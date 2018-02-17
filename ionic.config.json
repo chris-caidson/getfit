@@ -1,0 +1,8 @@
+{
+  "name": "getfit",
+  "app_id": "b6c9d09b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
