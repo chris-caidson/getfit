@@ -6,7 +6,7 @@
   </ion-header>
   <ion-content>
     <div id="getFitDiv">
-      <!-- <img src="assets/imgs/misc/get-fit.png" alt="Get Free" (click)="openPage('HomePage')" menuClose /> -->
+      <img src="assets/imgs/misc/get-fit.png" alt="Get Free" (click)="openPage('HomePage')" menuClose />
     </div>
     <ion-list>
       <div *ngFor="let p of pages">
@@ -33,7 +33,7 @@
     </ion-list>
   </ion-content>
 </ion-menu>
-<nav id="mainNav">
+<nav id="mainNav" *ngIf="this.auth.loggedIn">
   <img src="../assets/imgs/misc/get-fit-lg.png" alt="Get Fit" (click)="openPage('HomePage')" class="pointer" />
   <div id="navigationDiv" class="uppercase">
     <span id="homeSpan" (click)="openPage('HomePage')">Home</span>

@@ -1,0 +1,82 @@
+login {
+  #loginDiv {
+    display: grid;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+
+    #loginControlsContainer {
+      position: absolute;
+      top: calc(100% / 2 - 60px);
+      left: calc(100% / 4 - 50px);
+
+      #getFitLogo {
+        display: block;
+        height: 55%;
+        width: 55%;
+      }
+
+      #loginControls {
+        display: grid;
+        margin-top: $small-margin;
+
+        label {
+          font-size: smaller;
+          color: darken($light-color, 30%);
+        }
+
+        #loginTextBox {
+          display: inline-block;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          width: 150px;
+        }
+
+        #submitButton {
+          width: 150px;
+          margin-left: 0;
+          height: 85%;
+        }
+
+        #incorrectSpan {
+          display: inline-block;
+          color: #c00000;
+          margin-top: 4px;
+        }
+      }
+
+      @media (min-width: 640px) {
+        #getFitLogo {
+          height: 75%;
+          width: 75%;
+        }
+
+        #loginTextBox {
+          width: 225px !important;
+        }
+
+        #submitButton {
+          width: 225px !important;
+          margin-left: 0;
+          height: 100% !important;
+        }
+      }
+
+      @media (min-width: 900px) {
+        #getFitLogo {
+          height: 100%;
+          width: 100%;
+        }
+
+        #loginTextBox {
+          width: 300px !important;
+        }
+
+        #submitButton {
+          width: 300px !important;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

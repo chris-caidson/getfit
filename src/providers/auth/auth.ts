@@ -3,7 +3,7 @@ import * as firebase from "firebase";
 
 @Injectable()
 export class AuthProvider {
-  private localStorageKey: string = "getFitLoggedIn";
+  private localStorageKey: string = "gfLoggedIn";
 
   incorrectPassword: boolean = false;
   previousPage: string = "HomePage";
@@ -24,7 +24,7 @@ export class AuthProvider {
   public login(password: string) {
     firebase
       .auth()
-      .signInWithEmailAndPassword("default_user@getfree.com", password)
+      .signInWithEmailAndPassword("default_user@getfit.com", password)
       .then(() => {
         this.loggedIn = true;
         this.incorrectPassword = false;

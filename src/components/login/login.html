@@ -1,0 +1,20 @@
+<div id="loginDiv">
+  <div id="imgContainer">
+    <img src="assets/imgs/login-bg/login-bg-1400" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+            assets/imgs/login-bg/login-bg-400.jpg 400w,
+            assets/imgs/login-bg/login-bg-853.jpg 853w,
+            assets/imgs/login-bg/login-bg-1168.jpg 1168w,
+            assets/imgs/login-bg/login-bg-1400.jpg 1400w" />
+  </div>
+  <div id="loginControlsContainer"> 
+    <img id="getFitLogo" src="assets/imgs/misc/get-fit-lg.png" alt="GET Fit" />
+    <div>
+      <form (ngSubmit)="login()" #loginForm="ngForm" id="loginControls">
+        <label for="loginTextBox">Password:</label>
+        <input id="loginTextBox" type="password" name="password" autofocus [(ngModel)]="password" required />
+        <button id="submitButton" ion-button outline type="submit" [disabled]="!loginForm.form.valid">Submit</button>
+        <span id="incorrectSpan" *ngIf="this.authProvider.incorrectPassword">Invalid password.</span>
+      </form>
+    </div>
+  </div>
+</div>
