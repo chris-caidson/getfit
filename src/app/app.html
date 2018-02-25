@@ -4,16 +4,126 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <ion-content>
+    <div id="getFitDiv">
+      <!-- <img src="assets/imgs/misc/get-fit.png" alt="Get Free" (click)="openPage('HomePage')" menuClose /> -->
+    </div>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <div *ngFor="let p of pages">
+        <div *ngIf="p.separatorLevel === 1" class="primary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <div *ngIf="p.separatorLevel === 2" class="secondary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <div *ngIf="p.separatorLevel === 3" class="tertiary-separator">
+          <span>{{p.title}}</span>
+        </div>
+        <button *ngIf="p.component !== null" menuClose ion-item (click)="openPage(p.component)" no-lines class="menu-button">
+          <div *ngIf="!p.indent">
+            <i item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
+            <span>{{p.title}}</span>
+          </div>
+          <div *ngIf="p.indent" class="indent-side-menu-item">
+              <i item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
+              <span>{{p.title}}</span>
+            </div>
+        </button>
+      </div>
     </ion-list>
   </ion-content>
-
 </ion-menu>
+<nav id="mainNav">
+  <img src="../assets/imgs/misc/get-fit-lg.png" alt="Get Fit" (click)="openPage('HomePage')" class="pointer" />
+  <div id="navigationDiv" class="uppercase">
+    <span id="homeSpan" (click)="openPage('HomePage')">Home</span>
+    <div class="dropdown">
+      <div class="main-menu">Movement</div>
+      <div class="dropdown-content">
+        <p (click)="openPage('WhyCleansePage')">Why Cleanse?</p>
+        <p (click)="openPage('ProblemPage')">Problem</p>
+        <p (click)="openPage('SolutionPage')">Solution</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Science</div>
+      <div id="scienceSubMenu" class="dropdown-content">
+        <p (click)="openPage('ScienceBehindIsagenixPage')">The Science Behind Isagenix</p>
+        <p (click)="openPage('StudiesPage')">Studies</p>
+        <p (click)="openPage('MythbusterPage')">Myth Buster</p>
+        <div class="menu-separator">Research&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <p (click)="openPage('CleansingPage')">Cleansing</p>
+        <p (click)="openPage('AdaptogensPage')">Adaptogens</p>
+        <p (click)="openPage('WheyPage')">Whey</p>
+        <p (click)="openPage('TelomeresPage')">Telomeres</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Systems</div>
+      <div id="systemsSubMenu" class="dropdown-content">
+        <div id="core4Div">
+          <p (click)="openPage('Core4Page')">Core 4&nbsp;
+            <i class="fa fa-caret-down"></i>
+          </p>
+        </div>
+        <p (click)="openPage('CleanseForLifePage')" class="indented-menu-item">Cleanse</p>
+        <p (click)="openPage('IonixSupremePage')" class="indented-menu-item">Ionix</p>
+        <p (click)="openPage('IsaleanShakePage')" class="indented-menu-item">Shakes</p>
+        <p (click)="openPage('ProductBPage')" class="indented-menu-item">Product B</p>
+        <div id="packsDiv">
+          <p (click)="openPage('PickYourPackPage')">Packs&nbsp;
+            <i class="fa fa-caret-down"></i>
+          </p>
+        </div>
+        <p (click)="openPage('ThirtyDaySystemPage')" class="indented-menu-item">Good</p>
+        <p (click)="openPage('ValuePakPage')" class="indented-menu-item">Better</p>
+        <p (click)="openPage('UltimatePakPage')" class="indented-menu-item">Best</p>
+        <p (click)="openPage('KosherProductsPak')" class="indented-menu-item">Kosher</p>
+        <p (click)="openPage('VeganPak')" class="indented-menu-item">Vegan</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Athletes</div>
+      <div id="athletesSubMenu" class="dropdown-content">
+        <p (click)="openPage('AthletesPage')">Team Isagenix</p>
+        <p (click)="openPage('ResearchPage')">Research</p>
+        <p (click)="openPage('AmpedPage')">Sports Science</p>
+        <div class="menu-separator">Pre-Workout&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <p (click)="openPage('AmpedPowerPage')">Amped Power</p>
+        <p (click)="openPage('AmpedNoxPage')">Amped NOx</p>
+        <div class="menu-separator">Mid-Workout&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <p (click)="openPage('AmpedFuelPage')">Amped Fuel</p>
+        <div class="menu-separator">Post-Workout&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <p (click)="openPage('AmpedRecoverPage')">Amped Recover</p>
+        <p (click)="openPage('IsaleanProShake')">IsaLean Pro Shake</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Kids</div>
+      <div id="kidsSubmenu" class="dropdown-content">
+        <p (click)="openPage('KidsPage')">Problem</p>
+        <p (click)="openPage('KidsSolutionPage')">Solution</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="main-menu">Results</div>
+      <div id="resultsSubmenu" class="dropdown-content">
+        <p (click)="openPage('IsabodyChallengePage')">IsaBody Challenge</p>
+        <p (click)="openPage('SuccessStoriesPage')">Success Stories</p>
+      </div>
+    </div>
+    <div id="facebookMenuItem" class="dropdown pointer">
+      <i class="fa fa-facebook-square"></i>
+    </div>
+  </div>
+</nav>
 
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

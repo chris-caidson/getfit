@@ -5,15 +5,12 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
-
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
 @import "ionic.globals";
-
 
 // Shared Variables
 // --------------------------------------------------
@@ -21,9 +18,6 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
 
 // Named Color Variables
 // --------------------------------------------------
@@ -34,34 +28,67 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary: #8cc831,
+  secondary: #12b6f2,
+  light: #fff,
+  dark: #211f21
 );
 
+$primary-color: #8cc831;
+$darker-primary-color: darken($primary-color, 10%);
+
+$secondary-color: #12b6f2;
+$darker-secondary-color: darken($secondary-color, 10%);
+
+$accent-color: #4059D8;
+$lighter-accent-color: lighten($accent-color, 20%);
+$darker-accent-color: darken($accent-color, 20%);
+
+$tertiary-color: #ccc;
+$darker-tertiary-color: darken($tertiary-color, 10%);
+
+$light-color: #fff;
+$darker-light-color: darken($light-color, 10%);
+
+$dark-color: #211f21;
+$darker-dark-color: darken($dark-color, 10%);
+
+$default-text-color: #676767;
+$primary-header-color: #81d742;
+
+$video-shadow: 0px 0px 10px black;
+$text-shadow: 1px 1px 2px $darker-tertiary-color;
+
+$image-border: 8px 8px solid $tertiary-color;
+$image-border-radius: 8px;
+
+$letter-spacing: 0.05em;
+$base-font-size: 14pt;
+
+$default-border-radius: 4px;
+$default-border-size: 4px;
+
+$footer-bg-color: #393939;
+
+$default-margin: 20px;
+$xsmall-margin: $default-margin / 3;
+$small-margin: $default-margin / 2;
+$large-margin: $default-margin * 2;
+$xlarge-margin: $default-margin * 3;
+
+$max-grid-width: 90vw;
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -72,14 +99,12 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------

@@ -1,0 +1,174 @@
+// Elements
+
+* {
+  color: $default-text-color;
+  font-family: "Montserrat", sans-serif;
+  font-size: $base-font-size;
+  line-height: 1.35;
+}
+
+main {
+  max-width: $max-grid-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1300px) {
+  main {
+    max-width: 1200px;
+  }
+}
+
+footer {
+  margin-top: $default-margin;
+}
+
+h1 {
+  color: $primary-header-color;
+  font-size: $base-font-size + 12;
+  text-shadow: $text-shadow;
+  border-bottom: 1px solid $primary-header-color;
+}
+
+h2 {
+  color: $primary-header-color;
+  font-size: $base-font-size + 6;
+  text-shadow: $text-shadow;
+}
+
+h3 {
+  color: $darker-accent-color;
+  font-size: $base-font-size + 3;
+}
+
+h4 {
+  color: $dark-color;
+  font-size: $base-font-size + 2;
+}
+
+h5 {
+  font-size: $base-font-size + 1;
+}
+
+header {
+  margin-bottom: $large-margin;
+
+  img {
+    width: 100%;
+  }
+}
+
+ion-navbar ion-title {
+  margin-left: -$default-margin;
+}
+
+p {
+  color: $default-text-color;
+  text-align: justify;
+}
+
+// Classes
+
+.centered {
+  text-align: center;
+}
+
+.disclaimer {
+  font-size: smaller;
+  font-style: italic;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin-left: -$default-margin;
+}
+
+.note {
+  font-style: italic;
+  margin-top: -$xsmall-margin;
+  color: darken($tertiary-color, 15%);
+}
+
+.pdf {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 45px;
+  text-decoration: none;
+  color: $secondary-color;
+  background-image: url("../assets/imgs/misc/pdf.png");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 5px;
+  min-height: 40px;
+}
+
+@media (min-width: 640px) {
+  .pdf {
+    min-height: 30px;
+    background-position-y: 0px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.testimonial {
+  font-style: italic;
+}
+
+.title {
+  font-style: italic;
+}
+
+.uppercase {
+  font-variant: small-caps;
+}
+
+.video-li {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../assets/imgs/misc/play-button.png");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 10px;
+  background-size: 35px 25px;
+  padding-left: 45px;
+  height: 50px;
+  color: $secondary-color;
+  margin-bottom: $default-margin;
+}
+
+@media (min-width: 640px) {
+  .video-li {
+    height: 50px;
+    background-position-y: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.video-caption {
+  color: $lighter-accent-color;
+  font-size: $base-font-size;
+  text-shadow: $text-shadow;
+}
+
+.video-thumb {
+  border: $default-border-size solid $primary-color;
+  border-radius: $default-border-radius;
+  box-shadow: $video-shadow;
+  cursor: pointer;
+}

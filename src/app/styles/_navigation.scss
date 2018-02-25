@@ -1,0 +1,305 @@
+// All styles below are for side-menu navigation.
+
+.primary-separator {
+  background: rgb(150, 223, 250);
+  background: -moz-linear-gradient(
+    top,
+    rgba(150, 223, 250, 1) 1%,
+    rgba(47, 190, 243, 1) 99%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(150, 223, 250, 1) 1%,
+    rgba(47, 190, 243, 1) 99%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(150, 223, 250, 1) 1%,
+    rgba(47, 190, 243, 1) 99%
+  );
+  border-bottom: 1px solid #0d8cbb;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#96dffa",
+      endColorstr="#2fbef3",
+      GradientType=0
+    );
+  font-size: larger;
+  font-style: italic;
+  padding: 10px 5px;
+
+  span {
+    color: $darker-accent-color;
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+
+.secondary-separator,
+.toolbar-background {
+  background: rgb(182, 214, 86);
+  background: -moz-linear-gradient(
+    top,
+    rgba(182, 214, 86, 1) 1%,
+    rgba(101, 170, 60, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(182, 214, 86, 1) 1%,
+    rgba(101, 170, 60, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(182, 214, 86, 1) 1%,
+    rgba(101, 170, 60, 1) 100%
+  );
+  border-bottom: 1px solid #4a762a;
+  border-top: 1px solid #8fb02c;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#b6d656",
+      endColorstr="#65aa3c",
+      GradientType=0
+    );
+  font-size: larger;
+  padding: 5px 15px;
+
+  span {
+    color: white;
+  }
+}
+
+.tertiary-separator {
+  background: rgb(239, 239, 239);
+  background: -moz-linear-gradient(
+    top,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(207, 207, 207, 1) 100%
+  );
+  color: #555;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#efefef",
+      endColorstr="#cfcfcf",
+      GradientType=0
+    );
+  font-style: italic;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  padding: 5px 20px;
+}
+
+.menu-button {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  border-bottom: 1px solid #dedede !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#ffffff",
+      endColorstr="#ebebeb",
+      GradientType=0
+    );
+  padding-left: 30px;
+
+  i {
+    color: $darker-secondary-color;
+  }
+
+  span {
+    color: darken($default-text-color, 10%);
+    font-size: $base-font-size - 1;
+  }
+}
+
+.space-right {
+  padding-right: 10px;
+}
+
+i.fixed-width {
+  width: 25px;
+}
+
+ion-navbar {
+  text-align: center;
+
+  i {
+    color: $light-color;
+    text-shadow: $text-shadow;
+  }
+
+  span {
+    color: $light-color;
+    font-weight: normal;
+    text-shadow: $text-shadow;
+  }
+}
+
+ion-icon[name="menu"],
+.back-button-icon {
+  color: $light-color;
+}
+
+.toolbar-title {
+  color: $light-color !important;
+}
+
+.indent-side-menu-item {
+  display: inline-block;
+  padding-left: $large-margin;
+}
+
+#getFreeDiv {
+  background: rgb(242, 246, 248); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(242, 246, 248, 1) 0%,
+    rgba(216, 225, 231, 1) 50%,
+    rgba(181, 198, 208, 1) 51%,
+    rgba(224, 239, 249, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(242, 246, 248, 1) 0%,
+    rgba(216, 225, 231, 1) 50%,
+    rgba(181, 198, 208, 1) 51%,
+    rgba(224, 239, 249, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(242, 246, 248, 1) 0%,
+    rgba(216, 225, 231, 1) 50%,
+    rgba(181, 198, 208, 1) 51%,
+    rgba(224, 239, 249, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f2f6f8",
+      endColorstr="#e0eff9",
+      GradientType=0
+    ); /* IE6-9 */
+  border-bottom: 2px solid darken($tertiary-color, 15%) !important;
+
+  img {
+    display: block;
+    max-width:100%;
+    margin: $small-margin auto;
+  }
+}
+
+// All styles below are for traditional website navigation.
+
+#navigationDiv {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.main-menu {
+  color: darken($light-color, 10%);
+  border: none;
+  background-color: transparent;
+  font-size: larger;
+  margin: 12px 20px 0 0;
+  padding-bottom: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: url("../assets/imgs/misc/transparent-menu-background.png");
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: darken($light-color, 10%);
+  margin: 20px 30px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.dropdown-content p:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .main-menu {
+  color: white;
+  border-bottom: 3px solid $primary-color;
+}
+
+#homeSpan {
+  color: $light-color;
+  font-size: larger;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#homeSpan:hover {
+  border-bottom: 1px solid $light-color;
+}
+
+#successSubMenu {
+  right: 0px;
+}
+
+#resultsSubmenu {
+  right: 20px;
+}
+
+.menu-separator{
+  display: block;
+  margin-left: 20px;
+  color: darken($tertiary-color, 15%);
+
+  i {
+    color: darken($tertiary-color, 15%);
+  }
+}
+
+#systemsSubMenu i {
+  color: $tertiary-color;
+}
+
+.indented-menu-item {
+  display: block;
+  margin-left: $xlarge-margin !important;
+}
+
+#facebookMenuItem {
+  font-size: 20pt;
+
+  i {
+    color: $tertiary-color;
+  }
+}
