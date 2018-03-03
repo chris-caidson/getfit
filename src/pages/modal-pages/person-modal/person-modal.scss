@@ -1,0 +1,45 @@
+page-person-modal {
+  article {
+    margin-top: $default-margin;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  h3 {
+    color: $secondary-color;
+    text-align: left;
+  }
+
+  div {
+    text-align: justify;
+  }
+
+  @media (min-width: 640px) {
+    article {
+      margin-top: $large-margin;
+    }
+
+    .grid-container {
+      grid-template-columns: auto auto;
+      justify-content: flex-start;
+
+      section {
+        padding-left: $default-margin;
+      }
+
+      aside {
+        max-width: 400px;
+      }
+    }
+
+    img {
+      margin-right: $large-margin;
+    }
+
+    section {
+      margin-top: -$default-margin;
+    }
+  }
+}

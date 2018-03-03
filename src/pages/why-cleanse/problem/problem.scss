@@ -1,3 +1,66 @@
 page-problem {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
 
+  ion-grid {
+    max-width: 500px;
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+    }
+
+    section {
+      display: inline-block;
+      margin-left: $default-margin;
+      margin-right: $default-margin;
+
+      img {
+        display: inline-block;
+        margin-top: $large-margin;
+      }
+    }
+
+    #fedUpContent {
+      order: 0;
+    }
+
+    #fedUpImage {
+      order: 1;
+      margin-top: $xlarge-margin;
+    }
+
+    #foodMattersContent {
+      order: 3;
+      margin-top: $large-margin;
+    }
+
+    #foodMattersImage {
+      order: 2;
+      margin-top: $xlarge-margin;
+    }
+
+    #theUnhealthyTruthContent {
+      order: 4;
+      margin-top: $large-margin;
+    }
+
+    #theUnhealthyTruthImage {
+      order: 5;
+      margin-top: $xlarge-margin;
+    }
+
+    #whyDietsAreFailingUsContent {
+      order: 7;
+      margin-top: $large-margin;
+    }
+
+    #whyDietsAreFailingUsImage {
+      order: 6;
+      margin-top: $xlarge-margin;
+    }
+  }
 }

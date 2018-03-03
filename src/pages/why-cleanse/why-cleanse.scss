@@ -1,3 +1,69 @@
 page-why-cleanse {
+  button span {
+    color: $light-color;
 
+    i {
+      color: $light-color !important;
+    }
+  }
+
+  #buttonDiv {
+    display: none;
+  }
+
+  .green-icon {
+    color: $primary-color;
+  }
+
+  ion-footer {
+    background-color: #efefef;
+    border-top: 1px solid #bbb;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    max-width: $max-grid-width;
+    margin: auto;
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+    }
+
+    section {
+      display: inline-block;
+      margin-left: $default-margin;
+      margin-right: $default-margin;
+
+      img {
+        margin-top: $large-margin;
+      }
+    }
+
+    #benefitsOfCleansingSection {
+      order: 3;
+    }
+
+    #foodGirlSection {
+      order: 4;
+    }
+
+    #thinkAboutItSection {
+      order: 2;
+    }
+
+    #yogaGirlSection {
+      order: 1;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    #buttonDiv {
+      display: block;
+      margin-top: $default-margin;
+    }
+  }
 }

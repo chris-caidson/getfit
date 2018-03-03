@@ -22,6 +22,115 @@
       </header>
       <main role="main">
         <article>
+          <h1 class="centered uppercase">Why Cleanse?</h1>
+          <div class="grid-container">
+            <section>
+              <h3>One of the biggest threats to our health is our own environment.</h3>
+              <p>Our nutritionally bankrupt food, overladen with empty calories, combined with an ever-increasing toxic world, is
+                wreaking havoc on our mental and physical health.</p>
+              <p>In addition to an unhealthy diet and lack of exercise, many scientists now question if the toxic overload may also
+                be contributing to weight gain, obesity, and accelerated aging. Everyone - even people who are fit and lean -
+                needs to know how a nutritionally-bankrupt yet empty calorie-rich diet, and overexposure to toxins, can affect
+                long-term health.
+              </p>
+              <p>While no single product can single-handedly remedy all of our problems, it’s imperative that we get serious about
+                improving and maintaining our health through a system that provides nutritional cleansing, replenishing of nutrients,
+                and support for healthy aging.</p>
+            </section>
+            <section>
+              <div id="buttonDiv">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <button ion-button full color="secondary" (click)="loadProblemPage()">
+                        <i class="fa fa-exclamation-circle fixed-width space-right"></i>
+                        <span>Problem</span>
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <button ion-button full color="secondary" (click)="loadSolutionPage()">
+                        <i class="fa fa-check-circle fixed-width space-right"></i>
+                        <span>Solution</span>
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+              <img src="assets/imgs/misc/toxins.jpg" alt="Toxins" />
+            </section>
+            <section id="thinkAboutItSection">
+              <h2>Think About It</h2>
+              <p>
+                <i class="fa fa-check green-icon space-right"></i>We change the oil in our cars and trucks so they don’t break down. We change the filters in our heating and
+                air conditioners to keep them running properly.
+              </p>
+              <p>
+                <i class="fa fa-heart green-icon space-right"></i>
+                We brush our teeth to prevent decay. We seem to understand the concept of prevention and protecting our investment, yet we
+                ignore our most important asset - our body.
+              </p>
+              <p>
+                <i class="fa fa-star green-icon space-right"></i>
+                If we clear out the junk and we put in good nutrition, then we get healthy cells and a healthy body.
+              </p>
+              <p>
+                One company is leading the way to provide safe and effective product systems to address obesity, toxicity, declining fitness,
+                and premature aging. Isagenix offers complete nutritional cleansing and replenishing systems, that, when used
+                in conjunction with a balanced diet and fitness program, can have a dramatic effect on your overall health.
+              </p>
+              <p>
+                Isagenix products have helped hundreds of thousands of people take control of their health, get in peak shape, and lose and
+                maintain weight – and that number continues to grow.
+              </p>
+            </section>
+            <section id="yogaGirlSection">
+              <img sizes="(max-width: 553px) 100vw" src="assets/imgs/yoga-girl/yoga-girl-300.jpg" alt="Yoga Girl" srcset="
+                      assets/imgs/yoga-girl/yoga-girl-300.jpg 300w,
+                      assets/imgs/yoga-girl/yoga-girl-553.jpg 553w" />
+            </section>
+            <section id="benefitsOfCleansingSection">
+              <h2>Benefits of Cleansing</h2>
+              <h3>How Cleansing Helps You Live Long and Live Healthy</h3>
+              <p>Isagenix is not simply a juice cleanse or a detox cleanse. Those are temporary fixes that don’t solve the bigger
+                problem of keeping our bodies free of harmful toxins. The Isagenix cleanses are a long-term solution that lead
+                to a greater sense of vitality, improved metabolism, and help burn the unhealthy, visceral fat stored in bodies.
+                You’re also going to improve your body’s natural cellular cleansing system, something that a simple liver cleanse
+                won’t take care of.</p>
+              <h3>Don't Be Surprised if You Experience Some of the Following During Your Cleanse:</h3>
+              <ul class="bulleted">
+                <li>A boost of energy in your day-to-day activities.</li>
+                <li>Less craving for fatty, chemical-ridden food.</li>
+                <li>Lean, improved muscle tone.</li>
+                <li>Steady and predictable weight loss over time.</li>
+                <li>Balanced and consistent digestion.</li>
+              </ul>
+            </section>
+            <section id="foodGirlSection">
+              <img sizes="(max-width: 847px) 100vw" src="assets/imgs/food-girl/food-girl-847.png" alt="Food Girl" srcset="
+                    assets/imgs/food-girl/food-girl-300.png 300w,
+                    assets/imgs/food-girl/food-girl-847.png 847w" />
+            </section>
+          </div>
         </article>
       </main>
-</ion-content>
+    </ion-content>
+    <ion-footer *ngIf="this.auth.loggedIn">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button full color="secondary" (click)="loadProblemPage()">
+              <i class="fa fa-exclamation-circle fixed-width space-right"></i>
+              <span>Problem</span>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button full color="secondary" (click)="loadSolutionPage()">
+              <i class="fa fa-check-circle fixed-width space-right"></i>
+              <span>Solution</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-footer>

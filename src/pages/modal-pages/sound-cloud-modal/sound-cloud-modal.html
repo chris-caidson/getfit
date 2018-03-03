@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <i class="fa fa-music fixed-width space-right"></i>
+      <span>SoundCloud Recording</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="modal-close-div">
+    <span>
+      <i class="fa fa-newspaper-o fixed-width space-right"></i>{{title}}</span>
+    <button class="modal-close-btn" outline round (click)="closeModal()">
+      <i class="fa fa-close fixed-width"></i>
+    </button>
+  </div>
+  <main role="main">
+    <article>
+      <section>
+        <h3 class="centered">{{title}}</h3>
+        <iframe #iframe [src]="url">
+          Loading... please wait.
+        </iframe>
+      </section>
+    </article>
+  </main>
+</ion-content>

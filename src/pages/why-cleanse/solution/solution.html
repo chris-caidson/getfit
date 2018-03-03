@@ -21,7 +21,39 @@
               assets/imgs/why-cleanse/woman-with-cloth/woman-with-cloth-1400.jpg 1400w" />
       </header>
       <main role="main">
-        <article>
+        <article class="grid-container">
+          <section id="areYouToxicContent">
+            <h1 class="uppercase">Are You Toxic?</h1>
+            <p>
+              <span class="title">Are You Toxic</span> addresses the concerns of living in a world that is TOXIC and a food supply that is DEFICIENT, which are major contributors
+              to chronic disease and obesity. Isagenix, the World Leader in Deep Cellular Nutritional
+              Cleansing and Fat-burning, offers a solution.</p>
+          </section>
+          <section id="areYouToxicImage">
+            <img src="assets/imgs/misc/are-you-toxic.jpg" alt="Are You Toxic Video" (click)="openVideoModal('toxic')" class="video-thumb" />
+          </section>
+          <section id="nutritionalCleansingContent">
+            <ion-col col-12 col-lg class="col-left">
+              <h1 class="uppercase">Nutritional Cleansing</h1>
+              <p>
+                <span class="title">Nutritional Cleansing</span> discusses a lifestyle change with Nutritional Cleansing by addressing two major issues:
+                environmental toxicity and nutritional deficiency. The video also describes the benefits of Isagenix products.
+              </p>
+            </ion-col>
+          </section>
+          <section id="nutritionalCleansingImage">
+              <img src="assets/imgs/misc/mary.jpg" alt="Nutritional Cleansing Video" (click)="openVideoModal('cleansing')" class="video-thumb" />
+          </section>
+          <section id="whyIsagenixWorksContent">
+            <h1 class="uppercase">Why Isagenix Works</h1>
+            <p>
+              Dr. Michael Colgan is a leading visionary in the field of healthy aging and athletic performance. He shares his insight as
+              to WHY our bodies NEED the nutrients provided by Isagenix. <span class="title">Why Isagenix Works</span>focuses on the power
+              of the Isagenix System and undenatured whey protein.</p>
+          </section>
+          <section id="whyIsagenixWorksImage">
+            <img src="assets/imgs/misc/michael.jpg" alt="Why Isagenix Works Video" (click)="openVideoModal('isa-works')" class="video-thumb" />
+          </section>
         </article>
       </main>
 </ion-content>

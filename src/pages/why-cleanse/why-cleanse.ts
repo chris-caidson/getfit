@@ -15,4 +15,11 @@ export class WhyCleansePage {
     public auth: AuthProvider) {
   }
 
+  loadProblemPage() {
+    this.navCtrl.push('ProblemPage');
+  }
+
+  loadSolutionPage() {
+    this.navCtrl.push('SolutionPage');
+  }
 }

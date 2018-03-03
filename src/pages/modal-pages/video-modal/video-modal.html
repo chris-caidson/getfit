@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <i class="fa fa-film fixed-width space-right"></i>
+      <span>{{videoName}}</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="modal-close-div">
+    <span>
+      <i class="fa fa-newspaper-o fixed-width space-right"></i>{{videoName}}</span>
+    <button class="modal-close-btn" outline round (click)="closeModal()">
+      <i class="fa fa-close fixed-width"></i>
+    </button>
+  </div>
+  <video controls autoplay poster="assets/imgs/misc/loading.gif">
+    <source src="{{videoUrl}}">
+    <p>Your device does not support native video.</p>
+  </video>
+</ion-content>

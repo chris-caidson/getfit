@@ -1,3 +1,50 @@
 page-solution {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
 
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+    }
+
+    section {
+      display: inline-block;
+      margin-left: $default-margin;
+      margin-right: $default-margin;
+
+      img {
+        display: inline-block;
+        margin-top: $large-margin;
+      }
+    }
+
+    #areYouToxicContent {
+      order: 0;
+    }
+
+    #areYouToxicImage {
+      order: 1;
+      margin-top: $large-margin;
+    }
+
+    #nutritionalCleansingContent {
+      order: 3;
+    }
+
+    #nutritionalCleansingImage {
+      order: 2;
+      margin-top: $xlarge-margin;
+    }
+
+    #whyIsagenixWorksContent {
+      order: 4;
+    }
+
+    #whyIsagenixWorksImage {
+      order: 5;
+      margin-top: $large-margin;
+    }
+  }
 }
