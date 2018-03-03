@@ -1,3 +1,40 @@
 page-isalean-shake {
+  #topContainer section {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  h3 {
+    font-variant: small-caps;
+    border-bottom: 1px solid $tertiary-color;
+    margin-top: $large-margin;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  p {
+    margin-bottom: $large-margin;
+  }
+
+  .pdf-list li {
+    margin-bottom: $default-margin;
+  }
+
+  @media (min-width: 640px) {
+    #topContainer {
+      grid-template-columns: auto auto;
+      margin: auto;
+
+      img {
+        display: inline-block;
+        padding-right: $large-margin;
+      }
+    }
+
+    #bottomContainer {
+      margin: auto;
+    }
+  }
 }

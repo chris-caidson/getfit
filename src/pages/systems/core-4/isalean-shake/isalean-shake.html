@@ -20,8 +20,173 @@
             assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1168.jpg 1168w,
             assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1400.jpg 1400w" />
   </header>
-      <main role="main">
-        <article>
-        </article>
-      </main>
+  <main role="main">
+    <article>
+      <h1 class="uppercase centered">IsaLean Shake</h1>
+      <div id="topContainer" class="grid-container">
+        <section>
+          <img src="assets/imgs/products/isa-lean-lg.jpg" alt="IsaLean Shake" />
+        </section>
+        <section>
+          <p>A balanced 240-calorie, meal replacement clinically shown to support healthy weight loss and lean muscle growth
+            with 24 grams of high-quality protein.</p>
+          <ul>
+            <li>23 vitamins and minerals </li>
+            <li>Packed with protein, energy-fueling carbs, and good fats</li>
+            <li>High-fiber content and active enzymes aid digestion</li>
+          </ul>
+        </section>
+      </div>
+      <div id="bottomContainer" class="grid-container">
+        <section>
+          <h3>Flavors</h3>
+          <ul>
+            <li>Chocolate Mint</li>
+            <li>Creamy Dutch Chocolate</li>
+            <li>Creamy French Vanilla</li>
+            <li>Strawberry Cream</li>
+            <li>Dairy-free Chocolate</li>
+            <li>Dairy-free Vanilla</li>
+            <li>Limited-Quantity Seasonal Flavors, including (but not limited to):
+              <ul>
+                <li>Cookies and Cream</li>
+                <li>Eggnog</li>
+                <li>Mocha</li>
+                <li>Orange Cream</li>
+                <li>Peach Mango</li>
+                <li>Pina Colada</li>
+                <li>Pumpkin Spice</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Videos</h3>
+          <ul class="list-unstyled">
+            <li (click)="openVideoModal('shake-day')">
+              <span class="video-li">How to do an Isagenix Shake Day</span>
+            </li>
+            <li (click)="openVideoModal('presentation')">
+              <span class="video-li">IsaLean Shake Presentation</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Product Info</h3>
+          <ul class="list-unstyled pdf-list">
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('What Makes IsaLean Shake Superior?', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fwhat-makes-isalean-shake-superior.pdf?alt=media&token=973543a6-c9a4-4bae-b2bc-5909b9d01723')">What Makes IsaLean Shake Superior?</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake Product Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-product-information-sheet.pdf?alt=media&token=b30bab2f-2350-4931-a706-c000f9bd0b99')">IsaLean Shake Product Information Sheet</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Ingredients</h3>
+          <ul class="list-unstyled pdf-list">
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Chocolate Mint', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-chocolate-mint.pdf?alt=media&token=74bb8162-6c35-4f40-8fb1-b7964814585c')">IsaLean Shake - Chocolate Mint</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Cookies and Cream', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-cookies-and-cream.pdf?alt=media&token=e5f0db7e-a429-4412-9b23-962c30fb335c')">IsaLean Shake - Cookies and Cream</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Creamy Dutch Chocolate', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-creamy-dutch-chocolate.pdf?alt=media&token=7f315e7d-629d-410f-b5f7-87b47ede8f66')">IsaLean Shake - Creamy Dutch Chocolate</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Creamy French Vanilla', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-creamy-french-vanilla.pdf?alt=media&token=9757348c-210f-4280-a9f2-1cb806729a64')">IsaLean Shake - Creamy French Vanilla</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Peach Mango', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-peach-mango.pdf?alt=media&token=70a46d71-f33d-4410-8d27-1839ea5fb628')">IsaLean Shake - Peach Mango</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Pina Colada', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-pina-colada.pdf?alt=media&token=89957818-6e9b-439a-aa73-3a6694f762bb')">IsaLean Shake - Pina Colada</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Pumpkin Spice', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-pumpkin-spice.pdf?alt=media&token=a3213cbd-9937-4e22-adb8-9258ecb5845d')">IsaLean Shake - Pumpkin Spice</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('IsaLean Shake - Strawberry Cream', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisalean-shake-strawberry-cream.pdf?alt=media&token=304755e5-f55f-4fd2-9ba3-9efb5331cf25')">IsaLean Shake - Strawberry Cream</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Testimonials</h3>
+          <p>
+            <span class="testimonial">“Love the IsaLean® Shakes; they’re a delicious, whole meal replacement. Perfect protein/carb balance with the
+              clean, undenatured protein with all enzymes/amino acids. I don’t go a day without it. My daughter has it every
+              day. I feel healthier and less cravings than ever on my shakes.”</span> – Mitja K., Washington
+          </p>
+          <p>
+            <span class="testimonial">“My children know this is how we start our day every day so they get up and make their own shakes. It helps us
+              to establish our morning routine and stay focused.”</span> – Rebecca F., Texas
+          </p>
+          <p>
+            <span class="testimonial">“IsaLean® Shakes give me energy and my body feels balanced. I love it for dinner. My body feels that it is really
+              nourished.”
+            </span>
+            – Monica B., Washington
+          </p>
+          <p>
+            <span class="testimonial"> “IsaLean® Shakes have helped me gain control of my weight. I now maintain a consistent weight, have gained lean
+              muscle and feel healthier than ever before.”</span> – Janie L., California
+          </p>
+          <p>
+            <span class="testimonial">“I love IsaLean® Shakes. They are delicious, filling, and totally satisfying. Simple to prepare and feel so easy
+              in the tummy. No gas, bloating, or other heaviness. They make it very easy to stick to the 30-Day System.”</span>
+            – Patricia A., California
+          </p>
+          <p>
+            <span class="testimonial">“My body can’t wait for its morning shake. When I drink it, I can just feel my body responding to its nutritional
+              value. It wakes me up and makes me feel alive!”</span> – Richard O., Texas
+          </p>
+          <p>
+            <span class="testimonial">“I went from being tired, overwhelmed, and irritable to unbelievable energy, mental clarity, and a sense of peace.
+              My 5½-year-old said I am much nicer when I drink my shakes.”</span> – Becky B., Texas
+          </p>
+        </section>
+        <section>
+          <h3>FAQ's</h3>
+          <h4>What makes IsaLean Shakes unique?</h4>
+          <p>IsaLean Shakes contain superior nutrition compared to other meal replacement shakes on the market. IsaLean Shakes
+            contain exclusively sourced Myo-IsaLean Complex, the highest-quality whey protein from cows that are not treated
+            with hormones or routine antibiotics. IsaLean Shakes also contain Ionic Alfalfa™—our proprietary alfalfa juice
+            concentrate enriched in ionic minerals to keep the body running at peak performance.
+          </p>
+          <h4>
+            Why are IsaLean Shakes so important for the body?
+          </h4>
+          <p>
+            IsaLean Shakes provide balanced nutrients to maximize nutrition while minimizing caloric intake for safe weight loss and
+            effective weight management. Our exclusive shakes also have added enzymes to break down the carbohydrates, proteins
+            and fats for maximum absorption of key nutrients.
+          </p>
+          <h4>How do IsaLean Shakes support Nutritional Cleansing?</h4>
+          <p>Protein is an important nutrient needed by everyone on a daily basis. It is made up of essential and non-essential
+            amino acids, which are the “building blocks” for healthy bodies. Our high quality whey protein concentrate contains
+            a superior amino acid profile for optimum health and wellness. Protein has a number of different roles in the
+            body including the following:</p>
+          <ul>
+            <li>Repair body cells</li>
+            <li>Build and repair muscles and bones</li>
+            <li>Provide a source of energy</li>
+            <li>Curb cravings</li>
+            <li>Control many of the important processes in the body related to metabolism</li>
+          </ul>
+          <h4>What can I add to my IsaLean Shakes?</h4>
+          <p>
+            Our delicious shakes are perfect enjoyed just as they are. However, they are also extremely versatile and can be mixed with
+            other great Isagenix products. For extra nutrition, add a scoop of IsaFruits®, Isagenix Greens!™, Want More Energy?®,
+            IsaPro, Isagenix FiberPro™ or a half of an Oatmeal Berry SlimCake. You can add fresh fruit to your shake. See
+            your Independent Associate for recipes.
+          </p>
+          <p class="disclaimer">
+            * These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose,
+            treat, cure or prevent any disease.
+          </p>
+        </section>
+      </div>
+    </article>
+  </main>
 </ion-content>

@@ -1,3 +1,40 @@
 page-value-pak {
+  h3 {
+    font-variant: small-caps;
+    border-bottom: 1px solid $tertiary-color;
+    margin-top: $large-margin;
+  }
 
+  h4 {
+    font-style: italic;
+  }
+
+  ol li {
+    padding-left: $small-margin;
+    margin-bottom: $small-margin;
+  }
+
+  p {
+    margin-bottom: $large-margin;
+  }
+
+  #topContainer section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    #topContainer {
+      grid-template-columns: auto auto;
+      margin: auto;
+
+      img {
+        padding-right: $default-margin;
+      }
+    }
+
+    #bottomContainer {
+      margin: auto;
+    }
+  }
 }

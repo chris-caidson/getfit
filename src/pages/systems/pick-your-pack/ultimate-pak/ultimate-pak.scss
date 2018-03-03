@@ -1,3 +1,45 @@
 page-ultimate-pak {
+  h3 {
+    font-variant: small-caps;
+    border-bottom: 1px solid $tertiary-color;
+    margin-top: $large-margin;
+  }
 
+  h4 {
+    font-style: italic;
+  }
+
+  ol li {
+    padding-left: $small-margin;
+    margin-bottom: $small-margin;
+  }
+
+  p {
+    margin-bottom: $large-margin;
+  }
+
+  #topContainer section {
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      margin-top: -$default-margin;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #topContainer {
+      grid-template-columns: auto auto;
+      margin: auto;
+
+      img {
+        display: inline-block;
+        padding-right: $default-margin;
+      }
+    }
+
+    #bottomContainer {
+      margin: auto;
+    }
+  }
 }

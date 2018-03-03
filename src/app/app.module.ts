@@ -29,6 +29,7 @@ import { AuthProvider } from '../providers/auth/auth';
     InAppBrowser,
     PdfProvider,
     AuthProvider,
+    PdfProvider,
     //{ provide: LocationStrategy, useClass: PathLocationStrategy }
   ]
 })

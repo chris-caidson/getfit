@@ -20,8 +20,80 @@
             assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1168.jpg 1168w,
             assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1400.jpg 1400w" />
   </header>
-      <main role="main">
-        <article>
-        </article>
-      </main>
+  <main role="main">
+    <article>
+      <h1 class="uppercase centered">30 Day System</h1>
+      <div id="topContainer" class="grid-container">
+        <section>
+          <img src="assets/imgs/products/30-day-system-lg.jpg" alt="30 Day System" />
+        </section>
+        <section>
+          <p>
+            This cleansing and fat burning “starter pak” is ideal for individuals who want to lose weight using a long-term, flexible
+            program. The system is a groundbreaking path to healthy weight loss and is also designed to help support the
+            body’s natural detoxification systems. *
+          </p>
+          <ul>
+            <li>Experience consistent weight loss</li>
+            <li>Satisfy cravings for unhealthy food</li>
+            <li>Improve muscle tone</li>
+          </ul>
+        </section>
+      </div>
+      <div id="bottomContainer" class="grid-container">
+        <section>
+          <h3>Values and Benefits</h3>
+          <h4>Consistent Weight Loss</h4>
+          <p>The 30-Day System utilizes the Isagenix meal replacement, IsaLean® Shake, to help support your efforts to burn
+            and lose unwanted fat. The system also includes Cleanse for Life® to help nourish your body’s natural detoxification
+            systems. *</p>
+          <h4>Satisfy Cravings</h4>
+          <p>High-quality protein consumed as part of this system satisfies cravings and helps you stay full longer.</p>
+          <h4>Dairy-Free Option</h4>
+          <p>The 30-Day System now comes in a dairy-free option for those with dairy sensitivities or allergies or those looking
+            for more plant-based protein in their diets.</p>
+        </section>
+        <section>
+          <h3>Product List</h3>
+          <ol>
+            <li>4 IsaLean® Shake</li>
+            <li>1 Ionix® Supreme</li>
+            <li>2 Cleanse for Life®</li>
+            <li>1 Isagenix Snacks™</li>
+            <li>1 Natural Accelerator™</li>
+            <li>4 Hydrate® (Sticks)</li>
+            <li>1 IsaFlush®</li>
+            <li>1 Instructional System Guide</li>
+          </ol>
+        </section>
+        <section>
+          <h3>Videos</h3>
+          <ul class="list-unstyled">
+            <li (click)="openVideoModal('shake-day')">
+              <span class="video-li">How to do an Isagenix Shake Day</span>
+            </li>
+            <li (click)="openVideoModal('cleanse-day')">
+              <span class="video-li">How to do an Isagenix Cleanse Day</span>
+            </li>
+            <li (click)="openVideoModal('30-day')">
+              <span class="video-li">How to Use the 30 Day System</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Product Info</h3>
+          <ul class="list-unstyled pdf-list">
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('System Guide for Weight Loss', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fsystem-guide-for-weight-loss.pdf?alt=media&token=9e3c3bfc-4d8e-4f2e-93d9-0c9bb68f0cbf')">System Guide for Weight Loss</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('30 Day System Fast Facts', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2F30-day-system-fast-facts.pdf?alt=media&token=d025b912-fb2b-402a-bfa1-995a8f2f5562')">30 Day System Fast Facts</span>
+            </li>
+          </ul>
+        </section>
+        <p class="disclaimer">* These statements have not been evaluated by the Food and Drug Administration. These products are not intended
+            to diagnose, treat, cure, or prevent any disease.</p>
+      </div>
+    </article>
+  </main>
 </ion-content>

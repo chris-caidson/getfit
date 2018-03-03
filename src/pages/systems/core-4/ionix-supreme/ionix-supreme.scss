@@ -1,3 +1,35 @@
 page-ionix-supreme {
+  h3 {
+    font-variant: small-caps;
+    border-bottom: 1px solid $tertiary-color;
+    margin-top: $large-margin;
+  }
 
+  #pdfList li {
+    margin-bottom: $default-margin;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  p {
+    margin-bottom: $large-margin;
+  }
+
+  #topContainer section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    #topContainer {
+      grid-template-columns: auto auto;
+      margin: auto;
+    }
+
+    #bottomContainer {
+      margin: auto;
+    }
+  }
 }

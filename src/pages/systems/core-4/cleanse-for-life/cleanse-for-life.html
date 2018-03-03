@@ -22,6 +22,117 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="uppercase centered">Cleanse. Nourish. Replenish.</h1>
+      <div id="topContainer" class="grid-container">
+        <section>
+          <img src="assets/imgs/products/cleanse-for-life-lg.jpg" alt="Cleanse for Life" />
+        </section>
+        <section>
+          <p>Cleanse away toxins and impurities the natural way with Cleanse for Life®. With no artificial colors or flavors,
+            this synergistic blend of natural cleansing herbs and botanicals nourishes your body’s systems to help boost
+            metabolism and energy levels.When used as part of an Isagenix system. Cleanse for Life:</p>
+          <ul>
+            <li>Protects cells and vital organs from aging</li>
+            <li>Encourages safe weight loss</li>
+            <li>Boosts mental and physical performance</li>
+            <li>Supports detoxification and protects against toxins</li>
+          </ul>
+          <p>Available in:</p>
+          <ul>
+            <li>Powder, 16-serving (96 grams) canister</li>
+            <li>Liquid, 16 individual 2-ounce bottles</li>
+            <li>Liquid, 32-ounce bottle</li>
+          </ul>
+        </section>
+      </div>
+      <div id="bottomContainer" class="grid-container">
+        <section>
+          <h3>Flavors</h3>
+          <p>Natural Rich Berry, Powder or Liquid</p>
+        </section>
+        <section>
+          <h3>Videos</h3>
+          <ul class="list-unstyled">
+            <li (click)="openVideoModal('cleanse-day')">
+              <span class="video-li">How to do an Isagenix Cleanse Day</span>
+            </li>
+            <li (click)="openVideoModal('product-info')">
+              <span class="video-li">Cleanse for Life Product Information</span>
+            </li>
+            <li (click)="openVideoModal('on-the-go')">
+              <span class="video-li">Cleanse for Life Info on the Go</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Product Info</h3>
+          <ul class="list-unstyled">
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Cleanse for Life Product Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fcleanse-for-life-product-information-sheet.pdf?alt=media&token=3411f6f2-5046-49c9-9b38-4eddc31f88e8')">Cleanse for Life Product Information Sheet</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Ingredients</h3>
+          <ul class="list-unstyled">
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Cleanse for Life Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fcleanse-for-life-ingredients.pdf?alt=media&token=84d5e76e-ecf3-4a9f-a59d-c0a28ae9687a')">Cleanse for Life Ingredients</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Testimonials</h3>
+          <p>
+            <span class="testimonial">“When you use CFL daily, you help prevent the toxins that enter the body every day from becoming embedded in
+              the soft tissue and cells. Plus you benefit from the powerful ingredients that are building blocks for good
+              health and vitality.”</span>
+            – John Anderson
+          </p>
+          <p>
+            <span class="testimonial">“I’ve started doing the Cleanse for Life® every day and I feel like it lights me up even more. I also do a two-day
+              cleanse a couple of times a month.”</span> – Karolynn D., California
+          </p>
+          <p>
+            <span class="testimonial">“I can’t imagine not cleansing my body and doing the daily cleanse every day. It gives me so much energy and
+              has made such a profound difference. I feel better now than I’ve ever felt in my life.”</span> – Rick R., California
+          </p>
+        </section>
+        <section>
+          <h3>FAQ's</h3>
+          <h4>
+            How do I use Cleanse for Life?
+          </h4>
+          <p>
+            Cleanse for Life should be used as part of an Isagenix Cleansing and Fat Burning System for either daily cleansing or deep
+            cleansing. Drink 1 scoop of powder dissolved in 4 oz of water, or one 2 oz bottle of Cleanse for Life, up to
+            twice daily. Enjoy warm or cold. For a deeper, one- or two-day cleanse, drink 2 scoops of powder dissolved in
+            4 oz of water, or two, 2 oz bottles of Cleanse for Life, up to four times throughout the day. Enjoy warm or cold.
+            Cleansing is most effective with a combination of both daily and deep cleanses. Refer to the Cleansing & Fat
+            Burning Guide for further guidance.
+          </p>
+          <h4>
+            How does Cleanse for Life work?
+          </h4>
+          <p>
+            Cleanse for Life is not a colon cleanse or laxative. It is different because it nourishes the liver and promotes whole-body
+            cleansing on a cellular level. And, unlike other products on the market that may deplete the body of vital nutrients,
+            Cleanse for Life actually nourishes the body as it cleanses, gently removing contaminants from your body’s tissues,
+            promoting weight loss.
+          </p>
+          <h4>
+            What are the differences between liquid and the powder?
+          </h4>
+          <p>
+            The Cleanse for Life Liquid and the Cleanse for Life Powder equally provide nutritional cleansing benefits with the main
+            variation being delivery form—liquid versus powder. With Cleanse for Life conveniently available in two forms,
+            it is perfect for a variety of busy lifestyles. The liquid is already blended, so there is no mixing needed.
+            Alternatively, the Cleanse for Life Powder is portable; you can take the powder with you and mix it with water
+            whenever you want. Both taste great.</p>
+          <p class="disclaimer">* These statements have not been evaluated by the Food and Drug Administration. These products are not intended
+            to diagnose, treat, cure or prevent any disease.
+          </p>
+        </section>
+      </div>
     </article>
   </main>
 </ion-content>
