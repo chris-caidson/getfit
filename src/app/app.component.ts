@@ -52,7 +52,7 @@ export class MyApp {
       // Systems
       { title: "Systems", component: null, separatorLevel: 2, icon: null },
       //{ title: "Systems", component: "Systems Page", separatorLevel: 4, icon: "" },
-      { title: "Core 4", component: "Core_4Page", separatorLevel: 4, icon: "th-large" },
+      { title: "Core 4", component: "Core4Page", separatorLevel: 4, icon: "th-large" },
       { title: "Cleanse", component: "CleanseForLifePage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Ionix Supreme", component: "IonixSupremePage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Shakes", component: "IsaleanShakePage", separatorLevel: 4, icon: "caret-right", indent: true },

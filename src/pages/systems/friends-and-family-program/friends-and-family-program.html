@@ -10,8 +10,18 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+    <header role="banner">
+        <img src="assets/imgs/athletes/green-people-background/green-people-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+                assets/imgs/athletes/green-people-background/green-people-background-400.jpg 400w,
+                assets/imgs/athletes/green-people-background/green-people-background-845.jpg 845w,
+                assets/imgs/athletes/green-people-background/green-people-background-1164.jpg 1164w,
+                assets/imgs/athletes/green-people-background/green-people-background-1400.jpg 1400w" />
+      </header>
+  <main role="main">
+    <article>
+    </article>
+  </main>
 </ion-content>

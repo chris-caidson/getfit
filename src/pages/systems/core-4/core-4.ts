@@ -7,7 +7,7 @@ import { AuthProvider } from "../../../providers/auth/auth";
   selector: 'page-core-4',
   templateUrl: 'core-4.html',
 })
-export class Core_4Page {
+export class Core4Page {
 
   constructor(
     public navCtrl: NavController,
