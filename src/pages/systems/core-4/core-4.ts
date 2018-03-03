@@ -15,4 +15,20 @@ export class Core4Page {
     public auth: AuthProvider) {
   }
 
+  loadCleansePage(){
+    this.navCtrl.push('CleanseForLifePage');
+  }
+
+  loadIonixPage(){
+    this.navCtrl.push('IonixSupremePage');
+  }
+
+  loadIsaLeanPage(){
+    this.navCtrl.push('IsaleanShakePage');
+  }
+
+  loadIsaGenesisPage(){
+    this.navCtrl.push('ProductBPage');
+  }
+
 }

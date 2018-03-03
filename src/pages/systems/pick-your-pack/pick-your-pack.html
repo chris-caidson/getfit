@@ -20,8 +20,23 @@
             assets/imgs/green-cloth-girl/green-cloth-girl-1174.jpg 1174w,
             assets/imgs/green-cloth-girl/green-cloth-girl-1400.jpg 1400w" />
   </header>
-      <main role="main">
-        <article>
-        </article>
-      </main>
+  <main role="main">
+    <article>
+      <h1 class="uppercase centered">Packs</h1>
+      <div class="grid-container" id="grid">
+        <section>
+          <img src="assets/imgs/products/30-day-system.jpg" alt="30-Day System" (click)="load30DaySystemPage()" class="pointer" />
+          <h3 class="uppercase centered">Good</h3>
+        </section>
+        <section>
+          <img src="assets/imgs/products/value-pak.jpg" alt="Value Pak" (click)="loadValuePakPage()" class="pointer" />
+          <h3 class="uppercase centered">Better</h3>
+        </section>
+        <section>
+          <img src="assets/imgs/products/ultimate-pak.jpg" alt="Ultimate Pak" (click)="loadUltimatePakPage()" class="pointer" />
+          <h3 class="uppercase centered">Best</h3>
+        </section>
+      </div>
+    </article>
+  </main>
 </ion-content>

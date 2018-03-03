@@ -1,3 +1,45 @@
 page-systems {
+  h3 {
+    margin-top: 5px;
+  }
 
+  section {
+    margin-bottom: $large-margin;
+  }
+
+  article img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  @media (min-width: 768px) {
+    #topGrid {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #bottomGrid{
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    #topGrid {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
 }

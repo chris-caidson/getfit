@@ -15,4 +15,31 @@ export class SystemsPage {
     public auth: AuthProvider) {
   }
 
+  loadCleansePage(){
+    this.navCtrl.push('CleanseForLifePage');
+  }
+
+  loadIonixPage(){
+    this.navCtrl.push('IonixSupremePage');
+  }
+
+  loadIsaLeanPage(){
+    this.navCtrl.push('IsaleanShakePage');
+  }
+
+  loadIsaGenesisPage(){
+    this.navCtrl.push('IsaGenesisPage');
+  }
+
+  load30DaySystemPage(){
+    this.navCtrl.push('ThirtyDaySystemPage');
+  }
+
+  loadValuePakPage(){
+    this.navCtrl.push('ValuePakPage');
+  }
+
+  loadUltimatePakPage(){
+    this.navCtrl.push('UltimatePakPage');
+  }
 }

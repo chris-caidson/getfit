@@ -1,3 +1,28 @@
 page-pick-your-pack {
+  h3 {
+    margin-top: 5px;
+  }
+
+  section {
+    margin-bottom: $large-margin;
+  }
+
+  article img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  @media (min-width: 1024px) {
+    #grid{
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: auto auto auto;
+    }
+  }
 
 }

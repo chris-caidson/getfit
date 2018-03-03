@@ -15,4 +15,15 @@ export class PickYourPackPage {
     public auth: AuthProvider) {
   }
 
+  load30DaySystemPage(){
+    this.navCtrl.push('ThirtyDaySystemPage');
+  }
+
+  loadValuePakPage(){
+    this.navCtrl.push('ValuePakPage');
+  }
+
+  loadUltimatePakPage(){
+    this.navCtrl.push('UltimatePakPage');
+  }
 }
