@@ -4,8 +4,8 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <i class="fa fa-home fixed-width space-right"></i>
-      <span>Home</span>
+      <i class="fa fa-flask fixed-width space-right"></i>
+      <span>Quality Assurance</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -21,7 +21,82 @@
             assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
   </header>
   <main role="main">
-    <article>
+    <article class="grid-container">
+      <section>
+        <div>
+          <img id="qualityAssuranceImg" src="assets/imgs/science/quality-assurance.jpg" alt="Quality Assurance brochure"
+          (click)="pdfProvider.openPdf('Quality Assurance', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fquality-assurance.pdf?alt=media&token=359774e0-6dd3-415d-b64c-94306643664b')" />
+        </div>
+        <h1>Quality Assurance</h1>
+        <p>
+          As it should be, your safety is our first priority at Isagenix. Having safe, effective, no- compromise products means cutting
+          no corners when it comes to selecting and testing raw materials, following the appropriate regulatory guidelines,
+          and verifying that the finished products meet purity and composition standards.
+        </p>
+        <p>
+          The Isagenix no-compromise Ingredient Policy is extensive and thorough, covering every detail from ingredient sourcing to
+          manufacturing guidelines. By following these principles, Isagenix stands by its products with confidence. After
+          all, quality ingredients could mean the difference between products having no effect on health or delivering amazing
+          results.
+        </p>
+        <p>
+          At Isagenix, raw materials are only sourced from suppliers with a proven track record of sustainability and exceptional quality.
+          No-compromise quality doesn’t stop after raw materials have been selected. When the ingredients are delivered to
+          the manufacturing facility, there are strict guidelines called current Good Manufacturing Practices (cGMPs), which
+          outline how materials are handled. Isagenix works to ensure that all products meet or exceed the highest standards
+          of cGMPs for dietary supplements as outlined by the FDA and other international regulatory boards.
+        </p>
+        <p>
+          Isagenix policy requires that every raw material that arrives in the manufacturing facilities be immediately quarantined,
+          thoroughly inspected, and tested for:
+        </p>
+        <ul>
+          <li> Identity (botanicals and phytochemicals)</li>
+          <li>Strength and composition</li>
+          <li>Organoleptic properties (taste, color, odor, and texture)</li>
+        </ul>
+        <p> Testing to confirm safety and purity of raw materials is very extensive. Rigorous testing is performed for:
+        </p>
+        <ul>
+          <li> Microbial activity: total aerobic bacterial, yeast and mold, salmonella and E. coli strains, and other bacterial
+            strains</li>
+          <li> Pesticides, herbicides, and fungicides</li>
+          <li>Heavy metals: all botanicals are tested for the presence of lead, mercury, cadmium, and arsenic</li>
+          <li> PCBs and dioxins: each batch of fish oil is third-party tested to confirm undetectable levels of heavy metals,
+            PCBs, and dioxins</li>
+        </ul>
+        <p>
+          Any raw materials that do not meet these standardized testing methods are rejected or destroyed. In addition to testing raw
+          materials, Isagenix is unique in that we also thoroughly evaluate the efficacy of finished products. This includes
+          re-analyzing the product for identity and purity. Third-party claims testing on vitamin and mineral content is
+          also conducted to ensure that our products fully meet what is stated on the labels.
+        </p>
+        <p>
+          Finally, stability testing confirms that the strength and composition as indicated on the label of the product is accurate
+          up until at least the expiration date.
+        </p>
+        <p>
+          There are few other companies that can stand by their quality assurance commitment. By putting this much care into their
+          products, you can rest assured that Isagenix is putting the health of our customers first.
+        </p>
+        <p>
+          The team also contributes to evidence-based nutrition research by partnering with several well-respected universities in
+          funding and conducting clinical studies. These include University of Illinois at Chicago (UIC), Arizona State University,
+          University of Maryland, Skidmore College, University of Colorado, and more. For example, UIC conducted a clinical
+          study involving Isagenix products that was published in two peer-reviewed journals (Nutrition Journal and Nutrition
+          & Metabolism). The study serves as clinical substantiation for Isagenix systems for healthy weight loss and also
+          adds to advance our understanding of the relationship between diet, nutrition and health.
+        </p>
+      </section>
+      <section>
+        <ul id="subNav">
+          <li (click)="loadPage('SciencePage')">Science</li>
+          <li (click)="loadPage('ResearchAndSciencePage')">Research and Science</li>
+          <li (click)="loadPage('ScientificAdvisoryBoardPage')">Scientific Advisory Board</li>
+          <li class="selected">Quality Assurance</li>
+          <li (click)="loadPage('ScienceBehindIsagenixPage')">Science Behind Isagenix</li>
+        </ul>
+      </section>
     </article>
   </main>
   <get-footer></get-footer>

@@ -1,0 +1,62 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-flask fixed-width space-right"></i>
+      <span>Science</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article class="grid-container">
+      <section>
+        <div>
+          <img src="assets/imgs/science/scientists.jpg" alt="Scientists" />
+        </div>
+        <h1>Isagenix and Science</h1>
+        <div>
+          <p>
+            Behind any great health-and-wellness company, there have to be great products. And behind those great products, there has
+            to be an experienced yet forward-thinking team of knowledgeable and skilled experts. Isagenix is no exception
+            to this rule.
+          </p>
+          <p>
+            Scientists at Isagenix work tirelessly to research and develop product formulas based on the most advanced scientific findings
+            and technologies to provide you with the safest and most effective product solutions delivering optimal benefits.
+          </p>
+          <p>
+            Isagenix Research and Development couldn’t happen without the QRTS department (QRTS stands for Quality, Regulatory, Technology,
+            and Science), which consists of numerous scientists—including nutritionists, dietitians, food scientists, chemists,
+            organic chemists, microbiologists, toxicologists, and biologists. Through the collaboration of John Anderson,
+            Isagenix Founder and Product B™ Formula Developer, expertise from health professionals on our Scientific Advisory
+            Board, and esteemed scientists at highly respected universities, we ensure that “real results??? are at the heart
+            of every product.
+          </p>
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li class="selected">Science</li>
+          <li (click)="loadPage('ResearchAndSciencePage')">Research and Science</li>
+          <li (click)="loadPage('ScientificAdvisoryBoardPage')">Scientific Advisory Board</li>
+          <li (click)="loadPage('QualityAssurancePage')">Quality Assurance</li>
+          <li (click)="loadPage('ScienceBehindIsagenixPage')">Science Behind Isagenix</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

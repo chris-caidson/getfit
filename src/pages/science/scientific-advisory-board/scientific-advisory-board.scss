@@ -1,3 +1,145 @@
 page-scientific-advisory-board {
+  article {
+    display: grid;
+  }
 
+    ul {
+        list-style-type: none;
+
+        li {
+            display: block;
+            padding-top: $small-margin;
+            padding-bottom: $small-margin;
+            color: $secondary-color;
+            cursor: pointer;
+            border-bottom: 1px solid $tertiary-color;
+            margin-left: -$large-margin;
+            padding-left: $small-margin;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .selected {
+            background-color: $primary-color;
+            color: $light-color;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        ul li {
+            padding-left: $default-margin;
+            margin-left: $default-margin;
+            padding-right: $small-margin;
+        }
+
+        article {
+          grid-template-columns: auto auto;
+        }
+    }
+
+    #appleImg {
+        box-shadow: 0px 0px 15px #999;
+        border-radius: 8px;
+        float: left;
+        margin-right: $default-margin;
+    }
+
+    #headerDiv {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    h3 {
+        color: $secondary-color;
+    }
+
+    h5 {
+        color: $accent-color;
+        font-weight: normal;
+        text-shadow: none;
+        font-size: smaller;
+    }
+
+    #tapH5 {
+        display: block;
+    }
+
+    #clickH5 {
+        display: none;
+    }
+
+    .note {
+        border-top: 1px solid $tertiary-color;
+        padding-top: $small-margin;
+    }
+
+    figure {
+        margin-bottom: $xlarge-margin;
+
+        img {
+            display: block;
+            margin: auto;
+            height: 253px;
+            width: 158px;
+        }
+
+        span {
+            color: $default-text-color;
+            font-weight: normal;
+            text-shadow: none;
+            font-size: small;
+            display: block;
+        }
+    }
+
+    #peopleGrid {
+        padding-top: $default-margin;
+        display: grid;
+    }
+
+    @media (min-width: 640px) {
+        #headerDiv {
+            max-width: 1024px;
+            grid-template-columns: 307px 1fr;
+            grid-template-rows: auto;
+            padding-bottom: $large-margin;
+            margin: auto;
+        }
+
+        #headerImage {
+            display: inline-block;
+            margin: inherit;
+            margin-top: $default-margin;
+            margin-right: $large-margin;
+        }
+
+        #peopleGrid {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media (min-width: 920px) {
+        #peopleGrid {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #peopleGrid {
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        #tapH5 {
+            display: none;
+        }
+
+        #clickH5 {
+            display: block;
+        }
+    }
 }

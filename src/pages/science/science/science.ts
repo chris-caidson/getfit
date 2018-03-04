@@ -4,10 +4,10 @@ import { AuthProvider } from "../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-research-and-science',
-  templateUrl: 'research-and-science.html',
+  selector: 'page-science',
+  templateUrl: 'science.html',
 })
-export class ResearchAndSciencePage {
+export class SciencePage {
 
   constructor(
     public navCtrl: NavController,

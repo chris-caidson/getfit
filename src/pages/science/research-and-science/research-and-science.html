@@ -4,8 +4,8 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <i class="fa fa-home fixed-width space-right"></i>
-      <span>Home</span>
+      <i class="fa fa-flask fixed-width space-right"></i>
+      <span>Research and Science</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -21,7 +21,42 @@
             assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
   </header>
   <main role="main">
-    <article>
+    <article class="grid-container">
+      <section>
+        <h1>Research and Science</h1>
+        <img id="scopeGirl" src="assets/imgs/science/microscope-girl.jpg" alt="Girl looking into microscope" />
+        <p>The Isagenix Research and Science Team is responsible for spearheading clinical research on Isagenix products, reviewing
+          evidence-based literature to substantiate product claims, and contributing innovative ideas for product development.
+        </p>
+        <p>
+          Comprised of nutritionists and registered dietitians, the R&S team heads up the discussions at Isagenix about health and
+          nutrition. They are in constant communication with John Anderson, the Isagenix Scientific Advisory Board, and respected
+          scientists who are experts in their fields to analyze the latest in scientific research. Through collaboration
+          and review of scientific literature, the R&S team helps ensure that Isagenix products continue to undergo developments
+          that are representative of the latest that science has to offer for living a life in optimal health.
+        </p>
+        <p>
+          The team also contributes to evidence-based nutrition research by partnering with several well-respected universities in
+          funding and conducting clinical studies. These include University of Illinois at Chicago (UIC), Arizona State University,
+          University of Maryland, Skidmore College, University of Colorado, and more. For example, UIC conducted a clinical
+          study involving Isagenix products that was published in two peer-reviewed journals (Nutrition Journal and Nutrition
+          & Metabolism). The study serves as clinical substantiation for Isagenix systems for healthy weight loss and also
+          adds to advance our understanding of the relationship between diet, nutrition and health.
+        </p>
+        <p>
+          While keeping an ear to the ground for the latest developments in nutritional science, the R&S team also devotes time to
+          communicating new scientific developments to Isagenix Associates through events, podcasts, and articles.
+        </p>
+      </section>
+      <section>
+        <ul>
+          <li (click)="loadPage('SciencePage')">Science</li>
+          <li class="selected">Research and Science</li>
+          <li (click)="loadPage('ScientificAdvisoryBoardPage')">Scientific Advisory Board</li>
+          <li (click)="loadPage('QualityAssurancePage')">Quality Assurance</li>
+          <li (click)="loadPage('ScienceBehindIsagenixPage')">Science Behind Isagenix</li>
+        </ul>
+      </section>
     </article>
   </main>
   <get-footer></get-footer>

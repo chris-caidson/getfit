@@ -1,3 +1,54 @@
 page-science-behind-isagenix {
+    .grid-container {
+        grid-template-columns: auto;
+    }
 
+    #smallBrochure {
+        float: left;
+        margin-right: $default-margin;
+        box-shadow: 0px 0px 15px #999;
+        border-radius: 8px;
+    }
+
+    ol li {
+        margin-left: -$default-margin;
+        margin-bottom: $small-margin;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: block;
+            padding-top: $small-margin;
+            padding-bottom: $small-margin;
+            color: $secondary-color;
+            cursor: pointer;
+            border-bottom: 1px solid $tertiary-color;
+            margin-left: -$large-margin;
+            padding-left: $small-margin;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .selected {
+            background-color: $primary-color;
+            color: $light-color;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
+
+        ul li {
+            padding-left: $default-margin;
+            margin-left: $default-margin;
+            padding-right: $small-margin;
+        }
+    }
 }

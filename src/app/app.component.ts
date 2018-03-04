@@ -40,7 +40,7 @@ export class MyApp {
 
       // Science
       { title: "Science", component: null, separatorLevel: 2, icon: null },
-      { title: "Science Behind Isa.", component: "ScienceBehindIsagenixPage", separatorLevel: 4, icon: "flask" },
+      { title: "Science", component: "SciencePage", separatorLevel: 4, icon: "flask" },
       { title: "Studies", component: "StudiesPage", separatorLevel: 4, icon: "file" },
       { title: "Myth Buster", component: "MythbusterPage", separatorLevel: 4, icon: "bomb" },
       { title: "Research", component: null, separatorLevel: 3, icon: null},
@@ -51,7 +51,7 @@ export class MyApp {
 
       // Systems
       { title: "Systems", component: null, separatorLevel: 2, icon: null },
-      //{ title: "Systems", component: "Systems Page", separatorLevel: 4, icon: "" },
+      { title: "Systems", component: "SystemsPage", separatorLevel: 4, icon: "clone" },
       { title: "Core 4", component: "Core4Page", separatorLevel: 4, icon: "th-large" },
       { title: "Cleanse", component: "CleanseForLifePage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Ionix Supreme", component: "IonixSupremePage", separatorLevel: 4, icon: "caret-right", indent: true },

@@ -4,8 +4,8 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <i class="fa fa-home fixed-width space-right"></i>
-      <span>Home</span>
+      <i class="fa fa-flask fixed-width space-right"></i>
+      <span>Sci. Advisory Board</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -22,6 +22,89 @@
   </header>
   <main role="main">
     <article>
+      <div>
+        <h1>Scientific Advisory Board</h1>
+        <div id="headerDiv">
+          <img id="appleImg" src="assets/imgs/science/apple.jpg" alt="" />
+          <p>Isagenix has attracted the best and brightest professionals in the fields of nutrition, medicine, and health and
+            wellness to serve on our Scientific Advisory Board (SAB). Collectively, they represent the leaders in their respective
+            fields and the Isagenix commitment to excellence—to guide people safely along the path to optimal health and
+            wellness. The SAB’s group of medical and health professionals lend their experience and expertise to guarantee
+            and maintain the integrity and efficacy of our no-compromise products.</p>
+        </div>
+        <h5 id="tapH5" class="centered note">(Tap an image to see details.)</h5>
+        <h5 id="clickH5" class="centered note">(Click an image to see details.)</h5>
+        <div id="peopleGrid">
+          <figure>
+            <img src="assets/imgs/advisory/john-anderson.jpg" alt="John W. Anderson" (click)="openPersonModal('john-anderson')" class="pointer"
+            />
+            <figcaption>
+              <h5 class="uppercase centered">John W. Anderson</h5>
+              <span class="centered">Isagenix Founder</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/robert-kay.jpg" alt="Robert 'Bob' Kay, Ph.D." (click)="openPersonModal('robert-kay')" class="pointer"
+            />
+            <figcaption>
+              <h5 class="uppercase centered">Robert "Bob" Kay, Ph.D.</h5>
+              <span class="centered">Chief Science Officer</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/suk-cho.jpg" alt="Suk Cho, Ph.D." (click)="openPersonModal('suk-cho')" class="pointer" />
+            <figcaption>
+              <h5 class="uppercase centered">Suk Cho, Ph.D.</h5>
+              <span class="centered">Senior Science Advisor
+                <br />and SAB Chair</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/dennis-harper.jpg" alt="Dennis Harper, D.O." (click)="openPersonModal('dennis-harper')" class="pointer"
+            />
+            <figcaption>
+              <h5 class="uppercase centered">Dennis Harper, D.O.</h5>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/wayne-bidlack.jpg" alt="Wayne Bidlack, Ph.D." (click)="openPersonModal('wayne-bidlack')" class="pointer"
+            />
+            <figcaption>
+              <h5 class="uppercase centered">Wayne Bidlack, Ph.D.</h5>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/zhaoping-li.jpg" alt="Zhaoping Li, M.D., Ph.D." (click)="openPersonModal('zhaoping-li')" class="pointer"
+            />
+            <figcaption>
+              <h5 class="uppercase centered">Zhaoping Li, M.D., Ph.D.</h5>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/nicholas-messina.jpg" alt="Nicholas Messina, Ph.D." (click)="openPersonModal('nicholas-messina')"
+              class="pointer" />
+            <figcaption>
+              <h5 class="uppercase centered">Nicholas Messina, M.D.</h5>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/imgs/advisory/michael-colgan.jpg" alt="Michael Colgan, Ph.D., CCN" (click)="openPersonModal('michael-colgan')"
+              class="pointer" />
+            <figcaption>
+              <h5 class="uppercase centered">Michael Colgan, Ph.D., CCN</h5>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <section>
+          <ul>
+            <li (click)="loadPage('SciencePage')">Science</li>
+            <li (click)="loadPage('ResearchAndSciencePage')">Research and Science</li>
+            <li class="selected">Scientific Advisory Board</li>
+            <li (click)="loadPage('QualityAssurancePage')">Quality Assurance</li>
+            <li (click)="loadPage('ScienceBehindIsagenixPage')">Science Behind Isagenix</li>
+          </ul>
+        </section>
     </article>
   </main>
   <get-footer></get-footer>
