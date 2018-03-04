@@ -25,9 +25,9 @@
             <span>{{p.title}}</span>
           </div>
           <div *ngIf="p.indent" class="indent-side-menu-item">
-              <i item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
-              <span>{{p.title}}</span>
-            </div>
+            <i item-start class="fa fa-{{p.icon}} space-right fixed-width"></i>
+            <span>{{p.title}}</span>
+          </div>
         </button>
       </div>
     </ion-list>
@@ -68,10 +68,10 @@
             <i class="fa fa-caret-down"></i>
           </p>
         </div>
-        <p (click)="openPage('CleanseForLifePage')" class="indented-menu-item">Cleanse</p>
-        <p (click)="openPage('IonixSupremePage')" class="indented-menu-item">Ionix</p>
-        <p (click)="openPage('IsaleanShakePage')" class="indented-menu-item">Shakes</p>
-        <p (click)="openPage('ProductBPage')" class="indented-menu-item">Product B</p>
+        <p (click)="openPage('CleanseForLifePage')" class="indented-menu-item">Cleanse for Life</p>
+        <p (click)="openPage('IonixSupremePage')" class="indented-menu-item">Ionix Supreme</p>
+        <p (click)="openPage('IsaleanShakePage')" class="indented-menu-item">IsaLean Shakes</p>
+        <p (click)="openPage('ProductBPage')" class="indented-menu-item">IsaGenesis (Product B)</p>
         <div id="packsDiv">
           <p (click)="openPage('PickYourPackPage')">Packs&nbsp;
             <i class="fa fa-caret-down"></i>
@@ -122,7 +122,9 @@
       </div>
     </div>
     <div id="facebookMenuItem" class="dropdown pointer">
-      <i class="fa fa-facebook-square"></i>
+      <a href="https://www.facebook.com/groups/960960177302669/">
+        <i class="fa fa-facebook-square"></i>
+      </a>
     </div>
   </div>
 </nav>
