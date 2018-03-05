@@ -22,7 +22,41 @@
             assets/imgs/science/green-workout-background/green-workout-background-1400.jpg 1400w," />
   </header>
   <main role="main">
-    <article>
+    <article class="grid-container">
+      <div>
+        <h1 class="uppercase centered">Isagenix Studies</h1>
+        <section>
+          <h3>The Science - Clinical Research</h3>
+          <ul>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Clinical Research Fast Facts', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fclinical-research-fast-facts.pdf?alt=media&token=6ed984e3-6f45-4e4c-b8a3-ac9f59c135af')">Clinical Research Fast Facts</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Isagenix in Comparison to Heart-Healthy Diet', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisagenix-in-comparison-to-heart-healthy-diet.pdf?alt=media&token=9fe3a97f-caf4-4b35-95b0-928fe8c867d5')">Isagenix in Comparison to Heart-Healthy Diet</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Isagenix Reaches Milestone with New Long-Term Study', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fisagenix-reaches-new-milestone-with-new-long-term-study.pdf?alt=media&token=66120d02-5a1e-4ec6-bc6e-8eed40624d27')">Isagenix Reaches Milestone with New Long-Term Study</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>
+            Isagenix Peer-Reviewed Public Studies
+          </h3>
+          <ul>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Nutrition Journal', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fnutrition-journal.pdf?alt=media&token=0ff4cfbe-cbd1-4371-a28a-1e7d98e34a47')">Nutrition Journal</span>
+            </li>
+            <li>
+              <span class="pdf" (click)="pdfProvider.openPdf('Nutrition Metabolism', 'https://firebasestorage.googleapis.com/v0/b/getfreeglobal.appspot.com/o/pdf%2Fnutrition-metabolism.pdf?alt=media&token=dc65dec9-e1b8-4b36-8247-0cff94d7c59a')">Nutrition Metabolism</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="isaVsHeartHealthyDiv">
+        <img id="isaVsHeartHealthyImg" src="assets/imgs/science/isa-vs-heart-healthy-diet.jpg" alt="Isagenix vs. 'Heart-Healthy' Diet"
+        (click)="pdfProvider.openPdf('Isagenix vs. a Heart-Healthy Diet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fisa-vs-heart-healthy.pdf?alt=media&token=075ed142-b230-4333-9db4-b9156dee6447')" />
+      </div>
     </article>
   </main>
   <get-footer></get-footer>
