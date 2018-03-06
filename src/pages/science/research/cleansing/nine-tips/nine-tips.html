@@ -1,0 +1,145 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-leaf fixed-width space-right"></i>
+      <span>Cleansing</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Nine Tips to Prepare for a Successful Cleanse Day</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/cleanse-day-people.jpg" alt="" class="shadowed" />
+        <figcaption>The last thing you want
+          <br /> on a Cleanse Day is to
+          <br /> feel overwhelmed or
+          <br />improperly prepared.</figcaption>
+      </figure>
+      <p>
+        Whether you want to lose weight or just do something good for your body, you put a lot of dedication and effort into your
+        Cleanse Days. We get that. It’s why we want you to be as prepared as possible so nothing can hold you back from achieving
+        your goals.
+      </p>
+      <p>
+        To help you on your way, we’ve put together a checklist of things that can help make Cleanse Days easy for you.
+      </p>
+      <h3>
+        1. Start with at least two Shake Days before doing any Cleanse Days.
+      </h3>
+      <p>
+        Doing at least two Shake Days can help prepare your body for a Cleanse Day. For example, Shake Days can help ease your body
+        into the Isagenix System better than regular nutrition can.
+      </p>
+      <p>
+        You should never ever go into a Cleanse Day if you’re feeling unwell, run-down, or having digestive problems like constipation.
+        Be sure to start out with as many Shake Days as you think appropriate before doing Cleanse Days. Shakes can assist
+        with digestive regularity and supporting muscle growth and maintenance and are a great protein source before a Cleanse
+        Day.
+      </p>
+      <h3>
+        2. Designate your Cleanse Days in advance.
+      </h3>
+      <p>
+        Planning ahead is key in successful Cleanse Days. Knowing in advance what days you’ll be cleansing can help you become mentally
+        prepared for them. Be sure to jot them down on your calendar so you don’t accidentally schedule a lunch or dinner
+        with friends on those days.
+      </p>
+      <p>
+        Before Cleanse Days, take the time to look over your Cleanse Day Schedule and customize it to fit your day, ensuring you
+        will have access to all your cleansing tools throughout the day. Make sure that you are setting yourself up for success
+        on your Cleanse Day. If you have plans for a family dinner at your favorite restaurant, or have a physically exhaustive
+        workout planned, then a Shake Day might be more suitable.
+      </p>
+      <h3>
+        3. Cleanse with a friend or as a team.
+      </h3>
+      <p>
+        Having a cleansing buddy or buddies can help keep you accountable when temptation strikes. You might choose to cleanse with
+        a colleague from work, a family member, or a friend you talk to on social media who lives across the globe. No matter
+        who it is, having someone to turn to for encouragement when cravings hit will build morale and keep you motivated.
+      </p>
+      <h3>
+        4. Plan your Cleanse Day snacks.
+      </h3>
+      <p>
+        You have a variety of snack options available during Cleanse Days. They include up to six Isagenix Snacks™, one to two IsaDelight®
+        chocolates, ¼ apple or pear, one to two servings of e+™, and one serving of Replenish™ (for use during moderate exercise).
+        Be sure to have these on hand to curb cravings before they come.
+      </p>
+      <p>
+        To maximize the benefits of a Cleanse Day, you want to be wary of adding in too many extra calories. Always listen to your
+        body, however; if you are feeling like a headache is coming on or your blood sugar is low, have an extra snack like
+        an apple slice to help level you out.
+      </p>
+      <h3>
+        5. Clean out the pantry and fridge of "junk food" before Cleanse Days.
+      </h3>
+      <p>
+        One of the worst things that can happen to anyone on Cleanse Days is finding yourself opening the fridge only to spot that
+        leftover chocolate cake sitting next to your bottle of Cleanse for Life®. Don’t let that happen to you! Clean out
+        any junk food in advance.
+      </p>
+      <h3>
+        6. Find ways to stay hydrated throughout Cleanse Days.
+      </h3>
+      <p>
+        Staying properly hydrated is always a goal to aim for daily, but it’s particularly important during a Cleanse Day. Making
+        sure that you are drinking enough fluids, which is about two liters for the average person, can prevent the onset
+        of headaches and other troubles.
+      </p>
+      <p>
+        Your sources of hydration don’t need to be made up solely of plain water, but can also include diluted amounts of Ionix®
+        Supreme or Replenish (during physical activity). During the colder months of the year, try drinking Isagenix Coffee
+        or sipping herbal tea throughout the day. You can even try drinking Cleanse for Life warm, as an herbal tea, to stay
+        a bit warmer.
+      </p>
+      <h3>
+        7. Find ways to stay busy.
+      </h3>
+      <p>
+        Don’t put yourself in the position where you might be tempted to quit your Cleanse Day. Keep yourself busy and the day will
+        fly. That means getting your mind off of the fact that you’re abstaining from food and onto other things like your
+        personal health and wellness goals.
+      </p>
+      <h3>
+        8. Set reminders on your phone.
+      </h3>
+      <p>
+        As busy as you’ll be on Cleanse Days, it might be to easy to forget to take your next allotted Cleanse for Life serving,
+        snack, or glass of water. By setting an alarm or reminder on your phone, you can help be sure to make the most of
+        your Cleanse Day.
+      </p>
+      <h3>
+        9. Engage in light exercise.
+      </h3>
+      <p>
+        You don’t need to schedule any grueling workout. But engaging in any form of light exercise can be a healthy distraction
+        during Cleanse Days. Additionally, the physical activity can be useful for helping to maintain regular bowel habits,
+        support metabolism, and may even help suppress appetite.
+      </p>
+      <p>
+        Don’t let anything hold you back! The last thing that you want on a Cleanse Day is to find yourself improperly prepared or
+        overwhelmed. Planning ahead and leaning on the support of your team can make all of the difference and make every
+        Cleanse Day a success.
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

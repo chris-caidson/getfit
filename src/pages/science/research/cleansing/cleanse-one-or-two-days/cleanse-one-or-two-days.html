@@ -1,0 +1,150 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-leaf fixed-width space-right"></i>
+      <span>Cleansing</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Should You Cleanse One or two Days Per Week?</h1>
+      <img id="girls" src="assets/imgs/science/girls-arms-raised.jpg" alt="" class="shadowed" />
+      <p>
+        Nutritional cleansing with Isagenix can be adapted to fit anyone’s goals and personal needs. Since you have the option to
+        choose one or two Cleanse Days per week as part of an Isagenix 30-Day Cleansing and Fat Burning System, it’s common
+        to wonder whether one or two Cleanse Days will be more beneficial.
+      </p>
+      <p>
+        The answer: There’s no single perfect way to cleanse.
+      </p>
+      <p>
+        You can get great benefits with whichever option you choose. However, there are some important guidelines (see the System
+        Guide for Weight-Loss) to help you get the most out of your Cleanse Days.
+      </p>
+      <h3>
+        The Stages of Cleansing
+      </h3>
+      <p>
+        Cleanse Days with Isagenix are based on a concept that scientists refer to as intermittent fasting and involves either one
+        or two days each week where you’ll abstain from most food. Cleanse Days are different from ordinary fasting because
+        of the nutritional support that your body receives from Cleanse for Life® and the other nutrient-packed products
+        that you use to nourish your body. These Cleanse Day support products include Isagenix Snacks™, IsaDelights®, Replenish™,
+        and Ionix® Supreme, to name a few.
+      </p>
+      <p>
+        Your body goes through two different stages during a Cleanse Day. These stages relate to the physiology of fasting and are
+        based on the amount of time that has passed since your last meal. Of course, the length of time that it takes to
+        go through each stage is a little different for every person, so these time frames are a general estimate.
+      </p>
+      <p>
+        The Cleanse Day guideline is to choose either one or two Cleanse Days weekly. The reason is that this window of time is when
+        you can receive the greatest benefits from cleansing. You can cleanse for a shorter period of time, especially if
+        you are new to cleansing, but you should never go longer than two days for reasons that are explained below (See
+        Beyond 48 hours: What Happens When You Fast Too Long?).
+      </p>
+      <h3>
+        Stage One: Postabsorptive State
+      </h3>
+      <p>
+        Every time you eat, your body digests and absorbs the food you consume, then transports the nutrients to all of your cells
+        through the blood stream. After a meal, it takes your body around three hours to either use or store all of the nutrients
+        that you consumed. While everyone is a little different, the first stage of cleansing begins at this point, which
+        is called the postabsorptive state.
+      </p>
+      <p>
+        During this first stage, the body uses up the readily available nutrients from your most recent meal and begins to draw on
+        stored nutrients for energy to keep blood sugar levels steady. When you’re cleansing, the postabsorptive state begins
+        around three hours and lasts for about 12 to 18 hours after a meal. Imagine that you eat dinner in the evening and
+        plan to start your Cleanse Day the following morning. You’ll pass through most of this phase overnight while you
+        are sleeping, with the postabsorptive phase concluding some time in the morning or early afternoon, depending on
+        when you had dinner the previous night.
+      </p>
+      <h3>
+        Stage Two: Fasting State
+      </h3>
+      <p>
+        The second stage of a Cleanse Day is called the fasting state. This stage begins at around 12 to 18 hours after your last
+        meal and ends when you have been cleansing for over 48 hours. During the fasting state, your body is burning fat
+        as your primary source of energy, although you still need a small amount of sugar to fuel your metabolism, too. Your
+        body can store a limited amount of sugar in a form called glycogen, but this source is already running low by the
+        time your body enters the fasting state.
+      </p>
+      <p>
+        One of the reasons why Cleanse Day support products are so important is that, among other nourishing ingredients, they contain
+        a small amount of carbohydrate to provide steady nutrition to help fuel your metabolism, satisfy hunger, and reduce
+        cravings. By supplying a targeted amount of carbohydrate as a modest amount of calories, the cleansing process is
+        not disrupted.
+      </p>
+      <p>
+        Picture what is happening in your body during the fasting state of your Cleanse Day: Your body transitions from the postabsorptive
+        state in stage one to the fasting state during stage two after using up the nutrients from your most recent meal.
+        Your body is now burning through fat to generate most of your energy. A sign of rapid fat breakdown is when the body
+        starts to produce ketones for energy as a mild form of ketosis (note: ketosis should not be confused with ketoacidosis,
+        which is a metabolic complication generally related to diabetes when ketone bodies are in dangerously high concentrations).
+      </p>
+      <p>
+        By consuming your regularly spaced servings of Cleanse for Life and other cleanse support products, you are providing your
+        body with a steady source of nutrition while also keeping calories low.
+      </p>
+      <p>
+        There are some great health benefits to completing stage one of cleansing. However, entering stage two helps trigger many
+        of the principal benefits of Cleanse Days. Your body spends the majority of the first day of cleansing and all of
+        the second day of cleansing in this stage, so both a one-day and a two-day cleanse will trigger these benefits. It’s
+        not necessary to do two days to generate these benefits.
+      </p>
+      <h3>
+        Beyond 48 hours: What Happens When You Fast Too Long?
+      </h3>
+      <p>
+        If fasting continues for more than two days, your body will stop receiving benefits and instead experience detriment. During
+        both stage one and stage two (the postabsorptive and fasting stages), the body uses stored nutrients and energy to
+        support normal metabolism. However, when fasting continues beyond day two, your body puts on the brakes, slowing
+        your metabolism to a crawl.
+      </p>
+      <p>
+        The body enters a metabolic state that is something like a power-saving mode. Metabolism slows down as your body prepares
+        for an extended period of time without food. This stage is called adapted starvation, and is not beneficial for supporting
+        general health or for weight loss. It’s the reason why Cleanse Days should be limited to only one or two days and
+        never be longer than that. Fasting for more than two days slows metabolism and works against good health and fat
+        loss.
+      </p>
+      <h3>
+        The Window for Optimal Cleansing Benefits
+      </h3>
+      <p>
+        Cleanse Days are flexible and, as long as you follow some basic guidelines, you can choose your way to cleanse. If you are
+        new to Cleanse Days, there is no harm in starting out with a shorter period of time, for example 12 to 18 hours.
+        The shorter time frame can be a great way to slowly ease into Cleanse Days to build skill and confidence. There’s
+        certainly no benefit to going longer than two days. In fact, going beyond two days will hamper your progress and
+        should never be recommended. Nutritionally supported fasting through regular Cleanse Days, however, can offer great
+        benefits for your overall well-being and help you to reach your weight-loss goals when you follow these guidelines
+        for success.
+      </p>
+      <h3>
+        Reference
+      </h3>
+      <p id="ref">
+        Gropper SS, Smith JL, Groff JL. Advanced Nutrition and Human Metabolism. 5th ed. Belmont, CA: Wadsworth Cengage Learning;
+        2009.
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

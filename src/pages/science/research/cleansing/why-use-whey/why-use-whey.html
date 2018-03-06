@@ -1,0 +1,144 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-leaf fixed-width space-right"></i>
+      <span>Cleansing</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Why Use Whey Protein to Break Your Cleanse Day</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/whey-powder-overflowing.jpg" alt="" class="shadowed" />
+        <figcaption>Consuming whey protein
+          <br /> after Cleanse Days helps
+          <br /> preserve muscle.</figcaption>
+      </figure>
+      <p>
+        One of the principal findings of clinical studies around intermittent fasting with Isagenix-style Cleanse Days is that it
+        can be an efficient method to accelerate fat loss and improve health markers (1-3). However, especially for the physically
+        active on a weight-reduction program, a common concern is the decreased intake of calories that could lead to problems
+        with maintaining or building muscle.
+      </p>
+      <p>
+        Muscle is in a constant state of build up and break down in a process called protein turnover (4;5). Building muscle is controlled
+        largely by a cellular mechanism called mTORC1. How much energy (calories) is consumed and the level of protein intake
+        affect mTORC1 and ultimately the amount of muscle a person has (6;7). Reducing food intake or fasting can potentially
+        reduce mTORC1 signaling and halt muscle building (8).
+      </p>
+      <p>
+        What may come as a surprise to some is that during times of increased energy demand or reduced food intake, protein requirements
+        are increased above what the Institute of Medicine recommends. In fact, it’s now recommended that physically active
+        individuals eat 1.2 to 1.7 grams of protein per kilogram of bodyweight per day (9). For those who are in an energy
+        deficit and/or are physically active, protein intake above the recommended dietary allowance protects muscle.
+      </p>
+      <p>
+        It’s no wonder multiple studies have demonstrated that consuming more protein over the recommended dietary allowance (RDA)
+        spares muscle regardless of body size (10-12). When total daily protein intake is in line with the RDA and combined
+        with reduced energy intake, muscle building is blunted even with an optimal serving of high-quality protein like
+        whey (9).
+      </p>
+      <h3>
+        The Solution…
+      </h3>
+      <p>
+        Consuming protein either alone or in a meal promotes a significant increase in building up proteins in muscle (13;14). This
+        is caused by increases in insulin secretion and the amino acids, the building blocks of protein (15;16). To cause
+        the most profound effect on protein synthesis, the protein source should be high in quality, meaning that it contains
+        high levels of branched-chain amino acids, specifically leucine (17). Lower-quality proteins with lower amounts of
+        leucine may not be as effective (18). Whey is one of the richest sources of leucine, which is the most critical amino
+        acid for muscle synthesis (9).
+      </p>
+      <p>
+        Moreover, in times of decreased energy and after a fast, eating two to three times the recommended dietary allowance for
+        protein spares muscle and can stimulate muscle synthesis (9). So while taking in the right type of protein is important,
+        so is taking in the right amount.
+      </p>
+      <h3>
+        What to do…
+      </h3>
+      <p>
+        The day after a Cleanse Day should be started with an IsaLean® Shake or an IsaLean® Pro Shake since consuming at least a
+        20 to 25 gram serving of high-quality protein like whey maximally stimulates muscle synthesis for a few hours (10).
+      </p>
+      <p>
+        Older individuals should consume more total protein since a higher amount can increase mTORC1 signaling and reduce muscle
+        wasting from age-related anabolic resistance (12). They may have more benefit in using the IsaLean® Pro with a higher
+        protein content. Two shakes and other protein-rich meals should be consumed throughout the day to ensure 1.2 to 1.7
+        grams of protein per kilogram of body weight per day (9). An example for a 200-pound man and a 150-pound woman would
+        be 154 grams and 115 grams of protein, respectively.
+      </p>
+      <p>
+        By using these high-quality whey protein products and boosting protein intake, Isagenix customers can enjoy the benefits
+        of improved body composition—as in more lean muscle, less body fat—in addition to all the health benefits of Cleanse
+        Days.
+      </p>
+      <h3>
+        References
+      </h3>
+      <ol>
+        <li>Anson RM, Guo Z, de Cabo R et al. Intermittent fasting dissociates beneficial effects of dietary restriction on glucose
+          metabolism and neuronal resistance to injury from calorie intake. Proceedings of the National Academy of Sciences
+          2003;100:6216-20.
+        </li>
+        <li>Mattson MP, Wan R. Beneficial effects of intermittent fasting and caloric restriction on the cardiovascular and cerebrovascular
+          systems. The Journal of nutritional biochemistry 2005;16:129-37.</li>
+        <li>Kroeger CM, Klempel MC, Bhutani S, Trepanowski JF, Tangney CC, Varady KA. Improvement in coronary heart disease risk
+          factors during an intermittent fasting/calorie restriction regimen: Relationship to adipokine modulations. Nutr
+          Metab (Lond) 2012;9:98.</li>
+        <li>Pasiakos SM. Exercise and amino acid anabolic cell signaling and the regulation of skeletal muscle mass. Nutrients
+          2012;4:740-58.
+        </li>
+        <li>Pasiakos SM, Carbone JW. Assessment of skeletal muscle proteolysis and the regulatory response to nutrition and exercise.
+          IUBMB life 2014;66:478-84.</li>
+        <li>Proud CG. mTOR, unleashed. SCIENCE-NEW YORK THEN WASHINGTON- 2007;318:926.</li>
+        <li>Proud CG. Amino acids and mTOR signalling in anabolic function. Biochemical Society Transactions 2007;35:1187-90.</li>
+        <li>Bolster DR, Crozier SJ, Kimball SR, Jefferson LS. AMP-activated protein kinase suppresses protein synthesis in rat
+          skeletal muscle through down-regulated mammalian target of rapamycin (mTOR) signaling. Journal of Biological Chemistry
+          2002;277:23977-80.
+        </li>
+        <li>Atherton PJ, Etheridge T, Watt PW et al. Muscle full effect after oral protein: time-dependent concordance and discordance
+          between human muscle protein synthesis and mTORC1 signaling. The American journal of clinical nutrition 2010;92:1080-8.</li>
+        <li>Boh+¬ J, Low JA, Wolfe RR, Rennie MJ. Latency and duration of stimulation of human muscle protein synthesis during
+          continuous infusion of amino acids. The Journal of physiology 2001;532:575-9.</li>
+        <li>Wolfe RR, Miller SL. Amino acid availability controls muscle protein metabolism. Diabetes, nutrition & metabolism
+          1999;12:322-8.
+        </li>
+        <li>Floyd JC, Fajans SS, Pek S, Thiffault CA, Knopf RF, Conn JW. Synergistic effect of essential amino acids and glucose
+          upon insulin secretion in man. Diabetes 1970;19:109-15.</li>
+        <li>Kim E, Goraksha-Hicks P, Li L, Neufeld TP, Guan KL. Regulation of TORC1 by Rag GTPases in nutrient response. Nature
+          cell biology 2008;10:935-45.</li>
+        <li>Norton LE, Wilson GJ, Layman DK, Moulton CJ, Garlick PJ. Leucine content of dietary proteins is a determinant of
+          postprandial skeletal muscle protein synthesis in adult rats. Nutr Metab 2012;9:67.</li>
+        <li>Tang JE, Moore DR, Kujbida GW, Tarnopolsky MA, Phillips SM. Ingestion of whey hydrolysate, casein, or soy protein
+          isolate: effects on mixed muscle protein synthesis at rest and following resistance exercise in young men. Journal
+          of Applied Physiology 2009;107:987-92.</li>
+        <li>Moore DR, Robinson MJ, Fry JL et al. Ingested protein dose response of muscle and albumin protein synthesis after
+          resistance exercise in young men. The American journal of clinical nutrition 2009;89:161-8.</li>
+        <li>Cuthbertson D, Smith K, Babraj J et al. Anabolic signaling deficits underlie amino acid resistance of wasting, aging
+          muscle. The FASEB Journal 2005;19:422-4.</li>
+        <li>Katsanos CS, Kobayashi H, Sheffield-Moore M, Aarsland A, Wolfe RR. A high proportion of leucine is required for optimal
+          stimulation of the rate of muscle protein synthesis by essential amino acids in the elderly. American Journal of
+          Physiology-Endocrinology And Metabolism 2006;291:E381-E387.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

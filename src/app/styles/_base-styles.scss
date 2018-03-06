@@ -7,6 +7,11 @@
   line-height: 1.35;
 }
 
+figcaption {
+  font-size: small;
+  color: darken($tertiary-color, 35);
+}
+
 main {
   max-width: $max-grid-width;
   margin-left: auto;
@@ -92,6 +97,11 @@ p {
 .list-unstyled {
   list-style: none;
   margin-left: -$default-margin;
+}
+
+.shadowed {
+  box-shadow: 0px 0px 15px #999;
+  border-radius: 8px;
 }
 
 .note {

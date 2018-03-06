@@ -3,6 +3,10 @@ page-cleansing {
         grid-template-columns: auto;
     }
 
+    h2 {
+      cursor: pointer;
+    }
+
     figure {
         margin-left: auto;
         margin-right: auto;
@@ -10,12 +14,8 @@ page-cleansing {
         img {
             box-shadow: 0px 0px 15px #999;
             border-radius: 8px;
+            cursor: pointer;
         }
-    }
-
-    figcaption {
-        font-size: small;
-        color: darken($tertiary-color, 35);
     }
 
     #firstSection {

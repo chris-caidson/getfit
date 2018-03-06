@@ -1,0 +1,140 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-leaf fixed-width space-right"></i>
+      <span>Cleansing</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Why You Should Cleanse for Life</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/green-yoga-girl.jpg" alt="" class="shadowed" />
+        <figcaption>Long-term protection
+          <br /> from toxins can be
+          <br />achieved by living a
+          <br />nutritional cleansing
+          <br />lifestyle.</figcaption>
+      </figure>
+      <p>
+        Every day we’re continually exposed to toxins in the food we eat, the air we breathe, the water we drink, and the items we
+        touch. Learning more about these potentially harmful chemicals can be critical for making decisions to protect long-term
+        health. As with any subject, toxins are best understood through a little history.
+      </p>
+      <p>
+        Toxins—or xenobiotics—have always been part of the natural environment. Many of them are made by plants, bacteria, and animals
+        as defenses to keep predators at bay. The greater the abundance of toxins in a species, the more likely they will
+        survive. This natural arms race has produced millions of different kinds of toxins including venoms and poisons.
+      </p>
+      <p>
+        Human exposure to toxins also depends on how food is prepared. The use of fire was a novel way to deal with food toxins.
+        Heat breaks down many plant and animal defenses. Another example was fermentation, in which microorganisms produce
+        a food that is edible. As our ancestors improved upon their culinary talents, they were able to expand their palates.
+      </p>
+      <p>
+        Humans would eventually enjoy a wide variety of foods spanning all parts of the world. As they did, new foods and food preparation
+        techniques would introduce new toxins. Examples are the chemicals produced by heat, such as char, nitrosamines or
+        acrylamide, which can each be carcinogenic.
+      </p>
+      <p>
+        The act of living itself also comes to us at a cost. Toxins are produced within the human body from simply being alive day
+        to day. Toxins may, at times, be used to battle foreign bacteria or viruses. These can cause harm as they work to
+        protect the body, but after their job is done, they are detoxified through biochemical processes.
+      </p>
+      <h3>Modern World
+      </h3>
+      <p>
+        In our modern environment, pollution and food processing has increased our toxic load considerably. Humans have added thousands
+        of new chemicals that pollute our air and water. These toxins can often end up in our foods, not just in plants,
+        but concentrated in the animals that we eat. Food is also laden with chemicals in form of pesticides, processing
+        agents and artificial ingredients.
+      </p>
+      <figure id="fig2">
+        <img src="assets/imgs/science/pollution.jpg" alt="" class="shadowed" />
+        <figcaption>Continual flow of pollutants
+          <br />into water sources increases
+          <br />our risk of exposure to toxins.</figcaption>
+      </figure>
+      <p>
+        As our bodies are endlessly exposed to toxins, the toxins can overwhelm the body’s natural detoxification defenses. A slow
+        accumulation of toxins in our bodies may eventually disturb our natural processes.
+      </p>
+      <p>
+        It only adds to our toxic load when—in an age where portion sizes have grown out of proportion—we eat a lot more food than
+        ever before. Most of the foods available are designed, not to support us nutritionally, but to appeal to the power
+        of our taste buds. Our busy schedules have also made processed foods all the more convenient, adding to the waistline-expanding
+        potential of sedentary lifestyles, and putting further burden on our bodies.
+      </p>
+      <h3>
+        Human Body
+      </h3>
+      <p>
+        The human body has had to adapt over the generations to removing varying toxic loads. Our bodies come equipped with powerful
+        protections in forms of detoxification or cleansing systems. They are found throughout the body: in the stomach,
+        the intestine, the liver and the kidneys.
+      </p>
+      <p>
+        The liver is a primary detoxification organ, metabolizing thousands of different chemicals we’re exposed to daily. Much of
+        what we eat must pass through our livers. As the liver breaks nutrients down, it also metabolizes toxic substances.
+        In most cases, these toxins are cleared from the blood, then eliminated through bile or urine. At other times, they
+        can become stored in fat.
+      </p>
+      <p>
+        In addition, each individual cell contains its own inherent protections from the daily stresses of simply living. These include
+        powerful detoxification and antioxidant enzymes, which help maintain cellular integrity so that the cell may function
+        appropriately.
+      </p>
+      <h3>
+        Nutritional Cleansing
+      </h3>
+      <p>
+        Our ancestors found ways to enhance many of the body’s internal detoxification and cleansing systems. These nutritional cleansing
+        methods, which have been around for thousands of years, are only now beginning to be understood. A common practice
+        was the use of fasting along with herbal teas or special botanicals. The reduced food intake would allow the body
+        to purify itself through rest and renewal. Botanicals such as aloe gel, licorice root and ashwaghanda root contain
+        bioactives that encourage detoxification within the liver and in the individual cells.
+      </p>
+      <figure id="fig3">
+        <img src="assets/imgs/science/skeleton.jpg" alt="" class="shadowed" />
+        <figcaption>Nutritional cleansing
+          <br /> assists the liver, a
+          <br />primary detoxifier.</figcaption>
+      </figure>
+      <p>
+          Age-old traditions of nutritional cleansing have now been combined with modern technologies. Isagenix is a company that has
+          achieved this task with Cleanse for Life™, a drink specialized to support the liver, the immune system and cellular
+          health with vitamins, herbal teas and other botanical ingredients. The ingredients were chosen to help protect the
+          body from daily pollutants and promote their detoxification.
+        </p>
+      <p>
+        As a dietary supplement, Cleanse for Life can be taken daily for nourishment to help deal with daily toxic load and stresses.
+        Alternatively, when taken as guided in the Cleansing and Fat Burning System—a program rich in nutrition and low in
+        calories—one can reap benefits of "deep cleansing" and a sound approach to weight management.
+      </p>
+      <p>
+        Balanced nutrition and nutritional cleansing are key strategies for coping with daily toxins, but there are others. Although
+        there’s no way to avoid all toxins, one can reduce exposure as much as possible. It can be achieved by simple lifestyle
+        changes such as choosing clean fruits and vegetables, drinking clean water, using non-toxic skin care and seeking
+        out fresh air whenever possible.
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

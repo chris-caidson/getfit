@@ -1,0 +1,105 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-leaf fixed-width space-right"></i>
+      <span>Cleansing</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+            assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+            assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Why a Little Chocolate Can Be Good for Weight Management</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/isa-delights.jpg" alt="" class="shadowed" />
+        <figcaption>IsaDelights make it easy
+          <br /> to indulge while losing
+          <br /> weight.</figcaption>
+      </figure>
+      <p>
+        You should never have to fully abstain from the foods that bring you the most joy. The good news: A little chocolate daily
+        can actually support you in achieving your weight-loss goals.
+      </p>
+      <p>
+        The reason chocolate can be helpful has to do with indulgence, satisfaction, and balanced eating. When individuals take on
+        the approach of complete restriction of certain foods like chocolate, they often end up with just the opposite: temptation,
+        mental exhaustion, self-sabotage, and weight gain (1, 2).
+      </p>
+      <p>
+        Balanced eating, on the other hand, is not about complete restriction. It allows for controlled, portioned, and moderate
+        indulgences, such as indulging in a small amount of chocolate. Balance is what makes weight loss sustainable. You
+        can maintain balanced eating, believe it or not, by having a little chocolate daily.
+      </p>
+      <p>
+        Small, regular indulgences keep you enjoying life without guilt and without compromising your weight-loss goals – as long
+        as you also make your daily consumption something to look forward to as a reward for a job well done in healthy eating.
+      </p>
+      <h3>
+        Don’t Deny Yourself
+      </h3>
+      <p>
+        The key is to avoid feelings of guilt, which can have the potential to lead to additional feelings of helplessness or loss
+        of control (3). Instead, research into the psychology of dieting suggests that those who associate sweet indulgences
+        like chocolate with “celebration??? have a better time losing weight (3).
+      </p>
+      <p>
+        Consider adopting a balanced eating plan for weight loss – one that’s higher in protein, higher in nutrients, and lower in
+        unhealthy fats and refined carbohydrates – but then leave some room in your plan for chocolate daily. By treating
+        small indulgences of chocolate as a “celebration,??? you will be more successful in losing weight because you will
+        maintain a feeling of being in control of your nutrition.
+      </p>
+      <p>
+        Much like managing money, when you pay close attention to your budget, you can feel comfortable buying something special
+        once in a while. This rule applies to dieting as well, as it is sometimes acceptable to have a little treat after
+        a day of hard work.
+      </p>
+      <h3>
+        Chocolate on Cleanse Days
+      </h3>
+      <p>
+        If you like chocolate and are starting an Isagenix System for weight loss, you’ll be pleasantly surprised that Isagenix offers
+        a variety of chocolate-flavored meal replacements and snack options. Some of these options include Creamy Dutch Chocolate
+        IsaLean® Shake, IsaPro® Chocolate, and IsaLean® Bars in Chocolate Peanut Crunch, Chocolate Cream Crisp, and Chocolate
+        Decadence.
+      </p>
+      <p>
+        But if you’re a regular chocoholic seeking out a way to best satisfy your cravings, then look to IsaDelight® chocolates –
+        now available in Salted Caramel Milk Chocolate and Dark Chocolate with Mint.
+      </p>
+      <p>
+        IsaDelight chocolates were designed especially for use on Cleanse Days, as satisfying rewards for successfully overcoming
+        cravings and abstaining from food throughout the day. Each 60-calorie IsaDelight is individually wrapped for convenience
+        and to help with self-control.
+      </p>
+      <p>
+        With the products that Isagenix provides, you can still indulge in your craving for chocolate while comfortably losing weight.
+      </p>
+      <h3>
+        References
+      </h3>
+      <ol>
+        <li>Karim N. Dieting Makes People Fat. J Obes Weight Loss Ther 2015; 5(242): 2</li>
+        <li>Tindale B. The Magic of Sensible Dieting: Healthy Weight Loss without Hunger or Deprivation. Balboa Press, 2015.</li>
+        <li>Kuijer RG, Boyce JA. Appetite. Chocolate cake. Guilt or celebration? Associations with healthy eating attitudes,
+          perceived behavioural control, intentions and weight-loss. 2014 Mar;74:48-54. doi: 10.1016/j.appet.2013.11.013.
+          Epub 2013 Nov 23.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -17,4 +17,7 @@ export class CleansingPage {
     public auth: AuthProvider) {
   }
 
+  loadPage(pageName: string) {
+    this.navCtrl.push(pageName);
+  }
 }
