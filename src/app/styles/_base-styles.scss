@@ -104,6 +104,19 @@ p {
   border-radius: 8px;
 }
 
+.stats {
+  padding-left: $default-margin;
+  padding-right: $default-margin;
+
+  .field {
+    font-weight: bold;
+  }
+
+  div {
+    margin-bottom: $small-margin;
+  }
+}
+
 .note {
   font-style: italic;
   margin-top: -$xsmall-margin;

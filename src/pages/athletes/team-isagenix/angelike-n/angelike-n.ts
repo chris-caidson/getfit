@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from "../../providers/auth/auth";
+import { AuthProvider } from '../../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-athletes',
-  templateUrl: 'athletes.html',
+  selector: 'page-angelike-n',
+  templateUrl: 'angelike-n.html',
 })
-export class AthletesPage {
+export class AngelikeNPage {
 
   constructor(
     public navCtrl: NavController,
@@ -15,9 +15,9 @@ export class AthletesPage {
     public auth: AuthProvider) {
   }
 
-  loadPage(pageName: string) {
-    console.log(pageName);
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
+
 
 }

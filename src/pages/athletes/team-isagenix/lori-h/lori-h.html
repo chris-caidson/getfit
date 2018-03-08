@@ -1,0 +1,62 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Lori H.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                  assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
+                  assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
+                  assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
+                  assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Lori H.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/lori-h-01.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">32</span>
+          </div>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">Santa Monica, California</span>
+          </div>
+          <div>
+            <span class="field">Rank:</span>
+            <span class="value">9-Star Platinum, 5-Star Executive</span>
+          </div>
+          <div>
+            <span class="field">Joined Isagenix:</span>
+            <span class="value">April 2011</span>
+          </div>
+          <div>
+            <span class="field">Avg. Annual Isagenix Income:</span>
+            <span class="value">$1,000,000**</span>
+          </div>
+          <div>
+            <span class="field">Isagenix Millionaire #91</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/lori-h-02.jpg" alt="" />
+      </div>
+      <section>
+
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

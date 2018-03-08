@@ -8,7 +8,7 @@ import { AuthProvider } from "../../providers/auth/auth";
   templateUrl: 'home.html',
 })
 export class HomePage {
-  spacer: number = 320;
+  spacer: number = 345;
   year: number = (new Date()).getFullYear();
   @ViewChild(Slides) slides: Slides;
 
