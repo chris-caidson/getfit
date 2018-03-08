@@ -66,7 +66,8 @@ export class MyApp {
       { title: "Friends & Fam.", component: "FriendsAndFamilyProgramPage", separatorLevel: 4, icon: "usd" },
 
       // Athletes
-      { title: "Team Isagenix", component: "AthletesPage", separatorLevel: 2, icon: "users" },
+      { title: "Athletes", component: null, separatorLevel: 2, icon: null },
+      { title: "Team Isagenix", component: "AthletesPage", separatorLevel: 4, icon: "users" },
       { title: "Research", component: "AthleteArticlesPage", separatorLevel: 4, icon: "book" },
       { title: "Sports Science", component: "AmpedPage", separatorLevel: 4, icon: "bicycle" },
       { title: "Pre-Workout", component: null, separatorLevel: 3, icon: null },

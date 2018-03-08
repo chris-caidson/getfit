@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from "../../../../providers/auth/auth";
+import { AuthProvider } from '../../../../providers/auth/auth';
 import { PdfProvider } from "../../../../providers/pdf/pdf";
 
 @IonicPage()
 @Component({
-  selector: 'page-cleansing',
-  templateUrl: 'cleansing.html',
+  selector: 'page-new-zealand-whey',
+  templateUrl: 'new-zealand-whey.html',
 })
-export class CleansingPage {
+export class NewZealandWheyPage {
 
   constructor(
     public navCtrl: NavController,
@@ -17,8 +17,8 @@ export class CleansingPage {
     public auth: AuthProvider) {
   }
 
-  loadPage(pageName: string) {
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
-  
+
 }

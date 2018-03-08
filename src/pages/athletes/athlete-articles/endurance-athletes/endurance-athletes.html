@@ -1,0 +1,109 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-book fixed-width space-right"></i>
+      <span>Research</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                    assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">How Endurance Athletes Can Benefit From Cleanse Days</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/athletes/swimmer.jpg" alt="" class="shadowed" />
+        <figcaption>Keeping these tips in
+          <br />mind can help endurance
+          <br />athletes benefit
+          <br />from Cleanse Days.</figcaption>
+      </figure>
+      <p>
+        At Isagenix, a frequently asked question of runners and other endurance athletes is, "Can Cleanse Days be used without hurting
+        performance?" The answer is yes… with a few exceptions. Here’s what you need to know:
+      </p>
+      <h3>Properly timed cleansing increases antioxidant capacity.</h3>
+      <p>
+        Cleansing goes way beyond simply burning fat. In fact, it may boost a system very important to athletes: the antioxidant
+        defense system. In highly trained male cyclists, four days of very low energy restriction increased cellular glutathione
+        (GSH)—the body’s most abundant antioxidant—37 percent and GSH peroxidase (a major antioxidant protein) by 48 percent,
+        while stress was decreased by 52 percent (1).
+      </p>
+      <p>
+        While performance suffered during calorie restriction, the results suggest that several markers of the antioxidant defense
+        system were greatly increased in hard training athletes as they continued exercising.
+      </p>
+      <h3>The Takeaway:</h3>
+      <p>
+        No one’s recommending that athletes actually restrict calories, or perform Cleanse Days, for four consecutive days as in
+        the study, but the evidence suggests that a Cleanse Day every once in a while could bolster antioxidant support for
+        athletes.
+      </p>
+      <h3>Our Advice:</h3>
+      <p>
+        If you decide to do a Cleanse Day, choose a rest day or light exercise day and not a time around a serious competition. While
+        increasing your antioxidant status is a great benefit, a Cleanse Day may negatively affect performance if you’re
+        training intensely. (You can still perform everyday cleansing by taking Cleanse for Life® on a daily basis.)
+      </p>
+      <h3>Use Ageless Essentials to support your Cleanse Day and cravings.</h3>
+      <p>
+        While including essential vitamins and minerals is great when energy is low, researchers from the Department of Kinesiology
+        at Laval University also found that taking supplements either during fasting or following a meal, lowered the perceived
+        appetite significantly (2). Those who exercise generally have higher energy expenditures and may experience more
+        hunger than others during Cleanse Days. Providing the body with all of the key micronutrients—vitamins and minerals—that
+        are found in our Ageless Essentials Daily Pack, will help to maintain optimal bodily function. Be sure to stay properly
+        hydrated on Cleanse Days by drinking plenty of fluids.
+      </p>
+      <h3>Spare muscle by keeping up with training.</h3>
+      <p>
+        Choose a day to cleanse when you’re not overly taxing yourself; but that doesn’t mean you should take the other days that
+        week easy. In a study performed on endurance athletes over a period of one week, subjects either exercised or rested
+        during severe energy restriction. Those who continued to train intensely showed that exercise actually better maintained
+        body protein and prevented muscle loss (3). Again, no one should cleanse for a full week, but you should include
+        at least some of your normal training over the week of cleansing to avoid muscle loss.
+      </p>
+      <h3>Keep your protein intake up with IsaLean Shake or IsaPro.</h3>
+      <p>
+        What’s another way to prevent loss of your hard-earned muscle? Both short-term and long-term effects of high-quality protein
+        consumption can have profound positive effects on energy expenditure, nutrient use, appetite, and appetite-regulating
+        hormones during times of dietary restriction (4). Over a nine-week period, researchers from Purdue University found
+        a high-protein diet increased fat burning, spared glycogen (fuel for athletes), and decreased appetite (4). Furthermore,
+        higher protein helped prevent muscle loss. Add multiple shakes per day in the time leading up to and after your Cleanse
+        Days. Also, after a Cleanse Day, start your next day with an IsaLean or IsaLean PRO Shake.
+      </p>
+      <p>
+        Remember, just because you train hard doesn’t mean you can’t reap all the benefits of Cleanse Days. Just use the pointers
+        above and keep your performance goals in mind. For example, if you’ve been training for a marathon for months, it
+        would make little sense to throw a Cleanse Day in on the final week. Otherwise you can also perform everyday cleansing.
+        Be smart about cleansing and stay healthy.
+      </p>
+      <h3>References</h3>
+      <ol>
+        <li>Rankin J et al. Energy restriction but not protein source affects antioxidant capacity in athletes. Free Radic Biol
+          Med 2006;41:1001-1009.</li>
+        <li>Major G et al. Multivitamin and dietary supplements, body weight and appetite: results from a cross-sectional and
+          a randomized double-blind placebo-controlled study. Br J Nutr 2008;99:1157-1167.</li>
+        <li>McMurray R et al. Responses of endurance-trained subjects to caloric deficits induced by diet or exercise. Med Sci
+          Sports Exerc 1985;17:574-579.</li>
+        <li>Leidy H et al. Effects of acute and chronic protein intake on metabolism, appetite, and ghrelin during weight loss.
+          Obesity 2007;15:1215-25.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

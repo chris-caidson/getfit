@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from "../../../providers/auth/auth";
+import { AuthProvider } from '../../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-athlete-articles',
-  templateUrl: 'athlete-articles.html',
+  selector: 'page-isapro-natural-whey',
+  templateUrl: 'isapro-natural-whey.html',
 })
-export class AthleteArticlesPage {
+export class IsaproNaturalWheyPage {
 
   constructor(
     public navCtrl: NavController,
@@ -15,8 +15,8 @@ export class AthleteArticlesPage {
     public auth: AuthProvider) {
   }
 
-  loadPage(pageName: string) {
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
 
 }

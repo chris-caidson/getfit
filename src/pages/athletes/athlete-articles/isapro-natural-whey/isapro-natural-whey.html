@@ -1,0 +1,162 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-book fixed-width space-right"></i>
+      <span>Research</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                    assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
+                    assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Why IsaPro® is the Natural Whey to Build Muscle, Lose Fat</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/athletes/pasture.jpg" alt="" class="shadowed" />
+        <figcaption>All-natural quality IsaPro
+          <br />whey comes from dairy
+          <br />cows raised on pastures
+          <br />of New Zealand.</figcaption>
+      </figure>
+      <p>
+        Whether you’re an athlete, bodybuilder or weekend warrior, you know that getting enough protein in your diet is vital to
+        provide the amino acid "building blocks" that must be available to fuel growth of muscle and make the most of those
+        long hours of training. Yes, you can maximize muscle gains with the right kind of protein.
+      </p>
+      <p>
+        Numerous studies have shown that whey protein is superior to other protein sources because it’s more easily absorbed and
+        contains higher levels of branched-chain amino acids (BCAAs) to drive muscle protein anabolism—the lean muscle growth
+        you want.
+      </p>
+      <p>
+        What’s the whey protein source to help you maximize lean muscle growth? It’s the kind found in our Isagenix® IsaLean® Shake
+        and what also makes up our newly-enhanced Isagenix IsaPro unflavored whey protein with Ionic Alfalfa™. Here are the
+        reasons why our natural whey can help you build your muscle mass and help you burn fat.
+      </p>
+      <h3>Reason #1: IsaPro Delivers on Quality</h3>
+      <p>
+        Don’t drink another shake that contains "junk" whey protein! When you add IsaPro, you can feel confident about getting results
+        from your workouts.
+      </p>
+      <p>
+        We thoroughly inspect raw materials, testing their potency, so that we can be sure they satisfy our customers’ needs. As
+        we do, we make sure our whey continually offers its naturally superior amino acid profile and its content of BCAAs
+        that spur muscle growth to the max.
+      </p>
+      <h3>Reason #2: IsaPro is All-Natural</h3>
+      <p>
+        We know that quality whey can only come from a quality source, which is why our exclusive whey comes from dairy cows that
+        are raised on pastures (not grain) on small New Zealand family farms, milked according to season, well rested, and
+        not treated with hormones or antibiotics.
+      </p>
+      <p>
+        The dairy whey in IsaLean Shake and IsaPro is produced by thinking first about what’s best for the dairy cow’s nutrition
+        and what’s good for the pristine New Zealand environment. At Isagenix, we don’t think there should be any other whey.</p>
+      <h3>Reason #3: IsaPro is Backed by Science</h3>
+      <p>
+        Whether you want to fuel muscle growth or natural detox, or just get an extra protein boost in your IsaLean Shake for metabolism
+        and weight loss, IsaPro provides the right balance of amino acids for your body’s needs.
+      </p>
+      <p>
+        Studies have found that those who add protein high in BCAAs to your diet, coupled with exercise, have more lean muscle tissue
+        and lose more body fat. IsaPro unflavored whey protein provides the high count of BCAAs that trigger protein muscle
+        anabolism, especially when taken within 20 minutes after workouts.
+      </p>
+      <p>
+        Whey protein also helps enhance the body’s immune system by raising glutathione levels. Glutathione is a powerful antioxidant
+        with the ability to help the immune system and support cell integrity. The whey in our IsaLean Shake and in our IsaPro
+        unflavored whey protein has a rich cysteine content to support glutathione synthesis for liver and detox support.
+      </p>
+      <p>
+        Whey protein studies also show that it helps manage weight by promoting a feeling of fullness. And, as you build lean tissue,
+        your metabolic rate increases and you naturally burn more calories each day. In short, whey is the key to building
+        muscle and busting fat in the long-term.
+      </p>
+      <h3>Reason #4: IsaPro Technology</h3>
+      <p>
+        Not all whey proteins are created equal. Fresh, whole milk is guided through a low-heat series of fine filters, which separate
+        our whey from other dairy components such as fats and lactose. The ultra-filtration process yields the cleanest whey
+        protein concentrate available for easy digestibility.
+      </p>
+      <p>
+        Also, due to these gentle, low-heat methods, the whey protein is protected from breaking down and maintains its natural,
+        high-quality, undenatured state.
+      </p>
+      <h3>Reason #5: IsaPro Contains Ionic Alfalfa</h3>
+      <p>
+        Lastly, IsaPro now contains Isagenix’s exclusive, proprietary Ionic Alfalfa. The ingredient is a special alfalfa juice concentrate
+        rich in trace minerals coming from an ancient plant deposit.
+      </p>
+      <p>
+        Ionic Alfalfa provides extra support for general metabolism and supporting your body’s overall health naturally.
+      </p>
+      <h3>IsaPro Frequently Asked Questions</h3>
+      <p>
+        By now, we know you’ll have questions about IsaPro and how to get the best muscle-building and weight loss results. Here
+        are a few of the most frequently asked questions about IsaPro.
+      </p>
+      <p>
+        <strong>Q. </strong>I noticed my new IsaPro has changed. What are the differences with the new, upgraded version of IsaPro?
+      </p>
+      <p>
+        <strong>A. </strong>The just-upgraded version of IsaPro is made up of the same outstanding whey protein that is currently
+        featured in our previously launched natural creamy IsaLean Shakes. IsaPro now also contains Ionic Alfalfa for best
+        support of health and general wellbeing.
+      </p>
+      <figure id="fig2">
+      <img src="assets/imgs/athletes/isa-pro.jpg" alt="" />
+      <figcaption>
+          IsaPro delivers a
+          <br />high-quality amino
+          <br />acid profile to fuel
+          <br />muscle growth.
+      </figcaption>
+    </figure>
+      <p>
+        You will also notice that the new product is "fluffier" in appearance. It comes in a larger canister with a slightly larger
+        scoop to compensate for the change in density. Please be advised that, despite the change in appearance, the directions
+        for use and protein content per serving remains the same.
+      </p>
+      <p>
+        <strong>Q. </strong>How do I use Isagenix IsaPro?
+      </p>
+      <p>
+        <strong>A. </strong>You can add 1 scoop of IsaPro to 1½ scoops of your IsaLean Shake—any flavor—and 8 ounces of purified
+        water. The total protein content would be 35 grams. For optimum taste, blend with ice (preferably with an IsaBlender™).
+      </p>
+      <p>
+        <strong>Q. </strong>Who can benefit from using IsaPro?
+      </p>
+      <p>
+        <strong>A. </strong>We recommend IsaPro to almost anyone looking for a boost of protein, however, it is best used by athletes,
+        weekend warriors and growing teenagers. If you’re having trouble overcoming a weight-loss plateau, then you can also
+        use it to help boost metabolism and curb cravings.
+      </p>
+      <p>
+        <strong>Q. </strong>Can people who are required to be on low-sugar diets by their doctors use IsaPro?
+      </p>
+      <p>
+        <strong>A. </strong>Yes. Because IsaPro contains no added sugar, those with type 2 diabetes or who are otherwise required
+        to be on a low-sugar diet are able to use it to dilute the sugar intake from their IsaLean Shakes, or use it as a
+        separate item. As always, however, we recommend people with diabetes only use products or change their diet under
+        the care of a physician.
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>
