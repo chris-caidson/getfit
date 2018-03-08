@@ -1,0 +1,134 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-pagelines fixed-width space-right"></i>
+      <span>Adaptogens</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Meet the Adaptogens in Ionix Supreme</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/science-behind.png" alt="" class="shadowed" />
+      </figure>
+      <p>
+        Stress affects us every day. Whether from work, finances, or relationships, stress can make us feel overworked and overloaded.
+        But stress affects more than just our mental performance. It has real physical consequences, too, and can eventually
+        lead to poor health and disease.
+      </p>
+      <p>
+        Stress management methods include exercise, hobbies, or other relaxing activities such as meditation or yoga. Unfortunately,
+        according to a 2006 survey by the American Psychological Association, many Americans are resorting to unhealthy habits
+        when trying to manage stress. Whether it’s alcohol, stimulants or simply overeating, many Americans are in need of
+        finding a positive outlet for stress.
+      </p>
+      <p>
+        One healthy, effective way of dealing with stress without negative side effects is through the daily use of Adaptogens. From
+        the Greek word "adapto" meaning to adjust, the term Adaptogen is applied to plants that produce special substances
+        originally intended to help them adapt to and overcome stressors in their own environments. Some of these Adaptogens,
+        many of which have been used traditionally in parts of Asia and Europe, are found to have properties that also extend
+        benefits to humans.
+      </p>
+      <p>
+        Former Soviet Union research scientists Nicolai Lazarev and Israel Brekhman were the first to study Adaptogens scientifically
+        in hopes to provide a natural means of improving strength, energy, and stamina in soldiers, as well as athletes and
+        cosmonauts. Further research found that Adaptogens work by normalizing the body’s functions under stress and taking
+        them daily improves mental and physical performance while reducing fatigue (1,2).
+      </p>
+      <p>
+        Though all Adaptogens help the body reduce and resist the effects of stress, they each have their own mechanism of action
+        to benefit overall health. And because there’s no toxicity associated with Adaptogens, the more the better.
+      </p>
+      <p>
+        Here’s a deeper look at the adaptogen blend found in Ionix® Supreme:
+      </p>
+      <h3>Wolfberry</h3>
+      <p>Wolfberry (Lycium barbarum) is a red-orange berry of the Solanaceae nightshade family that includes tomato, eggplant,
+        chili pepper, and potato. Ancient herbalists regarded Wolfberry as nourishing to the liver, kidney, and eyes. Modern
+        studies support these traditional claims by showing that the extracts from Wolfberry have antioxidant properties
+        and protect the body from oxidative stress (3-5).</p>
+      <h3>Eleuthero Root</h3>
+      <p>Eleuthero root (Eleutherococcus senticosus) is a small, woody shrub native to Northeastern Asia. It has been used in
+        China for more than 2,000 years as a natural remedy for reducing fatigue. Recent studies have also indicated eleuthero
+        root to help maintain mental and physical performance under stressful conditions such as working in an emergency
+        room (6). </p>
+      <h3>Rhodiola</h3>
+      <p>Rhodiola (Rhodiola rosea) is a plant that grows in the coldest regions of the world, including Northern Asia. It’s
+        been used as an herbal medicine for several centuries in Russia and Scandinavia to increase physical endurance, improve
+        energy levels, and help resist high altitude sickness. In clinical trials Rhodiola has been shown to help strengthen
+        the body’s resistance to stress (7).</p>
+      <h3>Ashwagandha</h3>
+      <p>Ashwagandha (Withania somnifera), like Wolfberry, is a plant in the Solanaceae nightshade family and is native to the
+        dry regions of India, North Africa, and the Middle East. It’s been an important component in Indian Ayurvedic medicine
+        since ancient times, mostly for its restorative benefits. In recent studies Ashwagandha has demonstrated antioxidant
+        effects (8,9). Studies have also shown it to support healthy brain and immune function (10,11).</p>
+      <h3>Bacopa</h3>
+      <p>Bacopa (Bacopa monniera) is a plant popular in traditional Indian medicine practices for the enhancement of memory
+        and to promote longevity. Preclinical studies have shown it to have antioxidant and adaptogenic effects on the central
+        nervous system (12-14).</p>
+      <h3>Schizandra</h3>
+      <p>Schizandra (Schisandra chinensis) is known as the “five flavor berry??? because it contains all five of the basic flavors:
+        sweet, salty, sour, pungent, and bitter. The berry grows as part of a woody vine native to the forests of Northern
+        China and Eastern Russia. It has long been used in Traditional Chinese Medicine to nourish the kidneys and heart.
+        In human studies, schisandra has shown to increase work accuracy and antioxidant protection and decreased feelings
+        of fatigue and exhaustion (15).</p>
+      <p>
+        The stresses of life are not likely to disappear, but we can provide our body with the nutrition it needs to better manage
+        the physical response to stress. Prime your body daily with the blend of adaptogens in Ionix Supreme for optimal
+        stress protection and overall health.
+      </p>
+      <h3>References</h3>
+      <ol>
+        <li>Panossian A, Wikman G. Evidence-based efficacy of adaptogens in fatigue, and molecular mechanisms related to their
+          stress-protective activity. Curr Clin Pharmacol 2009;4:198-219.</li>
+        <li>Panossian A, Wikman G. Effects of adaptogens on the central nervous system and the molecular mechanisms associated
+          with their stree-protective activity. Pharmaceuticals 2010; 3: 188-224.</li>
+        <li>Amagase H, Sun B, Borek C. Lycium barbarum juice improves in vivo antioxidant biomarkers in serum of healthy adults.
+          Nutr Res 2009;29:19-25.</li>
+        <li>Zhang R, Kang KA, Piao MJ et al. Cytoprotective effect of the fruits of Lycium chinense Miller against oxidative
+          stress-induced hepatotoxicity. J Ethnopharmacol 2010;130:299-306.</li>
+        <li>Amagase H, Nance DM. A randomized, double-blind, placebo-controlled, clinical study of the general effects of a standardized
+          Lycium barbarum. J Altern Complement Med 2008;14:403-12. Jeyanthi T, Subramanian P. Nephroprotective effect of
+          Withania somnifera: a dose-dependent study. Ren Fail 2009;31:814-21.</li>
+        <li>Kuo J, Chen KW, Cheng IS, Tsai PH, Lu YJ, Lee NY. The effect of eight weeks of supplementation with Eleutherococcus
+          senticosus on endurance capacity and metabolism in human. Chin J Physiol 2010;53:105-11.</li>
+        <li>Darbinyan V, Kteyan A, Panossian A, Gabrielian E, Wikman G, Wagner H. Rhodiola rosea in stress induced fatigue–a
+          double blind cross-over study of a standardized extract SHR-5 with a repeated low-dose regimen on the mental performance
+          of healthy physicians during night duty. Phytomedicine 2000;7:365-71.</li>
+        <li>Jayaprakasam B, Padmanabhan K, Nair MG. Withanamides in Withania somnifera fruit protect PC-12 cells from beta-amyloid
+          responsible for Alzheimer’s disease. Phytother Res 2010;24:859-63.</li>
+        <li>Auddy B, et al. Standardized Withania somnifera extract significantly reduces stress-related parameters in chronically
+          stressed humans: a double-blind, randomized, placebo-controlled study. JANA 2008; 11:50-56.</li>
+        <li>Ziauddin M, Phansalkar N, Patki P, Diwanay S, Patwardhan B. Studies on the immunomodulatory effects of Ashwagandha.
+          J Ethnopharmacol 1996;50:69-76.</li>
+        <li>Davis L, Kuttan G. Immunomodulatory activity of Withania somnifera. J Ethnopharmacol 2000;71:193-200.</li>
+        <li>Uabundit N, Wattanathorn J, Mucimapura S, Ingkaninan K. Cognitive enhancement and neuroprotective effects of Bacopa
+          monnieri in Alzheimer’s disease model. J Ethnopharmacol 2010;127:26-31. doi: 10.1016/j.jep.2009.09.056</li>
+        <li>Morgan A, Stevens J. Does Bacopa monnieri improve memory performance in older persons? Results of a randomized, placebo-controlled,
+          double-blind trial. J Altern Complement Med 2010;16:753-9.</li>
+        <li>Roodenrys S, Booth D, Bulzomi S, Phipps A, Micallef C, Smoker J. Chronic effects of Brahmi (Bacopa monnieri) on human
+          memory. Neuropsychopharmacology 2002;27:279-81.</li>
+        <li>Aslanyan G, et al. Double-blind, placebo-controlled, randomized study of single dose effects of ADAPT-232 on cognitive
+          functions. Phytomedicine 2010.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

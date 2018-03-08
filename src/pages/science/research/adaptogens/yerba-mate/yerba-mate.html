@@ -1,0 +1,140 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-pagelines fixed-width space-right"></i>
+      <span>Adaptogens</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Yerba Mate and Adaptogens: What's Inside E+</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/e-shot-girl.jpg" alt="" class="shadowed" />
+        <figcaption>The ingredients in the e+ shot explain its
+          <br />unique energizing benefits.</figcaption>
+      </figure>
+      <p>
+        Whether you use it for a morning jolt, an afternoon pick-me-up, or an exercise elixir, Isagenix e+ Natural Energy Shot has
+        become an essential tool for many to stay energized throughout the day. But do you really know what’s inside e+ and
+        how it works to give you that healthy boost of energy?
+      </p>
+      <p>
+        When you break the seal of the two-ounce bottle, the first thing you notice is the aroma of crisp apple and pomegranate.
+        That’s right—natural juices and no artificial flavors, sweeteners, or colors are used in e+, or any Isagenix product
+        for that matter.
+      </p>
+      <p>
+        Although the delicious taste can be reason enough to enjoy the beverage, the real magic happens after you slug down the shot.
+        With about as much caffeine as a cup of regular coffee, e+ gives you a healthy energy boost—all for only 35 calories.
+        What’s more, the source of caffeine in e+ is from yerba mate and green tea extracts.
+      </p>
+      <h3>"Vitamin P"</h3>
+      <p>
+        Yerba mate is an herbal beverage popular in South America made from dried leaves of the Ilex paraguariensis plant and is
+        a natural source of caffeine. Research has linked yerba mate consumption to many health benefits—including heart
+        health and antioxidant protection—that are largely attributed to its high concentration of bioactive compounds including
+        polyphenols and flavonoids.
+      </p>
+      <p>
+        Polyphenols are the most abundant antioxidant in the human diet, topping all other phytochemicals (compounds that occur in
+        plants) and even known dietary antioxidants such as vitamin C, vitamin E, and carotenoids (1). Flavonoids, also known
+        as bioflavonoids, are a type of polyphenol and were even once referred to as “Vitamin P??? due to their key role
+        in health.
+      </p>
+      <p>
+        Green tea is made from the leaves of the Camellia sinensis plant and is also a natural source of caffeine. In addition to
+        giving you a boost, the catechins—another type of polyphenol with antioxidant properties—present in green tea extract
+        have been shown to stimulate thermogenesis (i.e. support calorie- and fat-burning potential), increase antioxidant
+        status, and reduce oxidative stress from free radicals (2, 3).
+      </p>
+      <h3>Just Enough Natural Caffeine</h3>
+      <p>
+        Research shows it takes 15 to 45 minutes after ingestion for caffeine levels to elevate in the body with peak concentrations
+        evident within one hour (4). As caffeine levels start to rise in the body, the caffeine molecule crosses the blood-brain
+        barrier and blocks the neurotransmitter, adenosine, from binding to receptors on the brain. Think of adenosine as
+        the “lazy??? neurotransmitter—it signals the brain to slow down nerve cell activity causing you to feel drowsy and
+        tired. In the brain, this also causes blood vessels to dilate, possibly to allow more oxygen to get to the brain
+        during sleep.
+      </p>
+      <p>
+        Conversely, when caffeine binds to the receptors on the brain, nerve cells speed up. As a result, brain cells start firing
+        off signals that make the body feel like it is in an alert state. This leads to the release of hormones causing a
+        cascade of physiological responses, all of which are aimed at making you more focused and in control. This explains
+        why after your e+ shot, you feel energized, primed, and ready to take on whatever comes your way.
+      </p>
+      <p>
+        There’s no need to consume dangerously excessive doses of synthetic caffeine to gain energizing benefits, as supplied in
+        some other energy drinks. In e+ shot, natural caffeine from yerba mate and green tea is only supplied in moderate
+        amounts that are healthy. The drink is fast acting and its supply of energy is long lasting. A half bottle is recommended
+        for moderate energy and a whole bottle for maximum energy. Recommendations are to not exceed two bottles daily and
+        to avoid mixing with alcoholic beverages. In addition, those who are under age 18, pregnant, or with any medical
+        conditions should check with a physician before using e+.
+      </p>
+      <h3>Fatigue-Fighting Adaptogens</h3>
+      <p>
+        While the naturally sourced caffeine from green tea and yerba mate are key components of e+, the real superstar is the adaptogenic
+        blend. Adaptogens are herbs and botanicals that have been shown to help normalize the body’s response to stress and
+        improving the body’s capacity to perform and function under stressful circumstances. They do this by stimulating
+        biochemical pathways that decrease the body’s sensitivity to harmful stressors, resulting in stress "protection"
+        (5, 6).
+      </p>
+      <p>
+        Take this scenario: You are standing at the top a ten-foot tall diving board. There are butterflies in your stomach, your
+        pulse rate quickens, you get nervous, feel flushed, perhaps your legs feel a little weak as you inch towards the
+        edge. Your imagination and anticipation have activated the nervous and endocrine systems, sending hormones surging
+        though your body. Finally, you jump. The second time around, you don’t have such a severe hormonal flux, the butterflies
+        aren’t as active, and your limbs are more compliant. What was the difference? Your body had experienced the stress
+        before, and it had built up a resistance. This conditioning is the principle behind adaptogens and how they work
+        to strengthen the body’s response to stress.
+      </p>
+      <p>
+        The specific blend found in e+ was inspired by the research of the late Dr. Israel Brekhman, a pioneer in the study of adaptogens.
+        Some of the stress-modulating, fatigue-fighting adaptogens in e+ include:
+
+      </p>
+      <ul>
+        <li>Eleuthero (Eleutherococcus senticosus): Also known as Siberian ginseng, this thin, thorny shrub has been shown to
+          improve endurance performance by supporting optimal cardiovascular functions and oxygen uptake (7).</li>
+        <li>Rhodiola (Rhodiola rosea): This adaptogenic plant is native to the arctic and mountainous regions of Europe, Asia,
+          and America. It has been used in traditional Chinese medicine and has been shown to increase energy, reduce fatigue,
+          and help maintain cognitive function during stressful circumstances (8).</li>
+        <li>Hawthorn Berry (Crataegus oxyacantha): Evidence supports hawthorn berry’s ability to mediate both the physiological
+          and psychological stress response in the body (9).</li>
+      </ul>
+      <p>The novel combination of energy-boosting caffeine and stress-modulating adaptogens in e+ Natural Energy shot set it
+        apart from any other energy beverage on the market. The blend of natural ingredients makes it a healthy and safe
+        alternative to high-calorie, excessively caffeinated, artificially sweetened energy drinks and shots. You only get
+        the best with Isagenix, and e+ is no exception.</p>
+        <h3>References</h3>
+        <ol>
+            <li>Scalbert et al. Polyphenols: antioxidants and beyond. J Clin Nutr 2005;18:2155-2175.
+            <li>Nago et al. Ingestion of a tea rich in catechins leads to a reduction in body fat and malondialdehyde-nodified LDL in men. Am J Clin Ntr 2005;81(1):122-9.</li>
+            <li>Higdon et al. Tea catechins and polyphenols: health effects, metabolism, and antioxidant functions. Crit Rev Food Nutr 2003;43(1):89-143.</li>
+            <li>Goldstein ER, et al. International society of sports nutrition position stand: caffeine and performance. J Int Soc Sports Nutr 2010;7:5.</li>
+            <li>Panossian A, Wikman G. Evidence-based efficacy of adaptogens in fatigue, and molecular mechanisms related to their stress-protective activity. Curr Clin Pharmacol 2009;4:198-219</li>
+            <li>Panossian A, Wikman G. Effects of adaptogens on the central nervous system and the molecular mechanisms associated with their stress—protective activity.  Pharmaceuticals 2010;3:188-224. doi: 10.3390/ph3010188</li>
+            <li>Kuo et al. The effect of eight weeks of supplementation with Eleutherococcus senticosus on endurance capacity and metabolism in human. Chin J Physiol 2010;53:105-11.</li>
+            <li>Darbinyan V, et al. Rhodiola rosea in stress induced fatigue–a double blind cross-over study of a standardized extract SHR-5 with a repeated low-dose regimen on the mental performance of healthy physicians during night duty. Phytomedicine 2000;7:365-71.</li>
+            <li>Can O, et al. Effects of hawthorn seed and pulp extracts on the central nervous system. Pharm Biol 2010;48(8):924-31.</li>
+        </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

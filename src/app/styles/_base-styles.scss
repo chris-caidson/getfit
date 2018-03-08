@@ -182,3 +182,27 @@ p {
   box-shadow: $video-shadow;
   cursor: pointer;
 }
+
+#tapH5, #clickH5 {
+  font-weight: normal;
+  text-shadow: none;
+  font-size: smaller;
+}
+
+#tapH5 {
+  display: block;
+}
+
+#clickH5 {
+  display: none;
+}
+
+@media (min-width: 1250px) {
+  #tapH5 {
+      display: none;
+  }
+
+  #clickH5 {
+      display: block;
+  }
+}

@@ -1,0 +1,102 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-pagelines fixed-width space-right"></i>
+      <span>Adaptogens</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Your Brain on Adaptogens</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/adaptogens-brain.jpg" alt="" class="shadowed" />
+        <figcaption>Adaptogens work like a
+          <br />"stress vaccine" for your
+          <br />brain.</figcaption>
+      </figure>
+      <p>
+        How we react to mental stress is controlled by a complex interaction between the hypothalamus, pituitary gland and adrenal
+        glands. These three structures form the hypothalamus-pituitary-adrenal (HPA) axis and help control mood, energy levels,
+        body temperature, and immunity. The hypothalamus secretes hormones that act on the pituitary gland that can cause
+        or stop the release of pituitary hormones. The adrenal glands release stress hormones like cortisol and adrenaline.
+        The role of the HPA axis is expansive yet its primary function relates to how we respond to stress. In the first
+        stage of the stress response the hypothalamus releases a hormone that signals the pituitary to "activate" the adrenal
+        gland to release cortisol. Cortisol is a classical stress hormone that is increased during times of stress.
+      </p>
+      <p>Cortisol release is a normal and healthy response to normal levels of stress. This is certainly true for acute stress.
+        However, chronic exposure to stress, like job pressures or family demands, can add on heavy doses of mental stress.
+        Chronic stress seems to be a hallmark of modern life and can cause dysfunction in both the HPA axis and cortisol
+        secretion patterns. A prolonged stress response can negatively affect one of the most important organs in your body,
+        your brain-as a result, the individual may experience decreased cognition, anxiety and poor mental performance.</p>
+      <p>
+        However, bioactive substances from Adaptogens can help by functioning like "stress vaccines" by reducing the over-exaggerated
+        response to a stressor and by helping maintain healthy levels of cortisol. This effect has been noted in a randomized
+        double-blind, placebo-controlled study using ashwagandha (Withania somnifera) supplements in adults experiencing
+        high levels of stress (1). Not only did researchers find decreased levels of perceived stress in subjects taking
+        ashwagandha, but cortisol was also decreased. The researchers suggested that the supplement’s "therapeutic activity
+        may be attributed, at least in part, to its effect on the hypothalamic-pituitary-adrenal axis, which regulates serum
+        cortisol concentration."
+      </p>
+      <p>
+        The idea of a "stress vaccine" was coined by Adaptogen expert Alexander Panossian, who explained that adpatogens mimic stress
+        itself and create an adaptive response to stress (2). This translates into increasing the work capacity of the brain
+        by being "stress-protective" or "restorative." Dr. Panossian reasons that the chemical structures of Adaptogens are
+        similar to hormones like adrenaline (2). Components of the herbs may also resemble corticosteroids, which help to
+        inactive a stress response (3).
+      </p>
+      <p>
+        Adaptogens, being restorative or stress protective, improve attention and focus while reducing risk of mental fatigue. In
+        this regard, Adaptogens are markedly different from stimulants. Adaptogenic effects have been noted to occur after
+        only one single dose (4). In this double-blinded, placebo-controlled, randomized study investigators used a single
+        dose of a combination of rhodiola (Rhodiola rosea), schisandra (Schisandra chinensis) and eleuthero (Eleutherococcus
+        senticosus). Mental performance, such as attention, speed and accuracy, was assessed in tired individuals performing
+        stressful cognitive tasks. The subjects in Adaptogen group exhibited improved attention and increased speed and accuracy
+        during stressful cognitive tasks. There was also a tendency to reduce percentage of errors, which meant better accuracy,
+        quality of the work, and degree of care.
+      </p>
+      <p>
+        Other plants like wolfberry (Lycium barbarum) and bacopa (Bacopa monnieri) also increase resistance to psychological stress
+        by acting as powerful antioxidants to support brain health (5-9). This is particularly true for older individuals
+        where decreased mental performance is more apparent. For example, in a study investigating the effects of bacopa
+        in memory improvement in older people over a 12-week period, bacopa significantly improved memory acquisition and
+        retention.
+      </p>
+      <p>
+        Unfortunately, in today’s modern lifestyles, too many people are succumbing to chronic stress-with poor health outcomes as
+        a result. While exercise and good nutrition is always advised, Adaptogens offer a further stress management option
+        to maintain brain health. Strong evidence ties the use of Adaptogens to improved memory, focus, attention and mental
+        performance. Truly something that every brain could use.
+      </p>
+      <h3>References</h3>
+      <ol>
+          <li>Auddy B, Hazra PJ, Mitra PA. A standardized Withania somnifera extract significantly reduces stress-related parameters in chronically stressed humans: a double-blind, randomized, placebo-controlled study. JANA. 2008; 11:50-56.</li>
+          <li>Panossian A, Wikman G. Evidence-based efficacy of adaptogens in fatigue, and molecular mechanisms related to their stress-protective activity. Current clinical pharmacology 2009;4:198-219.</li>
+          <li>Panossian A, Wikman G. Effects of adaptogens on the central nervous system and the molecular mechanisms associated with their stressGÇöprotective activity. Pharmaceuticals 2010;3:188-224.</li>
+          <li>Aslanyan G, Amroyan E, Gabrielyan E, Nylander M, Wikman G, Panossian A. Double-blind, placebo-controlled, randomised study of single dose effects of ADAPT-232 on cognitive functions. Phytomedicine 2010;17:494-9.</li>
+          <li>Amagase H, Sun B, Borek C. Lycium barbarum (goji) juice improves in vivo antioxidant biomarkers in serum of healthy adults. Nutrition Research 2009;29:19-25.</li>
+          <li>Jayaprakasam B, Padmanabhan K, Nair MG. Withanamides in Withania somnifera fruit protect PCGÇÉ12 cells from +¦GÇÉamyloid responsible for Alzheimer’s disease. Phytotherapy Research 2010;24:859-63.</li>
+          <li>Morgan A, Stevens J. Does Bacopa monnieri improve memory performance in older persons? Results of a randomized, placebo-controlled, double-blind trial. The Journal of Alternative and Complementary Medicine 2010;16:753-9.</li>
+          <li>Roodenrys S, Booth D, Bulzomi S, Phipps A, Micallef C, Smoker J. Chronic effects of Brahmi (Bacopa monnieri) on human memory. Neuropsychopharmacology 2002;27:279-81.</li>
+          <li>Ziauddin M, Phansalkar N, Patki P, Diwanay S, Patwardhan B. Studies on the immunomodulatory effects of Ashwagandha. Journal of Ethnopharmacology 1996;50:69-76.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -18,4 +18,5 @@ export class NineTipsPage {
   goBack() {
     this.navCtrl.pop();
   }
+  
 }

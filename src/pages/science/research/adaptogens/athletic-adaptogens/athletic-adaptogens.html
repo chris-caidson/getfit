@@ -1,0 +1,95 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-pagelines fixed-width space-right"></i>
+      <span>Adaptogens</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">E+: Modulated Caffeine and Adaptogens for Athletic Performance</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/runners.jpg" alt="" class="shadowed" />
+        <figcaption>Lead the pack by
+          <br />optimizing performance
+          <br />with the unique blend of
+          <br />adaptogens and natural
+          <br />caffeine in Isagenix e+.</figcaption>
+      </figure>
+      <p>
+        With athletes over the last 30 years at the Colgan Institute, we have tested synthetic caffeine, the form used in most sodas
+        and energy drinks today. We have compared its effects with natural caffeines from arabica coffee (Coffea arabica),
+        black and green teas (Camelia sinensis), guarana (Paullinia cupana), and yerba maté (Ilex paraguariensis).
+      </p>
+      <p>
+        We have seen better effects and have not found undesirable side effects with judicious amounts of natural caffeines. In agreement
+        with controlled studies, we have found that moderate doses of plant extracts of caffeine from Coffea arabica, and
+        Camelia sinensis, calculated for lean body weight, and used under specific conditions, yield a significant improvement
+        in running time in a 10K race of 1.0 percent to 3.3 percent. For a runner whose best 10K is approaching 40 minutes,
+        a goal for many recreational runners, we have found an average improvement of 1 minute 17 seconds. That is a huge
+        gain in performance.
+      </p>
+      <h3>e+ Adds Adaptogens</h3>
+      <p>
+        Since the research of Russian and Chinese scientists showed the power of adaptogenic herbs in the 1980s, we have used them
+        with all athletes trained through the Colgan Institute (3). Of the 40,000 plus herbals in current use only 11 are
+        proven adaptogens in controlled trials, that is they maintain physiological functions within a normal range so as
+        to improve energy during the day, yet promote sleep and bodily recovery from stress during the sleep cycle. Specifically,
+        we have tested rhodiola (Rhodiola rosea) from Northeastern China, and eleuthero (Eleutherococcus senticosus) from
+        Northwestern China. Both yield improvements in athletic performance, with and without modulated caffeine in our tests,
+        and also when used singly in controlled trials (4,5).
+      </p>
+      <p>
+        Consequently, I was very pleased to see the development of the e+ by Dr. Suk Cho and his team of scientists at Isagenix.
+        Combined by a proprietary process that cannot be duplicated, e+ contains a judicious amount of modulated caffeine
+        from green tea and yerba mate, plus eluthero, rhodiola, and other adaptogenic herbals in a 2-oz sealed shot, exactly
+        right for athletes.
+      </p>
+      <p>
+        Specifically, the e+ also contains leuzea (Rhaponticum carthamoides) an adaptogen from Siberia that has only recently become
+        available in any quantity in the US. Famed in Russia as the herbal tonic Maralu, it was named after the Maral deer
+        who fed on it and gained legendary strength and endurance. These effects have now been confirmed in controlled animal
+        trials (6).
+      </p>
+      <p>
+        Overall, the e+ is now the leading energy formulation for athletes to use before workouts, yielding an extended energising
+        effect that should last about four hours. When taking it, hold the shot in your mouth for about 10 seconds. For those
+        aiming for maximum results, limit your intake of coffee and tea and other common sources of natural caffeine, and
+        avoid sodas and other energy drinks entirely. Share the e+ before a workout, share the IsaLean Shake after workout,
+        and share spectacular results with everyone.
+      </p>
+      <h3>References</h3>
+      <ol>
+        <li>Rogers PJ, Smith JE, Heatherley SV, Pleydell-Pearce CW. Time for tea: mood, blood pressure and cognitive performance
+          effects of caffeine and theanine administered alone and together. Psychopharmacology (Berl) 2008;195:569–77.</li>
+        <li>Haskell CF, Kennedy DO, Milne AL, Wesnes KA, Scholey AB. The effects of L-theanine, caffeine and their combination
+          on cognition and mood. Biol Psychol 2008;77:113–22.</li>
+        <li>Colgan M. Optimum Sports Nutrition. New York: Advanced Research Press 1993.</li>
+        <li>Kuo J et al. The effect of eight weeks of supplementation with Eleutherococcus senticosus on endurance capacity and
+          metabolism in humans. Chin J Physiol 2010;53(2):105-11.</li>
+        <li> Hung SK et al. The effectiveness and efficacy of Rhodiola rosea: a systematic review of randomized clinical trials.
+          Phytomedicine 2011;18(4):235-44.</li>
+        <li>Selepcova L, Sommer A, Vargova M. Effect of feeding on a diet containing varying amounts of Rhaponticum carthamoides
+          hay meal on selected morphological parameters in rats. Eur J Entomol 1995;92: 391-397.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

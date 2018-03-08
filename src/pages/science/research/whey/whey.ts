@@ -15,4 +15,7 @@ export class WheyPage {
     public auth: AuthProvider) {
   }
 
+  loadPage(pageName: string) {
+    this.navCtrl.push(pageName);
+  }
 }

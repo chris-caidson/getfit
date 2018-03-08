@@ -12,9 +12,7 @@ page-cleansing {
         margin-right: auto;
 
         img {
-            box-shadow: 0px 0px 15px #999;
-            border-radius: 8px;
-            cursor: pointer;
+          cursor: pointer;
         }
     }
 
@@ -26,20 +24,6 @@ page-cleansing {
       color: $secondary-color;
       text-decoration: underline;
       cursor: pointer;
-    }
-
-    #tapH5, #clickH5 {
-        font-weight: normal;
-        text-shadow: none;
-        font-size: smaller;
-    }
-
-    #tapH5 {
-        display: block;
-    }
-
-    #clickH5 {
-        display: none;
     }
 
     section {
@@ -56,16 +40,6 @@ page-cleansing {
         figure {
             margin-left: 0;
             margin-right: $large-margin;
-        }
-    }
-
-    @media (min-width: 1250px) {
-        #tapH5 {
-            display: none;
-        }
-
-        #clickH5 {
-            display: block;
         }
     }
 }

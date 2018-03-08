@@ -1,0 +1,111 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-pagelines fixed-width space-right"></i>
+      <span>Adaptogens</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Dr. Israel Brekhman: "Father of Adaptogens" and His Energizing Adaptogen Blend in E+</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/dr-brekhman.jpg" alt="" class="shadowed" />
+        <figcaption>Dr. Israel Brekhman’s adaptogen
+          <br />formula found in Isagenix e+ can
+          <br />give you the energy and focus
+          <br />you need.</figcaption>
+      </figure>
+      <p>
+        It was 1960 when Russian scientist, Dr. Israel Brekhman, first had his work published in scientific literature. This first
+        publication was a culmination of 15 years of previous research on adaptogens—a topic Brekhman dedicated the rest
+        of his life to. His continued research on adatogens led to hundreds more publications and discovery of the many health
+        benefits from these protective agents. Brekhman was not only a world-renowned scientist and researcher, but also
+        a medical doctor, teacher, and philosopher. Known as the "Father of Adaptogens," he’s credited with introducing to
+        the world formulas of adaptogens that promote health by helping people cope with everyday stress, maintain high levels
+        of energy, and free the body from fatigue.
+      </p>
+      <p>
+        In a society plagued by chronic stress, a targeted solution to prime and protect the body from its harmful effects is necessary.
+        Deemed "nature’s answer to stress," Isagenix Ionix Supreme contains adaptogen compounds that work in the body by
+        increasing its ability to adapt to stress while also improving physical and mental functioning under stressful conditions
+        (1-2).
+      </p>
+      <p>
+        More specifically, and in one of his many research papers, Brekhman and his colleagues defined adaptogens as natural plant
+        substances that:
+      </p>
+      <ol>
+        <li>Increase the body’s ability to cope with internal and external stresses.</li>
+        <li>Exhibit stimulating effects after both single-time use and prolonged use, leading to increased working capacity and
+          mental performance under stressful and fatigue-inducing conditions.</li>
+        <li>Normalize the functions of the body.</li>
+        <li>Are entirely safe and have no negative side effects.</li>
+      </ol>
+      <p>
+        While all adaptogens are restorative to the body’s stress response and capacity to perform, certain combinations were studied
+        by Brekhman for the exclusive purpose of boosting performance and fighting fatigue. With that purpose in mind, Isagenix
+        has formulated the new e+ Natural Energy Shot with Brekhman’s own adaptogen formula coupled with naturally sourced
+        caffeine—talk about the perfect pairing for energy and performance!
+      </p>
+      <p>
+        The first energy-boosting adaptogen in Brekhman’s formula, and now in e+ is Eleuthero (full name: Eleutherococcus senticosus).
+        Eleuthero, also known as Siberian ginseng, is a thin, thorny shrub native to forests in southeastern Russia, northern
+        China, Japan, and Korea.
+      </p>
+      <p>
+        The research behind Eleuthero has shown it to improve endurance exercise, oxygen uptake, and overall performance in athletes.
+        One study published in 2010 echoed just that–college-aged male tennis players who supplemented with eleuthero for
+        eight weeks had significantly enhanced endurance time and elevated cardiovascular functions (3).
+      </p>
+      <p>
+        Another adaptogen in e+, Rhodiola (full name: Rhodiola rosea)—native to the arctic and mountainous regions throughout Europe,
+        Asia, and America—also has scientific research behind it alluding to athletic improvement. A 2012 study conducted
+        on cyclists found an improved heart rate response to exercise and a decreased perception of effort in subjects who
+        took rhodiola one hour before exercise (4).
+      </p>
+      <p>
+        The adaptogens in e+ not only can help power a workout, but can also help you resist stress to stay mentally sharp after
+        a hard day’s (or night’s) work. Rhodiola, for instance, has been found to reduce general and mental fatigue in doctors
+        working night shifts (4).
+      </p>
+      <p>
+        One of the most recent reviews of adaptogens, published in October 2012, gives cause to always have e+ on hand when a pick-me-up
+        is needed. According to the review, adaptogens "induce increased attention and endurance in situations of decreased
+        performance caused by fatigue and/or sensation of weakness" (5).
+      </p>
+      <p>
+        The bottom line is that adaptogens are plant substances that help the body to better handle external and internal stressors,
+        they enhance the body’s ability to perform physically, and they increase energy and mental alertness. Israel Brekhman
+        spent his lifetime and career studying adaptogens and how we can use them to prime and protect the body. With e+,
+        Isagenix is taking some of Brekhman’s best work and giving people the tool to take themselves and their health to
+        the next level.
+      </p>
+      <h3>References</h3>
+      <ol id="references">
+          <li>Panossian A, Wikman G. Effects of adaptogens on the central nervous system and the molecular mechanisms associated with their stree-protective activity. Pharmaceuticals 2010; 3: 188-224.</li>
+          <li>Panossian A, Wikman G. Evidence-based efficacy of adaptogens in fatigue, and molecular mechanisms related to their stress-protective activity. Curr Clin Pharmacol 2009;4:198-219.</li>
+          <li>Kuo J, Chen KW, Cheng IS, Tsai PH, Lu YJ, Lee NY. The effect of eight weeks of supplementation with Eleutherococcus senticosus on endurance capacity and metabolism in human. Chin J Physiol 2010;53:105-11.</li>
+          <li>Darbinyan V, Kteyan A, Panossian A, Gabrielian E, Wikman G, Wagner H. Rhodiola rosea in stress induced fatigue–a double blind cross-over study of a standardized extract SHR-5 with a repeated low-dose regimen on the mental performance of healthy physicians during night duty. Phytomedicine 2000;7:365-71.</li>
+          <li>Vinod PS, Shivakumar H. A current status of adaptogens: natural remedy to stress. Asian Pac J Trop Dis 2012;S480-S490.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

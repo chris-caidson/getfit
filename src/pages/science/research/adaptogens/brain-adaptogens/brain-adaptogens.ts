@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from "../../../../providers/auth/auth";
+import { AuthProvider } from "../../../../../providers/auth/auth";
 
 @IonicPage()
 @Component({
-  selector: 'page-adaptogens',
-  templateUrl: 'adaptogens.html',
+  selector: 'page-brain-adaptogens',
+  templateUrl: 'brain-adaptogens.html',
 })
-export class AdaptogensPage {
+export class BrainAdaptogensPage {
 
   constructor(
     public navCtrl: NavController,
@@ -15,7 +15,8 @@ export class AdaptogensPage {
     public auth: AuthProvider) {
   }
 
-  loadPage(pageName: string) {
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
+
 }
