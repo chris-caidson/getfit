@@ -10,7 +10,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-  <login></login>
+  <login></login> 
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <header role="banner">
@@ -23,6 +23,16 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">Getting Started</h1>
+      <div class="grid-container">
+        <section>
+          <img (click)="openVideoModal()" id="videoThumb" class="video-thumb" src="assets/imgs/misc/you-plus-two.jpg" alt="You Plus Two Video" />
+        </section>
+        <section>
+          <img id="pdf" src="assets/imgs/misc/you-plus-two-logo.jpg" alt="You Plus Two PDF"
+          (click)="pdfProvider.openPdf('You + 2, Them + 2', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fyou-plus-two-them-plus-two.pdf?alt=media&token=8700f0bf-0dec-41a7-8256-37df5dbbb2de')" />
+        </section>
+      </div>
     </article>
   </main>
   <get-footer></get-footer>
