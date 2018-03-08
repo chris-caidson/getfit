@@ -1,0 +1,87 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-bolt fixed-width space-right"></i>
+      <span>Telomeres</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Environmental Pollution Linked to Short Telomeres</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/telomeres.jpg" alt="" class="shadowed" />
+        <figcaption>Research has found that
+          <br />Italian women living near
+          <br />illegal toxic waste dumps
+          <br />have shorter telomeres.</figcaption>
+      </figure>
+      <p>
+        Living too close to a landfill containing hazardous waste is associated with premature aging at the level of telomeres, according
+        to a new study from University of Naples Federico II in Italy.
+      </p>
+      <p>
+        The length of telomeres, protective caps on the ends of chromosomes, is considered a biological marker of aging. Telomeres
+        shorten with age and when exposed to oxidative stress, the amount of which can be raised by a number of factors including
+        environmental pollution.
+      </p>
+      <p>
+        To evaluate how environmental pollution can affect telomeres, the Italian researchers evaluated blood samples of 50 pregnant
+        women who lived in close proximity to illegal hazardous waste dumps in Italy’s Campania region.They found that the
+        women had significantly shorter telomeres compared to women living in other areas free of the landfills. In addition,
+        the women who lived closest to the dumps were most likely to have short telomeres.
+      </p>
+      <p>
+        The researchers also reported that low activity of the enzyme telomerase—necessary to maintain telomere length integrity—was
+        detected in the pollution-exposed women as well.
+      </p>
+      <p>
+        "These findings may have implications for understanding how, at the cellular level, environmental stress may promote earlier
+        onset of age-related diseases," wrote the researchers, who published their findings in Gene.
+      </p>
+      <p>
+        Italy’s Campania region—between Acerra, Nola, and Marigliano—has been dubbed the "triangle of death" because of reports of
+        an unusually high number of deaths from cancer (as well as birth defects). Illegal hazardous waste dumping in the
+        region is thought to contribute to these deaths. There are an estimated 1,230 illegal hazardous waste dumps in the
+        area.
+      </p>
+      <p>
+        The research may be used to implicate the local illegal dumping as a health hazard and steer enforcement of landfill regulations
+        in the region.
+      </p>
+      <p>
+        According to an article in New Scientist, industrial waste products called dioxins may be to blame for the effect on telomeres.
+        Dioxins are dangerous chemicals found widely in the environment that are linked to interfering with hormones, reproductive
+        problems, and chronic diseases. Short telomeres have been linked to several age-related diseases including cardiovascular
+        disease, Alzheimer’s disease, and some cancers.
+      </p>
+      <p>
+        According to the World Health Organization, more than 90 percent of the exposure to dioxins in humans is from foods such
+        as meat, dairy, fish, and shellfish. For this reason, governments have programs in place to monitor the food supply
+        for dioxins.
+      </p>
+      <h3>Reference</h3>
+      <p class="disclaimer">
+        Felice BD, et al. Telomere shortening in women resident close to waste landfill sites. Gene. 2012 March 20 [Epub ahead of
+        print]. doi: http://dx.doi.org/10.1016/j.gene.2012.03.040
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

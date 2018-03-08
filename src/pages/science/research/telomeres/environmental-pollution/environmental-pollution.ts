@@ -4,10 +4,10 @@ import { AuthProvider } from '../../../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-why-use-whey',
-  templateUrl: 'why-use-whey.html',
+  selector: 'page-environmental-pollution',
+  templateUrl: 'environmental-pollution.html',
 })
-export class WhyUseWheyPage {
+export class EnvironmentalPollutionPage {
 
   constructor(
     public navCtrl: NavController,
@@ -18,5 +18,5 @@ export class WhyUseWheyPage {
   goBack() {
     this.navCtrl.pop();
   }
-  
+
 }

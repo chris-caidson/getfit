@@ -1,0 +1,78 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-bolt fixed-width space-right"></i>
+      <span>Telomeres</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Phobic Stress Linked to Shorter Telomeres</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/airplane.jpg" alt="" class="shadowed" />
+        <figcaption>New study suggests that high levels of
+          <br />phobic anxiety, as in fear of flying, may
+          <br />lead to shorter telomeres</figcaption>
+      </figure>
+      <p>
+        Too much stress is never a good thing; it’s linked with a bevy of poor health outcomes and can even age you faster. Now,
+        Harvard Medical School researchers have shown that phobic anxiety could hasten shortening of telomeres, the markers
+        of aging.
+      </p>
+      <p>
+        The researchers found that phobic anxiety—or the irrational fear of a certain situation or object (i.e. fear of flying or
+        crowded spaces)—is associated with a greater number of cells with short telomeres, similar to that which is found
+        in people who suffer from chronic stress.
+      </p>
+      <p>
+        The study, funded by the National Institutes of Health, analyzed telomere lengths in blood samples provided by 5,243 middle
+        aged and elderly women who were divided into low and high phobic anxiety groups based on self-reports regarding phobic
+        symptoms on a validated questionnaire. Women with high phobic anxiety had significantly shorter telomeres than women
+        with low phobic anxiety, showing premature aging of telomeres that would correspond to a difference of about six
+        years.
+      </p>
+      <p>
+        "This study provides a key addition – phobic anxiety – to an emerging literature that posits mental distress and disorders
+        as risk factors for accelerated aging," the researchers wrote.
+      </p>
+      <p>
+        Telomeres are the guards of genetic material within cells, and have been the focus of many scientific studies over the last
+        several years because of their association with aging. They are repetitive nucleotide sequences at the end of chromosomes
+        acting as caps to protect DNA from damage that occurs when cells divide. Over time, telomeres gradually shorten,
+        leading to the DNA damage and cell death that is implicated in aging.
+      </p>
+      <p>
+        How to protect your DNA? General recommendations are to exercise regularly, eat a healthy diet, avoid smoking, and adopt
+        stress-reducing habits. Supplementation with vitamins, minerals, fish oil omega-3 fatty acids, and potent amounts
+        of stress-busting or telomere-supporting botanicals can also play a role.
+      </p>
+      <p>
+        And based on this study, it may be necessary to have your "happy place" geared up to escape to in your head, or other defense
+        mechanism, when faced with situations that bring you panic. It might do more than get you through the situation—it
+        just might protect your telomeres and help your body stay younger.
+      </p>
+      <h3>Reference</h3>
+      <p class="disclaimer">
+        Okereke OI et al. High phobic anxiety is related to lower leukocyte telomere length in women. Plos One 2012;7:e40516. doi:10.1371/journal.pone.0040516
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

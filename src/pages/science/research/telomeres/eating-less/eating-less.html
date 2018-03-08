@@ -1,0 +1,86 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-bolt fixed-width space-right"></i>
+      <span>Telomeres</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+              assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+              assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Could Eating Less Be Good for Your Telomeres?</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/mouse.jpg" alt="" class="shadowed" />
+        <figcaption>Mice fed fewer calories
+          <br />have healthier telomeres,
+          <br />study finds.</figcaption>
+      </figure>
+      <p>
+        Having less on your plate might help preserve your telomeres and keep you feeling younger, hints a mouse study from Spain.
+      </p>
+      <p>
+        The study found that young mice fed fewer calories across most of their lifespan were healthier and had longer telomeres.
+        In addition, the calorie restriction combined with greater levels of telomerase—the enzyme that maintains the length
+        of telomeres—led to increased mouse "health span" and longevity.
+      </p>
+      <p>
+        The team of scientists, led by Maria Blasco, director of the Spanish National Cancer Research Centre (CNIO) and head of the
+        Telomeres and Telomerase Group, previously found that stimulating the expression of the telomerase enzyme in normal
+        aged mice extended their health and lifespan. In the new study, the researchers evaluated the effects of calorie
+        restriction on a variety of mice that were genetically altered to express greater levels of telomerase.
+      </p>
+      <p>
+        The researchers separated young mice into four groups: normal or the genetically altered mice on either a control or calorie-restricted
+        diet. When the mice intended to consume fewer calories reached three months of age, the researchers reduced their
+        food by 40 percent (roughly equivalent to reducing a typical person’s diet from 2000 calories to 1200) for the remainder
+        of their lifespan.
+      </p>
+      <p>
+        Interestingly, as the genetically altered mice (to produce greater levels of telomerase) were placed on the control diet
+        aged, they mimicked the findings of the prior research showing that overexpression of telomerase led to improved
+        health and slowed aging.
+      </p>
+      <p>
+        At the end of the study, the researchers found that all the mice on long-term calorie restriction had delayed onset of age-related
+        illnesses while showing improvements in blood sugar control and motor coordination. On average, however, the genetically
+        altered mice were healthier and lived longer.
+      </p>
+      <p>
+        The findings suggest that calorie restriction may act in synergy with increased telomerase expression in the genetically
+        altered mice to slow the shortening of telomeres and improve mouse longevity.
+      </p>
+      <p>
+        "We see that mice that undergo caloric restriction show a lower telomere shortening rate than those fed with a normal diet,"
+        said Blasco. "These mice therefore have longer telomeres as adults, as well as lower rates of chromosome anomalies."
+      </p>
+      <p>
+        What does this mean for humans? Because this is a mouse study, it’s difficult to make assumptions regarding whether or not
+        fewer calories will have any of the same effects of preserving telomeres in humans. However, it’s an intriguing possibility
+        as calorie restriction has long been associated with improving the health and extending the lifespan of several organisms
+        including nematode worms, rodents, and even primates.
+      </p>
+      <h3>Reference</h3>
+      <p class="disclaimer">
+        Vera E, De Jesus BB, Foronda M, Flores JM, Blasco M. Telomerase Reverse Transcriptase Synergizes with Calorie Restriction
+        to Increase Health Span and Extend Mouse Longevity. PLoS ONE, 2013;8(1) e53760. doi: 10.1371/journal.pone.0053760
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

@@ -1,0 +1,136 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-bolt fixed-width space-right"></i>
+      <span>Telomeres</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Save Your Telomeres</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/healthy-aging.jpg" alt="" class="shadowed" />
+        <figcaption>Healthy aging begins
+          <br />with protecting your
+          <br />telomeres.</figcaption>
+      </figure>
+      <p>
+        Since their discovery more than 75 years ago by the Nobel Laureate geneticist Hermann Müller, telomeres have attracted worldwide
+        attention among scientists investigating the aging process.
+      </p>
+      <p>
+        Telomeres are the protective caps on the ends of chromosomes composed of short DNA sequences protecting our DNA and genetic
+        material from damage. Another Nobel Laureate, Elizabeth Blackburn, likened telomeres to the little plastic caps on
+        the ends of shoelaces (aglets).
+      </p>
+      <p>
+        Under normal conditions, when a cell divides, telomeres shorten. If they grow too short, they reach what’s known as the Hayflick
+        limit (named after the esteemed gerontologist Leonard Hayflick), and the protective capacity of the telomere decreases.
+        Real-world relevance of telomere shortening can be observed during the aging process in humans when comparing the
+        length of telomeres from newborns (8,000 base pairs) to adults (3,000 base pairs) to elderly individuals (1,500 base
+        pairs).
+      </p>
+      <p>
+        Therefore, because several disease states and pathological processes have been linked to telomere shortening, several academic
+        laboratories and companies have explored intervention strategies to slow down the rate of telomere attrition.
+      </p>
+      <p>
+        Several lifestyle factors can also significantly affect telomere health and the rate of telomere shortening. Among the most
+        studied factors associated with shorter telomeres are psychosocial: depression, anxiety, and childhood adversity
+        (1,2). Other lifestyle factors associated with telomere length include smoking, physical activity, drugs and toxins,
+        and oxidative stress. Indeed, the decades of research implicating oxidative stress in the aging process has recently
+        begun addressing and demonstrating a similarly deleterious role of oxidative stress on telomere length (3-5). As
+        a result, antioxidant intake and subsequent plasma concentrations may be newly emerging biomarkers of telomere status
+        (6-8).
+      </p>
+      <p>
+        <img id="telomereTlc" src="assets/imgs/science/telomere-tlc.jpg" alt="Telomere T.L.C." />
+      </p>
+      <p>
+        Oxidative stress is defined as an overabundance of reactive oxygen species (ROS). Excessive oxidative stress damages DNA,
+        proteins, and lipids. While ROS are produced under normal conditions, oxidative stress occurs under conditions of
+        poor health. To prevent oxidative stress, the body requires antioxidant nutrients such as glutathione precursors
+        like the amino acid cysteine (found in IsaLean® Shakes) along with specific enzymes (9,10). Among these antioxidant
+        enzymes is catalase, which functions to convert toxic and DNA-damaging hydrogen peroxide (H2O2) into water (11,12).
+      </p>
+      <p>
+        With this is mind, Isagenix partnered with scientists in the School of Nutrition and Health Promotion at Arizona State University
+        to conduct a clinical evaluation in an independent, randomized, placebo-controlled, double-blinded study to evaluate
+        Product B’s effect on catalase and other enzymes. Third-generation Product B contains a proprietary blend of plant
+        botanicals, antioxidants, and other bioactives that provide significant protection against telomere shortening in
+        cellular systems.
+      </p>
+      <p>
+        However, obtaining clinical support as a potential natural product against telomere shortening proved difficult due to analytical
+        shortcomings and methodological issues in measuring telomere length. For this reason most studies considering the
+        impact of dietary, environmental, or lifestyle factors on telomeres are frequently observed in studies with thousands
+        of study participants.
+      </p>
+      <p>
+        In this study researchers had subjects consume either Product B or a placebo for 12 weeks and observed that subjects supplemented
+        with Product B demonstrated a significant elevation of catalase in red blood cells (increase by 30 percent vs. placebo).
+        Considering the role catalase may play in the aging process, this was very exciting news and the relevance of this
+        finding was not lost on the researchers, who commented, “The increase in catalase observed by Product B is an exciting
+        development considering the relationship between the enzyme and increased lifespan in animal studies.???
+      </p>
+      <p>
+        Now, Isagenix has developed fourth generation Product B® IsaGenesis®, which contains a novel lipid-soluble blend to increase
+        absorption and bioavailability.
+      </p>
+      <p>
+        Clinical and experimental evidence is slowly emerging supporting the benefits of the nutritional antioxidants, plant botanicals,
+        and other bioactives provided by Ageless Essentials™ Daily Pack, containing Product B IsaGenesis, IsaOmega Supreme®,
+        C-Lyte®, Essentials for Men™ or Essentials for Women™, and Ageless Actives™.
+      </p>
+      <p>
+        In conjunction with a healthy diet, weight and stress management, quality and sufficient sleep, and regular exercise, Product
+        B IsaGenesis may provide the most optimal protection against age-accelerated telomere shortening and a longer, healthier
+        life.
+      </p>
+      <h3>References</h3>
+      <ol>
+        <li>Puterman E et al. Determinants of telomere attrition over 1 year in healthy older women: stress and health behaviors
+          matter. Mol Psychiatr 2014 Jul 29. doi: 10.1038/mp.2014.70. [Epub ahead of print].</li>
+        <li>Shalev I et al. Stress and telomere biology: a lifespan perspective. Psychoneuroendocrinology 2013;38:1835-42.</li>
+        <li>Correia-Melo C et al. Telomeres, oxidative stress and infl ammatory factors: partners in cellular senescence? Longev
+          Healthspan 2014;3:1. doi: 10.1186/2046-2395-3-1.</li>
+        <li>Demissie S et al. Insulin resistance, oxidative stress, hypertension, and leukocyte telomere length in men from the
+          Framingham Heart Study. Aging Cell 2006;5:325-30.</li>
+        <li>Salpea KD et al. Association of telomere length with type 2 diabetes, oxidative stress and UCP2 gene variation. Atherosclerosis
+          2010;209:42-50.
+        </li>
+        <li>Xu Q et al. Multivitamin use and telomere length in women. Am J Clin Nutr 2009;89:1857-63.</li>
+        <li>Tiainen AM et al. Leukocyte telomere length and its relation to food and nutrient intake in an elderly population.
+          Eur J Clin Nutr 2012;66:1290-4.</li>
+        <li>Paul L. Diet, nutrition and telomere length. J Nutr Biochem 2011;22:895-901.</li>
+        <li>Cutler RG. Oxidative stress and aging: catalase is a longevity determinant enzyme. Rejuvenation Res 2005;8:138-40.</li>
+        <li>Schriner SE et al. Extension of murine life span by overexpression of catalase targeted to mitochondria. Science
+          2005;308:1909-11.
+        </li>
+        <li>Woo SR et al. Cells with dysfunctional telomeres are susceptible to reactive oxygen species hydrogen peroxide via
+          generation of multichromosomal fusions and chromosomal fragments bearing telomeres. Biochem Biophys Res Commun
+          2012;417:204-10.
+        </li>
+        <li>Linn S. DNA damage by iron and hydrogen peroxide in vitro and in vivo. Drug Metab Rev 1998;30:313-26.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

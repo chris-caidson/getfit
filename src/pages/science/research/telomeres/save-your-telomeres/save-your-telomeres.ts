@@ -4,10 +4,10 @@ import { AuthProvider } from '../../../../../providers/auth/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-why-use-whey',
-  templateUrl: 'why-use-whey.html',
+  selector: 'page-save-your-telomeres',
+  templateUrl: 'save-your-telomeres.html',
 })
-export class WhyUseWheyPage {
+export class SaveYourTelomeresPage {
 
   constructor(
     public navCtrl: NavController,
@@ -18,5 +18,5 @@ export class WhyUseWheyPage {
   goBack() {
     this.navCtrl.pop();
   }
-  
+
 }
