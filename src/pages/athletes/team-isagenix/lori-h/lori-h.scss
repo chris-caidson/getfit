@@ -2,4 +2,23 @@ page-lori-h {
   #headerdiv {
     grid-template-columns: auto auto auto
   }
+
+  #mainContent {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  aside {
+    margin-left: 0;
+  }
+
+  @media (min-width: 1000px) {
+    #mainContent {
+      grid-template-columns: auto auto;
+    }
+
+    aside {
+      margin-left: $large-margin;
+    }
+  }
 }

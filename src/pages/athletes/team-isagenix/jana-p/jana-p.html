@@ -1,47 +1,102 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>Jana P.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Jana P.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Jana P.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/jana-p.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">29</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">New South Wales</span>
-              </div>
-            </section>
-            <img src="assets/imgs/athletes/team-isa/jana-p-01.jpg" alt="" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Jana P.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/jana-p.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">29</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">New South Wales</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/jana-p-01.jpg" alt="" />
+      </div>
+      <section id="mainContent">
+        <div>
+          <p>
+            Olympic Athlete Finds Isagenix as the Answer
+          </p>
+          <p>
+            At the tender age of 16, Jana burst onto the world athletics stage, specialising in the 400 metres run and 400 metre hurdles.
+            Her stellar career has seen Jana claim five world championship titles and four gold medals in the Commonwealth
+            Games. Her determination, natural talent and hard work, saw her join an elite club becoming one of only seven
+            athletes in the world to win world championships at youth, junior, and senior level.
+          </p>
+          <p>
+            Since taking a break from competitive athletics, Jana has branched out into professional speaking and built a personal training
+            business from the ground up. She now travels around the country giving motivational seminars to young people,
+            junior athletes and corporate staff to educate on work/life balance, good nutrition and self esteem. All this,
+            while training to become a midwife and studying for her degree in Psychology.
+          </p>
+          <p>
+            Her hunger and passion for winning Olympic gold remains the driving force behind her motivation. She’s focused on winning
+            a gold medal at the 2016 Olympic Games in Rio de Janeiro with Isagenix® as her secret weapon.
+          </p>
+          <p>
+            Why Isagenix?
+          </p>
+          <p>
+            "I’ve tried every product on the market and nothing tastes as good as Isagenix. Since Isagenix, my weight is more stable,
+            my moods are more stable and I’m feeling healthier than ever!"
+          </p>
+          <p>
+            Why Athletics?
+          </p>
+          <p>
+            "My heart is with athletics. There’s nothing like the feeling of freedom you get when running down the athletics track."
+          </p>
+        </div>
+        <aside>
+          <h3>Jana’s Favorite Product</h3>
+          <p>"I love the Isagenix Snacks!™, I used to be a chocaholic but the Snacks! really help take the edge off."</p>
+        </aside>
+        <div>
+          <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+          <p class="disclaimer">
+            * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+            subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days
+            on an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss
+            from week to week compared to subjects on a traditional diet.
+          </p>
+          <p class="disclaimer">
+            ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+            as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+            personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+            Independent Associate Earnings Statement found at IsagenixEarnings.com.
+          </p>
+          <p class="disclaimer">
+            Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

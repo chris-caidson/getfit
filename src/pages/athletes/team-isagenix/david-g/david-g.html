@@ -1,51 +1,103 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>David G.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>David G.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">David G.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/david-g.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">48</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">British Columbia</span>
-              </div>
-              <div>
-                  <span class="field">Body Fat:</span>
-                  <span class="value">&lt; 5%</span>
-                </div>
-            </section>
-            <img src="assets/imgs/athletes/team-isa/david-g-01.jpg" alt="" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">David G.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/david-g.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">48</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">British Columbia</span>
+          </div>
+          <div>
+            <span class="field">Body Fat:</span>
+            <span class="value">&lt; 5%</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/david-g-01.jpg" alt="" />
+      </div>
+      <section id="mainContent">
+        <div>
+          <h3>Sharing the Secret to Success</h3>
+          <p>
+            David G. is a fitness professional. He co-owns a premier fitness studio in British Columbia with his wife, Sarah. The couple
+            joined Isagenix® in August 2009 after hearing about the incredible experiences people were having with Isagenix
+            products.
+          </p>
+          <p>
+            David and his wife were looking for a new way to support their training, increase their energy, improve their endurance and
+            reduce their post-workout recovery time.
+          </p>
+          <p>
+            David has spent the last 30 years training as an Olympic weightlifter, a martial artist and a bodybuilder, with the last
+            17 years focused on bodybuilding.
+          </p>
+          <p>
+            On his 47th birthday, David put his fitness skills to the test and entered the 2012 Western Naturals Masters Bodybuilding
+            Division. When he heard his name announced as the winner of his division, he was floored.
+          </p>
+          <p>
+            So, what’s next for David?
+          </p>
+          <p>
+            He’s gearing up to compete in next year’s bodybuilding competition, only this time on a national level. To do that, he’ll
+            spend the next year working out and gaining lean muscle—all fueled by Isagenix.
+          </p>          
+        </div>
+        <aside>
+          <h3>David's Favorite Products</h3>
+          <ul>
+            <li>IsaLean® Shake</li>
+            <li>Ionix® Supreme</li>
+            <li>Ageless Essentials™ with Product B™</li>
+          </ul>
+        </aside>
+        <div>
+            <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+            <p class="disclaimer">
+              * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+              subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days
+              on an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss
+              from week to week compared to subjects on a traditional diet.
+            </p>
+            <p class="disclaimer">
+              ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+              as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+              personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+              Independent Associate Earnings Statement found at IsagenixEarnings.com.
+            </p>
+            <p class="disclaimer">
+              Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+            </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

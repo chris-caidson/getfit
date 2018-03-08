@@ -1,5 +1,38 @@
 page-tiff-d {
-  #headerdiv {
-    grid-template-columns: auto auto auto
-  }
+    #headerdiv {
+        grid-template-columns: auto auto auto;
+    }
+
+    #mainContent {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+
+    #asideImg {
+        float: right;
+        margin-left: $small-margin;
+    }
+
+    @media (min-width: 1000px) {
+        #mainContent {
+            grid-template-columns: auto auto;
+        }
+
+        aside {
+            margin-left: $large-margin;
+        }
+
+        #asideImg {
+            float: none;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }

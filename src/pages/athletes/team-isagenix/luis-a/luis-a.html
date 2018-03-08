@@ -1,50 +1,145 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>Luis A.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Luis A.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Luis A.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/luis-a.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">51</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">Mexico City, Mexico</span>
-              </div>
-              <div>
-                  <span class="field">Joined Isagenix:</span>
-                  <span class="value">May 2012</span>
-                </div>
-            </section>
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Luis A.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/luis-a.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">51</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">Mexico City, Mexico</span>
+          </div>
+          <div>
+            <span class="field">Joined Isagenix:</span>
+            <span class="value">May 2012</span>
+          </div>
+        </section>
+      </div>
+      <section id="mainContent">
+        <div>
+          <h3>
+            Ironman Record-Breaker Uses Isagenix for Racing Power
+          </h3>
+          <p>
+            Back when he was a student, Luis A. was the only kid in his class who couldn’t finish a three-mile walk, barely making it
+            halfway. Today, he’s setting world records as an Ironman competitor. He has completed more than 100 Ironman events
+            and is the only person to have competed in every single Ironman competition, earning him a world record.
+          </p>
+          <p>
+            A positive attitude spurred his major life change, and now Isagenix is ensuring he continues to compete at peak performance.
+          </p>
+          <h3>
+            From Failure to Record-Breaker
+          </h3>
+          <p>
+            Luis credits his life transformation to a shift in his thinking. He set mini-goals for himself, working from walking three
+            miles, to completing his first Ironman 22 years ago. "Changing my outlook to a positive one was the trigger for
+            me," Luis says. He has completed up to 13 Ironmans in a year.
+          </p>
+          <p>
+            As an Ironman athlete, Luis started using Isagenix products after a recommendation from a nutritionist. He tried an IsaLean®
+            Bar and loved the taste, which was a big enough reason to get him hooked on the products and spread them to the
+            4,000-member Ironmex organization he founded, consisting of Mexican Ironman athletes.
+          </p>
+          <p>
+            "One thing that’s very important to me for any product is flavor," says Luis. "It doesn’t matter how good it is for you,
+            if it tastes like cardboard, you can’t eat it."
+          </p>
+          <p>
+            You’ll now find Isagenix products in his briefcase and travel pack, whether he’s working out for his next Ironman, or climbing
+            one of the tallest mountains in the world. He plans on climbing Mount Vinson in Antarctica by the end of 2013.
+            This is the fifth of the seven highest peaks of each continent he will have traversed.
+          </p>
+          <h3>
+            Always on the Go
+          </h3>
+          <p>
+            Luis says he hopes to be the oldest person to compete in an Ironman some day – which means he has no plans to stop training.
+          </p>
+          <p>
+            Even injuries can’t keep Luis down. A herniated disc sidelined the athlete for 60 days this past April, with doctors telling
+            him to not compete in an Ironman for two years. Two months after he left the hospital after his surgery, he climbed
+            Mont Blanc in the Alps and completed the Ironman Frankfurt, all in the same week. Since then, he’s completed
+            10 more Ironmans this year.
+          </p>
+          <p>
+            Luis’ legacy extends beyond the records he’s setting. His 18-year-old son, Jose Manuel, ran in Luis’ hundredth Ironman in
+            October 2013 and was the youngest athlete in the race. Not surprisingly, Jose Manuel is an Isagenix fan, too.
+          </p>
+        </div>
+        <aside>
+          <h3>
+            Luis' Tips for Success
+          </h3>
+          <ul>
+            <li>Make your meals count. "If you eat junk food or fast food, it’s almost worse than not eating," Luis says. He
+              says he prefers the quick and easy convenience of Isagenix products because the meal replacements allow him
+              more time to tend to his business.</li>
+            <li>Fuel your workout. When you’re climbing mountains and competing in Ironman events, fueling your body during the
+              workout is key. Luis loves bringing IsaLean Bars with him when he’s climbing. "They’re compact, convenient
+              and nutritious," Luis says. "They help my performance, save me time in having to prepare something, and are
+              flavorful."
+            </li>
+            <li>Keep a positive attitude. No matter what obstacles Luis encounters, he looks on the bright side of things, which
+              keeps propelling him forward in achieving his goals. "I have failed many times, but I find a way to make the
+              failure a positive challenge," Luis says. "Take baby steps. The best and worst things in life can be spun bad
+              or good – it’s up to you how to face them."</li>
+          </ul>
+          <h3>
+            Luis' Favorite Products
+          </h3>
+          <ul>
+            <li>Isagenix Greens!™</li>
+            <li>Ionix®</li>
+            <li>IsaLean Bars</li>
+          </ul>
+        </aside>
+        <div>
+          <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+          <p class="disclaimer">
+            * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+            subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days
+            on an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss
+            from week to week compared to subjects on a traditional diet.
+          </p>
+          <p class="disclaimer">
+            ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+            as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+            personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+            Independent Associate Earnings Statement found at IsagenixEarnings.com.
+          </p>
+          <p class="disclaimer">
+            Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

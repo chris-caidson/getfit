@@ -1,47 +1,90 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>Seville K.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Seville K.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Seville K.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/seville-k.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">26</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">Kansas</span>
-              </div>
-            </section>
-            <img src="assets/imgs/athletes/team-isa/seville-k-01.jpg" alt="" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Seville K.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/seville-k.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">26</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">Kansas</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/seville-k-01.jpg" alt="" />
+      </div>
+      <section>
+        <h3>
+          High-performance Athlete Discusses His Experience with Isagenix
+        </h3>
+        <p>
+          I have a master’s degree in performance and wellness and feel that proper supplementation is important not only for athletes
+          to recover faster but just sedentary Americans who need to jump-start their lifestyle habits.
+        </p>
+        <p>
+          I’ve been approached by a lot of companies and Isagenix®Millionaire Hilari C. was the first one who was able to carry the
+          conversation about the labels and why Isagenix is better. I was using some popular brands on the market, but decided
+          to give Isagenix a shot. I decreased body fat, increased strength and I’m leaner and stronger than I’ve ever been.
+          Isagenix definitely goes deeper than the labels.
+        </p>
+        <p>
+          I already knew whey was good, but with Isagenix you’re talking about supercharged whey protein with tons of vitamins and
+          minerals. I was doing my own combinations before, so I was really excited when IsaLean® Pro came out. Most people
+          say it’s too many calories, but increasing protein intake can boost your recovery and performance.
+        </p>
+        <p>
+          With elite athletes I do the Energy and Performance System and add Cleanse for Life®. The 30-Day System is a good starter
+          with IsaPro® added—that gives people a full assessment of the program.
+        </p>
+        <p>
+          I had some clients whose results weren’t moving because they couldn’t grasp the nutrition. Going a strictly whole-foods route,
+          about 50 percent or less would have success and the long-term retention was pretty slim. To fix this challenge,
+          I have my clients use Isagenix because it gets excuses out of the way and the products are going to do exactly
+          what they’re supposed to do and then some.
+        </p>
+        <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+        <p class="disclaimer">
+          * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+          subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days on
+          an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss from
+          week to week compared to subjects on a traditional diet.
+        </p>
+        <p class="disclaimer">
+          ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+          as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+          personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+          Independent Associate Earnings Statement found at IsagenixEarnings.com.
+        </p>
+        <p class="disclaimer">
+          Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+        </p>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

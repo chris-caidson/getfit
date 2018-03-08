@@ -1,47 +1,102 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>Dottie B.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Dottie B.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Dottie B.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/dottie-b.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">45</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">New Hampshire</span>
-              </div>
-            </section>
-            <img src="assets/imgs/athletes/team-isa/dottie-b-01.jpg" alt="" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Dottie B.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/dottie-b.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">45</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">New Hampshire</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/dottie-b-01.jpg" alt="" />
+      </div>
+      <section id="mainContent">
+        <div>
+          <p>
+            Fueled For Gold
+          </p>
+          <p>
+            You would never know from Dottie’s accomplishments that she’s a double lung and kidney transplant recipient. The determined
+            athlete has won numerous gold medals in the 100/200-meter sprint at the USA Track and Field and Transplant Olympics.
+            A mother of a young son, Dottie is also a fitness competitor who will be taking a crew of Isagenix® athletes
+            to the TriFitness Challenge, a competition that combines a military-based obstacle course with a grace and physique
+            element.
+          </p>
+          <p>
+            "Being born with cystic fibrosis and told I wasn’t going to be able to do this or that, I knew I had a different road for
+            myself," shares the 45-year-old. "I always wanted to be an athlete, so nutrition has always been the difference
+            between living just an OK life to an exceptional one."
+          </p>
+          <p>
+            Dottie and her husband, a specialty performance coach who trains pro athletes, have noticed big results in her training since
+            switching to Isagenix in 2011. Along with sustained energy throughout the day, the track and field competitor
+            experienced greater strength during sprints, quicker recovery and increased mental clarity—key for a sprinter
+            who needs to react to the starting gun. "We did our own research and Founder and Master Formulator John Anderson
+            and the Isagenix scientists just got it right." This summer Dottie will compete at the World Transplant Olympics
+            in the 100/200-meter sprint, where she took gold in 2010. And she is confident she will win gold again. "Isagenix
+            has allowed me to continue to live at an exceptional level of health."
+          </p>
+        </div>
+        <aside>
+          <h3>
+            Dottie’s Favorite Products
+          </h3>
+          <ul>
+            <li>e+™</li>
+            <li>IsaLean® Pro</li>
+            <li>Ageless Essentials™ with Product B™</li>
+            <li>Ionix® Supreme</li>
+            <li>Cleanse for Life®</li>
+          </ul>
+        </aside>
+        <div>
+          <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+          <p class="disclaimer">
+            * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+            subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days
+            on an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss
+            from week to week compared to subjects on a traditional diet.
+          </p>
+          <p class="disclaimer">
+            ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+            as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+            personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+            Independent Associate Earnings Statement found at IsagenixEarnings.com.
+          </p>
+          <p class="disclaimer">
+            Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

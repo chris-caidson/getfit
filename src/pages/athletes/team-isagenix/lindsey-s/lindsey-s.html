@@ -1,47 +1,99 @@
 <ion-header *ngIf="this.auth.loggedIn">
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <i class="fa fa-user fixed-width space-right"></i>
-        <span>Lindsey S.</span>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content *ngIf="!this.auth.loggedIn">
-    <login></login>
-  </ion-content>
-  <ion-content *ngIf="this.auth.loggedIn">
-    <header role="banner">
-      <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
-        srcset="
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-user fixed-width space-right"></i>
+      <span>Lindsey S.</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
                   assets/imgs/athletes/team-isa-background/team-isa-background-400.jpg 400w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-831.jpg 831w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1161jpg 1161w,
                   assets/imgs/athletes/team-isa-background/team-isa-background-1400.jpg 1400w" />
-    </header>
-    <main role="main">
-      <article>
-        <h1 class="centered uppercase">Lindsey S.</h1>
-        <div id="headerdiv" class="grid-container">
-            <img src="assets/imgs/athletes/team-isa/thumbs/lindsey-s.jpg" alt="" />
-            <section class="stats">
-              <div>
-                <span class="field">Age:</span>
-                <span class="value">29</span>
-              </div>
-              <div>
-                <span class="field">Location:</span>
-                <span class="value">Arizona</span>
-              </div>
-            </section>
-            <img src="assets/imgs/athletes/team-isa/lindsey-s-01.jpg" alt="" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">Lindsey S.</h1>
+      <div id="headerdiv" class="grid-container">
+        <img src="assets/imgs/athletes/team-isa/thumbs/lindsey-s.jpg" alt="" />
+        <section class="stats">
+          <div>
+            <span class="field">Age:</span>
+            <span class="value">29</span>
           </div>
-          <section>
-
-          </section>
-      </article>
-    </main>
-    <get-footer></get-footer>
-  </ion-content>
+          <div>
+            <span class="field">Location:</span>
+            <span class="value">Arizona</span>
+          </div>
+        </section>
+        <img src="assets/imgs/athletes/team-isa/lindsey-s-01.jpg" alt="" />
+      </div>
+      <section id="mainContent">
+        <div>
+          <h3>Finding the Figures for Success</h3>
+          <p>
+            Lindsey had a desire to do fitness competitions for years but never thought she could. Then she had an epiphany at Isagenix®
+            Celebration 2011. "I saw (Ms. Bikini Universe 2010, Ms. Bikini America 2010 and Ms. Figure America 2010) Lori
+            Harder and all the Savage Girls and I realized I was using the same products they were. So why couldn’t I do
+            it"?
+          </p>
+          <p>
+            With the help of Isagenix, the 29-year-old took second place at her first fitness competition last year. "People think fitness
+            competitors are in the gym six hours a day but I was only in the gym an hour a day. It was incredible to see
+            the changes to my body just from incorporating good nutrition." As she preps for her first national competition
+            at Fitness America in November, Isagenix is helping Lindsey maintain her physique and natural energy. "Many people
+            rebound after competing, but the amazing thing is I’ve stayed within a few pounds of my competition weight year-round
+            and I feel great."
+          </p>
+          <p>
+            Fitness competitions have now become one of Lindsey’s biggest passions, along with helping others achieve ultimate health
+            through her burgeoning Isagenix business, which she is now pursuing full time. "I am so happy to have found a
+            business that combines my passion for personal development with health and wellness."
+          </p>
+          <p>
+            "Take action every day toward your goals; use the systems and tools that the company provides, and never, ever, ever quit.
+            Ever."
+          </p>
+        </div>
+        <aside>
+          <h3>Lindsey's Favorite Products</h3>
+          <ul>
+            <li>Cleanse for Life®</li>
+            <li>Ionix® Supreme</li>
+            <li>IsaLean® Pro</li>
+            <li>IsaDelight Plus™</li>
+          </ul>
+        </aside>
+        <div>
+          <p class="disclaimer">The individuals pictured are actual Isagenix Associates and not paid models.</p>
+          <p class="disclaimer">
+            * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+            subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days
+            on an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss
+            from week to week compared to subjects on a traditional diet.
+          </p>
+          <p class="disclaimer">
+            ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+            as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+            personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+            Independent Associate Earnings Statement found at IsagenixEarnings.com.
+          </p>
+          <p class="disclaimer">
+            Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

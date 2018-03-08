@@ -80,7 +80,7 @@ export class ScientificAdvisoryBoardPage {
             "(Dietary Supplement Health and Education Act) implemented in 1994. Dr. Harper was a voting member of the American " +
             "Osteopathic Association, former President of Physicians for Progressive Medicine, former Chairman for the " +
             "Osteopathic Licensing Board for the state of Utah and was a Fellow for the Federation of State Medical Boards. " +
-            "Dr. Harper is the author of “Cleansing for Life: Nature’s Best Kept Health Secret.”"
+            "Dr. Harper is the author of 'Cleansing for Life: Nature’s Best Kept Health Secret.'"
         };
         break;
 
