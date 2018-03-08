@@ -8,4 +8,11 @@ page-tales-of-telomeres {
     font-size: smaller;
     margin-bottom: $small-margin;
   }
+
+  audio {
+    border: 1px solid #999;
+    box-shadow: 0px 0px 10px #333;
+    display: inline-block;
+    margin-top: $small-margin;
+  }
 }

@@ -4,7 +4,11 @@ page-cleansing {
     }
 
     h2 {
-      cursor: pointer;
+        cursor: pointer;
+    }
+    
+    section {
+      border-bottom: 1px solid $tertiary-color;
     }
 
     figure {
@@ -12,7 +16,16 @@ page-cleansing {
         margin-right: auto;
 
         img {
-          cursor: pointer;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $small-margin;
+        }
+
+        figcaption {
+            text-align: center;
+            max-width: 300px;
         }
     }
 
@@ -20,26 +33,24 @@ page-cleansing {
         margin-top: $large-margin;
     }
 
-    #systemGuide {
-      color: $secondary-color;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    section {
-        border-bottom: 1px solid $tertiary-color;
-        margin-bottom: $default-margin;
-        padding-bottom: $default-margin;
-    }
-
     @media (min-width: 640px) {
         .grid-container {
-            grid-template-columns: auto auto;
+            grid-template-columns: 200px auto;
         }
 
         figure {
             margin-left: 0;
             margin-right: $large-margin;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            figcaption {
+                text-align: left;
+                max-width: auto;
+            }
         }
     }
 }

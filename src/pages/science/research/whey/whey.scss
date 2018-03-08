@@ -7,12 +7,25 @@ page-whey {
         cursor: pointer;
     }
 
+    section {
+      border-bottom: 1px solid $tertiary-color;
+    }
+
     figure {
         margin-left: auto;
         margin-right: auto;
 
         img {
             cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $small-margin;
+        }
+
+        figcaption {
+            text-align: center;
+            max-width: 300px;
         }
     }
 
@@ -22,12 +35,22 @@ page-whey {
 
     @media (min-width: 640px) {
         .grid-container {
-            grid-template-columns: auto auto;
+            grid-template-columns: 200px auto;
         }
 
         figure {
             margin-left: 0;
             margin-right: $large-margin;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            figcaption {
+                text-align: left;
+                max-width: auto;
+            }
         }
     }
 }
