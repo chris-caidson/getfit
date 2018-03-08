@@ -1,0 +1,62 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-asterisk fixed-width space-right"></i>
+      <span>Whey</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Myth: Whey Protein is Only for Bodybuilders and Athletes</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/whey-protein.jpg" alt="" class="shadowed" />
+      </figure>
+      <p>
+        Bodybuilders and athletes prefer whey protein in Isagenix IsaPro over any other kind of protein for great reasons:
+      </p>
+      <p>
+        Scientific studies show that taking whey protein after workouts can boost muscle growth more than other types of protein.
+        That’s because whey is quickly digested and absorbed and has a superior amino acid profile rich in the branched-chain
+        amino acids. But what about people who aren’t working out all the time in the gym?
+      </p>
+      <p>
+        Well, studies also show extra whey protein can help satisfy appetite and provide an extra boost for metabolism for losing
+        stubborn belly fat. This is why IsaPro supplemental whey protein is a perfect addition to meal-replacements like
+        IsaLean Shake. Isagenix also offers IsaLean Pro with this combination in convenient packets. IsaPro can be taken
+        alone or mixed with fruit for a snack and a protein boost to stimulate metabolism
+      </p>
+      <p>
+        Most importantly, whey protein can be used to give older adults a calorie controlled protein boost. Recent evidence finds
+        that older people can benefit from whey to meet their increased protein needs for maintaining muscle. IsaPro is perfect
+        to use in the kitchen for boosting protein content in recipes such as oatmeal, pancakes and cookies. It’s not any
+        typical whey protein that will do either. IsaPro is whey better containing 18 grams of quality undenatured whey protein
+        in every scoop.
+      </p>
+      <p>
+        The evidence is clear: IsaPro makes a great addition to a healthy diet for people no matter what they’re looking for – whether
+        it’s athletic performance, weight loss, or healthy aging.
+      </p>
+      <p>
+        And, IsaPro is now available in Vanilla and Chocolate!
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

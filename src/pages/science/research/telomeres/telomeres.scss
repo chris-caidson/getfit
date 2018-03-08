@@ -1,3 +1,33 @@
 page-telomeres {
+    .grid-container {
+        grid-template-columns: auto;
+    }
 
+    h2 {
+        cursor: pointer;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    #firstSection {
+        margin-top: $large-margin;
+    }
+
+    @media (min-width: 640px) {
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
+
+        figure {
+            margin-left: 0;
+            margin-right: $large-margin;
+        }
+    }
 }

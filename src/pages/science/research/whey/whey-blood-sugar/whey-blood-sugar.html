@@ -1,0 +1,90 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-asterisk fixed-width space-right"></i>
+      <span>Whey</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Could Whey Protein Before or with Meals Help Control Blood Sugar?</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/whey-powder.jpg" alt="" class="shadowed" />
+        <figcaption>Studies show consuming whey protein before
+          <br />or with meals can improve blood sugar
+          <br />management.</figcaption>
+      </figure>
+      <p>
+        In the crossover trial, 15 subjects with type 2 diabetes consumed 50 grams of whey protein mixed with water 30 minutes prior
+        to meals on one day and used a placebo drink prior to their meal another day (1). The meal consisted of foods known
+        to cause the most dramatic spikes in blood sugar—high-glycemic foods—such as white bread and jelly. To track the
+        effects of the meal on blood sugar and insulin levels, the researchers tested each subject’s blood just before and
+        after they drank the whey protein or placebo drink, 15 and 30 minutes after they ate their meal, and every 30 minutes
+        after that for three hours.
+      </p>
+      <p>
+        At 30 minutes, insulin response after the meal was 96 percent higher when the patients pre-loaded with whey protein, meaning
+        their bodies did a better job of ushering sugar that was consumed into cells than when they didn’t consume whey before
+        their meal. This resulted in a 28 percent decrease in blood sugar levels simply by consuming whey before a meal.
+      </p>
+      <p>
+        Researchers suggested that whey protein promoted the production of the intestinal hormone GLP-1, which is a glucagon-like
+        peptide that stimulates the production of insulin. This is an important function, especially in people with diabetes
+        whose insulin production may be impaired or for those who rely on insulin injections, because it prompts increased
+        production of insulin. An ample supply of insulin is key in offsetting dangerous blood sugar spikes and fluctuation
+        of energy levels that often occur after meals high in carbohydrates.
+      </p>
+      <p>
+        A similarly designed study in 2005 published in The American Journal of Clinical Nutrition focused on the incorporation of
+        whey protein in a meal, instead of before, and its effects on insulin activity and blood sugar levels after a meal
+        (2). The subjects were given a whey protein supplement with a meal of readily absorbed carbohydrates (mashed potatoes
+        and meatballs). The next day they were given the same meal but whey protein was substituted with another source of
+        protein: lean ham. Blood sugar and insulin levels were analyzed before and after the meal. The researchers found
+        that insulin responses increased by 57 percent resulting in a 21 percent lower blood sugar response with the incorporation
+        of whey protein in a meal. The take away? It’s not just about eating protein; whey protein in particular has beneficial
+        effects on blood sugar management.
+      </p>
+      <p>
+        The results of both studies strengthen the implications of the positive effect whey protein has on blood sugar control—whether
+        taken as a supplement before a meal or as part of a meal. Consumers with type 2 diabetes are advised to discuss different
+        approaches for blood sugar management with their doctors before making adjustments to their diets.
+      </p>
+      <p>
+        Here are some ways you can incorporate whey protein into your diet daily:
+      </p>
+      <ul>
+        <li>Consume whey protein (such as IsaPro®) mixed with water before an indulgent meal higher in carbohydrates. You can
+          even add a splash of juice to boost flavor.</li>
+        <li>Drink a smoothie or shake that contains whey protein for your meal. IsaLean® meal replacements contain high-quality
+          whey protein along with low-glycemic carbohydrates and healthy fats for a complete meal replacment.</li>
+        <li>Add whey protein powder to meals or baked goods. Try mixing whey protein powder into your oatmeal, pancake batter,
+          or homemade protein bars.</li>
+      </ul>
+      <h3>References</h3>
+      <ol>
+        <li>Jakubowicz D, Froy O, Ahrén B, et al. Incretin, insulinotropic and glucose-lowering effects of whey protein pre-load
+          in type 2 diabetes: a randomised clinical trial. Diabetologia. 2014. doi: 10.1007/s00125-014-3305-x</li>
+        <li>Frid AH, Nilsson M, Holst JJ, Bjorck IM. Effect of whey on blood glucose and insulin responses to composite breakfast
+          and lunch meals in type 2 diabetic subjects. Am J Clin Nutr 82: 69–75, 2005.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

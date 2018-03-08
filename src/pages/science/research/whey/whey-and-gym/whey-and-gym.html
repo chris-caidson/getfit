@@ -1,0 +1,99 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-asterisk fixed-width space-right"></i>
+      <span>Whey</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Make Gym Time Count with Whey Protein</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/fit-guy-black-and-white.jpg" alt="" class="shadowed" />
+        <figcaption>Hard work at the gym pays off by supplementing
+          <br />with whey protein.</figcaption>
+      </figure>
+      <p>
+        Getting to the gym and putting in a high-intensity workout can be challenging. So when you set aside the time to hit the
+        gym and work yourself to exhaustion, don’t you want to make it count?
+      </p>
+      <p>
+        According to a new study published in the Journal of the American College of Nutrition, what you eat before exercise can
+        influence two vital hormones for muscle growth and recovery—testosterone and cortisol—and determine whether or not
+        your workout pays off (1).
+      </p>
+      <p>
+        Researchers looked at the effects of supplementing with whey protein, soy protein, or carbohydrate in resistance-trained
+        men. For two weeks at a time, the subjects ingested each of the fuel sources before performing a heavy bout of weight
+        lifting. After completing each of the two-week protocols, the researchers compared the effects on testosterone and
+        cortisol levels.
+      </p>
+      <p>
+        Exercise naturally can lead to higher levels of testosterone. But when compared to whey, soy protein supplementation resulted
+        in significantly decreased levels of testosterone production for 30 minutes immediately following training. Soy protein
+        even resulted in lower testosterone levels than when subjects supplemented with carbohydrate. This blunting of testosterone
+        could lead to reduced gains in muscle and strength, meaning your hard work at the gym is a waste.
+      </p>
+      <p>
+        Additionally, whey protein supplementation resulted in significantly lower levels of cortisol for 30 minutes immediately
+        following training. Whey’s effects probably had to do with its action on inducing a better insulin response. Although
+        elevated cortisol levels following exercise are normal, a quicker insulin response and a decrease in circulating
+        levels of cortisol can help lead to faster and more efficient recovery.
+      </p>
+      <h3>Testosterone and Cortisol for Optimal Performance</h3>
+      <p>What does higher testosterone and lower cortisol following resistance training mean? More muscle building and faster
+        recovery!
+      </p>
+      <p>
+        As one of the main anabolic hormones, testosterone plays a major role in both men and women in body composition. Research
+        has shown that declining levels of testosterone are correlated with an increase in Body Mass Index (BMI) and fat
+        mass (2). This is due to the role testosterone plays in increasing muscle mass and strength, as well as boosting
+        bone density and strength.
+      </p>
+      <p>
+        Cortisol plays a wide range of roles in the body, but as a stress hormone, being highly elevated for longer periods of time
+        could be damaging to health. In regards to exercise, cortisol naturally increases after physical activity and researchers
+        continue to try to determine how much of a cortisol response can be considered neutral and not damaging to the body
+        (3).
+      </p>
+      <h3>Beyond Horomons: Why Whey Wins</h3>
+      <p>Whey’s superior effect over soy when combined with resistance exercise has a lot to do with amino acids. Even though
+        both proteins are considered "complete" proteins, meaning they contain all essential amino acids, whey has a higher
+        amount of branched chain amino acids (BCAAs). These include leucine, isoleucine, and valine, which are considered
+        the most effective moderators of muscle growth and make whey an almost undisputed choice for attaining gains in muscle
+        size and strength (4).
+      </p>
+      <p>
+        Why spend the time and dedication going to the gym and putting in the hard work if your protein source isn’t going to work
+        just as hard for you? Don’t choose a protein that may even work against gains and recovery. Be sure to choose whey
+        over soy.</p>
+      <h3>References</h3>
+      <ol>
+        <li>Kraemer WJ, Solomon-Hill G, Volk BM et al. The effects of soy and whey protein supplementation on acute hormonal
+          reponses to resistance exercise in men. J Am Coll Nutr 2013;32:66-74.</li>
+        <li>Vermeulen A. Ageing, hormones, body composition, metabolic effects. World J Urol 2002;20:23-7.</li>
+        <li>Gerber M, Brand S, Lindwall M et al. Concerns regarding hair cortisol as a biomarker of chronic stress in exercise
+          and sport science. J Sports Sci Med 2012;11:571-81.</li>
+        <li>Phillips SM. The science of muscle hypertrophy: making dietary protein count. Proc Nutr Soc 2011;70:100-3.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

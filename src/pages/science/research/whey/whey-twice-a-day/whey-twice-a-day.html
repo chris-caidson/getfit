@@ -1,0 +1,103 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-asterisk fixed-width space-right"></i>
+      <span>Whey</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/science/blue-science-background/blue-science-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                assets/imgs/science/blue-science-background/blue-science-background-400.jpg 400w,
+                assets/imgs/science/blue-science-background/blue-science-background-1076.jpg 1076w,
+                assets/imgs/science/blue-science-background/blue-science-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Whey Protein Twice a Day Keeps Muscle Loss Away</h1>
+      <figure id="fig1">
+        <img src="assets/imgs/science/fit-guy-color.jpg" alt="" class="shadowed" />
+        <figcaption>A new study adds to the body of evidence that
+          <br />whey protein is key for maintaining muscle
+          <br />during weight loss.</figcaption>
+      </figure>
+      <p>
+        There’s a big difference between "good" and "bad" weight loss. The good kind, the kind we should all strive for, is losing
+        the least amount of muscle in relation to body fat.
+      </p>
+      <p>
+        Getting enough protein is one of the keys to preventing muscle loss while dieting, but research shows protein may be lacking
+        in a lot of weight loss diets, considering that on average the amount of weight loss most people have is about 30
+        percent from muscle.
+      </p>
+      <p>
+        A matter of hot debate has been whether the source of protein, be it animal or plant, could be an important factor in saving
+        muscle while losing weight. Some of early research has shown, for example, that dairy proteins such as whey have
+        been able to lead to greater fat loss while maintaining muscle.
+      </p>
+      <p>
+        Now a new randomized, double-blinded study has shown that whey protein supplementation can further help preserve more muscle
+        compared to soy or carbohydrate (1). The study was published in December in the Journal of Nutrition by researchers
+        from McMaster University in Ontario, Canada.
+      </p>
+      <p>
+        The 14-day weight-loss study randomized overweight or obese men and women to groups consuming prepackaged diets containing
+        whey (27 grams), soy (26 grams), or carbohydrate (25 grams) twice daily. All of the groups lost some weight including
+        from body fat and muscle with no significant differences.
+      </p>
+      <p>
+        However, the researchers found that the group that consumed whey showed greater muscle protein synthesis (MPS) compared to
+        subjects consuming either soy or carbohydrate. Moreover, the carbohydrate group had less fat breakdown compared to
+        the group consuming whey or soy.
+      </p>
+      <p>
+        In the conclusion, the study authors wrote, whey protein slowed the decline of MPS as a result of weight loss and could be
+        an important factor in preserving muscle in long-term weight loss.
+      </p>
+      <p>
+        Lead researcher Stuart Phillips, Ph.D., interviewed for this blog previously, has often noted the critical importance of
+        maintaining muscle over time since it can play a role not only in resting metabolism, but also for supporting blood
+        sugar control and overall mobility.
+      </p>
+      <p>
+        Whey can be a useful protein because of its high content of branched-chain amino acids (namely leucine) that helps to promote
+        muscle protein synthesis in comparison to other protein sources, Phillips said.
+      </p>
+      <p>
+        The dose of whey needed to maximize muscle depends on age and amount of resistance training too.
+      </p>
+      <p>
+        For instance, in previous research conducted by Phillips and others, it was found that adults (20 to 65) and elderly men
+        (65 and above) exhibited a differential response to varying amounts of whey protein after resistance training (2).
+        For men under 65, whey protein in amounts of 20 grams at each meal was able to maximally stimulate muscle protein
+        synthesis, whereas elderly individuals required double the dose, 35 to 40 grams, to obtain the same response.
+      </p>
+      <p>
+        The reason has to do with a blunted anabolic response to protein ingestion that occurs in people with age as they become
+        more sedentary, which is why Phillips recommends getting some form of physical activity every day.
+      </p>
+      <p>
+        Regular resistance training of muscles in combination with obtaining quality sources of protein such as whey regularly is
+        the key to maintaining muscle during weight loss, according to Phillips.
+      </p>
+      <h3>References</h3>
+      <ol>
+        <li>Hector AJ, et al. Whey protein supplementation preserves postprandial myofibrillar protein synthesis during short-term
+          energy restriction in overweight and obese adults. J Nutr. Doi: 10.3945/jn.114.200832</li>
+        <li>Burd NA, et al. Greater stimulation of myofibrillar protein synthesis with ingestion of whey protein isolate v. micellar
+          casein at rest and after resistance exercise in elderly men. Br J Nutr 1-5, 2012.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>
