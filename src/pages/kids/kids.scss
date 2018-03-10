@@ -1,3 +1,26 @@
 page-kids {
+  #img01 {
+    float: left;
+    margin-right: $default-margin;
+  }
 
+  #img02 {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .number {
+    color: $secondary-color;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  @media (min-width: 800px){
+    #img02 {
+      float: right;
+      margin-left: $default-margin;
+    }
+  }
 }
