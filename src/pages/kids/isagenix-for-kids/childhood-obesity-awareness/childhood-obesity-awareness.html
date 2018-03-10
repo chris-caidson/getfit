@@ -1,0 +1,82 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-child fixed-width space-right"></i>
+      <span>Isa for Kids</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/kids/kids-background/kids-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+                  assets/imgs/kids/kids-background/kids-background-400.jpg 400w,
+                  assets/imgs/kids/kids-background/kids-background-847.jpg 847w,
+                  assets/imgs/kids/kids-background/kids-background-1166.jpg 1166w,
+                  assets/imgs/kids/kids-background/kids-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">September is National Childhood Obesity Awareness Month</h1>
+      <img id="img01" src="assets/imgs/kids/smile.jpg" class="shadowed" alt="" />
+      <p>
+        Childhood obesity is now a common health concern among parents in the United States with one in three children in the United
+        States is overweight or obese. This is more than double the rate of childhood obesity 30 years ago.
+      </p>
+      <p>
+        September is National Childhood Obesity Month, and just like adults, kids need the right nutrition to enhance their health
+        and improve their quality of life. Isagenix is the perfect partner for parents in providing kids the high-quality
+        nutrients they need.
+      </p>
+      <h3>Five Reasons Isagenix is Great for Kids</h3>
+      <ol>
+        <li>
+          <strong>Kids love Isagenix.</strong> Tens of thousands of kids worldwide love having Isagenix products everyday to fuel
+          their bodies and keep them feeling great.</li>
+        <li>
+          <strong>Delicious and ultra-nutritious.</strong> Isagenix products deliver kid-approved great taste and optimal nutrition
+          to help your kids be super-healthy.</li>
+        <li>
+          <strong>Safe and proven.</strong> Our products are well-known for their strict safety and quality measures.</li>
+        <li>
+          <strong>Superior quality.</strong> All Isagenix products meet our no-compromise Ingredient Policy standards, and we use
+          only healthy natural ingredients with no artificial sweetener, flavors or colors.</li>
+        <li>
+          <strong>Health is the best investment.</strong> Your child’s health is one of the top investments you can make for them.
+          Isagenix products are the foundation for that.</li>
+      </ol>
+      <p>In light of National Childhood Obesity Month, and because tasty treats can also serve as healthy snacks—especially
+        incorporating Isagenix products—here’s a recipe for No-Bake Fudge that’s perfect to make with the kiddos in the kitchen.</p>
+      <h3>No-Bake Almond Fudge</h3>
+      <img id="img02" src="assets/imgs/kids/fudge.jpg" class="shadowed" alt="" />
+      <ul>
+        <li>1 large avocado</li>
+        <li>1/4 almond milk or milk of choice</li>
+        <li>2 scoops of IsaLean® Shake in Creamy Dutch Chocolate</li>
+        <li>1 teaspoon of cocoa powder</li>
+        <li>1 teaspoon sea salt</li>
+        <li>½ cup of crushed almonds</li>
+        <li>Natural sweetener to taste</li>
+      </ul>
+      <ol>
+        <li>Add avocados, cocoa powder, IsaLean® Shake in Creamy Dutch Chocolate, sea salt and natural sweetener to a food processor.
+          If you don’t have a food processor, add these ingredients into a large bowl and then beat with an egg beater. Process
+          until smooth.</li>
+        <li>Add the almonds into the smooth fudge batter. Beat again until the batter is smooth and/or chunky. Whichever you
+          prefer.
+        </li>
+        <li>Line an 8 x 8 baking dish with parchment paper (not wax paper) and place the mixture from the food processor/bowl
+          in it. Press firmly with the back of a spoon or spatula to remove any air.</li>
+        <li>Freeze for at least three hours before serving. Remove the pan, slice into squares and sprinkle with coarse sea salt.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

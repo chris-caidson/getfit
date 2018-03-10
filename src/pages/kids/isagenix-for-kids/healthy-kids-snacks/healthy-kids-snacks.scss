@@ -1,0 +1,14 @@
+page-healthy-kids-snacks {
+  #img01 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    #img01 {
+      float: right;
+      margin-left: $default-margin;
+    }
+  }
+}

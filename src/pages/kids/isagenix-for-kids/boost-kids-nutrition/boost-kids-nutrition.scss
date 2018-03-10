@@ -1,0 +1,24 @@
+page-boost-kids-nutrition {
+  #img01, #img02 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ol li {
+    margin-bottom: $small-margin;
+  }
+
+  @media (min-width: 640px) {
+    #img01 {
+      float: right;
+      margin-left: $default-margin;
+    }
+
+    #img02 {
+      float: left;
+      margin-right: $large-margin;
+      margin-bottom: $default-margin;
+    }
+  }
+}

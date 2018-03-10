@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AuthProvider } from "../../../providers/auth/auth";
-
+import { AuthProvider } from "../../../../providers/auth/auth";
 @IonicPage()
 @Component({
-  selector: 'page-kids-solution',
-  templateUrl: 'kids-solution.html',
+  selector: 'page-childhood-obesity-awareness',
+  templateUrl: 'childhood-obesity-awareness.html',
 })
-export class KidsSolutionPage {
+export class ChildhoodObesityAwarenessPage {
 
   constructor(
     public navCtrl: NavController,
@@ -15,7 +14,8 @@ export class KidsSolutionPage {
     public auth: AuthProvider) {
   }
 
-  loadPage(pageName: string){
-    this.navCtrl.push(pageName);
+  goBack() {
+    this.navCtrl.pop();
   }
+
 }

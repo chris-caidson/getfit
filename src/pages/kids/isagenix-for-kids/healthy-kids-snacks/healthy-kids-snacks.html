@@ -1,0 +1,76 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-child fixed-width space-right"></i>
+      <span>Isa for Kids</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/kids/kids-background/kids-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+                  assets/imgs/kids/kids-background/kids-background-400.jpg 400w,
+                  assets/imgs/kids/kids-background/kids-background-847.jpg 847w,
+                  assets/imgs/kids/kids-background/kids-background-1166.jpg 1166w,
+                  assets/imgs/kids/kids-background/kids-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">Healthy Snacks Kids Can Really Sink Their Teeth Into</h1>
+      <img id="img01" src="assets/imgs/kids/heart.jpg" alt="" class="shadowed" />
+      <p>
+        September is National Childhood Obesity Awareness Month and Isagenix is leading the charge to help get future generations
+        healthier. The Centers for Disease Control (CDC) reported in 2010, that 17 percent of children and adolescents between
+        ages two and 19 years of ages were diagnosed as obese. Children who are already obese are more likely to stay obese
+        raising their risk of chronic health issues like heart disease, stroke, type 2 diabetes, osteoarthritis and particular
+        types of cancer.
+      </p>
+      <p>
+        Let’s turn back this horrible tide of childhood obesity and poor nutrition. With healthy snacks and nutritionally rich meal
+        alternatives, Isagenix can help the next generation be healthy, happy and prepared for a bright, promising future.
+        Here is a list of healthy snacking suggestions:
+      </p>
+      <h3>Share Their World!</h3>
+      <p>IsaLean® Shakes are available in Creamy Dutch Chocolate and Creamy French Vanilla and provide maximum nutrition with
+        minimal calories. Each serving provides 24 grams of protein, 23 key vitamins and minerals, and 32 percent of the
+        recommended dietary intake of fiber. Kids will love the great taste and everyone loves the nutrition.</p>
+      <h3>Snack Counter-Attack</h3>
+      <p>Available in both Vanilla or Chocolate, Isagenix Snacks!™ help you curb cravings and keep you feeling satisfied for
+        hours. Snacks! also contain chromium, which can help improve blood sugar control. Kids won’t know they’re eating
+        a stimulant-free, healthy snack–they’ll just love it!</p>
+      <h3>Chew on This</h3>
+      <p>FiberSnacks!™ are available in Peanut Chocolate Chew and peanut-free Honey Almond Crisp, each 150-calorie snack bar
+        contains 6 grams of protein and 24 percent of daily recommended fiber to keep kids feeling fuller longer.</p>
+      <h3>A Heart-Healthy Cookie</h3>
+      <p>Got cookie monsters? Oatmeal Berry SlimCakes® are the perfect alternative to store-bought baked goods. At only 90 calories
+        and 5 grams of heart-healthy fiber, each SlimCakes is overflowing with blueberries and cranberries rich in antioxidants.
+        Sweetened with certified organic agave, SlimCakes are also preservative-free and cholesterol-free while they help
+        curb hunger pangs.</p>
+      <h3>Electrolyte Turbo-Boost</h3>
+      <p>For a refreshing alternative to sugary drinks with no artificial colors, sweeteners or caffeine and provides a boost
+        of Vitamins A, B complex and C that helps keep kids hydrated, one serving of Want More Energy?® contains just 7 grams
+        of sugar, 35 calories and mixes easily with water. Available in Citrus, Orange and new Tropical Fruit & Hibiscus
+        flavors. (Recommended for ages 9 and up. For more information about this product or other products, please visit
+        our allergen and suggested age group table.)</p>
+      <h3>Raise the Bar</h3>
+      <p>
+        IsaLean® Bars are delicious, nutritionally complete, protein-packed meal replacement bars that are sure to satisfy men, moms
+        and munchkins alike! It’s the ideal, convenient and quick all-natural, healthy meal-replacement with only 260 calories.
+      </p>
+      <p>
+        Let’s beat childhood obesity! All of these Isagenix products can help contribute to a child’s healthy diet. If you’re interested
+        in making positive changes to your child’s diet, review our complete list of products and the ages appropriate for
+        use. Let the healthy snacking begin at Isagenix.com.
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

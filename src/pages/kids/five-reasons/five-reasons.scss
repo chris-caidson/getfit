@@ -1,3 +1,50 @@
 page-five-reasons {
+    span.uppercase {
+        font-weight: bold;
+    }
 
+    ol li {
+      margin-bottom: $small-margin;
+    }
+
+    #nav {
+        list-style-type: none;
+
+        li {
+            display: block;
+            padding-top: $small-margin;
+            padding-bottom: $small-margin;
+            color: $secondary-color;
+            cursor: pointer;
+            border-bottom: 1px solid $tertiary-color;
+            margin-left: -$large-margin;
+            padding-left: $small-margin;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .selected {
+            background-color: $primary-color;
+            color: $light-color;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .grid-container {
+          grid-template-columns: auto auto;
+        }
+
+        #nav {
+          margin-top: 0;
+
+            li {
+                padding-left: $default-margin;
+                margin-left: $default-margin;
+                padding-right: $small-margin;
+            }
+        }
+    }
 }

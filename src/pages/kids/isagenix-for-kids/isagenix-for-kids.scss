@@ -1,3 +1,89 @@
 page-isagenix-for-kids {
+    #outerContainer {
+        display: grid;
+        grid-template-columns: auto;
+    }
 
+    section {
+        border-bottom: 1px solid $tertiary-color;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $small-margin;
+        }
+
+        figcaption {
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+
+    ol li {
+        font-size: smaller;
+        margin-bottom: $small-margin;
+    }
+
+    #nav {
+        list-style-type: none;
+
+        li {
+            display: block;
+            padding-top: $small-margin;
+            padding-bottom: $small-margin;
+            color: $secondary-color;
+            cursor: pointer;
+            border-bottom: 1px solid $tertiary-color;
+            margin-left: -$large-margin;
+            padding-left: $small-margin;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .selected {
+            background-color: $primary-color;
+            color: $light-color;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 640px) {
+        .grid-container {
+            grid-template-columns: 200px auto;
+        }
+
+        figure {
+            margin-left: 0;
+            margin-right: $large-margin;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            figcaption {
+                text-align: left;
+                max-width: auto;
+            }
+        }
+    }
+
+    @media (min-width: 800px) {
+        #nav {
+            li {
+                padding-left: $default-margin;
+                margin-left: $default-margin;
+                padding-right: $small-margin;
+            }
+        }
+    }
 }

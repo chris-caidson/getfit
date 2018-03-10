@@ -15,4 +15,7 @@ export class IsagenixForKidsPage {
     public auth: AuthProvider) {
   }
 
+  loadPage(pageName: string){
+    this.navCtrl.push(pageName);
+  }
 }

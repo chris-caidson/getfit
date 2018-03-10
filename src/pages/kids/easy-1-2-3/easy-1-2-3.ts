@@ -15,4 +15,7 @@ export class Easy_1_2_3Page {
     public auth: AuthProvider) {
   }
 
+  loadPage(pageName: string){
+    this.navCtrl.push(pageName);
+  }
 }

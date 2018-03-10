@@ -22,6 +22,17 @@
   </header>
   <main role="main">
     <article>
+      <section class="grid-container">
+        <img id="img01" src="assets/imgs/kids/lifetime-commitment.jpg" alt="Kids" class="shadowed" (click)="pdfProvider.openPdf('Staying Healthy Lifetime Commitment', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Flifetime-commitment.pdf?alt=media&token=3af37142-9b03-466a-855d-ce688f1df1fc')"
+        />
+        <ul id="nav">
+          <li (click)="loadPage('KidsSolutionPage')">Kid-Approved Isagenix Products</li>
+          <li (click)="loadPage('Easy_1_2_3Page')">Easy 1-2-3</li>
+          <li (click)="loadPage('IsagenixForKidsPage')">Isagenix for Kids</li>
+          <li (click)="loadPage('FiveReasonsPage')">5 Reasons Isagenix is Good for Children</li>
+          <li class="selected">Staying Healthy Lifetime Commitment</li>
+        </ul>
+      </section>
     </article>
   </main>
   <get-footer></get-footer>

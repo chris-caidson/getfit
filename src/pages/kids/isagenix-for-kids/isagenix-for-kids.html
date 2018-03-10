@@ -22,6 +22,80 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">Isagenix for Kids</h1>
+      <p id="tapH5" class="note centered">(Tap a headline or image to view full document.)</p>
+      <p id="clickH5" class="note centered">(Click a headline or image to view full document.)</p>
+      <div id="outerContainer">
+        <div>
+          <section>
+            <h2 class="centered" (click)="loadPage('ChildhoodObesityAwarenessPage')">September is National Childhood Obesity Awareness Month</h2>
+            <div class="grid-container">
+              <figure>
+                <img src="assets/imgs/kids/smile-small.jpg" alt="" (click)="loadPage('ChildhoodObesityAwarenessPage')" class="shadowed" />
+              </figure>
+              <div>
+                <p>
+                  Childhood obesity is now a common health concern among parents in the United States with one in three children in the United
+                  States is overweight or obese. This is more than double the rate of childhood obesity 30 years ago.
+                </p>
+                <p>
+                  September is National Childhood Obesity Month, and just like adults, kids need the right nutrition to enhance their health
+                  and improve their quality of life. Isagenix is the perfect partner for parents in providing kids the high-quality
+                  nutrients they need.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="centered" (click)="loadPage('BoostKidsNutritionPage')">5 Ways to Boost Your Kids' Nutrition (Without Them Even Knowing!)</h2>
+            <div class="grid-container">
+              <figure>
+                <img src="assets/imgs/kids/unhappy-small.jpg" alt="" (click)="loadPage('BoostKidsNutritionPage')" class="shadowed" />
+              </figure>
+              <div>
+                <p>
+                  Struggling with a picky child? Odds are, you’re not alone! Between texture, taste and simply a desire to assert their own
+                  "free will," it’s tough to get the good stuff into your kid’s daily nutrition.
+                </p>
+                <p>
+                  Good news! Many Isagenix® products are the perfect supplement for your kid’s nutrition! So, if Johnny snubs his nose at broccoli
+                  during dinner or Jane really doesn’t want to eat chicken, you have a few choices you can add to their routine
+                  to make sure they’re making up for some of the nutrients they’re likely missing.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="centered" (click)="loadPage('HealthyKidsSnacksPage')">Healthy Snacks Kids Can Really Sink Their Teeth Into</h2>
+            <div class="grid-container">
+              <figure>
+                <img src="assets/imgs/kids/heart-small.jpg" alt="" (click)="loadPage('HealthyKidsSnacksPage')" class="shadowed" />
+              </figure>
+              <div>
+                <p>
+                  September is National Childhood Obesity Awareness Month and Isagenix is leading the charge to help get future generations
+                  healthier. The Centers for Disease Control (CDC) reported in 2010, that 17 percent of children and adolescents
+                  between ages two and 19 years of ages were diagnosed as obese. Children who are already obese are more
+                  likely to stay obese raising their risk of chronic health issues like heart disease, stroke, type 2 diabetes,
+                  osteoarthritis and particular types of cancer.
+                </p>
+                <p>
+                  Let’s turn back this horrible tide of childhood obesity and poor nutrition. With healthy snacks and nutritionally rich meal
+                  alternatives, Isagenix can help the next generation be healthy, happy and prepared for a bright, promising
+                  future. Here is a list of healthy snacking suggestions: –
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <ul id="nav">
+          <li (click)="loadPage('KidsSolutionPage')">Kid-Approved Isagenix Products</li>
+          <li (click)="loadPage('Easy_1_2_3Page')">Easy 1-2-3</li>
+          <li class="selected">Isagenix for Kids</li>
+          <li (click)="loadPage('FiveReasonsPage')">5 Reasons Isagenix is Good for Children</li>
+          <li (click)="loadPage('StayingHealthyPage')">Staying Healthy Lifetime Commitment</li>
+        </ul>
+      </div>
     </article>
   </main>
   <get-footer></get-footer>

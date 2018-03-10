@@ -1,3 +1,59 @@
 page-kids-solution {
+    #img01 {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $small-margin;
+    }
 
+    ol li {
+        font-size: smaller;
+        margin-bottom: $small-margin;
+    }
+
+    #nav {
+        float: none;
+        margin-left: 0;
+        list-style-type: none;
+
+        li {
+            display: block;
+            padding-top: $small-margin;
+            padding-bottom: $small-margin;
+            color: $secondary-color;
+            cursor: pointer;
+            border-bottom: 1px solid $tertiary-color;
+            margin-left: -$large-margin;
+            padding-left: $small-margin;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .selected {
+            background-color: $primary-color;
+            color: $light-color;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        #img01 {
+            float: left;
+            margin-right: $default-margin;
+        }
+
+        #nav {
+            float: right;
+            margin-left: -$default-margin;
+
+            li {
+                padding-left: $default-margin;
+                margin-left: $default-margin;
+                padding-right: $small-margin;
+            }
+        }
+    }
 }

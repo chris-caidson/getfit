@@ -1,0 +1,80 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-child fixed-width space-right"></i>
+      <span>Isa for Kids</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/kids/kids-background/kids-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+                assets/imgs/kids/kids-background/kids-background-400.jpg 400w,
+                assets/imgs/kids/kids-background/kids-background-847.jpg 847w,
+                assets/imgs/kids/kids-background/kids-background-1166.jpg 1166w,
+                assets/imgs/kids/kids-background/kids-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <button id="backBtn" (click)="goBack()">
+        <i class="fa fa-caret-left"></i>&nbsp;Back</button>
+      <h1 class="centered uppercase">5 Ways to Boost Your Kid’s Nutrition (Without Them Even Knowing!)</h1>
+      <img id="img01" src="assets/imgs/kids/unhappy.jpg" alt="" class="shadowed" />
+      <p>
+        Struggling with a picky child? Odds are, you’re not alone! Between texture, taste and simply a desire to assert their own
+        "free will," it’s tough to get the good stuff into your kid’s daily nutrition.
+      </p>
+      <p>
+        Good news! Many Isagenix® products are the perfect supplement for your kid’s nutrition! So, if Johnny snubs his nose at broccoli
+        during dinner or Jane really doesn’t want to eat chicken, you have a few choices you can add to their routine to
+        make sure they’re making up for some of the nutrients they’re likely missing.
+      </p>
+      <p>
+        Here are five nutrients your children should be getting daily and a few tips to help you add more nutrition to their daily
+        routine:
+      </p>
+      <img id="img02" src="assets/imgs/kids/veggies.jpg" alt="" class="shadowed" />
+      <ol>
+        <li>
+          <strong>Protein. </strong>Their bones are growing and so are their brains so protein is a critical component for their
+          future. Add half of a protein-rich Creamy Dutch Chocolate IsaLean® Shake to their after-school routine or hand
+          them half of a Chocolate Cream Crisp or Natural Oatmeal Raisin IsaLean Bar before they head to their sports practice
+          to feed their bodies the nutrition they need while giving them the yummy flavors they crave.</li>
+        <li>
+          <strong>Fruits. </strong>Sometimes it’s hard to fit 3-5 servings of fruit into a kid’s daily nutrition routine. For those
+          "tough" days, mix a scoop of IsaFruits® into juice, shake it up in a bottle of water, or toss it in to your child’s
+          Creamy French Vanilla IsaLean Shake. Just one scoop is equal to the antioxidant power of 33 superfruits that were
+          cold pressed to maintain their nutritional integrity. </li>
+        <li>
+          <strong>Greens. </strong>Since the dawn of time it seems like kids have found a way around eating their vegetables. With
+          cold and flu season quickly approaching, making sure they get enough healthy, dark, leafy greens is critical for
+          boosting their immune systems. If they’re not getting the recommended daily servings, as shared on ChooseMyPlate.gov,
+          consider adding a scoop of Isagenix Greens!™ to their water or IsaLean Shake for a refreshing, healthy boost. The
+          mix contains antioxidant-rich ingredients such as ginkgo biloba leaf, green tea extract and grape seed extract
+          to help fight off free radicals, which can potentially endanger your cells and weaken your immune system.</li>
+        <li>
+          <strong>Fiber. </strong>Good health begins with a healthy digestive tract. By ensuring your child’s intestinal flora are
+          at a right balance, you will be setting their immune system up for success. If they’re struggling to eat whole
+          grains as recommended, try incorporating one FiberSnacks!™ bar. Featuring prebiotic soluable fiber and insoluable
+          fiber along with drizzles of chocolate or the crunch of almonds, this gluten-free, tasty treat takes care of your
+          concerns while feeding their tummies with exactly what they need. FiberSnacks! are available in Peanut Chocolate
+          Chew or lunch box-approved, peanut-free Honey Almond Crisp.</li>
+        <li>
+          <strong>Zinc. </strong>One of the best ways to keep your child’s immune system strong is making sure that zinc is incorporated
+          into your kid’s nutrition. Zinc is an essential mineral that is naturally present in some foods, but we’re often
+          lacking the amount our bodies truly need to function at their utmost. Just a few sprays of Isamune® with Zinc before
+          your kids head out the door for school will give them one more way to get their daily intake if they somehow missed
+          the memo about consuming chocolate, pumpkin, squash and other zinc-rich foods every day. The formula also features
+          Reishi mushrooms, bovine colostrum, delivering immunity support with immunoglobulins, proline-rich polypeptides,
+          and lactoferrin. Together, these proteins act to provide super-enhanced support to your immune system.</li>
+      </ol>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>
