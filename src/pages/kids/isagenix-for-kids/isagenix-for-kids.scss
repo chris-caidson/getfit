@@ -77,7 +77,11 @@ page-isagenix-for-kids {
         }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 1000px) {
+        #outerContainer {
+            grid-template-columns: auto auto;
+        }
+
         #nav {
             li {
                 padding-left: $default-margin;

@@ -1,3 +1,26 @@
 page-isabody-challenge {
+    #img01 {
+      float: none;
+      margin-left: 0;
+    }
 
+    h4 {
+      font-style: italic;
+      font-weight: bold;
+      color: darken($tertiary-color, 25);
+    }
+
+    #link {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+
+    @media (min-width: 1000px) {
+      #img01 {
+        float: right;
+        margin-left: $default-margin;
+      }
+    }
 }
