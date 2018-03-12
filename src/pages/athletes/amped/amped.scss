@@ -1,3 +1,56 @@
 page-amped {
+  #topGrid {
+    grid-template-columns: auto;
+  }
 
+  #img01 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pdfs li {
+    margin-bottom: $default-margin;
+  }
+
+  figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $large-margin;
+    cursor: pointer;
+
+    figcaption {
+      text-align: center;
+      font-size: large;
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
+
+  @media (min-width: 640px) {
+    #bottomGrid {
+      margin-top: $large-margin;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media (min-width: 1020px) {
+    #topGrid {
+      grid-template-columns: auto auto;
+
+      div {
+        margin-top: -$default-margin;
+      }
+    }
+
+    #img01 {
+      margin-right: $default-margin;
+    }
+
+    #bottomGrid {
+      margin-top: $large-margin;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
 }

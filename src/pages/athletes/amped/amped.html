@@ -23,6 +23,78 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">Amplify Your Workout</h1>
+      <section id="topGrid" class="grid-container">
+        <img id="img01" src="assets/imgs/athletes/amplify-workout.jpg" class="video-thumb" alt="Amplify Your Workout Video" (click)="openVideoModal('amplify-workout')"
+        />
+        <div>
+          <h3>Your Workout Is About to Change</h3>
+          <p>
+            From the moment you step out your front door to the last exhausted breath after your final rep, AMPED™ is there to improve
+            your performance—beginning to end. This family of products is scientifically crafted to power you up, keep you
+            going, and help you recover so you can stay one step ahead of the competition, even if your only competition
+            is yourself.
+          </p>
+        </div>
+      </section>
+      <h3>Performance System</h3>
+      <p>
+        The Performance System offers a mix of nutrients, energy boosters, and high-quality protein for muscle growth and recovery
+        while helping you achieve a tighter, leaner physique.
+      </p>
+      <ul>
+        <li>Helps build and maintain lean muscle+</li>
+        <li>Enhances performance; helps you recover faster+</li>
+        <li>Kick-start workouts+</li>
+      </ul>
+      <h3>Custom Performance System</h3>
+      <p>
+        Customize this system to make performance work for you. Choose your options and products to create a solution that can give
+        you incredible results!
+      </p>
+      <h3>Product List</h3>
+      <ol>
+        <li>AMPED Power</li>
+        <li>AMPED NOx</li>
+        <li>AMPED Fuel</li>
+        <li>AMPED Recover</li>
+      </ol>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amplify-workout')">
+          <span class="video-li">Amplify Your Workout</span>
+        </li>
+      </ul>
+      <h3>Product Info</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-product-info-sheet.pdf?alt=media&token=26ca1297-3679-438d-afbd-426c6a8cd1b1')">AMPED Product Information Sheet</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Infographic', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-infographic.pdf?alt=media&token=f04dcea0-e4fb-455e-a99e-1f804cea931e')">AMPED Infographic</span>
+        </li>
+      </ul>
+      <section id="bottomGrid" class="grid-container">
+        <figure (click)="loadPage('AmpedPowerPage')">
+          <img src="assets/imgs/athletes/amped-power.jpg" alt="Amped Power" />
+          <figcaption>AMPED Power</figcaption>
+        </figure>
+        <figure (click)="loadPage('AmpedNoxPage')">
+          <img src="assets/imgs/athletes/amped-nox.jpg" alt="Amped NOx" />
+          <figcaption>AMPED NOx</figcaption>
+        </figure>
+        <figure (click)="loadPage('AmpedFuelPage')">
+          <img src="assets/imgs/athletes/amped-fuel.jpg" alt="Amped Fuel" />
+          <figcaption>AMPED Fuel</figcaption>
+        </figure>
+        <figure (click)="loadPage('AmpedRecoverPage')">
+          <img src="assets/imgs/athletes/amped-recover.jpg" alt="Amped Recover" />
+          <figcaption>AMPED Recover</figcaption>
+        </figure>
+      </section>
     </article>
   </main>
   <get-footer></get-footer>
