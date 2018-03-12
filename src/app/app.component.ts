@@ -42,7 +42,7 @@ export class MyApp {
       { title: "Science", component: null, separatorLevel: 2, icon: null },
       { title: "Science", component: "SciencePage", separatorLevel: 4, icon: "flask" },
       { title: "Studies", component: "StudiesPage", separatorLevel: 4, icon: "file" },
-      //{ title: "Myth Buster", component: "MythbusterPage", separatorLevel: 4, icon: "bomb" },
+      { title: "Myth Buster", component: "MythbusterPage", separatorLevel: 4, icon: "bomb" },
       { title: "Research", component: null, separatorLevel: 3, icon: null},
       { title: "Cleansing", component: "CleansingPage", separatorLevel: 4, icon: "leaf" },
       { title: "Adaptogens", component: "AdaptogensPage", separatorLevel: 4, icon: "pagelines" },

@@ -1,3 +1,32 @@
 page-mythbuster {
+  .grid-container {
+    grid-template-columns: auto;
+  }
 
+  figure {
+    text-align: center;
+    margin-bottom: $large-margin;
+
+    figcaption {
+      font-size: larger;
+      color: $darker-accent-color;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: $small-margin;
+    }
+  }
+
+  @media(min-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+      align-content: end;
+      align-self: end;
+      justify-self: end;
+      justify-content: end;
+    }
+  }
 }
