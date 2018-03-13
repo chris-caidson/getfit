@@ -1,4 +1,4 @@
-page-kosher-products-pak {
+page-dairy-free-isalean {
   p {
     margin-bottom: $large-margin;
   }
@@ -9,6 +9,16 @@ page-kosher-products-pak {
     p {
       margin-bottom: auto;
     }
+  }
+
+  #videoContainer {
+    margin-left: $default-margin;
+  }
+
+  .small {
+    font-size: smaller;
+    font-weight: bold;
+    color: darken($tertiary-color, 20);
   }
 
   #firstSection {
@@ -26,10 +36,6 @@ page-kosher-products-pak {
       text-align: center;
       margin-top: $default-margin;
     }
-  }
-
-  #videoContainer {
-    margin-left: $default-margin;
   }
 
   h3 {

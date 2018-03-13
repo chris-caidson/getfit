@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { DairyFreeIsaleanShakePage } from './dairy-free-isalean-shake';
+import { DairyFreeIsaleanPage } from './dairy-free-isalean';
 import { ComponentsModule } from './../../../../components/components.module';
 
 @NgModule({
   declarations: [
-    DairyFreeIsaleanShakePage,
+    DairyFreeIsaleanPage,
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(DairyFreeIsaleanShakePage),
+    IonicPageModule.forChild(DairyFreeIsaleanPage),
   ],
 })
-export class DairyFreeIsaleanShakePageModule {}
+export class DairyFreeIsaleanPageModule {}

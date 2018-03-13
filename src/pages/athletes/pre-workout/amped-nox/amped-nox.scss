@@ -1,58 +1,65 @@
 page-amped-nox {
-
-  .grid-container {
-    grid-template-columns: auto;
-  }
-
-  #firstSection {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    img, audio {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    p {
+        margin-bottom: $large-margin;
     }
 
-    h4 {
-      text-align: center;
-      margin-top: $default-margin;
-    }
-  }
-
-  h3 {
-    font-variant: small-caps;
-    border-bottom: 1px solid $tertiary-color;
-    margin-top: $large-margin;
-  }
-
-  h4 {
-    font-style: italic;
-  }
-
-  p {
-    margin-bottom: $large-margin;
-  }
-
-  audio {
-    border: 1px solid #999;
-    box-shadow: 0px 0px 10px #333;
-    display: inline-block;
-  }
-
-  #pdfs li {
-    margin-bottom: $default-margin;
-  }
-
-  @media (min-width: 800px) {
     .grid-container {
-      grid-template-columns: auto auto;
+        grid-template-columns: auto;
+
+        p {
+            margin-bottom: auto;
+        }
     }
 
     #firstSection {
-      margin-right: $large-margin;
-      margin-top: $default-margin;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        img, audio {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: $default-margin;
+        }
     }
-  }
+
+    h3 {
+        font-variant: small-caps;
+        border-bottom: 1px solid $tertiary-color;
+        margin-top: $large-margin;
+    }
+
+    h4 {
+        font-style: italic;
+    }
+
+    p {
+        margin-bottom: $large-margin;
+    }
+
+    audio {
+        border: 1px solid #999;
+        box-shadow: 0px 0px 10px #333;
+        display: inline-block;
+    }
+
+    #pdfs li {
+        margin-bottom: $default-margin;
+    }
+
+    @media (min-width: 800px) {
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
+
+        #firstSection {
+            margin-right: $large-margin;
+            margin-top: $default-margin;
+        }
+    }
 }

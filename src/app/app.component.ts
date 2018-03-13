@@ -61,8 +61,8 @@ export class MyApp {
       { title: "Good", component: "ThirtyDaySystemPage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Better", component: "ValuePakPage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Best", component: "UltimatePakPage", separatorLevel: 4, icon: "caret-right", indent: true },
-      //{ title: "Kosher", component: "KosherProductsPakPage", separatorLevel: 4, icon: "caret-right", indent: true },
-      //{ title: "Vegan", component: "DairyFreeIsaleanShakePage", separatorLevel: 4, icon: "caret-right", indent: true },
+      { title: "Kosher", component: "KosherProductsPakPage", separatorLevel: 4, icon: "caret-right", indent: true },
+      { title: "Vegan", component: "DairyFreeIsaleanPage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Friends & Fam.", component: "FriendsAndFamilyProgramPage", separatorLevel: 4, icon: "usd" },
 
       // Athletes

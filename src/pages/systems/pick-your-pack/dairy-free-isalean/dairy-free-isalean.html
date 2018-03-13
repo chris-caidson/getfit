@@ -1,0 +1,119 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-archive fixed-width space-right"></i>
+      <span>Vegan</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+            assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-400.jpg 400w,
+            assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-847.jpg 847w,
+            assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1168.jpg 1168w,
+            assets/imgs/athletes/green-fitness-people-background/green-fitness-people-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <div class="grid-container">
+        <section id="firstSection">
+          <img src="assets/imgs/products/dairy-free.jpg" alt="Dairy Free Shakes and Bars" />
+        </section>
+        <section>
+          <p>
+            <strong>IsaLean Shake Dairy-Free</strong>
+            <br /> A nutrient-packed meal replacement that delivers quality dairy-free, plant-based protein, energy-fueling carbohydrates,
+            good fats, and filling fiber you need to maintain good health.
+          </p>
+          <ul>
+            <li>24 grams of high-quality, plant-based protein</li>
+            <li>Supports weight loss and lean muscle growth</li>
+            <li>Suitable for dairy sensitivities and vegetarian diets</li>
+          </ul>
+          <p>
+            <strong>IsaLean Bar Dairy-Free</strong>
+            <br /> This bar caters to people with dairy sensitivities or those who are looking for a plant-based protein to help
+            support weight management on-the-go.
+          </p>
+          <ul>
+            <li>High-quality, plant-based protein that is 100 percent dairy-free</li>
+            <li>Satisfies daily hunger to help you achieve your weight-management goals</li>
+            <li>Supports muscle maintenance</li>
+          </ul>
+        </section>
+      </div>
+      <h3>Flavors</h3>
+      <h4 class="small">Dairy-Free Shakes</h4>
+      <ul>
+        <li>Vanilla Chai</li>
+        <li>Rich Chocolate</li>
+      </ul>
+      <h4 class="small">Dairy-Free Bars</h4>
+      <ul>
+        <li>Chocolate Berry Bliss</li>
+        <li>Chocolate Peanut Butter</li>
+        <li>Chocolate Coconut Almond</li>
+      </ul>
+      <h3>
+        Videos
+      </h3>
+      <p id="videoContainer">
+        <span class="video-li" (click)="openVideoModal()">How to do an Isagenix Shake Day</span>
+      </p>
+      <h3>
+        Ingredients
+      </h3>
+      <h4 class="small">Dairy-Free Shakes</h4>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('Dairy-Free IsaLean Shake - Rich Chocolate Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-isalean-shake-dairy-free-chocolate.pdf?alt=media&token=f0dac5fe-aa1b-4a52-9f29-26c42467ff0c')">Rich Chocolate IsaLean Shake Ingredients</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('Dairy-Free IsaLean Shake - Vanilla Chai Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-isalean-shake-dairy-free-vanilla-chai.pdf?alt=media&token=0d2819ad-41a9-4126-83a9-4ce1204fb451')">Vanilla Chai IsaLean Shake Ingredients</span>
+        </li>
+      </ul>
+      <h4 class="small">Dairy-Free Bars</h4>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('Dairy-Free IsaLean Bar - Chocolate Berry Bliss Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-isalean-bar-dairy-free-chocolate-berry-bliss.pdf?alt=media&token=b9afa7c4-7ae4-4f04-b0f0-c5fc2dc57533')">Chocolate Berry Bliss IsaLean Bar Ingredients</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('Dairy-Free IsaLean Bar - Chocolate Almond Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-isalean-bar-dairy-free-chocolate-coconut-almond.pdf?alt=media&token=15f7c035-ca40-419b-9c1f-27728373c4ba')">Chocolate Almond IsaLean Bar Ingredients</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('Dairy-Free IsaLean Bar - Chocolate Peanut Butter Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-isalean-bar-dairy-free-chocolate-peanut-butter.pdf?alt=media&token=11b180c6-ef2c-4169-ae8d-c231529504bb')">Chocolate Peanut Butter IsaLean Bar Ingredients</span>
+        </li>
+      </ul>
+      <h3>Testimonials</h3>
+      <p>
+        <span class="testimonial">"As someone who has tried every non-dairy shake on market, I am excited for this new Isagenix shake; same nutritional
+          profile and it tastes great!"</span> - Daniele Herbert</p>
+      <p>
+        <span class="testimonial">Wow! What a great taste and thank you for providing a solution for those people with dairy and food intolerance issues.</span>
+        - Dr. Scott F. Peterson</p>
+      <p>
+        <span class="testimonial">The best tasting non-dairy shake I've ever had!</span> - Warren Lance
+      </p>
+      <p>
+        <span class="testimonial">This shake is an absolute answer to the digestive and food sensitivity challenges facing millions of people. I am
+          so excited.</span> - Susan Sly
+      </p>
+      <p>
+        <span class="testimonial">It’s fantastic—refreshing with a very appealing taste, texture and flavor.</span> - Carol Foullory
+      </p>
+      <p>
+        <span class="testimonial">Isagenix did it again! Finally, a great tasting vegetarian shake superior to others has been delivered.</span> -
+        Joy Schonholz
+      </p>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

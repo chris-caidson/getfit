@@ -1,25 +1,32 @@
 page-amped-fuel {
-
-  .grid-container {
-    grid-template-columns: auto;
-  }
-
-  #firstSection {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    img, audio {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    p {
+        margin-bottom: $large-margin;
     }
 
-    h4 {
-      text-align: center;
-      margin-top: $default-margin;
+    .grid-container {
+        grid-template-columns: auto;
+
+        p {
+            margin-bottom: auto;
+        }
     }
-  }
+
+    #firstSection {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        img, audio {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: $default-margin;
+        }
+    }
 
     h3 {
         font-variant: small-caps;
@@ -29,10 +36,6 @@ page-amped-fuel {
 
     h4 {
         font-style: italic;
-    }
-
-    p {
-        margin-bottom: $large-margin;
     }
 
     audio {
@@ -46,13 +49,13 @@ page-amped-fuel {
     }
 
     @media (min-width: 800px) {
-      .grid-container {
-        grid-template-columns: auto auto;
-      }
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
 
-      #firstSection {
-        margin-right: $large-margin;
-        margin-top: $default-margin;
-      }
+        #firstSection {
+            margin-right: $large-margin;
+            margin-top: $default-margin;
+        }
     }
 }
