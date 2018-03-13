@@ -21,7 +21,6 @@ export class AmpedPage {
   openVideoModal(videoName: string) {
     var data: any;
 
-    console.log(videoName);
     switch (videoName) {
       case "amplify-workout":
         data = {

@@ -23,6 +23,70 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">AMPED Power</h1>
+      <div class="grid-container">
+        <section id="firstSection">
+          <img src="assets/imgs/athletes/amped-power-lg.png" alt="AMPED Power" />
+          <h4>AMPED Power 101</h4>
+          <audio controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp3s%2Famped-power.mp3?alt=media&token=1139e193-5c7e-407b-a5cc-4ae7d0d83164">
+            <p>Your device does not support native audio.</p>
+          </audio>
+        </section>
+        <section>
+          <p>
+            AMPED™ Power is a pre-workout supplement designed to prepare your body for better strength and power before exercise.
+          </p>
+          <ul>
+            <li>Pre-workout timing gives training a boost before it even begins.</li>
+            <li>Creatine improves your performance and reduces fatigue.*</li>
+            <li>Nitrosigine® and citrulline support blood flow and maximize delivery of nutrients and oxygen to working muscles.*</li>
+            <li>For greater alertness and focus, pair with e+™.</li>
+          </ul>
+        </section>
+      </div>
+      <h3>Flavors</h3>
+      <p>Cherry Berry</p>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amplify-workout')">
+          <span class="video-li">Amplify Your Workout</span>
+        </li>
+      </ul>
+      <h3>Product Info</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-product-info-sheet.pdf?alt=media&token=26ca1297-3679-438d-afbd-426c6a8cd1b1')">AMPED Product Information Sheet</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Infographic', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-infographic.pdf?alt=media&token=f04dcea0-e4fb-455e-a99e-1f804cea931e')">AMPED Infographic</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Power Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-power-product-info.pdf?alt=media&token=590bff14-43e5-46ad-ab37-35bf2791491a')">AMPED Power Product Information Sheet</span>
+        </li>
+      </ul>
+      <h3>Ingredients</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Power Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-fact-panel-amped-power.pdf?alt=media&token=a6e69a7a-ca20-48f8-8493-690d5c921428')">AMPED Power Ingredients</span>
+        </li>
+      </ul>
+      <h3>FAQ's</h3>
+      <h4>What is AMPED Power?</h4>
+      <p>A pre-workout drink powder designed to boost exercise, accelerate strength and muscle gains, and prime the body for
+        faster recovery.*</p>
+      <h4>Why do I need AMPED Power?</h4>
+      <p>When working out, you need the right fuel to produce the best results. Strength, power, and speedy recovery are all
+        obtainable with hard work and supplementation. AMPED Power combines the ingredients your body needs to help you achieve
+        the results you want.</p>
+      <h4>How does it work?</h4>
+      <p>AMPED power contains key ingredients to help boost your workouts. Creatine helps increase performance, power, and strength
+        while Nitrosigine® and citrulline boost blood flow and nutrient delivery to working muscles.*</p>
+      <p class="disclaimer">
+        <br />Nitrosigine® is a registered trademark of Nutrition 21, LLC and is patent protected.</p>
     </article>
   </main>
   <get-footer></get-footer>

@@ -1,4 +1,18 @@
 page-amped {
+  h3 {
+    font-variant: small-caps;
+    border-bottom: 1px solid $tertiary-color;
+    margin-top: $large-margin;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  p {
+    margin-bottom: $large-margin;
+  }
+
   #topGrid {
     grid-template-columns: auto;
   }

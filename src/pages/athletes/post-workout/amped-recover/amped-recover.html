@@ -23,6 +23,55 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">AMPED Recover</h1>
+      <div class="grid-container">
+        <section id="firstSection">
+          <img src="assets/imgs/athletes/amped-recover-lg.png" alt="AMPED Recover" />
+          <h4>AMPED Recover 101</h4>
+          <audio controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp3s%2Famped-recover.mp3?alt=media&token=e2b9bf16-82db-414d-b97d-cd7dffba25fc">
+            <p>Your device does not support native audio.</p>
+          </audio>
+        </section>
+        <section>
+            <p>A post-workout supplement to support muscle rebuilding and recovery.</p>
+            <ul>
+              <li>Supports faster post-workout muscle recovery.</li>
+              <li>Supports muscle rebuilding process.</li>
+              <li>Delivers branched-chain amino acids, which trigger muscle protein synthesis.</li>
+              <li>No artificial flavors, colors, or sweeteners.</li>
+            </ul>
+        </section>
+      </div>
+      <h3>Flavors</h3>
+      <p>Raspberry Lemonade</p>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amplify-workout')">
+          <span class="video-li">Amplify Your Workout</span>
+        </li>
+      </ul>
+      <h3>Product Info</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-product-info-sheet.pdf?alt=media&token=26ca1297-3679-438d-afbd-426c6a8cd1b1')">AMPED Product Information Sheet</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Infographic', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-infographic.pdf?alt=media&token=f04dcea0-e4fb-455e-a99e-1f804cea931e')">AMPED Infographic</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Recover Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-recover-product-info.pdf?alt=media&token=d974720b-b171-4c2d-9dc1-0d6aab163b55')">AMPED Recover Product Information Sheet</span>
+        </li>
+      </ul>
+      <h3>Ingredients</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Recover Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-amped-recover.pdf?alt=media&token=9f2d1ea8-e31f-476b-8ae0-8444fb870534')">AMPED Recover Ingredients</span>
+        </li>
+      </ul>
     </article>
   </main>
   <get-footer></get-footer>

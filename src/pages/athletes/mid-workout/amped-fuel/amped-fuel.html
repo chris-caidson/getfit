@@ -23,6 +23,55 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">AMPED Fuel</h1>
+      <div class="grid-container">
+        <section id="firstSection">
+          <img src="assets/imgs/athletes/amped-fuel-lg.png" alt="AMPED Fuel" />
+          <h4>AMPED Fuel 101</h4>
+          <audio controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp3s%2Famped-fuel.mp3?alt=media&token=b67df70b-2059-4d93-bec8-67631bc95d60">
+            <p>Your device does not support native audio.</p>
+          </audio>
+        </section>
+        <section>
+          <p>A conveniently packaged mid-workout gel that helps sustain endurance during any extended or demanding activity.</p>
+          <ul>
+            <li>Energize muscles for greater endurance.</li>
+            <li>Refuel during activity with the right balance of fast-acting carbohydrates from apple puree, agave, and molasses.</li>
+            <li>Help protect against muscle breakdown during extended training.</li>
+            <li>No artificial flavors, colors, or sweeteners.</li>
+          </ul>
+        </section>
+      </div>
+      <h3>Flavors</h3>
+      <p>Apple</p>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amplify-workout')">
+          <span class="video-li">Amplify Your Workout</span>
+        </li>
+      </ul>
+      <h3>Product Info</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-product-info-sheet.pdf?alt=media&token=26ca1297-3679-438d-afbd-426c6a8cd1b1')">AMPED Product Information Sheet</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Infographic', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-infographic.pdf?alt=media&token=f04dcea0-e4fb-455e-a99e-1f804cea931e')">AMPED Infographic</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Fuel Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-fuel-product-info.pdf?alt=media&token=17ea3d70-a94a-45c0-b9e6-6cb25520640b')">AMPED Fuel Product Information Sheet</span>
+        </li>
+      </ul>
+      <h3>Ingredients</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Fuel Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-amped-fuel.pdf?alt=media&token=8dd5dbeb-b7c1-49e4-a7d7-f502c36df2e8')">AMPED Fuel Ingredients</span>
+        </li>
+      </ul>
     </article>
   </main>
   <get-footer></get-footer>

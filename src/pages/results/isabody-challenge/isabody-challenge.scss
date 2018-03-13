@@ -20,7 +20,8 @@ page-isabody-challenge {
     @media (min-width: 1000px) {
       #img01 {
         float: right;
-        margin-left: $default-margin;
+        margin-left: $large-margin;
+        margin-bottom: $small-margin;
       }
     }
 }

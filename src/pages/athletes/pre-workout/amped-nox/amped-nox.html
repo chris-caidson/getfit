@@ -23,6 +23,58 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">AMPED NOx</h1>
+      <div class="grid-container">
+        <section id="firstSection">
+          <img src="assets/imgs/athletes/amped-nox-lg.png" alt="AMPED NOx" />
+          <h4>AMPED NOx 101</h4>
+          <audio controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp3s%2Famped-nox.mp3?alt=media&token=6e2640cc-3d4f-42bf-8a2e-e0182b5c4e71">
+            <p>Your device does not support native audio.</p>
+          </audio>
+        </section>
+        <section>
+          <p>
+            AMPED™ NOx is a pre-workout shot that supports nitric oxide production, which increases blood flow and oxygen delivery to
+            cells so your muscles can function efficiently and prevent fatigue.
+          </p>
+          <ul>
+            <li>Take your training to the next level with improved athletic performance.</li>
+            <li>Provides fruit and vegetable extracts to support nitric oxide production.</li>
+            <li>Supports blood flow for delivery of nutrients and oxygen to cells.</li>
+            <li>Primes your body to reduce fatigue.</li>
+          </ul>
+        </section>
+      </div>
+      <h3>Flavors</h3>
+      <p>Garden Blend</p>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amplify-workout')">
+          <span class="video-li">Amplify Your Workout</span>
+        </li>
+      </ul>
+      <h3>Product Info</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-product-info-sheet.pdf?alt=media&token=26ca1297-3679-438d-afbd-426c6a8cd1b1')">AMPED Product Information Sheet</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Infographic', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-infographic.pdf?alt=media&token=f04dcea0-e4fb-455e-a99e-1f804cea931e')">AMPED Infographic</span>
+        </li>
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED NOx Information Sheet', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-nox-product-info.pdf?alt=media&token=9c3504f4-1ae1-4dd1-828e-d73427e14bbf')">AMPED NOx Product Information Sheet</span>
+        </li>
+      </ul>
+      <h3>Ingredients</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Power Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fus-en-fact-panel-amped-nox.pdf?alt=media&token=6461c4b4-4681-43d1-a693-e069d88be15a')">AMPED NOx Ingredients</span>
+        </li>
+      </ul>
     </article>
   </main>
   <get-footer></get-footer>
