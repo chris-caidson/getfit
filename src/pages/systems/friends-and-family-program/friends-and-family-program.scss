@@ -17,6 +17,17 @@ page-friends-and-family-program {
       margin-right: auto;
     }
 
+    .pdf {
+      background-position-y: center;
+      background-position-x: $small-margin;
+    }
+
+    #pdf {
+      padding-top: $small-margin;
+      padding-bottom: $small-margin;
+      padding-right: $small-margin;
+    }
+
     @media (min-width: 800px) {
         .grid-container {
             grid-template-columns: auto auto;

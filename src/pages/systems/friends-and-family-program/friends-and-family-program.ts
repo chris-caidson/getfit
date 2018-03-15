@@ -20,9 +20,9 @@ export class FriendsAndFamilyProgramPage {
 
   openVideoModal() {
     const myModal = this.modalCtrl.create("VideoModalPage", {
-      name: "You + 2, Them + 2",
+      name: "You Share, They Share, Repeat",
       url:
-        "https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp4s%2Fyou-plus-two-them-plus-two.mp4?alt=media&token=49d56d54-ba00-47fd-aa4b-1ac1fd1dadad"
+        "https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/mp4s%2Fyou-share-they-share-repeat.mp4?alt=media&token=1a989915-41c1-4ee2-90a1-4026f0c0c19b"
     });
 
     myModal.present();

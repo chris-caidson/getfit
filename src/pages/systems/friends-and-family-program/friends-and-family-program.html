@@ -10,7 +10,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content *ngIf="!this.auth.loggedIn">
-  <login></login> 
+  <login></login>
 </ion-content>
 <ion-content *ngIf="this.auth.loggedIn">
   <header role="banner">
@@ -26,11 +26,11 @@
       <h1 class="centered uppercase">Getting Started</h1>
       <div class="grid-container">
         <section>
-          <img (click)="openVideoModal()" id="videoThumb" class="video-thumb" src="assets/imgs/misc/you-plus-two.jpg" alt="You Plus Two Video" />
+          <img (click)="openVideoModal()" id="videoThumb" class="video-thumb" src="assets/imgs/misc/you-share-they-share-video-thumb.jpg" alt="You Share, They Share, Repeat Video" />
         </section>
         <section>
-          <img id="pdf" src="assets/imgs/misc/you-plus-two-logo.jpg" alt="You Plus Two PDF"
-          (click)="pdfProvider.openPdf('You + 2, Them + 2', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fyou-plus-two-them-plus-two.pdf?alt=media&token=8700f0bf-0dec-41a7-8256-37df5dbbb2de')" />
+          <img class="pdf shadowed" id="pdf" src="assets/imgs/misc/you-share-they-share-repeat.jpg" alt="You Share, They Share, Repeat PDF"
+          (click)="pdfProvider.openPdf('You Share, They Share, Repeat', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Fyou-share-they-share-repeat.pdf?alt=media&token=163c65f7-20c8-44d0-9377-007ae989e07d')" />
         </section>
       </div>
     </article>

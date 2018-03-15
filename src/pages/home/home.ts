@@ -1,4 +1,4 @@
-import { Component, ViewChild, HostListener } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, Platform } from 'ionic-angular';
 import { AuthProvider } from "../../providers/auth/auth";
 
