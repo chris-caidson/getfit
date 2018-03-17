@@ -23,7 +23,45 @@
   </header>
   <main role="main">
     <article>
+      <h1 class="centered uppercase">Success Stories</h1>
+      <p id="tapH5" class="note centered">(Tap an image to view story.)</p>
+      <p id="clickH5" class="note centered">(Click an image to view story.)</p>
+      <section id="yearsSection">
+        <button id="btn2015" (click)="year=2015" [ngClass]="{ 'active': !year || year == 2015 }">2015</button>
+        <button id="btn2014" (click)="year=2014" [ngClass]="{ 'active': year == 2014 }">2014</button>
+        <button id="btn2013" (click)="year=2013" [ngClass]="{ 'active': year == 2013 }">2013</button>
+        <button id="btn2012" (click)="year=2012" [ngClass]="{ 'active': year == 2012 }">2012</button>
+        <button id="btn2011" (click)="year=2011" [ngClass]="{ 'active': year == 2011 }">2011</button>
+        <button id="btn2010" (click)="year=2010" [ngClass]="{ 'active': year == 2010 }">2010</button>
+        <button id="btn2009" (click)="year=2009" [ngClass]="{ 'active': year == 2009 }">2009</button>
+        <button id="btn2008" (click)="year=2008" [ngClass]="{ 'active': year == 2008 }">2008</button>
+        <button id="btn2007" (click)="year=2007" [ngClass]="{ 'active': year == 2007 }">2007</button>
+      </section>
+
+      <section class="grid-container people-5" [ngClass]="{ 'people-4': year == 2007 }">
+        <figure *ngFor="let person of this.people | yearFilter: year" (click)="showStory(person.name)">
+          <img src="assets/imgs/results/success-stories/after/{{person.imgId}}.jpg" alt="{{person.name}}" />
+          <figcaption>{{person.name}}</figcaption>
+        </figure>
+      </section>
+
     </article>
   </main>
   <get-footer></get-footer>
 </ion-content>
+<ion-footer *ngIf="this.auth.loggedIn" id="footer">
+  <ion-item>
+    <ion-label>Year</ion-label>
+    <ion-select class="yearSelect" [(ngModel)]="year">
+      <ion-option selected>2015</ion-option>
+      <ion-option>2014</ion-option>
+      <ion-option>2013</ion-option>
+      <ion-option>2012</ion-option>
+      <ion-option>2011</ion-option>
+      <ion-option>2010</ion-option>
+      <ion-option>2009</ion-option>
+      <ion-option>2008</ion-option>
+      <ion-option>2007</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-footer>
