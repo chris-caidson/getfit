@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthProvider } from "../../../providers/auth/auth";
 
-
 @IonicPage()
 @Component({
   selector: 'page-success-stories',
@@ -13,37 +12,37 @@ export class SuccessStoriesPage {
 
   people: any = [
     // 2015
-    { year: 2015, imgId: "001", name: "Abilio V."},
-    { year: 2015, imgId: "002", name: "Amy O."},
-    { year: 2015, imgId: "003", name: "Angela F."},
-    { year: 2015, imgId: "004", name: "Billy A."},
-    { year: 2015, imgId: "005", name: "Caylen W."},
-    { year: 2015, imgId: "006", name: "Ellen C."},
-    { year: 2015, imgId: "007", name: "James B."},
-    { year: 2015, imgId: "008", name: "Jesse J."},
-    { year: 2015, imgId: "009", name: "John M."},
-    { year: 2015, imgId: "010", name: "Kathy P."},
-    { year: 2015, imgId: "011", name: "Kelli E."},
-    { year: 2015, imgId: "012", name: "Michael L."},
-    { year: 2015, imgId: "013", name: "Natalie H."},
-    { year: 2015, imgId: "014", name: "Nicole S."},
-    { year: 2015, imgId: "015", name: "Ryan E."},
+    { year: 2015, imgId: "001", name: "Abilio V." },
+    { year: 2015, imgId: "002", name: "Amy O." },
+    { year: 2015, imgId: "003", name: "Angela F." },
+    { year: 2015, imgId: "004", name: "Billy A." },
+    { year: 2015, imgId: "005", name: "Caylen W." },
+    { year: 2015, imgId: "006", name: "Ellen C." },
+    { year: 2015, imgId: "007", name: "James B." },
+    { year: 2015, imgId: "008", name: "Jesse J." },
+    { year: 2015, imgId: "009", name: "John M." },
+    { year: 2015, imgId: "010", name: "Kathy P." },
+    { year: 2015, imgId: "011", name: "Kelli E." },
+    { year: 2015, imgId: "012", name: "Michael L." },
+    { year: 2015, imgId: "013", name: "Natalie H." },
+    { year: 2015, imgId: "014", name: "Nicole S." },
+    { year: 2015, imgId: "015", name: "Ryan E." },
     // 2014
-    { year: 2014, imgId: "016", name: "Abby G."},
-    { year: 2014, imgId: "017", name: "Amyra M."},
-    { year: 2014, imgId: "018", name: "Angie R."},
-    { year: 2014, imgId: "019", name: "Ben M."},
-    { year: 2014, imgId: "020", name: "Bob S."},
-    { year: 2014, imgId: "021", name: "David J."},
-    { year: 2014, imgId: "022", name: "Elizabeth B."},
-    { year: 2014, imgId: "023", name: "Erin P."},
-    { year: 2014, imgId: "024", name: "Jason O."},
-    { year: 2014, imgId: "025", name: "Jennifer R."},
-    { year: 2014, imgId: "026", name: "Judy L."},
-    { year: 2014, imgId: "027", name: "Randy F."},
-    { year: 2014, imgId: "028", name: "Shelagh R."},
-    { year: 2014, imgId: "029", name: "Thai L."},
-    { year: 2014, imgId: "030", name: "Wil A."},
+    { year: 2014, imgId: "016", name: "Abby G." },
+    { year: 2014, imgId: "017", name: "Amyra M." },
+    { year: 2014, imgId: "018", name: "Angie R." },
+    { year: 2014, imgId: "019", name: "Ben M." },
+    { year: 2014, imgId: "020", name: "Bob S." },
+    { year: 2014, imgId: "021", name: "David J." },
+    { year: 2014, imgId: "022", name: "Elizabeth B." },
+    { year: 2014, imgId: "023", name: "Erin P." },
+    { year: 2014, imgId: "024", name: "Jason O." },
+    { year: 2014, imgId: "025", name: "Jennifer R." },
+    { year: 2014, imgId: "026", name: "Judy L." },
+    { year: 2014, imgId: "027", name: "Randy F." },
+    { year: 2014, imgId: "028", name: "Shelagh R." },
+    { year: 2014, imgId: "029", name: "Thai L." },
+    { year: 2014, imgId: "030", name: "Will A." },
     // 2013
     { year: 2013, imgId: "031", name: "Aaron H."},
     { year: 2013, imgId: "032", name: "Angie T."},
@@ -160,7 +159,8 @@ export class SuccessStoriesPage {
 
   }
 
-  showStory(person: string) {
-   
+  showStory(person: any) {
+    let formattedName = person.name.toLowerCase().replace("&", "and").replace(/\./g, "").replace(/\s+/g, "-");
+    this.navCtrl.push("SuccessStoryPage", { name: formattedName} );
   }
 }

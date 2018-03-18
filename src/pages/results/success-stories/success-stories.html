@@ -37,14 +37,12 @@
         <button id="btn2008" (click)="year=2008" [ngClass]="{ 'active': year == 2008 }">2008</button>
         <button id="btn2007" (click)="year=2007" [ngClass]="{ 'active': year == 2007 }">2007</button>
       </section>
-
       <section class="grid-container people-5" [ngClass]="{ 'people-4': year == 2007 }">
-        <figure *ngFor="let person of this.people | yearFilter: year" (click)="showStory(person.name)">
+        <figure *ngFor="let person of this.people | yearFilter: year" (click)="showStory(person)">
           <img src="assets/imgs/results/success-stories/after/{{person.imgId}}.jpg" alt="{{person.name}}" />
           <figcaption>{{person.name}}</figcaption>
         </figure>
       </section>
-
     </article>
   </main>
   <get-footer></get-footer>

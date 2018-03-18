@@ -1,0 +1,2425 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-comments fixed-width space-right"></i>
+      <span>Success Stories</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/results/success-story/success-story-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw" srcset="
+        assets/imgs/results/success-story/success-story-400.jpg 400w,
+        assets/imgs/results/success-story/success-story-905.jpg 905w,
+        assets/imgs/results/success-story/success-story-1270.jpg 12701w,
+        assets/imgs/results/success-story/success-story-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">{{person.name}}</h1>
+      <section class="grid-container" id="topSection">
+        <figure>
+          <img src="assets/imgs/results/success-stories/before/{{person.imgId}}.jpg" class="shadowed" alt="{{person.name}} Before"
+          />
+          <figcaption>Before</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/imgs/results/success-stories/after/{{person.imgId}}.jpg" class="shadowed" alt="{{person.name}} After" />
+          <figcaption>After</figcaption>
+        </figure>
+        <div>
+          <ul *ngIf="person.stats" id="stats">
+            <li *ngFor="let s of person.stats">
+              <span class="field">{{s.key}}:</span>
+              <span class="value">{{s.value}}</span>
+            </li>
+          </ul>
+        </div>
+        <div *ngIf="person.hasVideo">
+          <figure>
+            <img (click)="openVideoModal()" class="video-thumb extra" src="assets/imgs/results/success-stories/video-thumbs/{{person.id}}.png"
+              alt="{{person.name}} Video" />
+            <figcaption *ngIf="person.id == 'amy-o'" class="extra-caption">
+              I woke up… and knew my life was going to change that day… I had made a schedule, highlighted an agenda, and immediately signed
+              up for the IsaBody Challenge to hold me accountable.
+            </figcaption>
+            <figcaption *ngIf="person.id == 'angela-f'" class="extra-caption">
+              This is not just for show or to win prizes or look physically different. Isagenix truly is a vehicle for transforming lives.
+            </figcaption>
+            <figcaption *ngIf="person.id == 'ellen-c'" class="extra-caption">
+              It feels amazing to inspire my students to be active and healthy through my actions.
+            </figcaption>
+            <figcaption *ngIf="person.id == 'james-b'" class="extra-caption">
+              Isagenix has given me the ability to actually dream and give 100 percent at everything—my Isagenix business, selling the
+              products, fueling myself with energy—everything!
+            </figcaption>
+            <figcaption *ngIf="person.id == 'jesse-j'" class="extra-caption">
+              I let stress take over and felt my life being taken away from me one day at a time. I decided I was done feeling sorry for
+              myself and that Isagenix would be my new beginning.
+            </figcaption>
+            <figcaption *ngIf="person.id == 'john-m'" class="extra-caption">
+              I really want to let other Baby Boomers know that Isagenix is a great opportunity," says John. "If you’re looking to get
+              in shape and stay young, as far as I’m concerned, this is the ultimate system that will take you there.
+            </figcaption>
+          </figure>
+        </div>
+        <div *ngIf="!person.hasVideo">
+          <img class="shadowed extra" src="assets/imgs/results/success-stories/before/{{person.imgId}}b.jpg" alt="{{person.name}}"
+          />
+        </div>
+      </section>
+      <section class="main-section" *ngIf="person.id == 'abilio-v'">
+        <h3>Retired U.S. Army Veteran and IsaBody Finalist is Always Up for a Challenge</h3>
+        <p>
+          Sixty-four-year-old Abilio admits, "I was dreaming about the day that I could fully retire throughout my career, and I should
+          have been happy when it happened. But I found myself with more free time and not too much to do."
+        </p>
+        <p>
+          The U.S. Army veteran had never been in this position before. Always busy, he first retired from the Army in 1991 after spending
+          20 years in active duty. To keep him intellectually engaged, he continued to work and contracted for the U.S Department
+          of Defense in Iraq and Afghanistan. He then retired once again in 2013.
+        </p>
+        <p>
+          This free time left Abilio overindulging in his favorite fare with plenty of wine on the side. At 219 pounds, he was at the
+          physical peak of mental boredom.
+        </p>
+        <p>
+          "I started gaining more weight than my body and frame were able to handle, which started to affect my lower back," says Abilio.
+          "I thought my better days were behind me and physical decline was all I could look forward to."
+        </p>
+        <p>
+          Little did Abilio know that the willpower he had gained in the Army would get him back to the height of his health and put
+          him on a fulfilling journey.
+        </p>
+        <h3>Isa… What?</h3>
+        <p>
+          "I was always tired and sluggish until someone said, ‘Party time!’" explains Abilio. "Then one day while visiting my nephews
+          in Florida at the beginning of February 2014, my nephew said he was going to start on products called ‘Isagenix.’"
+        </p>
+        <p>
+          Abilio didn’t know what that was or what it did, but when he returned to visit his nephew a few months later the name certainly
+          stuck.
+        </p>
+        <p>
+          "I saw the extraordinary change in physique, energy, and stamina level in my nephew," laughs Abilio. "So I immediately said,
+          ‘I’m in! Let’s get started with Isagenix!’"
+        </p>
+        <p>
+          The U.S. veteran ordered the 30-Day Cleansing and Fat Burning System and immediately felt the positive effects of the products.
+          His daughter Sharon was impressed by the physical change in her father, and decided to join Isagenix too.
+        </p>
+        <p>
+          Abilio is even close to his healthiest weight—180 pounds—from his days on active duty.* "From the beginning, I saw the IsaBody
+          Challenge® as a way for me to stay focused on my goal."
+        </p>
+        <p>
+          Today, Abilio is at 187 pounds,* and he’s certainly not stopping there. Instead, he’s found a deeper meaning in his healthy
+          living after retirement—one he never imagined.
+        </p>
+        <p>
+          "Although I reached my physical goals, I rediscovered passion in my life, my mind, my body, and my soul," explains Abilio.
+          "I am no longer a 64-year-old dreaming of escape: There is no mountain too high to climb and I realize that my
+          highest life purpose is to help others do the same with Isagenix."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'amy-o'">
+        <h3>No More ‘Skirting’ Around the Issue: IsaBody Finalist Fits Back into High School Attire!</h3>
+        <p>
+          Amy is a natural nurturer. As a stay-at-home mother of two, she consistently cares for everyone in her family—immediate and
+          extended—including volunteering her time to care for others as well.
+        </p>
+        <p>
+          "One of my favorite people in the world, my aunt, was diagnosed with cancer," explains Amy. "I was fortunate enough to invite
+          her into our home, so she lived with my family for a period where we did the chemo treatments, the radiation, and
+          everything else with us by her side." During this time, Amy admits that everything else in her life took the backseat
+          for a couple of years.
+        </p>
+        <p>
+          "I was worried about caring for my aunt, my kids, my house, and my finances," says Amy. "I was simply overwhelmed from always
+          taking care of everything and everyone."
+        </p>
+        <p>
+          Unfortunately, Amy’s aunt—lovingly nicknamed Aunt "O"—passed away in August 2013. With all of the stress coming to a head
+          with her aunt’s passing, Amy, at a petite 5"1’, was at 166 pounds… the heaviest she had ever been. And she wasn’t
+          going to stand for it anymore.
+        </p>
+        <h3>No More Quick Fixes</h3>
+        <p>
+          After dabbling in several "quick fixes," Amy had noticed a pattern.
+        </p>
+        <p>
+          "I would lose a little bit—15 pounds at the most—and then I’d gain it back. It was just a back-and-forth cycle," says Amy.
+        </p>
+        <p>
+          In April 2014, she was browsing through her Facebook feed when she noticed a post from her friend about Isagenix. The post
+          showed a picture of Isagenix products and read: "I’m looking to get fit this summer!" Amy wished for the same as
+          her friend.
+        </p>
+        <p>
+          But she wanted it for more than just a season.
+        </p>
+        <p>
+          "To be honest, I hadn’t even thought about losing weight for a long time," admits Amy. "I had tried so many different things
+          before that I didn’t want to screw up again."
+        </p>
+        <p>Amy channeled her inner detective and applied some research; she knew that if she did Isagenix and the IsaBody Challenge®
+          it would keep her dedicated for the long haul.
+        </p>
+        <p>
+          "I gave myself a simple ultimatum: If I do it and it works—great. And if it didn’t work, then that was it," shares Amy. "I
+          was just going to let myself be and figured maybe this was the body I was supposed to have after having two kids."
+        </p>
+        <h3>Now That's Dedication</h3>
+        <p>
+          When her 30-Day Fat Burning and Cleansing System shipment arrived in May 2014, Amy didn’t know what to expect.
+        </p>
+        <p>
+          "I figured the stuff was going to come, I was going to do the system, and it was going to be fine!" laughs Amy. "Well, I
+          opened the box and there was shakes, cleanses, and so much more, and I thought, ‘Oh my goodness.’"
+        </p>
+        <p>
+          OMG indeed. Amy was filled with such a staunch commitment that after she put her children to sleep that night, she stayed
+          up until 4 a.m. reading the manuals cover to cover many times over.
+        </p>
+        <p>
+          "That package had me pumped!" exclaims Amy. "I woke up three hours later and knew my life was going to change that day… I
+          had made a schedule, highlighted an agenda, and immediately signed up for the IsaBody Challenge to hold me accountable."
+        </p>
+        <p>
+          It worked. Today, Amy’s lost nine pant sizes and is now 115 pounds.*
+        </p>
+        <p>
+          Her favorite part? She’s kept a skirt from high school and hung it outside her closet every day during the Challenge for
+          inspiration. "I firmly believe with my whole heart that Isagenix gave me the power to get me back into that skirt,"
+          shares Amy. "And I can’t wait to wear that skirt onstage!"
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'angela-f'">
+        <h3>Cosmetologist Makes Lifestyle Change that Sticks</h3>
+        <p>
+          Angela was raised in a southern community where weight loss, exercise, and watching portions was not a priority. Food was
+          celebrated and it was always at the center of any gathering, which made it hard for Angela to maintain healthy
+          habits. When the South Carolina resident agreed to try Isagenix four years ago, little did she know she would make
+          a lifestyle change for good.
+        </p>
+        <p>
+          "At the time I was tired and working long hours as a cosmetologist," says Angela. "My nutrition was bad and I had about 50
+          pounds that needed to come off. I felt depleted and disconnected. I was willing to try anything because I just
+          wanted to feel better."
+        </p>
+        <p>
+          After her initial 9-Day Deep Cleansing and Fat Burning System, Angela released weight and felt energized. The 53-year-old
+          signed up for the IsaBody Challenge to stay committed to losing weight the healthy way. The support she got from
+          the Challenge made her feel for the first time in her life that she wasn’t alone in her weight-loss journey.
+        </p>
+        <h3>On The Right Side of 50</h3>
+        <p>
+          Angela has successfully completed four IsaBody Challenges, released a total of 45 pounds,* and transformed herself on so
+          many levels. The personal development and growth she’s experienced has helped her get through menopause, and cope
+          with her daughter Esprit growing up and moving out. She was finally able to let go of the negative mindset that
+          had weighed her down for so long. She no longer thinks twice about making healthy choices.
+        </p>
+        <p>
+          Currently in her fifth Challenge, Angela has been in maintenance mode since the fourth Challenge. The 53-year-old is holding
+          onto muscle mass and keeping her weight down doing a mix of cardio, weight training, yoga and tai chi every day.
+          To power her workouts and keep her going during long work days, the cosmetologist relies on IsaLean® Pro, Ageless
+          Essentials™ with Product B® IsaGenesis®, Ionix® Supreme and one Cleanse Day every week.
+        </p>
+        <p>
+          "Maintenance is easy because Isagenix is not a diet, it’s a lifestyle," says Angela. "When you make better food choices,
+          you make better life choices. I fully understand that whatever I do or don’t do now is going to show up in the
+          next five to 10 years in terms of my physical, mental, and emotional health."
+        </p>
+        <h3>A Woman on a Mission</h3>
+        <p>
+          The transformation she experienced with Isagenix has revealed a new mission for Angela. The hairdresser of more than 30 years
+          is now ready to help women realize the possibilities in front of them and create a financial legacy through her
+          Isagenix business, which she’s named Fuller Lifestyle.
+        </p>
+        <p>
+          "I’m embracing the growth that comes with challenging myself physically, mentally, emotionally, and financially," says Angela,
+          who credits her supportive husband Ron for easing her journey. This is not just for show or to win prizes or look
+          physically different. Isagenix truly is a vehicle for transforming lives."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'billy-a'">
+        <h3>Firefighter Discovers Another Way to Serve Others</h3>
+        <p>
+          At 55 years old, Billy is in prime physical shape. While decades as a firefighter have impacted his physicality, he believes
+          Isagenix is ultimately responsible for his ability to stay young and effective in the force.
+        </p>
+        <p>
+          Billy served as a firefighter in New Mexico for 25 years. After retiring in his mid-forties, he quickly changed his mind,
+          and rejoined a firefighting team in Arizona, where he continues to serve now.
+        </p>
+        <p>
+          "I missed the service so much," remembers Billy. "I missed helping people. I had this empty feeling in my heart and felt
+          that I wasn’t doing enough for people. So, I decided to get back in the service."
+        </p>
+        <h3>Not Accepting Defeat</h3>
+        <p>
+          Years later, the combination of four knee surgeries, a hernia, and a torn rotator cuff and bicep threatened to end Billy’s
+          firefighting career for good. Following his last injury, his doctor said Billy would require a 10-14 month healing
+          time, and that he may not fully recover.
+        </p>
+        <p>
+          Not only did his injuries slow him down, but Billy also knew that statistically, firemen live only five to seven years after
+          retirement. Fortunately, Billy’s son and 2014 IsaBody Challenge® Finalist, Will, encouraged Billy to try Isagenix
+          to aid his recovery and improve his lifestyle. Billy knew that losing weight would help his body heal quicker,
+          so he began Isagenix in February of 2014.
+        </p>
+        <p>
+          "I’m not going to be in those statistics because of the way my health is now. The whole Isagenix program helped me so much
+          in transforming my health," he says. Not only did Billy’s healthy habits help him recover from surgery in only
+          seven months, he was able to return to his profession and once again serve as a vital member of the Scottsdale
+          Fire Department.
+        </p>
+        <h3>The Power of Saving Lives</h3>
+        <p>
+          Nearly a year later, Billy decided to continue his Isagenix journey and join the IsaBody Challenge. He lost 37 pounds* during
+          the Challenge and feels stronger than ever.
+        </p>
+        <p>
+          "Looking good is a side effect of Isagenix. The main point of the products is that they help you feel good and live a healthy
+          lifestyle. I want to show people that you can do this at any age if you put in the work. The only thing stopping
+          you is you," shares Billy. Billy didn’t just hope to get his body back in prime shape, the main reason he kept
+          going even during the difficult days came down to his desire to save lives.
+        </p>
+        <p>
+          "I’ve always had the mindset that if I’m not in the best shape to save somebody’s life, I should not be a fireman, because
+          I owe the people that."
+        </p>
+        <h3>Spreading the Good News</h3>
+        <p>
+          Now, Billy is in the best shape to transform lives as a fireman and also as an Isagenix Associate. His goal is to eventually
+          retire from a respectable firefighting career and go full time with Isagenix.
+        </p>
+        <p>
+          "As a firefighter, often we help people when it’s already almost too late," says Billy. "I see so many people out of shape.
+          Many of them even have diabetes and high blood pressure. Now, I can help them before that."
+        </p>
+        <p>
+          The always positive husband and father of two embodies what it is to be an IsaBody Challenge Finalist. His physical transformation
+          was only the beginning, and now Billy hopes to "spread the good news" and move others—including his fellow firefighting
+          team—to begin their own change.
+        </p>
+        <p>
+          "You don’t want to just be alive. You want to be living," shares Billy. "Let’s live our lives to the fullest into our 70s,
+          80s, and 90s."
+        </p>
+        <p>
+          For more IsaBody success stories, visit IsaFYI.com.
+        </p>
+        <h3>
+          Billy’s IsaBody Challenge Strategies:
+        </h3>
+        <ul>
+          <li>Take it one day at a time. Today will end, and you’ll always have tomorrow to improve yourself.</li>
+          <li>Be positive. Wake up in the morning happy and ready to make a change.</li>
+          <li>Reach out to your teammates for support. That’s what gets you through it. Don’t do it by yourself; we’re here to
+            help you.</li>
+          <li>Be a product of the product. That’s what helps people believe Isagenix works.</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'caylen-w'">
+        <h3>Hockey Player Gets Back on the Ice with Isagenix</h3>
+        <p>
+          Two years into college, everything looked great for hockey defenseman Caylen W. The long-time athlete began playing hockey
+          at age four, was enjoying a hockey scholarship at the University of Vermont, and looking forward to a promising
+          professional career.
+        </p>
+        <h3>Starting Over</h3>
+        <p>
+          "I thought I had my world made for me going pro, then in the blink of an eye, I lost everything," he remembers.
+        </p>
+        <p>
+          A blow to the arm led to a hyperextended elbow, nearly tearing all of the ligaments and tendons. After six weeks of rehab,
+          it was evident that his athletic abilities weren’t the same. Shortly thereafter, Caylen’s coach suggested he "move
+          on."
+        </p>
+        <p>
+          Following a failed attempt at the pros due to the injury, he returned to his home in Alberta, Canada and "shut down completely."
+          Weeks went by and Caylen started to feel upset with how he looked and felt. He had lost his athletic build and
+          was tired, sluggish, and depressed.
+        </p>
+        <p>
+          Deciding to get his body back in check, he reached out to his friend Joel, who introduced him to Isagenix. Caylen decided
+          then to join the IsaBody Challenge® and never looked back.
+        </p>
+        <p>
+          "It was one of the best decisions I’ve ever made," he says. "As the days went on, I saw results that no other products have
+          ever given me. Isagenix completely blew out anything I’d ever tried before."
+        </p>
+        <h3>'Go Time'</h3>
+        <p>
+          He credits a huge part of his Challenge success to the endless support from friends, family, the START group, and the IsaBody
+          Challenge team. In fact, one of the highlights of his journey was when START Founder and Vice President of Global
+          Field Development Erik Coover commented on his pictures, telling him how great he looked.
+        </p>
+        <p>
+          "It was ‘go time’ right then," recalls Caylen. "I knew I was going to make the best of this."
+        </p>
+        <p>
+          And make the most of it he did. The 23-year-old completely transformed his body. He lost 28 pounds,* while building a solid
+          muscular physique that he says is better than ever before.
+        </p>
+        <p>
+          As an athlete, Caylen knows meeting his body’s nutritional demands are crucial. For that reason, he never goes without his
+          IsaLean® PRO Shake mixed with Isagenix Greens™ and Ionix® Supreme. He also adds IsaPro® to his nutrition regimen
+          for a protein boost.
+        </p>
+        <p>
+          "As an athlete, you want extra protein, because you go a lot harder in the gym," Caylen explains. "Since putting on lean
+          muscle, I also feel a lot faster and lighter on my feet when I’m skating."
+        </p>
+        <h3>Full Circle</h3>
+        <p>
+          Caylen’s next milestone came two days before the end of the Challenge. He was accepted to the University of Calgary, and
+          shortly after, he received a call from the head coach of the University’s hockey team asking if he’d play for them,
+          which of course, he enthusiastically accepted.
+        </p>
+        <p>
+          "It’s funny how things come full circle," Caylen says. "What I least expected was how the IsaBody Challenge would turn out
+          to be the most intense personal development course I have ever been through!"
+        </p>
+        <p>
+          Caylen has brought others, including his younger sister, into the Isagenix family as well. He is looking forward to attending
+          college and sharing Isagenix with others.
+        </p>
+        <p>
+          "Anytime I can help somebody, it’s one of the best feelings in the world," he shares.
+        </p>
+        <p>
+          Now, Caylen’s hockey future seems promising, and his Isagenix career just as much. The START member looks forward to excelling
+          in the START group as he grows his Isagenix business.
+        </p>
+        <p>
+          His biggest tip? For those who may feel Isagenix may be too expensive for their lifestyle, Caylen says think again.
+        </p>
+        <p>
+          "Don’t shy out on the price. When I came home, I was broke and I was able to make it work. Know that if you get just two
+          people on the products, you’re on your way. There’s always that one bill that’s tough to pay off, and Isagenix
+          can really help out."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'ellen-c'">
+        <h3>PE Teacher Reclaims Health and Becomes Powerful Role Model</h3>
+        <p>
+          For so long Ellen was trapped in a 296-pound body that made her feel ashamed. As an elementary physical education teacher,
+          she struggled demonstrating basic skills to her students. Fueling her shame were daily struggles like crossing
+          her legs, climbing the stairs, buckling a seatbelt on an airplane or feeling her daughter’s arms wrapped fully
+          around her for a hug.
+        </p>
+        <p>
+          "I had guilt about the time I wasted watching TV and the money I spent eating junk food," says Ellen. "I felt like a lazy
+          mom, withdrawn wife, absent friend and hypocritical teacher. I had lost all hope of living the life I desired for
+          myself and my family."
+        </p>
+        <h3>Mission to Reclaim Health</h3>
+        <p>
+          Ellen discovered Isagenix through her sister-in-law, Allison, who arranged a meeting with Life Coach and Personal Trainer,
+          Susan. Both women were convinced that Isagenix was the right solution. Shortly after that fateful meeting, Ellen
+          found in her mailbox what she believed was a sign to take action and she began her Isagenix journey.
+        </p>
+        <p>
+          "My mission was to reclaim my health," shares Ellen. "I became determined to make a change and not accept the destiny of
+          dying young like my brother who passed away from morbid obesity at age 39."
+        </p>
+        <p>
+          Staying true to her mission, Ellen complemented her Isagenix nutrition plan by working out twice a week with her trainer
+          and doing high-intensity interval training and fitness dance classes on her own.
+        </p>
+        <p>
+          Her biggest struggle was the temptation of falling back on her old habits of emotional eating. She powered through with mental
+          focus, determination, and having fun with the products. She even came up with her own special concoction called
+          Ellen’s Energizer: a packet of Greens™, IsaFruits®, Ionix® Supreme and Lemon Lime Replenish™.
+        </p>
+        <p>
+          Just a few days before beginning her second 30-Day Cleansing and Fat Burning System, Ellen signed up for her first IsaBody
+          Challenge®. She grappled with the insecurity of people seeing her photos. "My trainer kept encouraging and pushing,
+          but it took me releasing 25 pounds* to muster up the courage to take my first ‘before’ picture."
+        </p>
+        <h3>A Role Model for Her Students</h3>
+        <p>
+          These days Ellen isn’t shy about showing off her newfound strength, confidence, and 136-pound* weight loss. Her highlight
+          reel includes running her first 5K, training for a half-marathon, celebrating her entry into the 100-Pound Club
+          and showing her students how a real pushup is done. She isn’t stopping there. She’s already signed up for her third
+          Challenge.
+        </p>
+        <p>
+          "It feels amazing to inspire my students to be active and healthy through my actions,” says Ellen. "I was a collegiate athlete
+          and my drive, athleticism, and competitiveness have resurfaced. It’s great to have that identity back."
+        </p>
+        <p>
+          Ellen’s journey took her from feeling lonely and isolated to leading an active, healthy life full of friends and Associates
+          who continue to teach her about the power of belief.
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'james-b'">
+        <h3>IsaBody Finalist Says Adios to ‘Muffin Top’</h3>
+        <p>
+          "My parents were workaholics," describes 41-year-old James. "I was taught that in order to get ahead you had to put in more
+          hours at your job which meant, unfortunately, more time away from the family."
+        </p>
+        <p>
+          After James graduated from college with a degree in law and security, he quickly realized there were no careers available
+          in that position in New Lowell, Ontario, where he and his family settled.
+        </p>
+        <p>
+          "I fell into the electrical field through my wife and have been successful in operating my own company and managing eight
+          employees for 10 years," explains James.
+        </p>
+        <p>
+          James was on what he called "the tradesman diet." "My eating lifestyle included waking up in the morning, having a breakfast
+          sandwich, and then getting home at 10 and having a smorgasbord of leftovers from suppers… and that was pretty much
+          it."
+        </p>
+        <p>
+          As he built his business, he spent much of his time driving all over town and overseeing his employees’ projects. James started
+          slowly gaining weight which catapulted when he tore his ACL while playing soccer in 2011.
+        </p>
+        <p>
+          Out of physical commission, the pounds started packing on. "I put on an additional ten pounds," describes the 5’7" Ontario
+          native who was then 180 pounds. "It was honestly my daughter who gave me the motivation to lose weight."
+        </p>
+        <h3>The ‘Muffin Top’ Song</h3>
+        <p>
+          James is clearly dedicated to his family. Watching them succeed is his No. 1 priority, and he’s willing to do anything to
+          provide for his wife, 15-year-old and 13-year-old daughters, and 9-year-old son.
+        </p>
+        <p>
+          "My oldest daughter had this song on her cell phone called ‘The Muffin Top’ song," laughs James. "So every time I would take
+          my shirt off, she would put on this ‘Muffin Top’ song, and I think that was the defining moment. Even though it
+          sounds cruel, she’d say, ‘Dad, you’re kind of fat…’"
+        </p>
+        <p>
+          It was an eye-opener for James — and with the support of his wife, — he decided not to let his injury, work, and yes, even
+          "The Muffin Top" song get the best of him.
+        </p>
+        <p>
+          "A box showed up at the door, and my wife simply said, ‘We’re going to do Isagenix together.’ So of course I had to prove
+          her wrong."
+        </p>
+        <p>
+          Simply put, his wife won. James’ energy went through the roof, he lost the weight, and went from a 34" waist to 31.*
+        </p>
+        <h3>Representing Tradesmen</h3>
+        <p>
+          "When you’ve been in the trade for 20 some odd years, you really feel your body start to get sore after a hard day’s work,"
+          explains James. "I saw the IsaBody Challenge® as a chance to represent tradesmen who were missing out on the great
+          feeling that these products gave you after those long days."
+        </p>
+        <p>
+          James originally got into the Challenge, he admits, for the guarantee of receiving $200 worth of products once he completed
+          the Challenge. But his willpower and results behind the Challenge were, clearly, astonishing.
+        </p>
+        <p>
+          "I started to get abs and that was huge for me!" exclaims James. "I’d never had abs before and I’d done everything I could
+          before, but I never could get that sculpt. I feel fitter now in my 40s than when I was working out every day in
+          my 20s. Even the guys at the gym were saying, ‘You’re really shredding down. What are you using?’"
+        </p>
+        <p>
+          James was more than glad to share Isagenix products with his crew.
+        </p>
+        <p>
+          "I was a nobody before, and all of a sudden I’m starting to get cut and even lift heavier weights," says James—which was
+          a huge surprise to his wife. "She always said I was the strongest little guy she’s ever known… the ability to lift
+          strong, made me feel better every time I lifted—that blows my mind!"
+        </p>
+        <p>
+          With the IsaBody Challenge empowering the change in his body and attitude, James is also rethinking about the legacy he would
+          like to leave to his children.
+        </p>
+        <p>
+          "I just want to prove to my children that once you set a goal—that if you set your mind to something and really put it out
+          there—and see it all the way through then you’ve done something amazing," he shares. "Isagenix has given me the
+          ability to actually dream and give 100 percent at everything—my Isagenix business, selling the products, fueling
+          myself with energy– everything!"
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'jesse-j'">
+        <h3>Busy Father Gains the Mind and Body of a Competitor</h3>
+        <p>
+          Jesse has never been stronger mentally or physically, and after completing back-to-back IsaBody® Challenges, he’s now the
+          guy at the gym everyone is watching. The father of three has managed to get his health and body in top form despite
+          a super busy schedule acting as public safety chief for the local airport, running his family’s all-natural vegetable
+          farm, and keeping up with three young kids.
+        </p>
+        <p>
+          "Whenever I see myself in the mirror I have a slight moment of panic because I hardly recognize the image in front of me,"
+          shares Jesse. "I continue to see new muscles forming, my body fat decreasing, and my energy increasing."
+        </p>
+        <h3>From Stressed to Ripped</h3>
+        <p>
+          "I let stress take over and felt my life being taken away from me one day at a time," shares Jesse. "I decided I was done
+          feeling sorry for myself and that Isagenix would be my new beginning."
+        </p>
+        <p>
+          The Montana resident’s hectic life kept him from working out as much as he liked, but after getting noticeable results from
+          just using the products, Jesse signed up for his first IsaBody Challenge. He wanted to ensure that his busy schedule
+          would not sabotage his new healthy lifestyle.
+        </p>
+        <p>
+          The Challenge was instrumental in helping him set goals, then keeping him disciplined and motivated to follow through. At
+          the end of 16 weeks, Jesse felt energized after releasing 26 pounds.* He was ecstatic over the positive changes
+          in such a short time and finally felt like he was getting his life back.
+        </p>
+        <p>
+          Riding high on his results and the momentum of his family and friends cheering him on, Jesse signed up for his second IsaBody
+          Challenge with a goal to compete in a physique competition.
+        </p>
+        <p>
+          "I switched from the Weight Loss President’s Pak to the 30-Day Cleansing and Fat Burning System with IsaLean® PRO to gain
+          lean body mass," says Jesse. "My go-to now is the Athlete’s Pak. I do three IsaLean PRO shakes a day and two scoops
+          of IsaPro® after a workout and before bed. I also cleanse twice a week."
+        </p>
+        <p>
+          After the second Challenge, Jesse released 7 pounds of fat, gained 2 pounds of lean muscle, and was down to an impressive
+          9% body fat from 28%.*
+        </p>
+        <p>
+          The 33-year-old was rewarded for all his hard work with a third-place finish in his first-ever physique competition. The
+          results qualified Jesse to compete on a national level and he plans to keep training and competing, an integral
+          part of his life.
+        </p>
+        <p>
+          "It was a lot of fun and it’s great motivation to stay healthy. Plus, Isagenix makes it easy," says Jesse. "A lot of other
+          competitors were riding highs and lows in their energy but I felt great through the whole competition."
+        </p>
+        <h3>The Promise of Tomorrow</h3>
+        <p>
+          Jesse’s commitment to the Isagenix lifestyle has given him back his health and renewed his confidence. It’s hard to believe
+          he was once a tired, stressed, and frumpy dad. The happy husband and energetic father you see today looks forward
+          to playing with his kids and seeing a big smile on his wife’s face because he is once again an active member in
+          his family life.
+        </p>
+        <p>
+          "I’m in a great place physically and more importantly, mentally," says Jesse. "I look forward to my third IsaBody Challenge
+          and what tomorrow will bring."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'john-m'">
+        <h3>Baby Boomer Energized by Isagenix Transformation</h3>
+        <p>
+          At 60, John is in the best shape of his life and ready to tackle the world. A natural go-getter, the railroad conductor and
+          professional drummer lives a very active lifestyle filled with skiing, working out, running after his grandkids
+          and playing in his classic rock, folk/rock, and jazz bands.
+        </p>
+        <p>
+          On top of all of his hobbies, John works a physically demanding job as a conductor and also serves on the safety board and
+          union for the railroad. But it’s this natural inclination to do more that finally got the best of him.
+        </p>
+        <p>
+          "Being single, I just like to be active because it keeps me going," says John. "But I was getting sluggish, tired, and gaining
+          weight. It took major effort for me to maintain all the activities I wanted."
+        </p>
+        <p>
+          The Baby Boomer decided to give Isagenix a try after seeing fellow musician and 2009 IsaBody Finalist, Mike H., release several
+          pounds after using the Isagenix systems. But he didn’t get serious about his health until he had officially reached
+          burnout and depression set in. He committed to his first IsaBody Challenge as an extra push to feel focused and
+          on track.
+        </p>
+        <p>
+          "I took off 25 pounds* and felt energized," says John. "Cleansing was a big factor for me. Now I look forward to Cleanse
+          Days because I know how I’m going to feel the next day."
+        </p>
+        <p>
+          John was so happy with his initial success that he dove in to a second IsaBody Challenge. Although he suffered a back injury
+          halfway through that left him unable to exercise properly, he was able to maintain his weight by increasing his
+          Cleanse Days. He succeeded in finishing the Challenge and winning an Honorable Mention along the way
+        </p>
+        <h3>Youthful Aging Powered by Isagenix</h3>
+        <p>
+          While many of his peers are experiencing a decline in activity and health, John is at the top of his fitness game after completing
+          four IsaBody Challenges. The 60-year old credits the addition of the Isagenix Brain and Sleep Support System and
+          Ageless Essentials™ with Product B® IsaGenesis® to his Isagenix routine for his improved performance in the gym
+          and behind the drums.
+        </p>
+        <p>
+          "I truly believe that taking these products together has brought me to another level," says John. "I’m down to a size 32*
+          and in the best shape ever."
+        </p>
+        <h3>Broadcasting Isagenix</h3>
+        <p>
+          John is looking forward to his retirement from the railroad this year to pursue his Isagenix business full time. The active
+          single is committed to reaching Executive by Celebration 2015 and he plans to do it with meetings and Launch Parties
+          targeting his peers.
+        </p>
+        <p>
+          "I really want to let other Baby Boomers know that Isagenix is a great opportunity," says John. "If you’re looking to get
+          in shape and stay young, as far as I’m concerned, this is the ultimate system that will take you there."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'kathy-p'">
+        <h3>Caregiver Proves Healthy Aging Plays a Pivotal Role Later in Life</h3>
+        <p>
+          At 53 years young, Kathy is happily married living in Hawaii. She and her husband honeymooned on the island of Kauai, fell
+          in love with everything about it, and decided to call "paradise" home.
+        </p>
+        <p>
+          They work together at a local assisted living community in an effort to give back. Kathy’s titles range from Joy Specialist
+          to Happiness Facilitator to Social Butterfly – she likes to keep it fun for the residents, and considers them her
+          family. She is the Business Office Manager. "But, we had fallen into a rut at home." recalls Kathy. "We were enjoying
+          sitting back, relaxing, eating the wrong foods, and watching TV a little too much. We were not getting out and
+          enjoying the island."
+        </p>
+        <p>
+          It wasn’t until Kathy turned 50 that she decided to embark on an exercise regimen and lose weight.
+        </p>
+        <h3>Age is Just a Number</h3>
+        <p>
+          "From age 50 to 51, I was frustrated," shares Kathy. "Nothing worked. I had become an expert at not losing weight on numerous
+          weight-loss programs."
+        </p>
+        <p>
+          Then her yoga instructor shared Isagenix and the benefits behind the products.
+        </p>
+        <p>
+          "She also encouraged me to take a few "before" pictures, to document my journey and upload them into the Challenge," says
+          Kathy, "which I really did not understand. But I was so focused, I trusted her and did what she said."
+        </p>
+        <p>
+          With an increasing number of failed weight-loss programs under her belt, Kathy was open-minded and seeking solutions.
+        </p>
+        <p>
+          "When I saw my initial ‘before’ pictures I started to cry," remembers Kathy.
+        </p>
+        <p>
+          "They instantly became my motivation to get healthier. Anyone who thinks they don’t need to take a ‘before’ picture should
+          think again. It could be the game-changer you need."
+        </p>
+        <p>
+          Within three days of being on the 30-Day Cleansing and Fat Burning System, Kathy started to feel better, inside and out.
+        </p>
+        <h3>Third Time’s a Charm</h3>
+        <p>
+          That was three Challenges ago. Her incredible transformation has even been pictured in the 2013 and 2014 IsaBody™ Look Books.
+        </p>
+        <p>
+          "I lost 28 pounds* during my first Challenge," says Kathy. "I was happy. I thought I was finished, so I considered myself
+          in maintenance." But something strange happened. Before she could sign up for her second Challenge she shed an
+          additional 11 pounds,* taking her slim 5’2" physique down to a toned 114 pounds. At the end of her second Challenge
+          she dropped 3 additional pounds* for a final weight of 111 lbs. Then the third Challenge made it all so rewarding
+          by being selected as a finalist before the end of the year. "I don’t use a scale often," admits Kathy. "I rely
+          on how my clothes fit and how I feel."
+        </p>
+        <p>
+          The regimen that brought her success? Two shakes a day…unless she is running late, then Kathy reaches for an IsaLean Bar.
+        </p>
+        <p>
+          "I easily integrated Isagenix into my life. I was of the mindset that this was for life, so I wrapped my head around the
+          concepts, and it worked!"
+        </p>
+        <h3>Forging Forward</h3>
+        <p>
+          Kathy recently signed up for her fourth Challenge. Her goal: Build more lean muscle.
+        </p>
+        <p>
+          "I see firsthand, every day, how things are for the elderly folks who took care of themselves. They are leading active, vital
+          lives, and I want that kind of healthy aging for me," says Kathy.
+        </p>
+        <p>
+          Overall, Kathy has lost 39 pounds* and 40 inches* since starting her Isagenix journey.
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>Stay focused. Find the balance between good nutrition and exercise and you’ll do it forever.</li>
+          <li>Live a little. Just get back on track after you are done celebrating!</li>
+          <li>Skip the scale. It’s not important!</li>
+          <li>Be helpful and kind. It will keep you young.</li>
+        </ul>
+        <h3>Kathy's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro (Natural Vanilla)</li>
+          <li>Ionix® Supreme</li>
+          <li>IsaDelights (Milk Chocolate)</li>
+          <li>IsaLean® Bars (Nutty Caramel Cashew)</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'kelli-e'">
+        <h3>Former Pro Fitness Competitor Gets Her Pre-Baby Body Back</h3>
+        <p>
+          Two years ago, if someone had shown Kelli her "before" photo from the beginning of her 2015 IsaBody Challenge®, she would
+          never have believed it. She was in top shape as an elite fitness competitor and had recently received her pro card.
+        </p>
+        <h3>Adjusting to Motherhood</h3>
+        <p>
+          When Kelli became pregnant with her first baby last year, she ended up gaining nearly 50 pounds. Even after giving birth,
+          she retained much of the weight.
+        </p>
+        <p>
+          "I understand why people are comfortable with where they’re at after having a baby," says the 29-year-old mother. "As a new
+          parent, you don’t care about how you look, because everything is about the baby and you want to spend every moment
+          you can with them."
+        </p>
+        <p>
+          As the days went by, the Wisconsin-native began to feel down on herself and was too embarrassed to go back to the gym where
+          everyone had known her during her fitness prime.
+        </p>
+        <p>
+          In February 2015, four months after giving birth, Kelli decided that she couldn’t take it anymore. She "kicked it into gear"
+          and joined the IsaBody Challenge. Her goal was to get her body back, not only for herself, but for her son as well.
+        </p>
+        <p>
+          "I knew the only way I was going to be happy with myself and be a better mom was to have my confidence back," she remembers.Putting
+          in the Time
+        </p>
+        <p>
+          The new mother worked hard and got back into her gym routine.
+        </p>
+        <p>
+          "I thought, ‘I’m going to get there, and I’m going to see the results. It’s just going to take time,’" Kelli recalls. And
+          she was willing to put in that time.
+        </p>
+        <p>
+          Within a few weeks, she started to notice her progress, empowering her to finish strong. Her fiancé, Jesse, stood by her
+          side, successfully completing his own Challenge. Kelli felt a great deal of support during her transformation and
+          now enjoys a body that rivals her former fitness competitor physique.
+        </p>
+        <p>
+          "The biggest part of Isagenix is the positive people that are involved in the company," shares Kelli. "It’s amazing to me."
+        </p>
+        <h3>Reaching Goals</h3>
+        <p>
+          No longer confined to maternity jeans, Kelli comfortably wears her size 2 skinny jeans and feels that her stamina has greatly
+          improved. This fall, she is hoping to compete in her first fitness competition since having her son.
+        </p>
+        <p>
+          Kelli doesn’t let a day go by without properly nourishing her body. Specifically, she enjoys Ageless Essentials™ with Product
+          B® IsaGenesis®, Ionix® Supreme, and nightly shots of Cleanse for Life®.
+        </p>
+        <p>
+          One of her biggest tips for losing weight is to have a proper eating routine. "I never skip breakfast or dinner," she says.
+          "I eat a shake, a bar, or other snacks or meals every three hours to build my metabolism."
+        </p>
+        <p>
+          Kelli’s ultimate goal is to one day own a gym with her soon-to-be husband. She is in the process of getting her personal
+          training certification so she can help others improve their fitness and nutrition as well.
+        </p>
+        <p>
+          "I’ve had so many positive responses to everything that I’ve done," she says. "I want to be able to help others reach their
+          goals as well."For more IsaBody success stories like Kelli’s.
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'michael-l'">
+        <h3>Father of Three Challenges Himself, Becomes an Inspiration to His Children</h3>
+        <p>
+          While facing unemployment and back surgery, Illinois-native Michael L. had lost hope. His nutrition was poor, he was overweight,
+          and he had no energy for himself or his family.
+        </p>
+        <p>
+          His trying situation came to a point where simply waking up in the morning seemed meaningless. "I couldn’t think of anything
+          I had done to make the world a better place," remembers Michael. "I knew people counted on me, but I couldn’t be
+          counted on."
+        </p>
+        <h3>A Life-Changing Decision</h3>
+        <p>
+          When Michael’s friend introduced him to Isagenix six weeks after his back surgery, his outlook was bleak. Michael turned
+          it down, instead focusing on simply trying to get by. During his recovery, he realized his life was spinning out
+          of control. Then, nearly six months later, Michael was introduced to Isagenix again. This time, it was his massage
+          therapist who encouraged him to give the products a try.
+        </p>
+        <p>
+          "Here were two different people who didn’t know each other but were both telling me the same story," he recalls.
+        </p>
+        <p>
+          Praying this would be the change he desperately needed, Michael made the decision to try Isagenix.
+        </p>
+        <p>
+          "I know September 4, 2014 is the day my life changed forever," tells Michael. "I knew four days into the program that it
+          was different. I had more energy, and soon I began losing weight. I didn’t believe it at first."
+        </p>
+        <h3>Continual Progress</h3>
+        <p>
+          Even before he started working out, Michael lost 30 pounds* with his improved nutrition. He had started living the healthy
+          lifestyle he’d always wanted. Suddenly full of energy and passion, he began to share Isagenix with everyone he
+          could, including his wife and children. He was so encouraged by his success that he wanted to further his progress.
+          "I thought, ‘if I’m going to talk the talk, I have to walk the walk.’ So I decided to join the IsaBody Challenge."
+        </p>
+        <p>
+          During those 16 weeks, Michael lost an additional 21 pounds* and established an exercise routine that helped him achieve
+          a stunning, chiseled physique.
+        </p>
+        <p>
+          Michael was not the only one impressed by his results. His children watched as their dad became an even greater role model
+          and a more involved parent.
+        </p>
+        <p>
+          "This was the first time I can recall as a parent that I led by example," recalls Michael. "My son wrote a Facebook post
+          saying, ‘Dad, you inspire me.’ I started crying right in the middle of the gym when I read it."
+        </p>
+        <p>
+          Inspired by their father’s newfound resolve for health and wellness, two of his children quickly began using Isagenix products
+          and have had their own amazing results. In fact, his daughter is currently building her business while attending
+          college. Recently, Michael’s other son began his own Isagenix journey as well. Michael feels his proudest accomplishment
+          is that of his family’s experience with Isagenix. Not only do his children share his passion, but he has also brought
+          his wife and 80-year-old mother on board.
+        </p>
+        <h3>Reaching Out</h3>
+        <p>
+          During his Challenge, Michael took advice from the Isagenix pros, including 2014 IsaBody Challenge Grand Prize Winner Amyra
+          Mondon. Specifically, Michael followed one of Amyra’s tips to hire a professional trainer. He also learned workout
+          tips from coaches at Savage Fitness.
+        </p>
+        <p>
+          With the support of his family, friends, and fellow Isagenix Associates, Michael looks and feels better than ever.
+        </p>
+        <p>
+          "This is what I should have felt like in my twenties," shares Michael. "I feel like I’ve gained another chance. It’s a lot
+          of fun!"
+        </p>
+        <p>
+          Not stopping there, Michael now knows his newfound title of IsaBody Challenge Finalist will help further his ability to share
+          Isagenix with everyone.
+        </p>
+        <p>
+          "My passion is to help people get healthy," he says. "I feel great and other people should feel the same way. I know now
+          that I am making a difference."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'natalie-h'">
+        <h3>Mom Now the Best Version of Herself</h3>
+        <p>
+          Before being introduced to Isagenix by a friend, Natalie was overweight and uncomfortable in her own skin. It seemed everything
+          she was taught as a competitive athlete was not working anymore. Adding to her frustrations was the photography
+          business she started so she could stay home with her son.
+        </p>
+        <p>
+          "My business was floundering and it was taxing my relationship with my ever-supportive husband," shares Natalie. "I was feeling
+          like a failure as a mom, like a wife with no zest for life, and a partner with no financial contribution."
+        </p>
+        <p>
+          Desperate for change, Natalie took a chance and purchased her first box of Isagenix products with a credit card. After a
+          couple weeks she already felt better. After a short period of time, she was already down 12 pounds and 19 inches.*
+          She used the IsaBody Challenge to see what she could accomplish in 16 weeks.
+        </p>
+        <p>
+          "The Challenge provided me the support to stay accountable. I could plug in my results and see weight getting lower and the
+          inches getting smaller," shares Natalie. "And the $200 worth of free products is such a great incentive."
+        </p>
+        <h3>A Sparkling Red Celebration</h3>
+        <p>
+          The culmination of Natalie’s year-long Isagenix journey happened onstage in a sparkling red bikini. She slimmed down 46 pounds
+          with back-to-back Challenges, the 31-year-old mother fulfilled her dream of competing in a bikini competition.
+          At the end of it all, she’d lost 49 pounds,* 53 inches, and 15% body fat.*
+        </p>
+        <p>
+          Natalie’s goal was to be the absolute best version of herself. Following the guidance of her friend, fitness coach, and Isagenix
+          Millionaire Cathy, this first-time competitor switched her focus from weight loss to energy and performance.
+        </p>
+        <p>
+          "I utilized the IsaLean® Shakes, IsaLean® Pro and IsaPro® as I prepared for the stage. I am so grateful for these incredible
+          products. I’m in a size that I have NEVER been as an adult and I feel healthier and sexier at 31 than I did at
+          21," declares the 2015 IsaBody Challenge Top Achievers Finalist.
+        </p>
+        <h3>New Body Leads to Booming Business</h3>
+        <p>
+          The bikini competition and dramatic transformation pictures from the IsaBody Challenge has flooded Natalie’s inbox with messages
+          from people who want to know her secret.
+        </p>
+        <p>
+          "The secret is, there is no secret," says Natalie. "I had wall-kicking moments and days where I wanted to throw in the towel.
+          But I was dedicated to creating healthy habits and sharing my story. This is a lifestyle commitment and if you
+          follow the system Isagenix has laid out, it works."
+        </p>
+        <p>
+          Now that she’s reached her ultimate fitness goal, Natalie is now excited about the prospect of having a second child-a dream
+          she thought was not financially possible before Isagenix. The stay-at-home mom’s fast-growing business has allowed
+          her to be present for her son while making a significant contribution to the household income.
+        </p>
+        <p>
+          "I feel the best I have ever felt. The fact that it happened while I’m able to earn an income that will allow my husband
+          and I to expand our family is something I can never repay. My life is forever changed."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'nicole-s'">
+        <h3>Mom Finds Way to Care for Herself, So She Can Care for Others</h3>
+        <p>
+          Most mothers believe in putting their families first, and many are so busy putting others’ needs above their own that they
+          forget to care for themselves. For 28-year-old mother Nicole S., that’s exactly how it happened.
+        </p>
+        <p>
+          "I was taking care of my son, my husband, and doing everything for everyone else all the time," remembers Nicole. "I lost
+          myself in all of that."
+        </p>
+        <h3>The Perfect Gift</h3>
+        <p>
+          Trying to make time to improve her own health while caring for her young son, Bentley, proved challenging, as he struggled
+          with certain feeding difficulties, which required additional time and effort for Nicole.
+        </p>
+        <p>
+          Nicole’s mother, Tammie, had been using Isagenix products and had experienced an incredible transformation. When Tammie came
+          to visit her daughter and grandson for Christmas, she gave Nicole the best gift she could—a box of Isagenix products
+          to get her started on taking care of herself.
+        </p>
+        <p>
+          "My mom asked me ‘what are you doing for yourself? You need to take care of yourself, that way you can take care of everybody
+          else,’" Nicole recalls.
+        </p>
+        <p>
+          Right away, Nicole began using the products her mom had given her, and she began to feel a noticeable difference.
+        </p>
+        <p>
+          "I started having energy and sleeping better," shares Nicole. "My favorite product was the Ionix® Supreme, I still can’t
+          go a day without it."
+        </p>
+        <p>
+          Empowered by her goal to become a better mother through improving herself, Nicole committed to joining the IsaBody Challenge®.
+        </p>
+        <p>
+          In the beginning, she focused solely on nutrition with Isagenix, not yet introducing exercise into the mix. Over time, however,
+          she found that not only was she able to keep up with a toddler, but she also had enough energy to add a bit of
+          exercise into her daily routine as well.
+        </p>
+        <p>
+          "I’m excited to have the energy to exercise and stay active with my son," she says.
+        </p>
+        <h3>Refusing to Give Up</h3>
+        <p>
+          Nicole knew her resolve to take care of herself was benefiting her as a mother. "Things seemed to be getting so much better."
+        </p>
+        <p>
+          Just when life seemed to be heading in the right direction, family problems arose. In the middle of her Challenge, Nicole’s
+          husband left the family and moved out of state, leaving her to care for Bentley on her own. This proved to be an
+          incredibly difficult time in her life, but Nicole knew she couldn’t stop moving forward.
+        </p>
+        <p>
+          "I definitely knew that giving up was not going to be an option," she shares. "I was not going to give up myself, because
+          I’ve become a better mom through this whole process."
+        </p>
+        <p>
+          Nicole surged forward with her Challenge, and even began sharing Isagenix with others along the way. Despite this being a
+          difficult time in her life, she showed the resilience it took to truly better her life.
+        </p>
+        <p>
+          "I know that I wouldn’t have made it through as much as I did if I didn’t have this to focus on," she says. "It’s helped
+          change us and make us stronger. This Challenge definitely saved our lives."
+        </p>
+        <h3>Stronger than Ever</h3>
+        <p>
+          Supported by family and friends, Nicole keeps her sights on being the best mom she can be. Tammie says she is "beyond thrilled"
+          to see Nicole and Bentley experience a new life.
+        </p>
+        <p>
+          At the conclusion of her IsaBody Challenge, Nicole had dropped 15 pounds* and gained a true passion for Isagenix products.
+          That passion has led to her next goal: to share Isagenix with others and to grow her Isagenix business.
+        </p>
+        <p>
+          "How can you not share this freedom with other people when it’s done so much for you"? says Nicole. "I believe in it. I believe
+          in the products. I need to do this for me and my son and our future."
+        </p>
+        <p>
+          Nicole hopes to move near her family in Florida and join Tammie in growing their businesses. They look forward to "throwing
+          IsaParties for friends who want to experience Isagenix."
+        </p>
+        <p>
+          Feeling stronger now than ever, Nicole’s biggest tip for others beginning their own journey is to remember where they started.
+          She focuses on being supportive and helps them with researching product information. Most of all, she encourages
+          them to join the IsaBody Challenge as she did.
+        </p>
+        <p>
+          "No matter what you’re going through or what challenges you’re facing, if you just keep pressing forward, you can overcome
+          anything and come out stronger and better on the other side."
+        </p>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'ryan-e'">
+        <h3>Through Sickness and Flood, IsaBody Finalist Proves He’s Up for Any Challenge</h3>
+        <p>
+          They say "when it rains, it pours." For Ryan, an Alberta-native, that was literally how it happened.
+        </p>
+        <p>
+          In June of 2013, a massive flood hit Calgary, Alberta, devastating the area. Reported by the CBC as the most costly natural
+          disaster in Canadian history, the flood displaced over 100,000 people from their homes. Ryan and his family were
+          among those left homeless.
+        </p>
+        <p>
+          "We were displaced from our home for two months, living at a friend’s house," recalls the father of two. "There was seven
+          feet of water in the basement that ate away my basement floor. We had one of those IKEA shelves, the big thick
+          ones—it was floating. The area in my basement was toxic and I didn’t want my kids there."
+        </p>
+        <h3>Better Health, Better Life</h3>
+        <p>
+          At the same time as the flood, Ryan was also suffering from a candida (fungal) infection in his digestive tract and a condition
+          called adrenal fatigue.
+        </p>
+        <p>
+          "Adrenal fatigue is very lifestyle-based," explains Ryan. "You have to hammer nutrition into your body because you run through
+          it so much faster."
+        </p>
+        <p>
+          Ryan’s candida illness had similar effects to the adrenal fatigue, which compounded the problem.
+        </p>
+        <p>
+          "Brain fog is the most difficult symptom because you feel so disconnected. Loud noise made it worse, so in social settings
+          I would be distant. This and irritability are the biggest issues, making me a very unpleasant person."
+        </p>
+        <p>
+          The loving husband and father of two daughters, ages 7 and 4, has always prided himself first and foremost on being there
+          for his girls. With his ailing body, it became an incredible struggle to do so.
+        </p>
+        <p>
+          "There was a time when I couldn’t be myself for my kids," reflects Ryan. "It’s hard to admit that. It’s so hard to lose yourself.
+          People don’t realize how bad it is unless you tell them."
+        </p>
+        <p>
+          The natural disaster compounded Ryan’s health issues as he attempted to repair the flood’s extensive damage to his house.
+          Additionally, his profession as a Chiropractor added to the physical demands Ryan placed on his body. The 36-year-old
+          knew he had to do everything possible to get adequate nourishment.
+        </p>
+        <p>
+          "It was intense. I had no fuel left," remembers Ryan. "You’re just not yourself and you can’t find it in yourself to get
+          it back."
+        </p>
+        <p>
+          Back in 2013, Ryan and his wife Angela, met Angela M., who introduced them to Isagenix. Ryan was already interested in similar
+          products, but with Isagenix, he found he was able to get everything in one place. He had no idea how much quality
+          nutrition would help.
+        </p>
+        <p>
+          "Isagenix provided me with the essential nutrition my body required, which assisted me with correcting my deficiencies,"
+          tells Ryan. "It’s also what got me through the flood. I would come in and have my shake and I would keep going.
+          That’s truly what allowed me to get through enough to do that."
+        </p>
+        <h3>A New Kind of Challenge</h3>
+        <p>
+          After a great deal of effort, Ryan and his family were able to recover from the devastation of the flood and return to their
+          home. After seeing the impact Isagenix products had on his body, even through the many obstacles he faced, Ryan
+          decided to take on a new challenge.
+        </p>
+        <p>
+          In 2014, with the goal to "be more," Ryan joined the Isagenix IsaBody Challenge.
+        </p>
+        <p>
+          "I thought, ‘This is my chance,’" shares Ryan. "I’m going to give this a shot. The Challenge was perfect because it was going
+          to hold me accountable and I was going to push hard."
+        </p>
+        <p>
+          And he did. During the 16-week Challenge, Ryan regained his energy and toned his body, building 5 pounds of muscle.*
+        </p>
+        <p>
+          "The IsaBody Challenge was not about loss for me, it was about the gains," says Ryan. "I gained back my health, my life,
+          and my body."
+        </p>
+        <p>
+          As a chiropractor, Ryan understands he is in a unique position to impact the health of others. He sees this as the perfect
+          opportunity to share his story.
+        </p>
+        <p>
+          "I talk about the IsaBody Challenge with all of my patients," tells Ryan. "Anybody that’s willing to listen. I find when
+          people get on it, they have nothing but great things to say. And I love to hear that because I don’t want to just
+          help them physically with treatments, I want to see their lifestyle change."
+        </p>
+        <p>
+          Since completing the Challenge and overcoming major obstacles, Ryan has continued to improve his health. He sees Isagenix
+          as a "lifestyle" and continues to use the products to properly nourish his body.
+        </p>
+        <p>
+          "I got back the passion for life," Ryan says with a smile. "It’s about leaving your mark and making a difference for people
+          in their health."
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>Train hard, recover harder: Your ability to recover is vital to getting the best results and staying healthy. Nutrition
+            is the foundation of recovery.</li>
+          <li>Hard work pays off: Some days you will have to dig deep but you will get out what you put in. Just keep in mind
+            that what you get out may not be what you expected—but better.</li>
+          <li>Find your inspiration: Having your "why" will be your constant reminder of the purpose behind your efforts. It
+            will allow you to put the challenging days or moments into perspective so you can renew yourself and your approach.</li>
+          <li>Have fun: Your success will be more fulfilling if you had fun along the way.</li>
+        </ul>
+        <h3>Ryan's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>Cleanse For Life®</li>
+          <li>IsaDelights®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'abby-g'">
+        <h3>The Speed of Purpose: From Couch Potato to IsaBody Finalist</h3>
+        <p>
+          One day after work, Abby was reprising her role as a self-proclaimed "couch potato” when she came to a sudden and startling
+          revelation—life wasn’t getting any better. She was in her early 20s and her life had already settled into an unfulfilling
+          and unhealthy routine.
+        </p>
+        <p>
+          "Every day became a carbon copy of the one before it," says Abby. "I went to work, grazed the fridge and cabinets for hours
+          on end eating unhealthy snacks, then I’d plop down on the couch and watch TV until I couldn’t keep my eyes open,"
+          confesses Abby. "I had no motivation."
+        </p>
+        <p>
+          Nothing could move her. "My boyfriend would try to get me to go on walks or ride bikes," Abby remembers, "but I just wasn’t
+          interested."
+        </p>
+        <p>
+          Her ‘aha moment’ came when she saw pictures of herself from a friend’s party. "I saw pictures of myself and I was appalled,"
+          says Abby, "I realized it was time to make a change–things weren’t going to get any better–I didn’t even recognize
+          myself."
+        </p>
+        <h3>Abby’s IsaBody Motivation</h3>
+        <p>
+          Abby started with Isagenix in March of 2013. "I started using the 30-Day Cleansing and Fat Burning System," she says, "I
+          started to see pretty fast results, and considered joining the IsaBody Challenge®."
+        </p>
+        <p>
+          "My trainer suggested we do the Challenge, so that is exactly what I did to hold myself accountable," remembers Abby, "I
+          never in a million years expected to be a finalist! I just saw that I needed to change my lifestyle."
+        </p>
+        <h3>Abby’s New Normal</h3>
+        <p>
+          Today, Abby’s routine is very different. "These days, I get a lot of compliments," She shares confidently, "especially
+          during the final weeks of the Challenge."
+        </p>
+        <p>
+          Abby talks about some of her favorite Isagenix products. "I take e+™ before every workout. Isagenix fuels my energy. I feel
+          more alive and am more motivated and I’m so excited to tell others about Isagenix. Then there’s Ionix®. I can’t
+          go a day without it."
+        </p>
+        <p>
+          Friends and family have really noticed a significant change in Abby’s physique. "I frequently hear, ‘Wow you’ve really lost
+          a lot of weight’ and I must say that feels good."
+        </p>
+        <h3>A Challenge For The Future</h3>
+        <p>
+          Being an IsaBody Challenge Finalist has changed Abby’s life. "I plan to compete in many other IsaBody Challenges," states
+          Abby. "I love the discipline and it helps me stay focused, lowers my body fat percentage and reach a higher level
+          of fitness."
+        </p>
+        <p>
+          Abby is driven. "I love to share my story with everyone I meet. My goal is to build a business and help people. Isagenix
+          is the perfect way to build both."
+        </p>
+        <h3>Abby's Tipe for Weight-Loss Success and IsaBody Success</h3>
+        <ul>
+          <li>
+            <strong>Focus on your goals.</strong> Whether you want to release pounds, gain lean muscle or improve your health at
+            any age, IsaBody has a Challenge for you.</li>
+          <li>
+            <strong>Take the Challenge seriously.</strong> This Challenge is about transformation that moves you to make lasting
+            changes for healthy longevity.</li>
+          <li>
+            <strong>Share!</strong> Discuss the IsaBody Challenge whenever possible, you’ll be surprised at how much it will motivate
+            you.</li>
+        </ul>
+        <h3>Abby's Favorite Products</h3>
+        <ul>
+          <li>Ionix® Supreme</li>
+          <li>IsaLean® Pro</li>
+          <li>e+™ Energy Shot</li>
+          <li>Cleanse for Life®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'amyra-m'">
+        <h3>Florida Fitness Instructor Gets Fit with Isagenix</h3>
+        <p>
+          "Life before the IsaBody Challenge® was frustrating," shares Amyra, a former Tampa Bay Buccaneers NFL Cheerleader and current
+          group fitness instructor. "I was always active yet kept gaining weight. Then to be in front of a group, trying
+          to help them get in shape and not being in shape myself, was exhausting and disappointing."
+        </p>
+        <p>
+          Not to mention the not-so-exciting news she received from her doctor following her yearly physical.
+        </p>
+        <p>
+          "The tremendous financial pressure my family was having, the stresses of motherhood, and the long hours my husband was working
+          resulted in a lot of late-night snacking and me weighing 173 pounds," says Amyra.
+        </p>
+        <p>
+          That’s when her good friend shared Isagenix.
+        </p>
+        <h3>Becoming Her Biggest Fan</h3>
+        <p>
+          "I immediately ordered the 9-Day Deep Cleansing and Fat Burning System and signed up for the IsaBody Challenge," she says.
+        </p>
+        <p>
+          The first Challenge was all about transforming her physical appearance. The second was about transforming her life.
+        </p>
+        <p>
+          "I lost 7 pounds* that first week," exclaims Amyra. "But it was at Celebration 2013 when I realized that this is more than
+          just a physical transformation. I saw the financial opportunity available with Isagenix and gained a hope for the
+          future."
+        </p>
+        <p>
+          The desire to look her best, coupled with her drive to financially give back to her family, drove her to get up each morning
+          and work out.
+        </p>
+        <p>
+          Her success became apparent three months into her first Challenge when she slipped back into her pre-pregnancy jeans. Even
+          more exciting for Amyra was purchasing her first pair of size 2/4 jeans less than one year after joining Isagenix,
+          and after completing her second Challenge—a transformation slim down of six pant sizes.*
+        </p>
+        <h3>Creating Team Spirit</h3>
+        <p>
+          Today, this successful Crystal Executive is happier and healthier than she’s ever been. She’s also contributing between $300
+          and $900** a month to her family’s household income!
+        </p>
+        <p>
+          "Taking part in the Challenge has established more credibility and more authority in my business than I could ever articulate
+          in a conversation," explains Amyra.
+        </p>
+        <p>
+          Her personal and professional goals moving forward are to share the vision and build a team of like-minded people. She also
+          wants to help families experience the same financial relief to ultimately live the life they desire.
+        </p>
+        <p>
+          "I start by sharing the cost-saving benefits of the President’s Pak," laughs Amyra. "I spent so much money during my first
+          month between ordering the 9-Day System, vitamins and snacks for my kids, and extra products for my husband to
+          try. I wish someone would have told me sooner."
+        </p>
+        <p>
+          So, what’s next for this IsaBody Challenge Top Achievers Finalist?
+        </p>
+        <p>
+          "We [my team and I] are currently doing a 90-Day Game Plan," shares Amyra. "I have made a commitment to myself that while
+          I continue to wake up everyday at 5 a.m. to work out in preparation for Celebration in August, I will work my business
+          just as hard in hopes of achieving 3-Star Golden Circle by then!"
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Engage in exercise.</strong> "Just drink the shake and earn your shower!” (Follow the program and engage in any
+            exercise that you enjoy that makes you sweat.)</li>
+          <li>
+            <strong>Focus on today.</strong> Don’t focus on the end goal. It can be overwhelming. Focus on the day and celebrate
+            your daily accomplishments. They will accumulate into the big goal achieved!</li>
+          <li>
+            <strong>Talk to others.</strong> Plug in to the IsaBody community. Take lots of pictures and share your journey. It will
+            inspire others which will serve as motivation for you.</li>
+          <li>
+            <strong>Stay the course.</strong> No matter what, don’t quit!</li>
+        </ul>
+        <h3>Amyra's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro</li>
+          <li>e+™</li>
+          <li>Ionix® Supreme</li>
+          <li>Whey Thins™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'angie-r'">
+        <h3>Top Achiever Finalist Hopes to ‘Spread the Secret’</h3>
+        <p>
+          "Many times throughout my life I would turn to food for comfort," reflects Angie, a 2014 IsaBody Challenge® Top Achiever
+          Finalist. "The more I ate, the more I gained. The more I gained, the more I tried to shed the weight. The more
+          I failed, the more I ate. I was in a vicious cycle and was my own worst enemy."
+        </p>
+        <p>
+          After 20 years of "trying every fad diet under the sun," Angie glanced at her family—the majority who were overweight—and
+          chalked it up to genetics.
+        </p>
+        <p>
+          "Let me put it this way: By that time, the only thing I hadn’t done was gastric bypass surgery," shares Angie who was 258
+          pounds before being introduced to Isagenix in March 2013.
+        </p>
+        <h3>Proving a Point</h3>
+        <p>
+          Angie’s friend, Stephanie, gave her the 30-Day Cleansing and Fat Burning System to prove that Angie could lose the unwanted
+          weight with the right tools.
+        </p>
+        <p>
+          Wanting to equally prove to her friend that Isagenix was another "fad diet," Angie was actually pleasantly surprised. The
+          products not only worked, but Angie enjoyed the overall simplicity of the system.
+        </p>
+        <p>
+          "Stephanie definitely got me," laughs Angie. "I’m so happy she was right and I was wrong."
+        </p>
+        <p>
+          Since then, Angie went through an outstanding transformation losing 140 pounds.* Her incredible results inspired her father
+          to join Isagenix and embark on a similar weight-loss journey. Together, the daughter and father each lost more
+          than 100 pounds,* and entered the prestigious 100-Pound Club together.
+        </p>
+        <h3>Bring It On</h3>
+        <p>
+          Angie’s a pro at bringing dreams to life. She dreamt of finding the "Angie within" and accomplished that after being asked
+          to join the IsaBody Challenge by an Isagenix employee, Ashley, who was inspired by her transformation when she
+          lost her first 100 pounds.*
+        </p>
+        <p>
+          Since joining the IsaBody Challenge, the Arizona native lost 28 more pounds and succeeded her goal of reaching her high school
+          weight of 125 pounds. Now, Angie’s a happy and healthy 118 pounds, and ready to compete for the title of 2014 IsaBody
+          Challenge Grand Prize Winner.*
+        </p>
+        <p>
+          "I think everybody should continuously be in the IsaBody Challenge," expresses Angie. "Because whatever goal you’re trying
+          to reach, if you have a tool such as the IsaBody Challenge to hold yourself accountable, no one else can hold you
+          accountable except you—it’s your choice."
+        </p>
+        <p>
+          With losing a total of 26 sizes* since joining Isagenix, Angie believes it’s not about the size of your pants that makes
+          you a winner—it’s how you feel inside.
+        </p>
+        <p>
+          "I feel fantastic. I look a lot better. I’m years younger. And I’m able to run and play with my children for the first time
+          in their whole lives," says Angie, a mother of three. "With this newfound energy, the greatest prize of all is
+          that I won my life back."
+        </p>
+        <h3>Sharing the ‘Secret’</h3>
+        <p>
+          Now on a daily regime of using the 30-Day System, the 1-Star Golden Circle, Crystal Director has another dream to make a
+          reality: inspiring others through her journey of overcoming self-doubt while achieving their peak of wellness.
+        </p>
+        <p>
+          As a Top Achiever Finalist, Angie’s been awarded $3,000 cash, a trip for herself and a guest to 2014 Top Achievers, 2014
+          Celebration and a spot aboard the 2014 IsaBody Challenge Transformation Cruise.***
+        </p>
+        <p>
+          "I am definitely associated with Isagenix to help everyone that I can," says Angie. "I mean, I want to shout to the world:
+          ‘I found the secret, everybody! Come here; I can help you.’"
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Hold yourself accountable.</strong> That way, you don’t blame a friend or spouse or whomever for your actions.
+            You have to answer to yourself.</li>
+          <li>
+            <strong>Join multiple Challenges.</strong> Whatever goal you’re trying to reach, if you have a tool such as the IsaBody
+            Challenge, it keeps making you better and stronger.</li>
+          <li>
+            <strong>Work straight from the heart.</strong> Find a workout that moves you, put your heart into it, and visualize that
+            goal from your heart.</li>
+          <li>
+            <strong>Everything happens for a reason.</strong> We all find ourselves using Isagenix through some personal journey.
+            Just know that no matter what happens, it’s there for a reason and use that to empower your goal.</li>
+        </ul>
+        <h3>Angie's Favorite Products</h3>
+        <ul>
+          <li>e+™</li>
+          <li>IsaLean® Shakes</li>
+          <li>Ionix® Supreme</li>
+          <li>Cleanse for Life®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'ben-m'">
+        <h3>Wrestling With An Unhealthy Life</h3>
+        <p>
+          Collegiate Certified Athletic Trainer coach Ben M. dedicated his life to encouraging the fitness and performance of others.
+          But when it came to his own health, he couldn’t quite pin a healthy lifestyle down. "I was obese," recalls Ben.
+          "I hold a master’s degree in health and human performance, but I couldn’t take my own health seriously."
+        </p>
+        <p>
+          Ben recalls his earlier years. "I’ve always been an active guy but never a fit guy." He continues, "I was always tired
+          and kept sleeping heavily. My hands and feet were always swollen." Ben had a sobering revelation. "I was just
+          15 years younger than my dad when he died of a heart attack."
+        </p>
+        <h3>Tapping Out Early</h3>
+        <p>
+          Ben confesses he "was tired all the time," especially after the birth of his second daughter. His health continued to deteriorate.
+          "I had just returned from a national athletic training convention, and I had health testing done. My biometric
+          numbers were out of control, and in the second year, my numbers were even worse."
+        </p>
+        <p>
+          With his health in decline, Ben noticed other disturbing developments. "I was falling asleep every night by 7 p.m. My health
+          just wasn’t where I wanted it to be." Ben reached a crucial decision. "If I was going to make a change, it was
+          now or never."
+        </p>
+        <h3>A Nutritional Rematch</h3>
+        <p>
+          Ben needed help. "I met with, Tryg and Tracy, my athletic trainers from college," he remembers. "Two people I’ve always
+          looked up to and respected. They’re always looking good, always into fitness. They suggested Isagenix." It was
+          then that Ben decided to take the first step. "I decided to sign up and join Isagenix that night."
+        </p>
+        <p>
+          Ben can hardly contain his passion for the IsaBody Challenge® and committing gave him a whole new perspective. "It got me
+          up off the couch and helped me get my health back on track," he says. "It’s awesome!"
+        </p>
+        <p>
+          Ben’s sky-high confidence and impressive results are winning hearts, minds and bodies to Isagenix. "My confidence and my
+          results are an inspiration to others, and that," he confides, "feels really good."
+        </p>
+        <h3>Tackling Healthy New Goals</h3>
+        <p>
+          Ben is training for the Oklahoma City Memorial Marathon–and that’s just the beginning. "I’m also in the hunt for six-pack
+          abs by summer," he shares. "Training is going great—I’m not going to stop until I get them."
+        </p>
+        <p>
+          "I loved getting the IsaBody call," Ben recalls. "Becoming a finalist really motivated me. I’m getting better all the time.
+          I’m aiming for 5 percent body fat; I want to look like a sprinter."
+        </p>
+        <p>
+          "My diet has never been this energy-packed," Ben insists. "Nowadays, I can’t wait to work out, and Isagenix is always there
+          for me."
+        </p>
+        <h3>Ben's Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Commit.</strong> Releasing unwanted pounds takes determination, focus and the right nutrition. No matter what
+            your IsaBody™ goals, take them seriously.</li>
+          <li>
+            <strong>Stay focused.</strong> Don’t let anything distract you and prevent you from achieving what you want.</li>
+          <li>
+            <strong>Take command.</strong> The Challenge puts you in control. It’s your ship–you’re the Captain. Set a course for
+            success and set sail.</li>
+          <li>
+            <strong>Don’t be shy.</strong> Discuss the IsaBody Challenge with everyone you meet. The energy and words that come from
+            you will be motivational – and infectious!</li>
+        </ul>
+        <h3>Ben's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Bar (Chocolate Cream Crisp)</li>
+          <li>IsaLean® Pro (Natural Vanilla)</li>
+          <li>Ionix® Supreme</li>
+          <li>Isagenix Greens!™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'bob-s'">
+        <h3>Top Achievers Finalist and Seasoned Network Marketer Reignites Business</h3>
+        <p>
+          Before Bob joined the IsaBody Challenge® he had been a business builder for nearly five years, using the Challenge as his
+          key enrollment tool.
+        </p>
+        <p>
+          When he was not actively building his business with his wife, Andreja, the two were running their family-owned fine dining
+          European restaurant in British Columbia.
+        </p>
+        <p>
+          "We work on average 12 to 16 hours a day, so when we came across Isagenix in April 2009, it was a complete blessing in disguise,"
+          shares Bob.
+        </p>
+        <p>
+          They were enjoying some much needed down time on the beach in Mexico when they met Isagenix Millionaires, 16-Star Platinum,
+          20-Star Crystal Executives Herb and Patty C.
+        </p>
+        <p>
+          "We found something in Patty and Herb that we didn’t even know we were looking for that day," recalls Bob.
+        </p>
+        <h3>Pushing the Envelope</h3>
+        <p>
+          The next day, they enrolled with Isagenix.
+        </p>
+        <p>
+          Over the next few years, Bob and his wife became faithful product users, slowly building their business. Everything was good,
+          but Bob knew it could be better. He knew if he really wanted to ignite his business, he had to lead by example.
+          That’s when he joined the Challenge.
+        </p>
+        <p>
+          He also wanted to put to rest some lurking misconceptions about Isagenix being a fad diet in his area.
+        </p>
+        <p>
+          "My goal was to be one of the first contestants to actually put on weight and to also prove that this system was not a ‘diet,’
+          but a true heath and wellness program that will do what you desire."
+        </p>
+        <p>
+          To start his journey, he ordered the Performance President’s Pak. He also carved out one hour a day for the gym—a place Bob
+          rarely went despite being fairly fit.
+        </p>
+        <h3>Building on Momentum</h3>
+        <p>
+          After a few weeks of combining the products with regular exercise, Bob’s body started to lean out. His results inspired his
+          trainer and a few gym goers to also try the products, which also helped to organically grow his business.
+        </p>
+        <p>
+          For Bob, his journey was never about weight loss but instead about weight gain. His motto was simple: Focus on the process
+          and results will come.
+        </p>
+        <p>
+          "My motivation came each time I saw the amount of weights I was lifting increase," excites this 2014 Top Achievers Finalist.
+          "That was proof I was succeeding."
+        </p>
+        <p>
+          In addition to packing on more muscle, another element of Bob’s journey was to inspire others to get healthier.
+        </p>
+        <p>
+          By the end of Bob’s Challenge he had done both: he had gained 8 pounds* and was sporting washboard abs all while igniting
+          his business.
+        </p>
+        <p>
+          Currently a 5-Star Golden Circle and 4-Star Crystal Executive earning between $280,000 and $417,000 a year,** Bob now speaks
+          with confidence when sharing the benefits of the Challenge with others.
+        </p>
+        <p>
+          "Isagenix has also helped bring out the teamwork between my wife and me," adds Bob. "Running a successful restaurant sometime
+          means you’re running in opposite directions to get everything done."
+        </p>
+        <p>
+          Now, Bob and his wife are encouraging everyone on their team to join the Challenge.
+        </p>
+        <p>
+          "Part of this journey is about discovering a new you," shares Bob. "I love this Challenge for giving me the drive and accountability
+          to keep motivated."
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Give yourself a break.</strong> Don’t make it so regimented that you set yourself up for failure.</li>
+          <li>
+            <strong>Have an accountability partner.</strong> Ask either someone in the IsaBody Challenge or a trainer to help you
+            stick with the program.</li>
+          <li>
+            <strong>Create a motto.</strong> Mine is "Focus on the process and results will come!”</li>
+          <li>
+            <strong>Have fun!</strong> Approach each day with enthusiasm. People will start to want what you have—this is a business
+            building tool when used right.</li>
+        </ul>
+        <h3>Bob's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>e+™</li>
+          <li>IsaLean® Bars</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'david-j'">
+        <h3>From Wake-Up Call to Weight-Loss Success</h3>
+        <p>
+          Ask David about life before the IsaBody Challenge®, and he sums it up in one word: unhealthy. "I was eating lots of frozen
+          and processed foods," he says. "As I entered my 40s, my health started deteriorating rapidly – high blood pressure,
+          a bulging (spinal) disc, sleep apnea – you name it."
+        </p>
+        <p>
+          David, a veteran financial planner from Dubuque, Iowa, recalls a deteriorating state. "My health was unraveling. I was overweight
+          and eating unhealthy. Even worse," he confides, "a good friend had passed away who had a lot of similar health
+          challenges. He was my age."
+        </p>
+        <p>
+          "I had to either accept dying soon," shares David, "or get off my butt and do something about it." He began to set priorities.
+          "You don’t appreciate good health until it’s gone. I was in pain, feeling bad and very unhealthy. It was time for
+          a change."
+        </p>
+        <h3>A Sound Investment in Health</h3>
+        <p>
+          Determined to reach his goals, David searched for an answer. "I knew I needed help to release excess weight, but I didn’t
+          know where to turn," he remembers. David wanted to avoid a medicine cabinet filled with prescription drugs, so
+          he decided to do some research to look for a healthier alternative. Shortly after, his doctor asked him if he was
+          interested in attending a nutritional seminar.
+        </p>
+        <p>
+          That seminar was an Isagenix presentation. "I went, and I was so impressed, I signed up right away. I trusted my enrolling
+          sponsor, so I trusted Isagenix. I just had to try it."
+        </p>
+        <p>
+          For David, the systems were easy to follow. "I followed [them] and watched the weight melt off. In the mirror, I saw the
+          fit young man I was in high school returning. It was really exciting."
+        </p>
+        <h3>IsaBody Closes The Deal</h3>
+        <p>
+          Soon after joining Isagenix, David signed up for the IsaBody Challenge to hold himself accountable and he has never looked
+          back. The IsaBody Challenge gave him inspiration to compete with others. "Since high school football, competition
+          has always motivated me," David says. "I was hooked."
+        </p>
+        <p>
+          "I didn’t know what the magic number should be," he adds referring to weight watching, "but I knew I wanted to start feeling
+          healthy and fit."
+        </p>
+        <h3>A Brighter Future</h3>
+        <p>
+          Ask David today about his life, and his enthusiasm is infectious. "Oh my gosh, everything’s changed!" he says zealously.
+          David hoped to lose weight, but he didn’t expect such drastic results in so many arenas. His health, his cardio
+          and his physical strength are back.
+        </p>
+        <p>
+          David beams, "Recently, I have met the woman of my dreams. I’ve surrounded myself with positive and empowering people, and
+          my life and health now seem to be in balance. I have hope again."
+        </p>
+        <h3>David's Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Just commit.</strong> When I started, I didn’t start with the IsaBody Challenge being the main reason I joined.
+            Even if you don’t want to, do it anyway, because it holds you accountable.</li>
+          <li>
+            <strong>Stay focused on your end goal.</strong> When you know you have pictures and measurements coming up during the
+            IsaBody Challenge, believe me, it keeps you accountable.</li>
+          <li>
+            <strong>Share!</strong> I share my IsaBody Challenge story, and others have signed up based purely on hearing my experience.
+            Trust the plan completely.</li>
+        </ul>
+        <h3>David's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Bars (Chocolate Decadence & Lemon Passion Crunch)</li>
+          <li>IsaDelight® (Milk and Dark Chocolates)</li>
+          <li>IsaLean® Shakes (Creamy Dutch Chocolate)</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'elizabeth-b'">
+        <h3>Paramedic Makes Life-Changing Decision</h3>
+        <p>
+          Growing up, Elizabeth was very active. She loved swimming and enjoyed participating in water polo. By 18, her athleticism
+          transitioned out of the water and into CrossFit. As an adult, her fit, 170-pound frame made the physical demands
+          of her job as a paramedic easier.
+        </p>
+        <p>
+          It wasn’t until she became pregnant with her son and put on bed rest that her weight became an issue.
+        </p>
+        <p>
+          "When I entered the hospital to have my son, I weighed 245 pounds," shares Elizabeth. "When I left, I was still well over
+          220 pounds."
+        </p>
+        <p>
+          She had gained 75 pounds in nine short months.
+        </p>
+        <h3>Running for a Reason</h3>
+        <p>
+          When her son was six months old, Elizabeth decided to start running—an exercise she never thought she could do, but was determined
+          to try. By the time her son turned one, she was running 25 miles a week. Doing all that cardio only dropped Elizabeth’s
+          weight to 190 pounds.
+        </p>
+        <p>
+          That’s when she decided to take her friend up on her offer to try the Isagenix 30-Day Cleansing and Fat Burning System.
+        </p>
+        <p>
+          "She shared Isagenix with me while I was pregnant but I wasn’t open to it at the time," adds this California resident.
+        </p>
+        <p>
+          It came to a point during one of her daily runs that she found herself feeding her son snacks and entertaining him with her
+          iPad that she realized her workouts were no longer working out.
+        </p>
+        <h3>Taking Hurdles Head On</h3>
+        <p>
+          After taking the plunge and ordering the 30-Day System, she also teamed up with her mom and joined the IsaBody Challenge®.
+        </p>
+        <p>
+          "I still remember my first month and losing 23 pounds,"* shares this 2014 Top Achievers Finalist. "That was an incredible
+          milestone."
+        </p>
+        <p>
+          By the end of her first Challenge she was down 34 pounds total.*
+        </p>
+        <p>
+          Her hard work earned her Honorable Mention in the 2013 New Year Kick Off Challenge period and the chance to show off her
+          sleek new physique onstage at our yearly event. Her transformation not only inspired others, but their vote of
+          confidence inspired Elizabeth to sign up for another Challenge.
+        </p>
+        <p>
+          At the end of her subsequent, back-to-back Challenge, Elizabeth released an additional 10 pounds. More importantly, she went
+          from 39 percent to 16 percent body fat and released 80 inches from her body.*
+        </p>
+        <p>
+          Her journey encouraged those around her to join Isagenix, which in turn, ignited her business.
+        </p>
+        <p>
+          Because of her success, she has been able to step away from her 56-hour work week and substitute it with the money she’s
+          making in her Isagenix business.
+        </p>
+        <p>
+          Now, this 1-Star Golden Circle, Crystal Executive, who earns between $28,000 and $53,000 a year,** teaches paramedic school
+          twice a month—not because she has to, but because she wants to!
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Commit!</strong> Make a commitment to yourself. Making a life change is not something you can do for anyone but
+            yourself!
+          </li>
+          <li>
+            <strong>Stick with it.</strong> Know that everyone has days when they struggle. Do not let what happened yesterday shape
+            today.
+          </li>
+          <li>
+            <strong>Have fun.</strong> Reward yourself along the way by trying new classes and even new activities.</li>
+        </ul>
+        <h3>Elizabeth's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Shake</li>
+          <li>Ionix® Supreme</li>
+          <li>Ageless Essentials™ with Product B®</li>
+          <li>e+™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'erin-p'">
+        <h3>Celebration Finalist and IsaDerby Winner Envisions a Brighter Future</h3>
+        <p>
+          "I have struggled with my weight for years. Even though I was doing the right things, eating well and exercising, I wasn’t
+          seeing results," admits 43-year-old Erin. "There were constant food cravings and I found myself overeating and
+          overdrinking. So of course I was frustrated, exhausted and had very low energy." This mother of two always had
+          a desire to help others. For fifteen years she served as a school counse-lor and mindset coach.
+        </p>
+        <p>
+          "I loved working with children at school," reflects Erin. "But I always had a bigger vision, I wanted to contribute on
+          a bigger scale. I wanted more income for my family, and I valued my time freedom. Even more, I wanted to spend
+          that time with my family and enjoy the prospect that life is open to you."
+        </p>
+        <p>
+          With her husband, Geoff, in the Canadian Air Force, Erin and her daughters were constantly on the go. Within a few years,
+          the family had moved across the country four different times.
+        </p>
+        <p>
+          Emotionally and physically, Erin was spent.
+        </p>
+        <h3>Health is No. 1</h3>
+        <p>
+          "My friend, Wendy, suggested I do a cleanse," recalls Erin. "I didn’t know anything about it, but knew that I needed to
+          transform my health—that was number one, because I kept doing everything by my-self and that just wasn’t working."
+        </p>
+        <p>
+          In 2011, Erin went on the 30-Day Cleansing and Fat Burning System and lost noticeable weight in the first month.* With the
+          support of Wendy and other Isagenix Associates, Erin felt emotionally support-ed to achieve her goals.
+        </p>
+        <p>
+          "After the cleanse, I felt energized and my sleep was much better," says Erin. "I felt amazing and hadn’t felt like this
+          before."
+        </p>
+        <p>
+          She continued to purchase the products when she realized that she could reap the benefits of Isagenix to help create income.
+        </p>
+        <p>
+          "My first goal was to get my products paid for, which I did in my first few weeks," explains Erin. "Then I set a goal to
+          get a new car. And the next week I did."
+        </p>
+        <p>
+          In her first year, Erin made $100,000.** The now 5-Star Golden Circle, 4 star Crystal Executive had so many goals and visions
+          for her future, that she aimed to win IsaDerby™ in her first year.
+        </p>
+        <p>
+          "I was the number one point earner in 2011 and have been to IsaDerby three years in a row," exclaims Erin. "It’s the same
+          solid mindset to win IsaDerby that got me to the IsaBody finals."
+        </p>
+        <h3>Envisioning A Better Future</h3>
+        <p>
+          "Every year I would join the IsaBody Challenge®, but never completed it," reflects Erin about her health journey. "That
+          first year I kept my weight off and felt great. And then my second year, we moved across the country and I just
+          got so focused on building my business that my life got out of balance."
+        </p>
+        <p>
+          It was during that time that Erin stopped exercising and taking care of herself.
+        </p>
+        <p>
+          "I think it was fear of losing my business," admits Erin. "It was the fear of it going away or I guess I had to build trust
+          that this was going to stay." She knew that she had to beat this perspective and envisioned a new goal for herself.
+        </p>
+        <p>
+          "I made the decision that I wanted to represent Isagenix in all areas: as an athlete, as a woman who’s aging in a healthy
+          way, and as a woman who’s making income for her family," says Erin.
+        </p>
+        <p>
+          In January 2014, Erin wrote a note on a recipe card about the person she wanted to become.
+        </p>
+        <p>
+          "I want to be an IsaBody Finalist. I want to get into elite shape. I want to be a woman who does not apologize for who she
+          is. A women who follows through," wrote Erin.
+        </p>
+        <p>
+          By successfully competing in the IsaBody Challenge, Erin released 24 pounds.* Now at 5’6" and 134 pounds,* she feels like
+          the person she’s always wanted to become.
+        </p>
+        <p>
+          "The biggest thing that the IsaBody Challenge has taught me is that my future has unlimited potential," emphasizes Erin.
+          "Before, I had a lot of fear about the future. And now the biggest change is that I’m excited about it!"
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Make a decision.</strong> Decide with absolute clarity what you want to achieve and who you get to become on
+            this journey.</li>
+          <li>
+            <strong>Write down your goals.</strong> Visualize yourself making these a reality. Every night plan out your next day,
+            the products you are using, your meals, your fitness and time for yourself.</li>
+          <li>
+            <strong>Plug in to the support!</strong> Join your team’s Facebook support page, listen to Isagenix podcasts, go to local
+            Isagenix events, and surround yourself with people and information that support you.</li>
+          <li>
+            <strong>Never quit.</strong> When you feel like you’ve hit a roadblock, ask for help, take a deep breath and keep moving
+            toward your goal. Consistency will bring you massive success… Quitting is the only way to fail!</li>
+        </ul>
+        <h3>Erin's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro (Creamy Vanilla)</li>
+          <li>Brain and Sleep Support System™</li>
+          <li>Ionix® Supreme</li>
+          <li>IsaOmega Supreme®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'jason-o'">
+        <h3>U.S. Military Veteran Takes on New Challenge</h3>
+        <p>
+          Jason was attached to the special operations unit in the U.S. Army in the 1990s. Back then, his life was about traveling
+          the world, participating in various military operations and experiencing unbelievable journeys.
+        </p>
+        <p>
+          "I was living the adventure and my dream," says the now 39-year-old Jason. "Back then, I really thought I was in the best
+          shape of my life. Being in top physical and mental condition was essential to being a soldier because you never
+          knew what was around the corner."
+        </p>
+        <p>
+          When he returned home to the United States after eight honorable years of service, Jason couldn’t help but feel a "sadness
+          in his heart."
+        </p>
+        <p>
+          "I missed the recognition for doing well," shares Jason. "A lot of times, you just don’t get that in the civilian sector."
+        </p>
+        <h3>Adjusting Back to the Norm</h3>
+        <p>
+          Shortly after his discharge, he began working as a supervisor in a warehouse in his home state of New York, and then later
+          in Durham, North Carolina. That’s when he started developing some not-so-healthy habits—including smoking and poor
+          eating.
+        </p>
+        <p>
+          "Within 10 years as a supervisor, my health started to deteriorate," reflects Jason. "I had undergone three abdominal hernia
+          surgeries between 2006 and 2011. My life and self-worth were at an all-time low. Deep down, I knew I wasn’t doing
+          what I was meant to do."
+        </p>
+        <p>
+          At only 5’4", Jason tipped the scale at 215 pounds.
+        </p>
+        <p>
+          "I would stand in once place and literally be crushed under my own weight," he admits. "I couldn’t even bend over and tie
+          my shoes due to weight gain. Obviously, that’s not the best place to be."
+        </p>
+        <p>
+          After a divorce, custody battle and resigning from the warehouse industry, Jason knew the negative signs were meant for him
+          to turn his life around.
+        </p>
+        <p>
+          "I just let life get to me and thought: ‘I need to take control,’" says Jason.
+        </p>
+        <h3>Regaining Life</h3>
+        <p>
+          In September of 2012, Jason’s now-fiancé, Sandra, introduced him to Isagenix and the IsaBody Challenge®.
+        </p>
+        <p>
+          "I saw the IsaBody Challenge as a chance for me to make my mark in a positive way—not only to improve my health and wellness,
+          but to be able to inspire others to have the courage to embark on their own journey," says Jason. "The Challenge
+          gave me an opportunity to look in the mirror and make myself the person who I’ve always wanted to become."
+        </p>
+        <p>
+          Now, Jason is 163 pounds and went from a size 40 to a 29.*
+        </p>
+        <p>
+          "I haven’t been that size since I was a freshman in high school," exclaims Jason.
+        </p>
+        <p>
+          What impresses Jason most about the Challenge isn’t the weight loss—it’s the friendships and recognition gained that reminded
+          him of Army camaraderie.
+        </p>
+        <p>
+          "As time grew, it became clear to me that Isagenix is more than a Challenge," explains Jason. "The people you meet—that
+          touched your heart, that inspired you and that you’ve been inspired by—it’s just tremendous. You see that same
+          comradeship in the military and I appreciate how that is reflected in Isagenix. You think, ‘How everybody wants
+          you to succeed and how can you turn that down?’"
+        </p>
+        <p>
+          Jason now no longer carries the nostalgia from the Army, finally realizing that it’s time to start a new chapter in life.
+        </p>
+        <p>
+          "My biggest milestone throughout the IsaBody Challenge was that I had no desire to fall on those crutches: the smoking and
+          the excessive eating. That’s all gone now."
+        </p>
+        <p>
+          Now Jason is focused on achieving the positive life that he never knew he could have.
+        </p>
+        <p>
+          "Isagenix is a lifestyle change," says Jason. "And I love explaining to people that there’s nothing out there worth having
+          if you don’t work hard for it. That’s what the IsaBody Challenge did for me."
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Nutrition is key.</strong> You can’t out-exercise poor eating habits.</li>
+          <li>
+            <strong>Make the commitment.</strong> Make a healthy active lifestyle a priority. Engage in activities that you enjoy.</li>
+          <li>
+            <strong>Surround yourself with like-minded people.</strong> Stick with individuals that will share your hopes and dreams.
+            Positive company can motivate and inspire you when you need it most.</li>
+          <li>
+            <strong>Share your story.</strong> You may really be surprised by those whom you inspire with your success.</li>
+        </ul>
+        <h3>Jason's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>e+™ Energy Shot</li>
+          <li>Replenish™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'jennifer-r'">
+        <h3>Former Trainer Finds Path Back To Glory</h3>
+        <p>
+          Jennifer was always on the go. An avid athlete, she worked diligently to keep her weight in check – until she hit her 30s
+          when her weight started to slowly creep up. "My weight yo-yoed, up, then down, then up again," she says. "I was
+          all over the map."
+        </p>
+        <p>
+          Jennifer remembers her early career and her deep connection to physical fitness. After receiving her honors degree in Fitness
+          and Lifestyle Management, Jennifer worked as a personal trainer throughout her 20s. However, even with her passion
+          for fitness, her health-and-wellness challenges started to mount.
+        </p>
+        <h3>Going to the Dogs</h3>
+        <p>
+          Jennifer recalls when things began to change. "My life went to the dogs," she says, "literally." Steering away from her
+          health and fitness roots, she made a drastic lifestyle change. She moved north from the city of Toronto out to
+          the country and began raising Alaskan Malamutes and became a professional dog trainer and groomer.
+        </p>
+        <p>
+          "I spent lots of time on the road, going to dog shows and competitions," she says. "Everything I did was for the sake of
+          my dogs’ performances." She discusses the sacrifices and eventual toll of her commitment, "I didn’t exercise
+          or make healthy food choices, and my figure paid the price."
+        </p>
+        <h3>Isagenix Unleashed</h3>
+        <p>
+          Jennifer decided to kick a new healthy, Isagenix-powered lifestyle into high gear. "A close friend from college, Tinya G.,
+          was doing something really remarkable with Isagenix," Jennifer recalls, "I decided to find out more."
+        </p>
+        <p>
+          "Tinya hosted Isagenix parties at her house and was clearly doing something to turn her life around," Jennifer says. "I
+          finally reached out to her," Jennifer admits, "but I was very apprehensive. When I discovered the healthy nutrition
+          in the products, though, I just knew I’d be wowed by the results."
+        </p>
+        <p>
+          By day four of her first 30-Day Cleansing and Fat Burning System, she became a true believer, both of the product and the
+          business. "I’ve always been receptive to network marketing," Jennifer says. "When I discovered Isagenix, I knew
+          I found my home."
+        </p>
+        <h3>From Mush to Muscle</h3>
+        <p>
+          When she committed to the IsaBody Challenge, Jennifer was once again driven. "It’s a complete 180-degree change," she shares,
+          discussing her transformation due to the IsaBody Challenge.
+        </p>
+        <p>
+          The goals she set for herself at the start of the Challenge helped her get serious about completing it. "When I started this
+          Challenge, I discussed the importance of completing it with an Associate on another team," she says. "That really
+          helped me focus."
+        </p>
+        <h3>Success of the Highest Pedigree</h3>
+        Isagenix started as a weight release journey for Jennifer, but it has turned into so much more. "I did three 30-Day Cleansing
+        and Fat Burning Systems back-to-back to lose the initial weight," she says. "I’ve gained amazing strength, incredible
+        energy and unheard-of recovery levels. I thank the products and my training and focus in the IsaBody Challenge for
+        that."
+        <p>
+          Jennifer has now retired from her career as a dog groomer, but continues to breed and show dogs as a hobby. "Isagenix is
+          my career now," she says. "Inspiring others to get the very best from life makes me more passionate about my
+          own journey."
+        </p>
+        <h3>Jennifer's Tips for Success</h3>
+        <ul>
+          <li>Don’t wait for the perfect time to start the IsaBody Challenge – start now!</li>
+          <li>It starts with baby steps toward a goal you set you yourself – look to make daily progress, and celebrate every
+            triumph, big or small.</li>
+          <li>The potential for everyone to achieve their goals is totally realistic. You have all the support in the world –
+            you just have to reach out for it.</li>
+        </ul>
+        <h3>Jennifer's Favorite Products</h3>
+        <ul>
+          <li>Product B® IsaGenesis®</li>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>Isagenix Greens!™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'judy-l'">
+        <h3>Top Achievers Finalist Discovers Confidence at 60</h3>
+        <p>
+          "Internally, I felt confident," shares Judy, a 2014 IsaBody Challenge Top Achievers Finalist. "But externally, I held back
+          and was unsure of my actions, second guessing myself all the time."
+        </p>
+        <p>
+          For the past 10 years, the Ontario native spent her time as a body-oriented psychotherapist. Helping others create strong
+          mental health was a lifelong goal for Judy since childhood. But eventually, guiding individuals to work through
+          their trauma got the best of her, despite Judy’s dream of caring for others.
+        </p>
+        <p>
+          "I think the biggest part of the IsaBody Challenge has been the belief that you can do what you want to do to make a difference
+          in the lives of yourself, your family and the people around and in the world at large," reflects Judy, now a
+          2-Star Golden Circle, Executive. "Yet, once I started believing in myself and gaining strength through the Challenge,
+          I saw that I could actually make a bigger change in the world."
+        </p>
+        <h3>Making the Change</h3>
+        <p>
+          Clearly, working in the world of distress took its toll on Judy, who was 5’5" and a size 12 at 138 pounds before discovering
+          Isagenix in 2007.
+        </p>
+        <p>
+          "I was emotionally and physically exhausted," says this mother of two and wife of 23 years to her husband, Jim. "Even with
+          strong boundaries between work and family, I became moody, struggled with weight gain and knew that I was in trouble."
+        </p>
+        <p>
+          Confiding in her friend, Dr. Rick, about her inner feelings, he gave Judy the tools toward a rejuvenated life. After introducing
+          her to the 30-Day Cleansing and Fat Burning System, Judy released 22 pounds in five weeks.*
+        </p>
+        <p>
+          "I felt great, but after using Isagenix for seven years, I still felt delicate inside," says Judy. "I knew that I needed
+          to find my strength through confidence. I needed to physically ramp it up in order to show others what’s possible
+          when you focus on healthy living and aging gracefully."
+        </p>
+        <h3>Dispelling a 'Myth'</h3>
+        <p>
+          Before turning 60 in August 2013, Judy decided to join the IsaBody Challenge. Now the lean 116-pound Judy is a size two*
+          and has discovered her inner confidence through external strength.
+        </p>
+        <p>
+          "I’m honored to be a finalist," says Judy. "What gave me the strength was the idea to dispel the myth that when you turn
+          60, you’re starting to slow down. Somehow, being physically strong allowed me to recognize that this was the real
+          me. This is the one that didn’t have to second guess herself."
+        </p>
+        <p>
+          As a Top Achiever Finalist, Judy’s been awarded $3,000 cash, a trip for herself and a guest to 2014 Top Achievers, 2014 Celebration
+          and a spot aboard the 2014 IsaBody Challenge Transformation Cruise.***
+        </p>
+        <p>
+          "I feel like I’m an ambassador for the company since I became a finalist," reveals Judy. "I’ve had people turn to me and
+          let me know that I inspire them—and to me, that is so powerful. It means that I have to live every single day to
+          be the best that I can be."
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Make a commitment.</strong> Tell everyone that you’re completing a goal. That way, there’s no turning back once
+            you’ve said it out loud.</li>
+          <li>
+            <strong>Believe in yourself.</strong> You’ll always go through areas of self-doubt and diminishing willpower, but always
+            believe that you can accomplish your goal.</li>
+          <li>
+            <strong>Stick to consistent and persistent action.</strong> Never give up and focus on what is possible.</li>
+          <li>
+            <strong>Find a partner to get you through this.</strong> My husband helped me through my last Challenge and then decided
+            to get on board. I enjoy being a guide as to how he should approach the program.</li>
+        </ul>
+        <h3>Judy's Favorite Products</h3>
+        <ul>
+          <li>Ionix® Supreme</li>
+          <li>IsaDelight™</li>
+          <li>IsaLean® Shakes</li>
+          <li>Rejuvity® Essential Youth Serum™</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'randy-f'">
+        <h3>Marching To The Beat Of A New Drummer</h3>
+        <p>
+          Your world can change in an instant. Few know this as well as IsaBody Challenge® Finalist, Randy. "Unlike a lot of others,
+          I didn’t struggle with my weight when I was growing up," confesses the retired 20-year Army veteran. "At least
+          not at first."
+        </p>
+        <p>
+          Randy recalls his youth. "I was always fit; I played football at Oklahoma State University. I had no desire to go into the
+          military," he confesses, "but in the early 1970s, scholarship athletes had to be in ROTC. Thus after graduation,
+          I entered the Army. I even served on General Schwarzkopf’s medical staff during Desert Storm."
+        </p>
+        <h3>Being All He Could Be</h3>
+        <p>
+          After the Army, Randy was recruited to take a job in the healthcare industry. "I took a position as a Managed Care Director
+          for Colorado, Kansas and Oklahoma. He explains, "I was overqualified but took the job." Although Randy excelled,
+          he shortly found out what "At Will" meant.
+        </p>
+        <p>
+          Then, things took a turn.
+        </p>
+        <p>
+          "After I was let go, I went into a downward spiral," Randy recalls, "I was devastated and it impacted my family." Life
+          began to unravel. "Every subsequent year my waistline kept up with my age. I had a hard time functioning." Randy’s
+          ongoing weight gain and health issues became a growing concern for his family.
+        </p>
+        <h3>A Turn for the Worse</h3>
+        <p>
+          With a new career as a mortgage broker and health obstacles mounting, Randy’s health–and morale–worsened. "Just getting out
+          of bed and doing basic life activities exhausted me. My family feared I was heading for a heart attack."
+        </p>
+        <p>
+          Never one to quit, Randy was determined to reshape his destiny. "I was eager to make some positive changes," he confides.
+          "I needed to get my life back."
+        </p>
+        <h3>Enter: The Isagenix Cavalry</h3>
+        <p>
+          Concerned for his health, Randy’s wife suggested speaking to a friend. "Julie is a friend of my wife living in Florida. She
+          recommended Isagenix." Isagenix was exactly what he was looking for. "The first time I tried the 30-Day Cleansing
+          and Fat Burning System, I lost 29 pounds."* I was astonished by the results." Then, Randy discovered the IsaBody
+          Challenge®.
+        </p>
+        <h3>Back to Basic Training</h3>
+        <p>
+          Randy excels at what he sets his mind to. "I’ve always been a top achiever. As an IsaBody Challenge Finalist," he beams,
+          "my transformation transcended across my weight loss, healthy aging, and energy and performance goals. I now plan
+          to transform my financial status by sharing Isagenix with everyone!"
+        </p>
+        <p>
+          Randy’s self-esteem is back. "After NYKO, I’m ready!" He shares other milestones. "My workouts have more energy than ever.
+          I have more confidence than I’ve had in years."
+        </p>
+        <p>
+          Randy looks forward to building his Isagenix business. "When I work out, people come up and ask, ‘Is this really true or
+          how are you doing this?’ I tell them, ‘Yes, it’s Isagenix.’" He wears a T-shirt with how much weight he’s released
+          printed on it. "In the gym, others come up and share their struggles and tell me what an inspiration I am to them.
+          I’m looking great and best of all," he says confidently, "I feel like a winner!"
+        </p>
+        <h3>Randy's Tips for Success</h3>
+        <ul>
+          <li>Make a decision and commit to your goals and dreams. Write them down and have them in realistic bite-sized chunks.
+            I achieved my milestones 10 pounds at a time.</li>
+          <li>Invest in yourself, not things! You can transform your life by using the products daily and following the time-proven
+            system. The IsaBody Challenge keeps you accountable with a unified community that encourages success. Join us!</li>
+          <li>Regardless of your age or the shape you are in, it’s never too late to start and it’s always the "right time"
+            for Isagenix!</li>
+        </ul>
+        <h3>Randy's Favorite Products</h3>
+        <ul>
+          <li>e+™ Energy Shot</li>
+          <li>Ionix® Supreme</li>
+          <li>Cleanse For Life®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'shelagh-r'">
+        <h3>Part-time Administrator Looks Fabulous at 50</h3>
+        <p>
+          After deciding to leave a very unhealthy relationship, Shelagh knew she needed time to rebuild her life and her self-esteem.
+        </p>
+        <p>
+          Her best friend suggested Isagenix knowing its products’ ability to boost energy and endurance.
+        </p>
+        <p>
+          "I said ‘no’ for the first few months," admits Shelagh. "I just couldn’t open up to it."
+        </p>
+        <p>
+          During that time, her moods would fluctuate from high to low and her energy was completely deflated. She knew if she didn’t
+          pull herself up, she would eventually lose her job as an administrator for a condominium developer.
+        </p>
+        <p>
+          Coming to that realization opened Shelagh’s mind to trying Isagenix.
+        </p>
+        <h3>Opening Up To Isagenix</h3>
+        <p>
+          "By my third day on the Pacesetter Pak I was already feeling more motivated and uplifted," shares Shelagh. "I felt positive
+          and full of energy, but I knew I needed all the support I could get to follow through."
+        </p>
+        <p>
+          So, she also signed up for the IsaBody Challenge®.
+        </p>
+        <p>
+          "It was a 16-week goal and I couldn’t give up," explains Shelagh, "because I knew other people were doing it too."
+        </p>
+        <p>
+          Within her first few weeks on the products, Shelagh released 10 pounds* and felt healthier and stronger than she had in a
+          while.
+        </p>
+        <p>
+          Once she saw what the products could do for her body, she was open to meeting the people of Isagenix and attended an opportunity
+          meeting in Toronto. Inspired, she embarked on a new journey, building an Isagenix business, and decided to use
+          the Challenge as her platform.
+        </p>
+        <p>
+          While her success was fast moving, one thing still lingered in her mind.
+        </p>
+        <h3>Finishing What You Start</h3>
+        <p>
+          "I wrote in my first Challenge essay that ‘I’m considering a Figure Competition at 50, fueled by Isagenix,’" shares Shelagh.
+        </p>
+        <p>
+          With that goal still in limbo, she entered her second Challenge and set a firm goal to compete in a figure competition in
+          May of 2014.
+        </p>
+        <p>
+          In addition to her daily Isagenix products, Shelagh added extra Ionix® Supreme, Product B®, omega-3 essential fatty acids,
+          Isagenix Greens!™ and IsaPro® for a boost in nutrition.
+        </p> 
+        <p>
+          "What I began to notice was that even though I had not weight trained in over five years, I was astounded by how much I could
+          lift," admits Shelagh, "how fast I recovered from my workouts, how much energy I still had, and how balanced
+          I felt."
+        </p>
+        <h3>Fabulous at 50</h3>
+        <p>
+          In total, Shelagh ended up releasing 35 pounds since starting her Isagenix journey and whittled her waist line to slip into
+          a size zero pair of jeans.*
+        </p>
+        <p>
+          She also fulfilled her original goal, taking second place in her category at the fitness competition proving she could look
+          fabulous at 50!
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li><strong>Know your "why."</strong> Ask yourself why you are joining the Challenge and write down a powerful "why".</li>
+          <li><strong>Get social.</strong> Get tapped into Facebook groups and the IsaBody Challenge podcasts.</li>
+          <li><strong>Have a support team.</strong> Announce that you have joined the Challenge to your family and friends so they support you.</li>
+          <li><strong>Keep it simple.</strong> Do things in moderation—sleep, nutrition and exercise.</li>
+        </ul>
+        <h3>Shelagh's Favorite Products</h3>
+        <ul>
+          <li>Ionix® Supreme</li>
+          <li>IsaLean® Shake</li>
+          <li>Ageless Essentials™ with Product B®</li>
+          <li>Cleanse for Life®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'thai-l'">
+        <h3>Third Time’s the Charm for Thai’s Transformation</h3>
+        <p>
+          At 5’1", Thai often blended into the background. Something he didn’t mind, especially since he wasn’t 100 percent comfortable
+          with his body. "Any extra pound looks like five on my frame," he shares. At a starting weight of 148 pounds,
+          Thai was healthy and athletic, but his physique was far from ideal.
+        </p>
+        <p>
+          He routinely worked out hard and even drank protein shakes, but he didn’t have a solid system and he wasn’t seeing lasting
+          results. At 40, his athletic endeavors—like two-day volleyball tournaments and 10k races—left him exhausted and
+          sore.
+        </p>
+        <h3>Starting the System</h3>
+        <p>
+          In 2011, Thai was introduced to Isagenix with the 9-Day Cleansing and Fat Burning System. He was about to go on vacation
+          and wanted to trim down. The system helped him shed some torso fat and reveal the abs underneath. His success led
+          him to try a 30-Day Cleansing and Fat Burning System and eventually the Energy and Performance System. He knew
+          Isagenix worked for him, he’d even entered the IsaBody Challenge a few times, but it wasn’t until this year that
+          he actually completed a Challenge. For him, his third try was the charm.
+        </p>
+        <h3>Seeing Results</h3>
+        <p>
+          Thai went into his third IsaBody Challenge determined (and prepared) to succeed. He created a vision board to help him stay
+          focused on his goal, checked in with Barbara (his Isagenix mentor) weekly and scheduled everything. Every day Thai
+          knew how many days were left in the Challenge, when he needed to eat and what he’d be doing for a workout.
+        </p>
+        <p>
+          It all paid off. Thai earned a spot as one of the top five Celebration IsaBody Challenge finalists. He’ll appear onstage
+          at our 2014 Celebration event as one of 15 finalists who could win the Grand Prize, valued at over $25,000.
+        </p>
+        <p>
+          But that’s not all Thai’s won. He’s more confident than he’s ever been. He has more energy and recovers faster than he ever
+          has (and faster than some of his younger teammates). He’s started an Isagenix business and is enjoying meeting
+          new people and sharing the products that fueled his success. Thai also took on something new. He competed in his
+          first-ever bodybuilding competition where he placed sixth, among competitors that, in some cases, have been training
+          for years!
+        </p>
+        <p>
+          "I noticed that people backstage at the competition who weren’t using Isagenix were tired and cranky," Thai recalls. He,
+          on the other hand, "was full of energy, feeling good and ready to go." And, that’s the way he feels every day,
+          thanks to Isagenix.
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Use the System.</strong> The system works. Trust it and use it consistently.</li>
+          <li>
+            <strong>Don’t Go it Alone.</strong> You need a support system to successfully complete the Challenge. It really helps
+            to work with someone who has completed the Challenge. Check in regularly and share your success as you go!</li>
+          <li>
+            <strong>Visualize Success.</strong> To be successful, you must first have a goal to work toward. Create a vision board
+            that captures your personal goals so you can envision the outcome of the challenge.</li>
+          <li>
+            <strong>Stick to a Schedule.</strong> The IsaBody Challenge is only 16 weeks long. Create and stick to a schedule (eating,
+            working out, etc.) so you can stay on track to complete the Challenge and achieve your goals.</li>
+        </ul>
+        <h3>Thai's Favorite Products</h3>
+        <ul>
+          <li>e+™</li>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>Ageless Essentials with Product B®</li>
+        </ul>
+      </section>
+      <section class="main-section" *ngIf="person.id === 'will-a'">
+        <h3>‘Will’ Power Made the Difference</h3>
+        <p>
+          "As a kid, I was overweight," shares Will. "In high school, I played baseball—overweight. It wasn’t until I was 16 years
+          old that I really started to take an interest in diet and exercise."
+        </p>
+        <p>
+          His determination to fit in and shed those unwanted pounds provided him with a platform to rely on himself and become his
+          own teacher.
+        </p>
+        <p>
+          "I went on to play college baseball," adds Will. "That opportunity allowed me to focus on my nutrition and uncover my true
+          passion: health and wellness."
+        </p>
+        <p>
+          With health and fitness at his very core, Will embarked on a new journey and entered the realm of bodybuilding.
+        </p>
+        <h3>Falling Off Track</h3>
+        <p>
+          "I wanted to compete in bodybuilding, not to become a bodybuilder," explains Will, "but, to be a fitness role model to others."
+        </p>
+        <p>
+          Over the next year and a half Will competed in eight men’s physique competitions, which required he eat six times a day.
+        </p>
+        <p>
+          "Your diet regimen is insane," shares Will. "It’s an unrealistic lifestyle."
+        </p>
+        <h3>Eventually Something Had to Give</h3>
+        <p>
+          "I needed a break," explains Will. "I needed a couple of months to mentally regroup. I was overworked, overtired, and over
+          my extreme dieting. That’s when it all came back—all the body fat I had worked so hard to lose."
+        </p>
+        <p>
+          Coincidently, Will’s friends had just shared Isagenix with him.
+        </p>
+        <h3>Powered By Others</h3>
+        <p>
+          "Because I give everything a chance, I agreed to look into the company," shares Will. "I looked into the science, checked
+          out the ingredients and perused the products; and, because I really trusted those I surround myself with, I decided
+          to put the stuff to the test."
+        </p>
+        <p>
+          With that, he decided to train for another competition and use Isagenix products to prepare.
+        </p>
+        <p>
+          "I was going to push these products to the limit and test them on myself," laughs Will.
+        </p>
+        <p>
+          He started with the IsaPro®. Then, he slowly added in Ionix® Supreme.
+        </p>
+        <p>
+          "I was doing two meals and two meal replacement shakes with either IsaLean® Pro or IsaPro every day," says Will. "I also
+          did a few Cleanse Days."
+        </p>
+        <h3>Customized Success</h3>
+        <p>
+          Because of the high daily protein intake Will needed to sustain training, he customized his program, yet still adhered to
+          two shakes a day. He also joined the IsaBody Challenge®.
+        </p>
+        <p>
+          "The typical 30-Day Cleansing and Fat Burning System wasn’t enough food for me. I needed more," explains Will. "Plus, it
+          typically takes 16 weeks to prepare for a national level competition; and the Challenge is 16 weeks. I though it
+          was the perfect way to hold myself accountable."
+        </p>
+        <p>
+          By the time Will stepped on stage to compete in the men’s physique category he had chiseled out his physique. He also released
+          31.9 pounds* since joining Isagenix.
+        </p>
+        <p>
+          He was so impressed with his results he couldn’t stop talking about the products and decided to take advantage of the business
+          opportunity with his girlfriend and current 2014 Miss Arizona title holder, Savanna Troupe.
+        </p>
+        <p>
+          "The biggest difference between training now versus in the past has been the convenience of the products," shares Will, "and,
+          to be able to introduce something as convenient as an Isagenix system has been a game changer for me and most of
+          my clients."
+        </p>
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>
+            <strong>Have fun.</strong> Have fun and enjoy the goal you are trying to attain. Find an exercise that you like and find
+            enjoyable. Everybody’s goals are different.</li>
+          <li>
+            <strong>Stick with it.</strong> Find something convenient to follow; it’s a lifestyle change not a diet.</li>
+          <li>
+            <strong>Take action.</strong> Stop planning and preparing, just start!</li>
+        </ul>
+        <h3>Will's Favorite Products</h3>
+        <ul>
+          <li>IsaLean® Pro</li>
+          <li>Ionix® Supreme</li>
+          <li>Cleanse for Life®</li>
+          <li>e+™</li>
+        </ul>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section id="disclaimers">
+        <p class="disclaimer">
+          The individuals pictured are actual Isagenix Associates and not paid models.
+        </p>
+        <p class="disclaimer">
+          * Weight loss should not be considered typical. In a study performed in 2012 by University of Illinois at Chicago researchers,
+          subjects lost an average of 9 pounds with an average of 2 pounds of the loss from visceral fat after 30 days on
+          an Isagenix system. The subjects also had a greater level of adherence and had more consistent weight loss from
+          week to week compared to subjects on a traditional diet.
+        </p>
+        <p class="disclaimer">
+          ** Earning levels for Isagenix Independent Associates that appear in this publication are examples and should not be construed
+          as typical or average. Income level achievements are dependent upon the individual Associate’s business skills,
+          personal ambition, time, commitment, activity, and demographic factors. For average earnings, see the Isagenix
+          Independent Associate Earnings Statement found at IsagenixEarnings.com.
+        </p>
+        <p class="disclaimer">
+          Isagenix Millionaires are defined as Isagenix Associates who have cumulatively earned $1 million or more with Isagenix.
+        </p>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>
