@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PdfProvider } from '../providers/pdf/pdf';
 import { AuthProvider } from '../providers/auth/auth';
+import { PersonProvider } from '../providers/person/person';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AuthProvider } from '../providers/auth/auth';
     PdfProvider,
     AuthProvider,
     PdfProvider,
-    //{ provide: LocationStrategy, useClass: PathLocationStrategy }
+    PersonProvider,
+    //{ provide: LocationStrategy, useClass: PathLocationStrategy },
   ]
 })
 export class AppModule {}

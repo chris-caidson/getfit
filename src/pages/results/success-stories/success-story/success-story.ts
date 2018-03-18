@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { AuthProvider } from "../../../../providers/auth/auth";
+import { PersonProvider } from '../../../../providers/person/person';
 
 @IonicPage({
   defaultHistory: ['SuccessStoriesPage'],
@@ -159,9 +160,15 @@ export class SuccessStoryPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public auth: AuthProvider,
+    public personSvc: PersonProvider,
     public modalCtrl: ModalController) {
+
     let name = this.navParams.get("name");
     this.person = this.people.find(function (obj) { return obj.id === name; });
+  }
+
+  goBack() {
+    this.navCtrl.pop();
   }
 
   openVideoModal() {
