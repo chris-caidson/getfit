@@ -72,7 +72,7 @@ export class SuccessStoriesPage {
     { year: 2012, imgId: "055", name: "Frank P."},
     { year: 2012, imgId: "056", name: "Leanne K."},
     { year: 2012, imgId: "057", name: "Lois L."},
-    { year: 2012, imgId: "058", name: "Mariam B."},
+    { year: 2012, imgId: "058", name: "Miriam B."},
     { year: 2012, imgId: "059", name: "Patricia H."},
     { year: 2012, imgId: "060", name: "Rebekah H."},
     { year: 2012, imgId: "061", name: "Tiff D."},

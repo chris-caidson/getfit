@@ -71,51 +71,20 @@
             </figcaption>
           </figure>
         </div>
-        <div *ngIf="!person.hasVideo">
+        <div *ngIf="!person.hasVideo && person.extraImg">
           <img class="shadowed extra" src="assets/imgs/results/success-stories/before/{{person.imgId}}b.jpg" alt="{{person.name}}"
           />
         </div>
       </section>
-      <section class="main-section" [innerHTML]="personSvc.getSuccessStory(this.person.id)"></section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <section *ngIf="this.person.year === 2007" class="main-section" [innerHTML]="person2007.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2008" class="main-section" [innerHTML]="person2008.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2009" class="main-section" [innerHTML]="person2009.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2010" class="main-section" [innerHTML]="person2010.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2011" class="main-section" [innerHTML]="person2011.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2012" class="main-section" [innerHTML]="person2012.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2013" class="main-section" [innerHTML]="person2013.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2014" class="main-section" [innerHTML]="person2014.getSuccessStory(this.person.id)"></section>
+      <section *ngIf="this.person.year === 2015" class="main-section" [innerHTML]="person2015.getSuccessStory(this.person.id)"></section>
       <section id="disclaimers">
         <p class="disclaimer">
           The individuals pictured are actual Isagenix Associates and not paid models.
