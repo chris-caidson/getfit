@@ -27,7 +27,6 @@ export class HomePage {
 
   onResize(event) {
     const innerWidth = event.target.innerWidth;
-
     this.slides.slidesPerView = innerWidth / this.spacer;
  }
 }
