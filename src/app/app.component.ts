@@ -64,6 +64,7 @@ export class MyApp {
       { title: "Kosher", component: "KosherProductsPakPage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Vegan", component: "DairyFreeIsaleanPage", separatorLevel: 4, icon: "caret-right", indent: true },
       { title: "Friends & Fam.", component: "FriendsAndFamilyProgramPage", separatorLevel: 4, icon: "usd" },
+      { title: "Recipes", component: "RecipesPage", separatorLevel: 4, icon: "beer" },
 
       // Athletes
       { title: "Athletes", component: null, separatorLevel: 2, icon: null },
@@ -73,6 +74,7 @@ export class MyApp {
       { title: "Pre-Workout", component: null, separatorLevel: 3, icon: null },
       { title: "Amped Power", component: "AmpedPowerPage", separatorLevel: 4, icon: "plug" },
       { title: "Amped NOx", component: "AmpedNoxPage", separatorLevel: 4, icon: "fire" },
+      { title: "Amped Nitro", component: "AmpedNitroPage", separatorLevel: 4, icon: "rocket" },
       { title: "Mid-Workout", component: null, separatorLevel: 3, icon: null },
       { title: "Amped Fuel", component: "AmpedFuelPage", separatorLevel: 4, icon: "battery-three-quarters" },
       { title: "Post-Workout", component: null, separatorLevel: 3, icon: null },

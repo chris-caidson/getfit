@@ -16,4 +16,11 @@ page-video-modal {
       height: 93%;
     }
   }
+
+  @media (max-width: 1250px) {
+    .space-right {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 }

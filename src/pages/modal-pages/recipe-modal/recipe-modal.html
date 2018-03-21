@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <i class="fa fa-beer fixed-width space-right"></i>
+      <span>Recipe</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="modal-close-div">
+    <span>
+      <i class="fa fa-beer fixed-width space-right"></i>{{title}}</span>
+    <button class="modal-close-btn" outline round (click)="closeModal()">
+      <i class="fa fa-close fixed-width"></i>
+    </button>
+  </div>
+  <main role="main">
+    <article class="grid-container">
+      <section>
+        <figure>
+          <img src="assets/imgs/recipes/{{imgSrc}}.jpg" alt="{{title}} Recipe" />
+        </figure>
+      </section>
+    </article>
+  </main>
+</ion-content>

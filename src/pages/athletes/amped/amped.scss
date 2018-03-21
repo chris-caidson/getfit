@@ -64,7 +64,14 @@ page-amped {
 
     #bottomGrid {
       margin-top: $large-margin;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    #bottomGrid {
+      margin-top: $large-margin;
+      grid-template-columns: auto auto auto auto auto;
     }
   }
 }

@@ -1,0 +1,89 @@
+page-recipes {
+    #recipeTypeSection {
+        display: none;
+        margin-bottom: $default-margin;
+    }
+
+    #recipeSection img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $default-margin;
+        margin-bottom: $small-margin;
+    }
+
+    ion-item {
+        border-top: 1px solid #bbb !important;
+        background: rgb(242, 246, 248); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 50%, rgba(181, 198, 208, 1) 51%, rgba(224, 239, 249, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 50%, rgba(181, 198, 208, 1) 51%, rgba(224, 239, 249, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 50%, rgba(181, 198, 208, 1) 51%, rgba(224, 239, 249, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+        border: 1px solid darken($tertiary-color, 20);
+
+        ion-label {
+            color: #555 !important;
+        }
+    }
+
+    #tapH5, #clickH5 {
+        margin-top: (-$small-margin) !important;
+        margin-bottom: $default-margin;
+    }
+
+    figure {
+        cursor: pointer;
+        margin-bottom: $large-margin;
+
+        figcaption {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 750px) {
+        #footer {
+            display: none;
+        }
+
+        #recipeTypeSection {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+
+            button {
+                display: inline-block;
+                color: white;
+                background-color: $secondary-color;
+                margin: 0 $xsmall-margin;
+                padding: $small-margin 0;
+                border: 1px solid darken($secondary-color, 10);
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px #555;
+            }
+
+            button.active {
+                background-color: darken($secondary-color, 20) !important;
+                border: 1px solid darken($secondary-color, 30) !important;
+                box-shadow: 2px 2px 5px #555 inset;
+                cursor: default;
+            }
+        }
+    }
+
+    @media (min-width: 900px) {
+        #recipeSection {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: baseline;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #recipeSection {
+            grid-template-columns: auto auto auto;
+        }
+    }
+}

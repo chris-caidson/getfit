@@ -13,4 +13,11 @@ page-press-release-modal {
     font-style: italic;
     font-size: smaller;
   }
+
+  @media (max-width: 1250px) {
+    .space-right {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 }

@@ -1,0 +1,78 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-rocket fixed-width space-right"></i>
+      <span>Amped Nitro</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/pink-dumbbells-girl/pink-dumbbells-girl-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+              assets/imgs/athletes/pink-dumbbells-girl/pink-dumbbells-girl-400.jpg 400w,
+              assets/imgs/athletes/pink-dumbbells-girl/pink-dumbbells-girl-848.jpg 848w,
+              assets/imgs/athletes/pink-dumbbells-girl/pink-dumbbells-girl-1170.jpg 1170w,
+              assets/imgs/athletes/pink-dumbbells-girl/pink-dumbbells-girl-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">AMPED Nitro</h1>
+      <section class="grid-container" id="firstSection">
+        <img id="img01" src="assets/imgs/athletes/amped-nitro.jpg" alt="AMPED Nitro" />
+        <div>
+          <p>
+            AMPED™ NOx is an Informed-Sport certified preworkout supplement that provides energy, strength, and focus for optimal training.*
+          </p>
+          <p>
+            Formulated with active ingredients at levels clinically demonstrated to support the body and mind to train at a higher intensity
+            for a longer period of time.* Contains:
+          </p>
+          <ul>
+            <li>Nitrosigine<sup>®§§</sup> and L-citrulline for increased blood flow, mental focus, and pump.*</li>
+            <li>Creatine and betaine for increased muscle mass, power, strength, and cell hydration.*</li>
+            <li>Beta-alanine, taurine, and naturally sourced caffeine for increased energy, alertness, and stamina.*
+          </ul>
+        </div>
+      </section>
+      <h3>Flavors</h3>
+      <p>Watermelon</p>
+      <h3>Videos</h3>
+      <ul class="list-unstyled">
+        <li (click)="openVideoModal('amped-line')">
+          <span class="video-li">The Isagenix AMPED Line</span>
+        </li>
+        <li (click)="openVideoModal('amped-nitro')">
+          <span class="video-li">AMPED Nitro</span>
+        </li>
+        <li (click)="openVideoModal('amped-nitro-science')">
+          <span class="video-li">The Science Behind AMPED Nitro</span>
+        </li>
+        <li (click)="openVideoModal('amped-nitro-how-to-use')">
+          <span class="video-li">How to Use AMPED Nitro</span>
+        </li>
+      </ul>
+      <h3>Ingredients</h3>
+      <ul id="pdfs" class="list-unstyled">
+        <li>
+          <span class="pdf" (click)="pdfProvider.openPdf('AMPED Nitro Ingredients', 'https://firebasestorage.googleapis.com/v0/b/getfitglobal-bbef0.appspot.com/o/pdfs%2Famped-nitro-ingredients.pdf?alt=media&token=288ed81b-69a6-4afc-9566-a4789245697f')">AMPED Nitro Ingredients</span>
+        </li>
+      </ul>
+      <section id="bottomSection">
+        <p class="disclaimer">
+          * These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose,
+          treat, cure, or prevent any disease.
+        <br />
+          §§ Nitrosigine is a registered trademark of Nutrition 21, LLC and is patent protected.
+        </p>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>

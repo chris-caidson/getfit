@@ -26,4 +26,11 @@ page-sound-cloud-modal {
   .mobilePrestitial .g-flex-row-centered .g-box-full .m-enabled {
     display: none !important;
   }
+
+  @media (max-width: 1250px) {
+    .space-right {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 }

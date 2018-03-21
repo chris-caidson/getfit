@@ -1,0 +1,61 @@
+<ion-header *ngIf="this.auth.loggedIn">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <i class="fa fa-beer fixed-width space-right"></i>
+      <span>Recipes</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="!this.auth.loggedIn">
+  <login></login>
+</ion-content>
+<ion-content *ngIf="this.auth.loggedIn">
+  <header role="banner">
+    <img src="assets/imgs/athletes/green-people-background/green-people-background-1400.jpg" alt="" sizes="(max-width: 1400px) 100vw"
+      srcset="
+                  assets/imgs/athletes/green-people-background/green-people-background-400.jpg 400w,
+                  assets/imgs/athletes/green-people-background/green-people-background-845.jpg 845w,
+                  assets/imgs/athletes/green-people-background/green-people-background-1164.jpg 1164w,
+                  assets/imgs/athletes/green-people-background/green-people-background-1400.jpg 1400w" />
+  </header>
+  <main role="main">
+    <article>
+      <h1 class="centered uppercase">{{recipeType}} Recipes</h1>
+      <p id="tapH5" class="note centered">(Tap an image to view larger.)</p>
+      <p id="clickH5" class="note centered">(Click an image to view larger.)</p>
+      <section id="recipeTypeSection">
+        <button (click)="recipeType='Appetizer'" [ngClass]="{ 'active': !recipeType || recipeType == 'Appetizer' }">Appetizer</button>
+        <button (click)="recipeType='Beverage'" [ngClass]="{ 'active': recipeType == 'Beverage' }">Beverage</button>
+        <button (click)="recipeType='Breakfast'" [ngClass]="{ 'active': recipeType == 'Breakfast' }">Breakfast</button>
+        <button (click)="recipeType='Dessert'" [ngClass]="{ 'active': recipeType == 'Dessert' }">Dessert</button>
+        <button (click)="recipeType='Entrée'" [ngClass]="{ 'active': recipeType == 'Entrée' }">Entrée</button>
+        <button (click)="recipeType='Shake'" [ngClass]="{ 'active': recipeType == 'Shake' }">Shake</button>
+        <button (click)="recipeType='Snack'" [ngClass]="{ 'active': recipeType == 'Snack' }">Snack</button>
+      </section>
+      <section id="recipeSection">
+        <figure *ngFor="let recipe of this.recipes | recipeTypeFilter: recipeType" (click)="showRecipe(recipe)">
+          <img src="assets/imgs/recipes/thumbs/{{recipe.imgSrc}}.jpg" alt="{{recipe.title}} Recipe" class="shadowed" />
+          <figcaption>{{recipe.title}}</figcaption>
+        </figure>
+      </section>
+    </article>
+  </main>
+  <get-footer></get-footer>
+</ion-content>
+<ion-footer *ngIf="this.auth.loggedIn" id="footer">
+    <ion-item>
+      <ion-label>Recipe Type</ion-label>
+      <ion-select class="recipeTypeSelect" [(ngModel)]="recipeType">
+        <ion-option selected>Appetizer</ion-option>
+        <ion-option>Beverage</ion-option>
+        <ion-option>Breakfast</ion-option>
+        <ion-option>Dessert</ion-option>
+        <ion-option>Entrée</ion-option>
+        <ion-option>Shake</ion-option>
+        <ion-option>Snack</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-footer>

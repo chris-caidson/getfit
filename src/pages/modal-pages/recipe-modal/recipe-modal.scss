@@ -1,0 +1,25 @@
+page-recipe-modal {
+    article {
+        margin-top: $default-margin;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    h3 {
+        color: $secondary-color;
+        text-align: left;
+    }
+
+    div {
+        text-align: justify;
+    }
+
+    @media (max-width: 1250px) {
+      .space-right {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+}
