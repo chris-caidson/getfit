@@ -3,6 +3,8 @@ import { Component, ViewChild } from "@angular/core";
 import { Nav, Platform } from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   templateUrl: "app.html"
@@ -24,7 +26,8 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public auth: AuthProvider
+    public auth: AuthProvider,
+    private http: Http
   ) {
     this.initializeApp();
 
@@ -43,7 +46,7 @@ export class MyApp {
       { title: "Science", component: "SciencePage", separatorLevel: 4, icon: "flask" },
       { title: "Studies", component: "StudiesPage", separatorLevel: 4, icon: "file" },
       { title: "Myth Buster", component: "MythbusterPage", separatorLevel: 4, icon: "bomb" },
-      { title: "Research", component: null, separatorLevel: 3, icon: null},
+      { title: "Research", component: null, separatorLevel: 3, icon: null },
       { title: "Cleansing", component: "CleansingPage", separatorLevel: 4, icon: "leaf" },
       { title: "Adaptogens", component: "AdaptogensPage", separatorLevel: 4, icon: "pagelines" },
       { title: "Whey", component: "WheyPage", separatorLevel: 4, icon: "asterisk" },
@@ -97,6 +100,12 @@ export class MyApp {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      // this.http.get("//freegeoip.net/json/").toPromise().then(response => {
+      //   var json = response.json();
+
+      //   console.log(json);
+      // });
     });
   }
 

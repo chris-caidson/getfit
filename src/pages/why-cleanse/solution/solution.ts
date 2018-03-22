@@ -49,4 +49,7 @@ export class SolutionPage {
     myModal.present();
   }
 
+  loadProblemPage() {
+    this.navCtrl.setRoot('ProblemPage');
+  }
 }

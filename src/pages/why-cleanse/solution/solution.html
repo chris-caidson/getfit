@@ -61,3 +61,15 @@
   </main>
   <get-footer></get-footer>
 </ion-content>
+<ion-footer *ngIf="this.auth.loggedIn">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="secondary" (click)="loadProblemPage()">
+          <i class="fa fa-exclamation-circle fixed-width space-right"></i>
+          <span>Problem</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

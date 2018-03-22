@@ -21,12 +21,16 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.platform.ready().then((readySource) => {
-      this.slides.slidesPerView =this.platform.width() / this.spacer;
+      if (this.slides) {
+        this.slides.slidesPerView = this.platform.width() / this.spacer;
+      }
     });
   }
 
   onResize(event) {
-    const innerWidth = event.target.innerWidth;
-    this.slides.slidesPerView = innerWidth / this.spacer;
- }
+    if (this.slides) {
+      const innerWidth = event.target.innerWidth;
+      this.slides.slidesPerView = innerWidth / this.spacer;
+    }
+  }
 }

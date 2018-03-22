@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { HttpModule } from '@angular/http';
 //import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { MyApp } from './app.component';
@@ -25,6 +26,7 @@ import { Person_2007Provider } from '../providers/person-2007/person-2007';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],

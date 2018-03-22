@@ -57,4 +57,8 @@ export class ProblemPage {
     myModal.present();
   }
 
+  loadSolutionPage() {
+    this.navCtrl.setRoot('SolutionPage');
+  }
 }
+

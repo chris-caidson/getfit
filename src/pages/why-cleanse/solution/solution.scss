@@ -3,6 +3,23 @@ page-solution {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
   }
+  
+  ion-grid {
+    max-width: 500px;
+  }
+
+  ion-footer {
+    background-color: #efefef;
+    border-top: 1px solid #bbb;
+
+    button span {
+      color: $light-color;
+
+      i {
+        color: $light-color !important;
+      }
+    }
+  }
 
   @media (min-width: 768px) {
     .grid-container {

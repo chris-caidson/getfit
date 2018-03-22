@@ -8,6 +8,19 @@ page-problem {
     max-width: 500px;
   }
 
+  ion-footer {
+    background-color: #efefef;
+    border-top: 1px solid #bbb;
+
+    button span {
+      color: $light-color;
+
+      i {
+        color: $light-color !important;
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     .grid-container {
       grid-template-columns: auto auto;

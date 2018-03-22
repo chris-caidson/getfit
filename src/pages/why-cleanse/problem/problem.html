@@ -69,5 +69,17 @@
       </section>
     </article>
   </main>
-  <get-footer></get-footer>
+  <get-footer></get-footer> 
 </ion-content>
+<ion-footer *ngIf="this.auth.loggedIn">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="secondary" (click)="loadSolutionPage()">
+          <i class="fa fa-check-circle fixed-width space-right"></i>
+          <span>Solution</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
