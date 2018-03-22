@@ -55,9 +55,19 @@ get-footer {
     max-width: 200px;
   }
 
+  #getImg {
+    max-width: 213px !important;
+    max-height: 91px !important;
+  }
+
   @media (min-width: 640px) {
     a img {
       width: 40vw;
+    }
+
+    #getImg {
+      max-width: 213px !important;
+      max-height: 91px !important;
     }
 
     #getQuote {
@@ -84,6 +94,11 @@ get-footer {
       max-width: 25vw !important;
     }
 
+    #getImg {
+      max-width: 213px !important;
+      max-height: 91px !important;
+    }
+
     #getQuote {
       width: 50vw;
     }
@@ -98,8 +113,14 @@ get-footer {
       max-width: 15vw !important;
     }
 
+    #getImg {
+      max-width: 213px !important;
+      max-height: 91px !important;
+    }
+
     #getQuote {
       width: 40vw;
     }
+
   }
 }
