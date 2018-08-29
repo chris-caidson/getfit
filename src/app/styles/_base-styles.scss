@@ -7,6 +7,13 @@
   line-height: 1.35;
 }
 
+body {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  }
+  
 figcaption {
   font-size: small;
   color: darken($tertiary-color, 35);
