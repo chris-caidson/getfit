@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { HttpModule } from '@angular/http';
-//import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -50,7 +50,7 @@ import { Person_2007Provider } from '../providers/person-2007/person-2007';
     Person_2009Provider,
     Person_2008Provider,
     Person_2007Provider,
-    //{ provide: LocationStrategy, useClass: PathLocationStrategy },
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
   ]
 })
 export class AppModule {}
